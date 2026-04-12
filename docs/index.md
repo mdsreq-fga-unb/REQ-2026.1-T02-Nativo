@@ -27,9 +27,9 @@ Versão 1.9
 | 11/04/26 | 1.9 | Preenchimento da seção 6 e revisão dos tópicos 4.1 e 4.2 | André Henrique |
 | 11/04/26 | 2.0 | Preenchimento da seção 5 e revisão | Renan |
 
-1. # **CENÁRIO ATUAL DO CLIENTE E DO NEGÓCIO**
+# **1. CENÁRIO ATUAL DO CLIENTE E DO NEGÓCIO**
 
-   1. ## Identificação do Cliente
+   ## **1.1 Identificação do Cliente**
 
 	**Nome:** Nativo
 
@@ -49,15 +49,15 @@ ponte de comunicação com a aldeia de Bragança, responsável por validar
 
 decisões do projeto e avaliar entregas realizadas.
 
-2. ## Introdução ao Negócio e Contexto
+## **1.2. Introdução ao Negócio e Contexto**
 
 O Nativo é um aplicativo móvel tradutor voltado para a língua indigena Munduruku, com o objetivo de apoiar a revitalização linguística na Aldeia Munduruku de Bragança. Projetado e construído como um projeto de TCC de Alexia Naara a partir da orientação do Professor Doutor Sergio Antônio e coorientado pela Professora Doutora Celia Matsunaga e desenvolvido à tutela do Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS). O aplicativo conta com tradução bidirecional entre Português e Munduruku, uma sessão informativa, uma página para adicionar e editar traduções, gerenciamento de traduções e de usuários. 
 
 A missão do projeto representa uma importante iniciativa tecnológica voltada à preservação cultural e linguística dos povos originários da Amazônia. O projeto atua no processo de revitalização linguística da aldeia, onde a língua nativa tem perdido espaço e uso cotidiano, ameaçando a preservação das raízes culturais da comunidade. Para enfrentar esse enfraquecimento, o Nativo se propõe como um aplicativo móvel que funciona como um repositório de cultura e tradução bilíngue. No entanto, a aplicação não tem aderência na comunidade.
 
-3. ## Rich Picture
-    ![Rich Picture](./img/richpicture.png)
-4. ## Identificação da Oportunidade ou Problema
+## **1.3. Rich Picture**
+  ![Rich Picture](./img/richpicture.png)
+## **1.4. Identificação da Oportunidade ou Problema**
 
 A principal oportunidade identificada para o Nativo está relacionada às limitações de engajamento e uso contínuo da plataforma pelos usuários. Embora o aplicativo cumpra sua função básica de tradução bidirecional, observa-se que sua utilização tende a ser pontual e não recorrente, o que reduz seu impacto no processo de preservação e fortalecimento das línguas indígenas.
 
@@ -69,15 +69,15 @@ Dessa forma, o problema central a ser enfrentado é a baixa capacidade da plataf
 
 ![Diagrama de Ishikawa](./assets/ishikawa.png)
 
-5. ## Desafios do Projeto
+## **1.5. Desafios do Projeto**
 
 O principal desafio estratégico do projeto reside na complexidade do fluxo de comunicação e validação, uma vez que o contato com a comunidade Munduruku não ocorre de forma direta, mas mediado por uma representante, somado à falta de colaboradores para apoiar o desenvolvimento da aplicação. Esse cenário impacta a agilidade do desenvolvimento, dificulta a coleta de feedbacks em tempo real e compromete a realização completa do escopo inicialmente idealizado. Como consequência, decisões sobre evolução do produto, priorização de funcionalidades e validação das entregas tendem a depender de um processo mais lento e sensível a ruídos de comunicação
 
 Outro desafio relevante é de natureza técnica. A utilização do Flask na arquitetura atual da aplicação tem gerado dificuldades relacionadas à velocidade de funcionamento e à facilidade de evolução do sistema. Isso impacta diretamente a experiência de uso e também reduz a agilidade para implementar melhorias, correções e novas funcionalidades, o que se torna ainda mais crítico em um projeto que demanda expansão contínua e adaptação às necessidades da comunidade atendida.
 
-6. ## Mapa de Stakeholders
+## **1.6. Mapa de Stakeholders**
 
-	Os principais stakeholders do projeto são: Alexia Naara da Silva Cardoso, como cliente e desenvolvedora da aplicação, com alta influência na solução por validar ideias, escopo e entregas; Professor Sergio Freitas, como representante do CEDIS no produto, contribuindo com apoio às necessidades técnicas da aplicação, embora com menor influência nas decisões do projeto; Professor Márcio, como representante da aldeia e principal elo entre a comunidade e a equipe técnica, com alta influência por transmitir aos desenvolvedores as informações e percepções dos validadores; a diretora e os alunos, como validadores do Nativo, exercendo papel central na avaliação dos requisitos implementados e na comunicação de opiniões sobre a adequação da solução ao contexto real de uso; e a equipe de desenvolvimento, responsável por implementar as melhorias propostas e garantir a viabilidade técnica da aplicação, também com alta influência na concretização e evolução do produto.
+Os principais stakeholders do projeto são: Alexia Naara da Silva Cardoso, como cliente e desenvolvedora da aplicação, com alta influência na solução por validar ideias, escopo e entregas; Professor Sergio Freitas, como representante do CEDIS no produto, contribuindo com apoio às necessidades técnicas da aplicação, embora com menor influência nas decisões do projeto; Professor Márcio, como representante da aldeia e principal elo entre a comunidade e a equipe técnica, com alta influência por transmitir aos desenvolvedores as informações e percepções dos validadores; a diretora e os alunos, como validadores do Nativo, exercendo papel central na avaliação dos requisitos implementados e na comunicação de opiniões sobre a adequação da solução ao contexto real de uso; e a equipe de desenvolvimento, responsável por implementar as melhorias propostas e garantir a viabilidade técnica da aplicação, também com alta influência na concretização e evolução do produto.
 
 | Stakeholder | Relação com a solução | Interesse principal | Influência |
 | :---: | :---: | :---: | :---: |
@@ -90,9 +90,9 @@ Outro desafio relevante é de natureza técnica. A utilização do Flask na arqu
 
 ## 
 
-7. ## Segmentação de Clientes*.* 
+## **1.7 Segmentação de Clientes**
 
-	O aplicativo Nativo atende a quatro principais segmentos de usuários:
+O aplicativo Nativo atende a quatro principais segmentos de usuários:
 
 * **Crianças de 6 a 12 anos:** Público que busca a revitalização linguística, utilizando o aplicativo como ferramenta de consulta rápida, aprendizado fonético e associação visual da língua Munduruku.
 
@@ -102,13 +102,13 @@ Outro desafio relevante é de natureza técnica. A utilização do Flask na arqu
 
 * **Pesquisadores e Entusiastas da Língua:** Interessados na preservação da língua Munduruku, utilizam o sistema como um repositório de consulta gramatical e identidade cultural.
 
-2. # **SOLUÇÃO PROPOSTA**
+# **2. SOLUÇÃO PROPOSTA**
 
-   1. ## Objetivo geral do produto
+  ## **2.1 Objetivo geral do produto**
 
-	O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma *Nativo* na aldeia**, por meio  da refatoração da aplicação para suportar um ecossistema de mídia. Além disso, projeto visa resolver a falta de dinamismo na tradução através da implementação de uploads de áudio, vídeo e fotos, um feed social que transforme o aplicativo em um espaço vivo de interação comunitária, além de um sistema de gamificação, que estimule a prática constante da língua Munduruku. Com essas melhorias, a revitalização da língua Munduruku ocorre de forma lúdica, visual e participativa para a comunidade.
+O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma *Nativo* na aldeia**, por meio  da refatoração da aplicação para suportar um ecossistema de mídia. Além disso, projeto visa resolver a falta de dinamismo na tradução através da implementação de uploads de áudio, vídeo e fotos, um feed social que transforme o aplicativo em um espaço vivo de interação comunitária, além de um sistema de gamificação, que estimule a prática constante da língua Munduruku. Com essas melhorias, a revitalização da língua Munduruku ocorre de forma lúdica, visual e participativa para a comunidade.
 
-2. ## Objetivos específicos (OE) do produto
+## **2.2 Objetivos específicos (OE) do produto**
 
    \[OE1\] Enriquecer a experiência de tradução.
 
@@ -122,7 +122,7 @@ Outro desafio relevante é de natureza técnica. A utilização do Flask na arqu
 
    \[OE6\] Garantir a acessibilidade em cenários de baixa conectividade.
 
-   3. ## Característica do Produto (mapeadas com os Objetivos Específicos do produto)	
+  ## **2.3 Característica do Produto (mapeadas com os Objetivos Específicos do produto)**
 
 | ID | Característica de Produto (CP) | Descrição resumida | ID | Valor de negócio (VN) principal |  Contribuição principal | Contribuição secundária |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -134,7 +134,7 @@ Outro desafio relevante é de natureza técnica. A utilização do Flask na arqu
 | **CP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
 | **CP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |
 
-   4. ## Tecnologias a serem utilizadas
+  ## **2.4 Tecnologias a serem utilizadas**
 
 *Informe quais serão as tecnologias a serem utilizadas para a construção da solução proposta.*
 
@@ -144,7 +144,7 @@ No backend, será utilizado **Python com Flask**, tecnologia já empregada na ap
 
 Para persistência de dados, será utilizado o **Firebase**, com foco no uso de um banco de dados **NoSQL**, devido à sua flexibilidade para lidar com estruturas dinâmicas, como traduções, perfis de usuários e conteúdos multimídia. Essa escolha também favorece a integração com serviços de armazenamento de arquivos, permitindo suporte a áudios, imagens e outros recursos necessários à proposta do produto. Para o processo de build da aplicação mobile, será utilizado o **Gradle**, ferramenta já integrada ao ecossistema do React Native para geração do aplicativo Android. Além disso, para apoio ao desenvolvimento colaborativo, serão utilizados **Git e GitHub**, permitindo versionamento do código, controle de mudanças e colaboração entre os membros da equipe. Por fim, serão respeitadas as diretrizes da licença do projeto, que prevê a livre colaboração e distribuição do software, com ressalvas específicas relacionadas a conteúdos multimídia, como imagens e vídeos armazenados na plataforma.
 
-5. ## Pesquisa de mercado e análise competitiva
+## **2.5 Pesquisa de mercado e análise competitiva**
 
 *Apresente uma análise das soluções similares já existentes no mercado e como a nova solução poderá se diferenciar delas.*
 
@@ -161,7 +161,7 @@ A solução do Nativo irá se diferenciar por dois aspectos centrais.
 * O segundo é a valorização de conteúdos visuais e culturais da própria comunidade, com uso de fotos e vídeos, permitindo que a plataforma atue não apenas como ferramenta de tradução, mas também como um repositório vivo da cultura Munduruku, fortalecendo a identificação dos usuários com a aplicação e com o processo de revitalização linguística.
 
 
-  6. ## Viabilidade da proposta
+## **2.6 Viabilidade da proposta**
 
 A proposta é considerada viável no contexto da disciplina, tendo em vista o escopo definido e a capacidade técnica da equipe, com previsão de entrega de um MVP consistente e evoluções incrementais ao longo do semestre. Embora o fluxo de comunicação com a comunidade Munduruku apresenta limitações por ocorrer por meio de um representante, o projeto foi estruturado de forma compatível com essa realidade, apoiando-se em elementos já validados junto aos usuários.
 
@@ -178,7 +178,7 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 * O compartilhamento contínuo de conhecimento, de modo a evitar a concentração de responsabilidades e possíveis gargalos no desenvolvimento.
 
 
-  7. ## Benefícios Esperados
+## **2.7 Benefícios Esperados**
 
      
 
@@ -191,9 +191,9 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
   
 
 
-3. # **ESTRATÉGIAS DE ENGENHARIA DE SOFTWARE**
+# **3. ESTRATÉGIAS DE ENGENHARIA DE SOFTWARE**
 
-   # **3.1. Estratégia Priorizada**
+## **3.1. Estratégia Priorizada**
 
 ***Abordagem de Desenvolvimento de Software:** informe qual será a abordagem (dirigida por plano, ágil,híbrida) que irá guiar o desenvolvimento do produto proposto.*
 
@@ -207,9 +207,9 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 
 **Processo**:  OpenUP
 
-## 	3.2. Quadro Comparativo
+## 	**3.2. Quadro Comparativo**
 
-	O quadro apresenta algumas características que podem ser relacionadas ao OpenUP e RAD, visando auxiliar o entendimento e justificativa do processo mais adequado para o projeto
+O quadro apresenta algumas características que podem ser relacionadas ao OpenUP e RAD, visando auxiliar o entendimento e justificativa do processo mais adequado para o projeto
 
 | Características | OpenUP | RAD |
 | :---: | :---: | :---: |
@@ -227,7 +227,7 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 | **Controle de Qualidade** | O controle ocorre de forma mais estruturada ao longo das fases e iterações. | O controle depende muito da maturidade da equipe e da frequência de validação dos protótipos. |
 | **Previsibilidade e Planejamento** | Oferece maior previsibilidade de marcos, atividades e entregas. | Favorece adaptação rápida, mas pode reduzir previsibilidade se o feedback não vier com constância suficiente. |
 
-## 3.3. Justificativa
+## **3.3. Justificativa**
 
 *A partir das informações apresentadas na seção anterior, reporte a justificativa que fundamenta a escolha de um dos processos comparados, para o desenvolvimento do produto proposto.*
 
@@ -261,11 +261,11 @@ Com base nas características do projeto Nativo e nos desafios identificados, o 
 
 Dessa forma, o OpenUP se mostra a escolha mais adequada por oferecer maior organização, melhor suporte à evolução técnica e alinhamento com as necessidades de validação e documentação do projeto, contribuindo para uma condução mais segura e estruturada do desenvolvimento.
 
-4. ### **ENGENHARIA DE REQUISITOS**
+## **4. ENGENHARIA DE REQUISITOS**
 
 *A partir das informações apresentadas na seção 3, deste documento, devem ser estabelecidas as atividades da Engenharia de Requisitos (ER), suas práticas e técnicas em alinhamento ao processo de ESW informado. Inicialmente, cada uma das 6 atividades da ER deve ser associada às técnicas que serão utilizadas no projeto em desenvolvimento durante a disciplina.*
 
-##### **4.1. Atividades e Técnicas de ER**
+## **4.1. Atividades e Técnicas de ER**
 
 ***Elicitação e Descoberta:***
 
@@ -389,7 +389,7 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 
 * **Testes de Aceitação e Demonstração Final:** Apresentação da versão finalizada para a cliente e para a comunidade (via representante) para homologação do sistema, garantindo que a aplicação está pronta para o uso no dia a dia da aldeia.
 
-##### **4.2. Engenharia de Requisitos e o OpenUP**
+## **4.2. Engenharia de Requisitos e o OpenUP**
 
 *Aqui, as atividades da ER, suas práticas e técnicas devem ser mapeadas, a partir das fases (etapas) do processo estabelecido pela equipe, para a condução do projeto. Essas informações devem ser apresentadas em uma tabela conforme indicado, a seguir (exemplo).*
 
@@ -415,7 +415,7 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 |  | Organização e Atualização | Gerenciamento de mudanças e controle de dependências de forma leve. | Matriz de Rastreabilidade | Continuidade do conhecimento do projeto garantida, sem perda de rastreabilidade durante a rotação técnica da equipe. |
 | **Transição** | Verificação e Validação | Homologação final do sistema com o cliente e usuários finais. | Demonstração (Review) e Testes de Aceitação | Sistema Nativo integralmente validado pela aldeia, atestando a fidelidade linguística e o suporte em baixa conectividade. |
 
-5. ### **CRONOGRAMA E ENTREGAS**
+# **5. CRONOGRAMA E ENTREGAS**
 
 *Apresente o planejamento temporal do projeto, com as fases de desenvolvimento e prazos de entrega, especificando suas datas de início e de fim, bem como os produtos a serem gerados. O planejamento do projeto deve ser atualizado de maneira sucessiva, a partir da realização de cada ciclo (sprint, iteração) de desenvolvimento.*
 
@@ -458,9 +458,9 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 
 * Homologação: Garantia da fidelidade linguística Munduruku e da usabilidade em cenários de baixa conectividade.
 
-6. ### **INTERAÇÃO ENTRE EQUIPE E CLIENTE**
+# **6. INTERAÇÃO ENTRE EQUIPE E CLIENTE**
 
-##### **6.1. Composição da Equipe**
+## **6.1. Composição da Equipe**
 
 *A equipe de desenvolvimento será composta por:*
 
@@ -474,7 +474,7 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 
 Os responsáveis pelo backend, frontend e qualidade serão rotacionados ao longo das sprints, com objetivo de melhorar o conhecimento dos integrantes em áreas de menor domínio e apoiar o entendimento do andamento do projeto no geral.
 
-##### **6.2. Comunicação**
+## **6.2. Comunicação**
 
 *Descreva as ferramentas e métodos a serem usados para manter a equipe e o cliente alinhados, além da frequência de reuniões e interações. Também deve ser informado como será realizada a comunicação entre os membros da equipe.*
 
@@ -500,7 +500,7 @@ Os responsáveis pelo backend, frontend e qualidade serão rotacionados ao longo
 
 	
 
-##### **6.3. Processo de Validação**
+## **6.3. Processo de Validação**
 
 O processo de validação do produto seguirá os princípios iterativos e incrementais do **OpenUP**. Para garantir que a solução atenda às expectativas e mantenha a integridade técnica e cultural, a validação ocorrerá em três frentes principais:
 
@@ -516,15 +516,15 @@ O processo de validação do produto seguirá os princípios iterativos e increm
 
 * Ao final de cada iteração, os incrementos funcionais e testados do aplicativo serão empacotados e disponibilizados para validação de negócio. Durante essa etapa de revisão, a cliente atuará como homologadora, testando a aplicação na prática para verificar se o sistema atende aos requisitos estabelecidos e aos Objetivos Específicos (OEs), à usabilidade esperada para a aldeia e às regras de integridade cultural da língua Munduruku. Funcionalidades só serão integradas à versão final (Transição) após o *feedback* positivo nesses marcos.
 
-### **10\. LIÇÕES APRENDIDAS**
+# **10. LIÇÕES APRENDIDAS**
 
-##### **10.1 Unidade 1**
+## **10.1 Unidade 1**
 
 *\[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.\]*
 
 *\[Aqui, também devem estar registradas as dificuldades que a equipe teve durante a unidade, e como conseguiu (ou não superá-las).\]*
 
-### **11\. REFERÊNCIAS BIBLIOGRÁFICAS**
+# **11. REFERÊNCIAS BIBLIOGRÁFICAS**
 
 *\[Listar as referências utilizadas para a construção deste documento\]*
 

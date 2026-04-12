@@ -1,10 +1,9 @@
-**NATIVO**
-
-**VISÃO DE PRODUTO E PROJETO**
+# **<span style="color: red;"> NATIVO </span>**
+## **VISÃO DE PRODUTO E PROJETO**
 
 Versão 1.9
 
-**Histórico de revisão**
+## **Histórico de revisão**
 
 | Data | Versão | Descrição | Autor |
 | :---: | :---: | :---: | ----- |
@@ -29,7 +28,7 @@ Versão 1.9
 
 # **1. CENÁRIO ATUAL DO CLIENTE E DO NEGÓCIO**
 
-   ## **1.1 Identificação do Cliente**
+## **1.1 Identificação do Cliente**
 
 	**Nome:** Nativo
 
@@ -104,7 +103,7 @@ O aplicativo Nativo atende a quatro principais segmentos de usuários:
 
 # **2. SOLUÇÃO PROPOSTA**
 
-  ## **2.1 Objetivo geral do produto**
+## **2.1 Objetivo geral do produto**
 
 O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma *Nativo* na aldeia**, por meio  da refatoração da aplicação para suportar um ecossistema de mídia. Além disso, projeto visa resolver a falta de dinamismo na tradução através da implementação de uploads de áudio, vídeo e fotos, um feed social que transforme o aplicativo em um espaço vivo de interação comunitária, além de um sistema de gamificação, que estimule a prática constante da língua Munduruku. Com essas melhorias, a revitalização da língua Munduruku ocorre de forma lúdica, visual e participativa para a comunidade.
 
@@ -122,7 +121,7 @@ O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma
 
    \[OE6\] Garantir a acessibilidade em cenários de baixa conectividade.
 
-  ## **2.3 Característica do Produto (mapeadas com os Objetivos Específicos do produto)**
+## **2.3 Característica do Produto (mapeadas com os Objetivos Específicos do produto)**
 
 | ID | Característica de Produto (CP) | Descrição resumida | ID | Valor de negócio (VN) principal |  Contribuição principal | Contribuição secundária |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -134,7 +133,7 @@ O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma
 | **CP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
 | **CP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |
 
-  ## **2.4 Tecnologias a serem utilizadas**
+## **2.4 Tecnologias a serem utilizadas**
 
 *Informe quais serão as tecnologias a serem utilizadas para a construção da solução proposta.*
 

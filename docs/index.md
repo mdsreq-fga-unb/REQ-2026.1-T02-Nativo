@@ -30,11 +30,11 @@ Versão 1.9
 
 ## **1.1 Identificação do Cliente**
 
-	**Nome:** Nativo
+**Nome:** Nativo
 
-	**Tipo:** Aplicativo tradutor de línguas indígenas
+**Tipo:** Aplicativo tradutor de línguas indígenas
 
-	**Representante:** Alexia Naara da Silva Cardoso, desenvolvedora única do
+**Representante:** Alexia Naara da Silva Cardoso, desenvolvedora única do
 
 projeto.
 
@@ -135,8 +135,6 @@ O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma
 
 ## **2.4 Tecnologias a serem utilizadas**
 
-*Informe quais serão as tecnologias a serem utilizadas para a construção da solução proposta.*
-
 Para a construção da solução proposta para o Nativo, serão utilizadas tecnologias alinhadas à necessidade de evolução da aplicação, suporte a funcionalidades multimídia e adaptação a cenários de baixa conectividade, mantendo compatibilidade com a stack já adotada no projeto. Considerando que a aplicação já se encontra em funcionamento e que a equipe possui familiaridade com as tecnologias utilizadas, optou-se por manter a base atual, realizando melhorias estruturais e refatorações para mitigar os problemas identificados.	
 
 No backend, será utilizado **Python com Flask**, tecnologia já empregada na aplicação atual. Apesar dos desafios relacionados à performance e escalabilidade mencionados anteriormente, a estratégia adotada consiste na refatoração da arquitetura e na adoção de melhores práticas de desenvolvimento, visando melhorar a eficiência, organização e manutenção do sistema. No frontend, será utilizado **TypeScript com React Native**, considerando que o Nativo é uma aplicação voltada para dispositivos móveis. Essa escolha permite a construção de interfaces mais consistentes, reutilizáveis e alinhadas à experiência de uso em smartphones, além de facilitar a evolução de funcionalidades como suporte a mídias, interações e possíveis mecanismos de engajamento. A comunicação entre frontend e backend será realizada por meio de **APIs RESTful**, mantendo o padrão já adotado no projeto. Esse modelo possibilita a organização dos serviços da aplicação e a integração entre os diferentes componentes do sistema, garantindo maior modularidade e facilidade de manutenção.
@@ -144,8 +142,6 @@ No backend, será utilizado **Python com Flask**, tecnologia já empregada na ap
 Para persistência de dados, será utilizado o **Firebase**, com foco no uso de um banco de dados **NoSQL**, devido à sua flexibilidade para lidar com estruturas dinâmicas, como traduções, perfis de usuários e conteúdos multimídia. Essa escolha também favorece a integração com serviços de armazenamento de arquivos, permitindo suporte a áudios, imagens e outros recursos necessários à proposta do produto. Para o processo de build da aplicação mobile, será utilizado o **Gradle**, ferramenta já integrada ao ecossistema do React Native para geração do aplicativo Android. Além disso, para apoio ao desenvolvimento colaborativo, serão utilizados **Git e GitHub**, permitindo versionamento do código, controle de mudanças e colaboração entre os membros da equipe. Por fim, serão respeitadas as diretrizes da licença do projeto, que prevê a livre colaboração e distribuição do software, com ressalvas específicas relacionadas a conteúdos multimídia, como imagens e vídeos armazenados na plataforma.
 
 ## **2.5 Pesquisa de mercado e análise competitiva**
-
-*Apresente uma análise das soluções similares já existentes no mercado e como a nova solução poderá se diferenciar delas.*
 
 No cenário do mercado de soluções digitais voltadas à preservação linguística, o Nativo encontra poucos concorrentes diretos no contexto brasileiro, especialmente por seu foco específico na língua Munduruku e na realidade da Aldeia Munduruku de Bragança. Ainda assim, existem plataformas e aplicativos com propostas parcialmente semelhantes, voltados à preservação, documentação, ensino ou tradução de outras línguas indígenas e ameaçadas, que podem ser considerados referências competitivas.
 
@@ -179,8 +175,6 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 
 ## **2.7 Benefícios Esperados**
 
-     
-
 * Para o **cliente**: Ampliar a capacidade de evolução da plataforma Nativo com maior controle sobre o conteúdo e as interações, redução das limitações técnicas atuais e melhoria da confiabilidade e desempenho da aplicação. A solução também deverá fortalecer o posicionamento do Nativo como uma ferramenta de impacto social e cultural, criando melhores condições para expansão da plataforma, aumento do engajamento da comunidade e continuidade do projeto de revitalização linguística.
 
 
@@ -193,12 +187,6 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 # **3. ESTRATÉGIAS DE ENGENHARIA DE SOFTWARE**
 
 ## **3.1. Estratégia Priorizada**
-
-***Abordagem de Desenvolvimento de Software:** informe qual será a abordagem (dirigida por plano, ágil,híbrida) que irá guiar o desenvolvimento do produto proposto.*
-
-***Ciclo de vida:** informe o ciclo de vida de desenvolvimento de software a ser utilizado, em alinhamento com a abordagem escolhida.*
-
-***Processo de Engenharia de Software:** informe o processo de desenvolvimento de software a ser utilizado para a construção do produto proposto.*
 
 **Abordagem**: Híbrida
 
@@ -227,8 +215,6 @@ O quadro apresenta algumas características que podem ser relacionadas ao OpenUP
 | **Previsibilidade e Planejamento** | Oferece maior previsibilidade de marcos, atividades e entregas. | Favorece adaptação rápida, mas pode reduzir previsibilidade se o feedback não vier com constância suficiente. |
 
 ## **3.3. Justificativa**
-
-*A partir das informações apresentadas na seção anterior, reporte a justificativa que fundamenta a escolha de um dos processos comparados, para o desenvolvimento do produto proposto.*
 
 ### **Justificativa**
 
@@ -260,45 +246,9 @@ Com base nas características do projeto Nativo e nos desafios identificados, o 
 
 Dessa forma, o OpenUP se mostra a escolha mais adequada por oferecer maior organização, melhor suporte à evolução técnica e alinhamento com as necessidades de validação e documentação do projeto, contribuindo para uma condução mais segura e estruturada do desenvolvimento.
 
-## **4. ENGENHARIA DE REQUISITOS**
-
-*A partir das informações apresentadas na seção 3, deste documento, devem ser estabelecidas as atividades da Engenharia de Requisitos (ER), suas práticas e técnicas em alinhamento ao processo de ESW informado. Inicialmente, cada uma das 6 atividades da ER deve ser associada às técnicas que serão utilizadas no projeto em desenvolvimento durante a disciplina.*
+# **4. ENGENHARIA DE REQUISITOS**
 
 ## **4.1. Atividades e Técnicas de ER**
-
-***Elicitação e Descoberta:***
-
-* *\<Nome da técnica 1\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-***Análise e Consenso***
-
-* *\<Nome da técnica 1\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-  * *\<Nome da técnica n\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-***Declaração de Requisitos***
-
-* *\<Nome da técnica 1\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-  * *\<Nome da técnica n\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-***Representação de Requisitos***
-
-* *\<Nome da técnica 1\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-  * *\<Nome da técnica n\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-***Verificação e Validação de Requisitos***
-
-* *\<Nome da técnica 1\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-  * *\<Nome da técnica n\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-***Organização e Atualização de Requisitos***
-
-* *\<Nome da técnica 1\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
-
-  * *\<Nome da técnica n\>: \<descrição de como a técnica será utilizada no contexto do projeto\>.*
 
 As técnicas adotadas pela equipe para o projeto Nativo estão organizadas conforme as cinco frentes do processo de requisitos do OpenUP, associadas às seis atividades fundamentais da ER que se entrelaçam ao longo do projeto.
 
@@ -390,19 +340,6 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 
 ## **4.2. Engenharia de Requisitos e o OpenUP**
 
-*Aqui, as atividades da ER, suas práticas e técnicas devem ser mapeadas, a partir das fases (etapas) do processo estabelecido pela equipe, para a condução do projeto. Essas informações devem ser apresentadas em uma tabela conforme indicado, a seguir (exemplo).*
-
-| Fases do Processo | Atividades ER | Prática | Técnica | Resultado Esperado |
-| ----- | ----- | ----- | ----- | :---: |
-| *\<Fase 1\>* | *Elicitação e Descoberta* | *\<Prática 1\>* | *\<Técnica 1\>* | *\<Resultado esperado 1\>* |
-|  | *Análise e Consenso* | *\<Prática 2\>* | *\<Técnica 2\>* | *\<Resultado esperado 2\>* |
-|  | *Declaração* | *\<Prática 3\>* | *\<Técnica 3\>* | *\<Resultado esperado 3\>* |
-| *\<Fase 2\>* | *Verificação e Validação* | *\<Prática 4\>* | *\<Técnica 4\>* | *\<Resultado esperado 4\>* |
-|  | *Organização e Atualização* | *\<Prática 5\>* | *\<Técnica 5\>* | *\<Resultado esperado 5\>* |
-| *\<Fase n\>* | *Representação* | *\<Prática 6\>* | *\<Técnica 6\>* | *\<Resultado esperado 6\>* |
-|  | *Elicitação e Descoberta* | *\<Prática 7\>* | *\<Técnica 7\>* | *\<Resultado esperado 7\>* |
-|  | *Organização e Atualização* | *\<Prática 8\>* | *\<Técnica 8\>* | *\<Resultado esperado 8\>* |
-
 | Fases do Processo | Atividades ER | Prática | Técnica | Resultado Esperado |
 | :---: | :---: | :---: | :---: | :---: |
 | **Concepção** | Elicitação e Descoberta | Colaboração direta com stakeholders para entendimento do domínio. | Entrevistas, Brainstorming e Análise Documental | Escopo preliminar definido, identificação das necessidades da comunidade Munduruku e mapeamento dos gargalos do Flask. |
@@ -415,10 +352,6 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 | **Transição** | Verificação e Validação | Homologação final do sistema com o cliente e usuários finais. | Demonstração (Review) e Testes de Aceitação | Sistema Nativo integralmente validado pela aldeia, atestando a fidelidade linguística e o suporte em baixa conectividade. |
 
 # **5. CRONOGRAMA E ENTREGAS**
-
-*Apresente o planejamento temporal do projeto, com as fases de desenvolvimento e prazos de entrega, especificando suas datas de início e de fim, bem como os produtos a serem gerados. O planejamento do projeto deve ser atualizado de maneira sucessiva, a partir da realização de cada ciclo (sprint, iteração) de desenvolvimento.*
-
-*Deve ser apresentado o **planejamento de TODO o projeto**, ainda que, **PRELIMINAR**. Ao longo da disciplina, tal planejamento deverá ser atualizado.*
 
 | Fase | Período | Foco Principal | Entregas/Marcos |
 | :---- | :---- | :---- | :---- |
@@ -475,9 +408,7 @@ Os responsáveis pelo backend, frontend e qualidade serão rotacionados ao longo
 
 ## **6.2. Comunicação**
 
-*Descreva as ferramentas e métodos a serem usados para manter a equipe e o cliente alinhados, além da frequência de reuniões e interações. Também deve ser informado como será realizada a comunicação entre os membros da equipe.*
-
-	**Ferramentas de comunicação**
+**Ferramentas de comunicação**
 
 * **Teams/Google Meet:**Foram definidas entrevistas semanais para manter os conceitos e as ideias alinhadas. As reuniões serão realizadas na plataforma Teams ou, em caso de falhas, Google Meet.
 
@@ -519,12 +450,14 @@ O processo de validação do produto seguirá os princípios iterativos e increm
 
 ## **10.1 Unidade 1**
 
-*\[Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.\]*
+Durante a escrita do documento de visão de produto e projeto, algumas lições foram aprendidas que ajudaram muito no nosso crescimento e aprendizado. Abaixo estão as lições aprendidas, focando nas ações de melhoria, desafios enfrentados e como foram (ou não) superados.
 
-*\[Aqui, também devem estar registradas as dificuldades que a equipe teve durante a unidade, e como conseguiu (ou não superá-las).\]*
+**Dificuldades e Ações para Superá-las**
+
+1.  Dificuldades de entender o real escopo do projeto  
+   * **Desafio:**   
+   * **Como foi superada:**
 
 # **11. REFERÊNCIAS BIBLIOGRÁFICAS**
-
-*\[Listar as referências utilizadas para a construção deste documento\]*
 
 *1\.	\[Descrição da referência\]*

@@ -1,7 +1,29 @@
-# **<span style="color: red;"> NATIVO </span>**
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th {
+    background-color: #990000; /* Esse é o tom de vermelho escuro do seu Docs */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #7a0000;
+  }
+  td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: center;
+  }
+  
+</style>
+
+# **<span style="color: #990000;"> NATIVO </span>**
 ## **VISÃO DE PRODUTO E PROJETO**
 
-Versão 1.9
+Versão 1.13
 
 ## **Histórico de revisão**
 
@@ -13,7 +35,7 @@ Versão 1.9
 | 05/04/26 | 0.4 | Preenchimento tópico 2.3 | Johnnatan Salles |
 | 05/04/26 | 0.5 | Preenchimento tópico 1.2 | Arthur Mendes |
 | 05/04/26 | 0.6 | Preenchimento tópico 1.7 | Giovanna Guimarães |
-| 05/04/26 | 0.7 | Adição do Diagrama de Ishikawa e melhora da Rich Picture | Pedro Silva e Giovanna Guimarães |
+| 05/04/26 | 0.7 | Adição do Diagrama de Ishikawa e Rich Picture | Pedro Silva e Giovanna Guimarães |
 | 05/04/26 | 1.0 | Revisão e validação do documento | Pedro Silva  |
 | 07/04/26 | 1.1 | Refatoração dos Objetivos | André, Arthur, Giovanna, Renan |
 | 07/04/26 | 1.2 | Refatoração dos tópicos 1.2, 1.4, 2.1 e 2.2 | André, Arthur e Giovanna |
@@ -22,9 +44,22 @@ Versão 1.9
 | 08/04/26 | 1.5 | Refatoração dos tópicos 1.4, 2.1 e 2.2  | André, Johnnatan |
 | 09/04/26 | 1.6 | Preenchimento dos tópicos 3.1, 3.2 e 3.3 | Pedro Silva |
 | 10/04/26 | 1.7 | Preenchimento dos tópicos 2.4 e 2.5  | Pedro Silva  |
-| 10/04/26 | 1.8 | Preenchimento dos tópicos 4.1 e 4.2 | Giovanna Guimarães |
+| 10/04/26 | 1.8 | Preenchimento dos tópicos 4.1 4.2 e revisão do documento | Giovanna Guimarães |
 | 11/04/26 | 1.9 | Preenchimento da seção 6 e revisão dos tópicos 4.1 e 4.2 | André Henrique |
-| 11/04/26 | 2.0 | Preenchimento da seção 5 e revisão | Renan |
+| 11/04/26 | 1.10 | Preenchimento da seção 5 e revisão | Renan |
+| 12/04/26 | 1.11 | Preenchimento da seção 11 e revisão do documento | Pedro Silva  |
+| 13/04/26 | 1.12 | Refatoração da seção 5, complemento no tópico 2.6 e revisão do documento | André e Giovanna |
+| 13/04/26 | 1.13 | Refatoração rich picture da seção 1.3 e refatoração diagrama de ishikawa da seção 1.4 | Johnnatan Salles |
+
+## 📑 Sumário de Navegação
+* [1. Cenário Atual do Cliente e do Negócio](#1-cenário-atual-do-cliente-e-do-negócio)
+* [2. Solução Proposta](#2-solução-proposta)
+* [3. Estratégias de Engenharia de Software](#3-estratégias-de-engenharia-de-software)
+* [4. Engenharia de Requisitos](#4-engenharia-de-requisitos)
+* [5. Cronograma e Entregas](#5-cronograma-e-entregas)
+* [6. Interação entre Equipe e Cliente](#6-interação-entre-equipe-e-cliente)
+* [10. Lições Aprendidas](#10-lições-aprendidas)
+* [11. Referências Bibliográficas](#11-referências-bibliográficas)
 
 # **1. CENÁRIO ATUAL DO CLIENTE E DO NEGÓCIO**
 
@@ -55,7 +90,9 @@ O Nativo é um aplicativo móvel tradutor voltado para a língua indigena Mundur
 A missão do projeto representa uma importante iniciativa tecnológica voltada à preservação cultural e linguística dos povos originários da Amazônia. O projeto atua no processo de revitalização linguística da aldeia, onde a língua nativa tem perdido espaço e uso cotidiano, ameaçando a preservação das raízes culturais da comunidade. Para enfrentar esse enfraquecimento, o Nativo se propõe como um aplicativo móvel que funciona como um repositório de cultura e tradução bilíngue. No entanto, a aplicação não tem aderência na comunidade.
 
 ## **1.3. Rich Picture**
-  ![Rich Picture](./img/richpicture.png)
+  
+![Rich Picture](./img/richpicture.jpeg)
+
 ## **1.4. Identificação da Oportunidade ou Problema**
 
 A principal oportunidade identificada para o Nativo está relacionada às limitações de engajamento e uso contínuo da plataforma pelos usuários. Embora o aplicativo cumpra sua função básica de tradução bidirecional, observa-se que sua utilização tende a ser pontual e não recorrente, o que reduz seu impacto no processo de preservação e fortalecimento das línguas indígenas.
@@ -66,13 +103,13 @@ Com isso, a plataforma ainda não se consolida como um espaço de pertencimento 
 
 Dessa forma, o problema central a ser enfrentado é a baixa capacidade da plataforma em promover engajamento contínuo, participação ativa dos usuários e integração com a vivência cultural da comunidade, fatores essenciais para o fortalecimento e a revitalização linguística.
 
-![Diagrama de Ishikawa](./assets/ishikawa.png)
+![Diagrama de Ishikawa](./img/fishbone.jpeg)
 
 ## **1.5. Desafios do Projeto**
 
-O principal desafio estratégico do projeto reside na complexidade do fluxo de comunicação e validação, uma vez que o contato com a comunidade Munduruku não ocorre de forma direta, mas mediado por uma representante, somado à falta de colaboradores para apoiar o desenvolvimento da aplicação. Esse cenário impacta a agilidade do desenvolvimento, dificulta a coleta de feedbacks em tempo real e compromete a realização completa do escopo inicialmente idealizado. Como consequência, decisões sobre evolução do produto, priorização de funcionalidades e validação das entregas tendem a depender de um processo mais lento e sensível a ruídos de comunicação
+O principal desafio estratégico do projeto reside na complexidade do fluxo de comunicação e validação, uma vez que o contato com a comunidade Munduruku não ocorre de forma direta, mas mediado por uma representante, somado à falta de colaboradores para apoiar o desenvolvimento da aplicação. Esse cenário impacta a agilidade do desenvolvimento, dificulta a coleta de feedbacks em tempo real e compromete a realização completa do escopo inicialmente idealizado. Como consequência, decisões sobre evolução do produto, priorização de funcionalidades e validação das entregas tendem a depender de um processo mais lento e sensível a ruídos de comunicação.
 
-Outro desafio relevante é de natureza técnica. A utilização do Flask na arquitetura atual da aplicação tem gerado dificuldades relacionadas à velocidade de funcionamento e à facilidade de evolução do sistema. Isso impacta diretamente a experiência de uso e também reduz a agilidade para implementar melhorias, correções e novas funcionalidades, o que se torna ainda mais crítico em um projeto que demanda expansão contínua e adaptação às necessidades da comunidade atendida.
+Outro desafio relevante é de natureza técnica. A utilização do Flask na arquitetura atual da aplicação tem gerado dificuldades relacionadas à velocidade de funcionamento e à facilidade de evolução do sistema [[5]](#ref5). Isso impacta diretamente a experiência de uso e também reduz a agilidade para implementar melhorias, correções e novas funcionalidades, o que se torna ainda mais crítico em um projeto que demanda expansão contínua e adaptação às necessidades da comunidade atendida.
 
 ## **1.6. Mapa de Stakeholders**
 
@@ -85,9 +122,7 @@ Os principais stakeholders do projeto são: Alexia Naara da Silva Cardoso, como 
 | Diretora | Validadora institucional do Nativo | Avaliar a adequação da solução ao contexto escolar e às necessidades locais | Alta |
 | Alunos | Usuários e validadores do Nativo | Validar e transmitir opiniões sobre os requisitos implementados | Média |
 | Professor Márcio | Representante da aldeia e interlocutor com a equipe | Representar a aldeia, comunicar necessidades do contexto real e intermediar a validação da solução | Alta |
-| Equipe de desenvolvimento | Desenvolvedores da aplicação | Implementar as melhorias e garantir a viabilidade técnica | Alta |
-
-## 
+| Equipe de desenvolvimento | Desenvolvedores da aplicação | Implementar as melhorias e garantir a viabilidade técnica | Alta | 
 
 ## **1.7 Segmentação de Clientes**
 
@@ -109,29 +144,29 @@ O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma
 
 ## **2.2 Objetivos específicos (OE) do produto**
 
-   \[OE1\] Enriquecer a experiência de tradução.
+\[OE1\] Enriquecer a experiência de tradução.
 
-   \[OE2\] Aumentar a retenção e o engajamento na plataforma.
+\[OE2\] Aumentar a retenção e o engajamento na plataforma.
 
-   \[OE3\] Fomentar a interação e engajamento comunitário para troca de conteúdos culturais.
+\[OE3\] Fomentar a interação e engajamento comunitário para troca de conteúdos culturais.
 
-   \[OE4\] Assegurar a integridade e segurança do acervo cultural.
+\[OE4\] Assegurar a integridade e segurança do acervo cultural.
 
-   \[OE5\] Apoiar a personalização da jornada do usuário
+\[OE5\] Apoiar a personalização da jornada do usuário
 
-   \[OE6\] Garantir a acessibilidade em cenários de baixa conectividade.
+\[OE6\] Garantir a acessibilidade em cenários de baixa conectividade.
 
 ## **2.3 Característica do Produto (mapeadas com os Objetivos Específicos do produto)**
 
 | ID | Característica de Produto (CP) | Descrição resumida | ID | Valor de negócio (VN) principal |  Contribuição principal | Contribuição secundária |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CP1** | **Sincronização e Acesso Offline de Traduções** | **A consulta de traduções deverá funcionar mesmo sem  acesso à internet.** | **VN1** | **Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade.** |  **OE6** | **OE1** |
-| **CP2** | **Suporte a Multimídia nas Traduções** | **A solução deverá disponibilizar o upload e a exibição de arquivos de áudio, vídeo e fotos, apoiando o ensino da pronúncia e o contexto cultural de cada termo.** | **VN2** | **Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva.** | **OE1** | **OE6** |
-| **CP3** | **Criação e elaboração de questionários** | **A solução deverá oferecer uma ferramenta onde os Professores podem elaborar questionários baseados em perguntas e respostas de múltipla escolha, com objetivo de outros usuários testarem seus conhecimentos.** | **VN3** | **Aceleração do aprendizado e fixação através da prática ativa da língua, permitindo aos professores avaliarem o progresso da comunidade**  | **OE2** | **OE5** |
-| **CP4** | **Feed Social Comunitário** | **A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia, permitindo reações e comentários nas publicações.** | **VN4** | **Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes.** | **OE3** | **OE2** |
-| **CP5** | **Administração e Moderação de Conteúdo** | **A solução deverá permitir aos moderadores o poder de avaliar denúncias e remover postagens inadequadas do aplicativo.** | **VN5** | **Redução de riscos de conteúdos inadequados, garantia da qualidade, veracidade e segurança da plataforma.** | **OE4** | **OE3** |
-| **CP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
-| **CP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |
+| **CCP1** | **Sincronização e Acesso Offline de Traduções** | **A consulta de traduções deverá funcionar mesmo sem  acesso à internet.** | **VVN1** | **Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade.** |  **OE6** | **OE1** |
+| **CCP2** | **Suporte a Multimídia nas Traduções** | **A solução deverá disponibilizar o upload e a exibição de arquivos de áudio, vídeo e fotos, apoiando o ensino da pronúncia e o contexto cultural de cada termo.** | **VVN2** | **Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva.** | **OE1** | **OE6** |
+| **CCP3** | **Criação e elaboração de questionários** | **A solução deverá oferecer uma ferramenta onde os Professores podem elaborar questionários baseados em perguntas e respostas de múltipla escolha, com objetivo de outros usuários testarem seus conhecimentos.** | **VVN3** | **Aceleração do aprendizado e fixação através da prática ativa da língua, permitindo aos professores avaliarem o progresso da comunidade**  | **OE2** | **OE5** |
+| **CCP4** | **Feed Social Comunitário** | **A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia, permitindo reações e comentários nas publicações.** | **VVN4** | **Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes.** | **OE3** | **OE2** |
+| **CCP5** | **Administração e Moderação de Conteúdo** | **A solução deverá permitir aos moderadores o poder de avaliar denúncias e remover postagens inadequadas do aplicativo.** | **VVN5** | **Redução de riscos de conteúdos inadequados, garantia da qualidade, veracidade e segurança da plataforma.** | **OE4** | **OE3** |
+| **CCP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VVN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
+| **CCP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VVN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |
 
 ## **2.4 Tecnologias a serem utilizadas**
 
@@ -145,9 +180,9 @@ Para persistência de dados, será utilizado o **Firebase**, com foco no uso de 
 
 No cenário do mercado de soluções digitais voltadas à preservação linguística, o Nativo encontra poucos concorrentes diretos no contexto brasileiro, especialmente por seu foco específico na língua Munduruku e na realidade da Aldeia Munduruku de Bragança. Ainda assim, existem plataformas e aplicativos com propostas parcialmente semelhantes, voltados à preservação, documentação, ensino ou tradução de outras línguas indígenas e ameaçadas, que podem ser considerados referências competitivas.
 
-Entre essas soluções, destaca-se o **Woolaroo**, iniciativa do Google Arts & Culture voltada à exploração de línguas indígenas e ameaçadas por meio de recursos tecnológicos, incluindo reconhecimento de objetos e associação com vocabulário em diferentes idiomas. Apesar de sua proposta de valorização linguística, a plataforma não é voltada especificamente à nenhuma língua indígena brasileira nem resolve a necessidade local de fortalecimento cultural e linguístico da comunidade atendida pelo Nativo. ([Google Arts & Culture](https://artsandculture.google.com/project/woolaroo?utm_source=chatgpt.com))
+Entre essas soluções, destaca-se o **Woolaroo** [[1]](#ref1), iniciativa do Google Arts & Culture voltada à exploração de línguas indígenas e ameaçadas por meio de recursos tecnológicos, incluindo reconhecimento de objetos e associação com vocabulário em diferentes idiomas. Apesar de sua proposta de valorização linguística, a plataforma não é voltada especificamente à nenhuma língua indígena brasileira nem resolve a necessidade local de fortalecimento cultural e linguístico da comunidade atendida pelo Nativo.
 
-Outra referência é o MANGUARÉ Lenguas Indígenas, aplicativo descrito como um dicionário tradutor de línguas indígenas da Amazônia colombiana, com foco principal em registro, preservação e divulgação linguística. Embora sua proposta se aproxime do eixo de tradução e preservação, a solução não apresenta, ao menos em sua descrição pública, elementos mais amplos de engajamento comunitário, interação social ou mecanismos de incentivo ao uso contínuo da língua. ([Google Play](https://play.google.com/store/apps/details?hl=pt&id=com.traductor.app&utm_source=chatgpt.com))
+Outra referência é o **MANGUARÉ Lenguas Indígenas** [[2]](#ref2), aplicativo descrito como um dicionário tradutor de línguas indígenas da Amazônia colombiana, com foco principal em registro, preservação e divulgação linguística. Embora sua proposta se aproxime do eixo de tradução e preservação, a solução não apresenta, ao menos em sua descrição pública, elementos mais amplos de engajamento comunitário, interação social ou mecanismos de incentivo ao uso contínuo da língua.
 
 A solução do Nativo irá se diferenciar por dois aspectos centrais. 
 
@@ -172,6 +207,13 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 
 * O compartilhamento contínuo de conhecimento, de modo a evitar a concentração de responsabilidades e possíveis gargalos no desenvolvimento.
 
+### **Gestão de riscos preliminar da equipe** 
+
+| ID | Descrição do Risco | Tipo | Impacto | Probabilidade | Ação de Mitigação (Abordagem OpenUP) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **R1** | **Gargalos na Arquitetura Legada:** O back-end atual em Flask pode não suportar as novas funcionalidades | Técnico | Alto | Alta | Focar a Fase de Elaboração  em refatoração e criação de uma base arquitetural executável antes de desenvolver novas *features*. |
+| **R2** | **Ruídos de Comunicação e Validação:** Como a comunicação com a comunidade é indireta (via representante), requisitos podem ser mal interpretados. | Negócio | Alto | Alta | Utilizar protótipos de alta fidelidade e estabelecer marcos (Milestones) claros de revisão ao final de cada iteração curta para validação contínua com a representante. |
+| **R3** | **Curva de Aprendizado e Rotação:** A equipe adotará rodízio de papéis (Frontend/Backend/QA), o que pode gerar atrasos pela falta de domínio técnico específico. | Gerencial | Médio | Alta | Aplicar documentação contínua (Matriz de Rastreabilidade), *pair programming* e transferir o conhecimento técnico rotineiramente durante as reuniões semanais. |
 
 ## **2.7 Benefícios Esperados**
 
@@ -194,12 +236,12 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 
 **Processo**:  OpenUP
 
-## 	**3.2. Quadro Comparativo**
+## **3.2. Quadro Comparativo**
 
 O quadro apresenta algumas características que podem ser relacionadas ao OpenUP e RAD, visando auxiliar o entendimento e justificativa do processo mais adequado para o projeto
 
 | Características | OpenUP | RAD |
-| :---: | :---: | :---: |
+| ----- | :---: | :---: |
 | **Abordagem Geral** | Iterativo e incremental, com maior organização de fases, papéis e artefatos, mantendo agilidade moderada. | Iterativo e incremental, com forte foco em prototipação rápida, construção acelerada e ciclos curtos de validação. |
 | **Foco Principal** | Equilibrar arquitetura, requisitos, planejamento e entregas incrementais de forma estruturada. | Entregar rapidamente versões funcionais do sistema para validação e refinamento contínuo. |
 | **Foco em Arquitetura** | Dá atenção mais explícita à arquitetura desde o início, o que favorece reestruturações planejadas e sustentáveis. | Tende a priorizar velocidade de construção e prototipação, podendo deixar decisões arquitetônicas mais frágeis se não houver controle técnico. |
@@ -220,27 +262,27 @@ O quadro apresenta algumas características que podem ser relacionadas ao OpenUP
 
 Com base nas características do projeto Nativo e nos desafios identificados, o **OpenUP** se apresenta como o processo mais adequado pelos seguintes motivos:
 
-1. **Organização e Estrutura do Desenvolvimento:**
+#### 1. **Organização e Estrutura do Desenvolvimento:**
 
 * Diante da complexidade do projeto, especialmente no que se refere à necessidade de evolução arquitetural da aplicação e à organização das funcionalidades planejadas, o OpenUP é ideal por focar na criação de uma arquitetura executável logo nas fases iniciais (*Elaboração*). Isso garante uma base técnica sólida e sustentável, reduzindo o risco de retrabalho antes da construção em larga escala.
 
-2. **Ênfase em Arquitetura e Sustentabilidade Técnica:**
+#### 2. **Ênfase em Arquitetura e Sustentabilidade Técnica:**
 
 * O projeto enfrenta limitações técnicas relevantes, como gargalos na aplicação atual desenvolvida em Flask. O OpenUP, por valorizar a definição e evolução da arquitetura desde as etapas iniciais, contribui para a construção de uma base mais sólida e sustentável, reduzindo riscos de retrabalho e problemas de escalabilidade ao longo do desenvolvimento .
 
-3. **Melhor Adequação ao Fluxo de Validação:**
+#### 3. **Melhor Adequação ao Fluxo de Validação:**
 
-* Considerando que o contato com a comunidade ocorre de forma indireta, por meio de um representante, o OpenUP se mostra mais adequado por estruturar melhor os momentos de validação e alinhamento. Diferente de abordagens que dependem de feedback contínuo e imediato, o processo permite consolidar entregas e validar em pontos mais definidos, reduzindo impactos causados por atrasos ou ruídos na comunicação .
+* Considerando que o contato com a comunidade ocorre de forma indireta, por meio de um representante, o OpenUP se mostra mais adequado por permitir uma maior estruturação para os momentos de validação e alinhamento. Diferente de abordagens que dependem de feedback contínuo e imediato, o processo permite consolidar entregas e validar em pontos mais definidos, reduzindo impactos causados por atrasos ou ruídos na comunicação .
 
-4. **Suporte à Documentação:**
+#### 4. **Suporte à Documentação:**
 
 * Por se tratar de um projeto desenvolvido no contexto de disciplina, há a necessidade de documentação clara, rastreabilidade de decisões e organização dos artefatos produzidos. O OpenUP atende melhor a esse requisito ao incentivar uma documentação mais estruturada, sem perder a flexibilidade do desenvolvimento iterativo.
 
-5. **Controle do Escopo e Evolução Incremental:**
+#### 5. **Controle do Escopo e Evolução Incremental:**
 
 * O projeto apresenta diversas possibilidades de expansão, como gamificação, feed social e suporte multimídia. O OpenUP permite que essas funcionalidades sejam organizadas e priorizadas de forma incremental, garantindo que o escopo seja controlado e que as entregas ocorram de maneira consistente ao longo do tempo.
 
-6. **Equilíbrio entre Flexibilidade e Controle:**
+#### 6. **Equilíbrio entre Flexibilidade e Controle:**
 
 * Embora permita adaptação ao longo das iterações, o OpenUP mantém um nível adequado de controle sobre o processo, evitando que o desenvolvimento se torne desorganizado. Esse equilíbrio é essencial para o Nativo, que precisa evoluir continuamente, mas sem comprometer a qualidade técnica e a coerência do produto final.
 
@@ -250,91 +292,47 @@ Dessa forma, o OpenUP se mostra a escolha mais adequada por oferecer maior organ
 
 ## **4.1. Atividades e Técnicas de ER**
 
-As técnicas adotadas pela equipe para o projeto Nativo estão organizadas conforme as cinco frentes do processo de requisitos do OpenUP, associadas às seis atividades fundamentais da ER que se entrelaçam ao longo do projeto.
+### **Fase de Concepção**
 
-**1\. Elicitação e Análise** *Enfatiza a colaboração direta com stakeholders em vez de documentação extensiva.*
-
-**Elicitação e descoberta**
+#### **Elicitação e Descoberta:**
 
 * **Entrevistas:** Realizadas com a representante Alexia Naara para capturar as necessidades da comunidade Munduruku e entender os gargalos da aplicação atual em Flask.  
 * **Brainstorming:** Sessões com a equipe para idealizar mecanismos de gamificação e o feed social que incentivem o uso recorrente do app.
 
-  **Análise e consenso**
-
-* **Priorização MoSCoW:** Classificação dos requisitos em essenciais (*Must Have*), como o acesso offline, e desejáveis, como o feed social, para determinar o sequenciamento da implementação baseado no valor para o cliente.
-
-**2\. Documentação** *Adota um conjunto mínimo de artefatos, criados apenas quando agregam valor tangível para o projeto.*
-
-**Declaração**
-
-* **User Stories (Histórias de Usuário):** Utilizadas como os requisitos funcionais. Descrição das funcionalidades sob a perspectiva dos diferentes perfis, como crianças e professores, mantendo o foco no valor cultural.  
-* **Especificação Suplementar:** Agrupa os requisitos técnicos (restrições de implementação, como React Native/Firebase) e os requisitos não-funcionais (qualidades do sistema, como suporte a cenários de baixa conectividade).
-
-  **Representação**
-
-* **Protótipos e Wireframes:** Representação visual das interações no feed comunitário e nos questionários de gamificação para facilitar o entendimento da equipe e alinhamento com os stakeholders.
-
-**3\. Refinamento:** *Os requisitos são progressivamente detalhados conforme necessário para implementação, evitando especificação excessiva antecipada.*
-
-**Elicitação e descoberta**
-
-* **Análise Documental:** Revisão contínua do código-fonte e da documentação do TCC original para identificar funcionalidades legadas que precisam de refatoração, detalhando primeiro os itens de alto risco.
-
-**4\. Validação:** *Ocorre continuamente por meio de revisões com stakeholders, demonstrações e testes.*
-
-**Verificação e validação** 
-
-* **Demonstração (Review) e Prototipação:** Apresentação de telas e incrementos à cliente Alexia para validar se a refatoração técnica mantém a fidelidade linguística pretendida e atende à usabilidade da aldeia. O feedback é incorporado nas iterações subsequentes.  
-* **Checklists de Qualidade:** Verificação se cada requisito mapeado contribui diretamente para os Objetivos Específicos (OE).
-
-**5\. Gerenciamento:** *Utiliza um processo leve de controle de mudanças.*
-
-**Organização e atualização**
-
-*  **Matriz de Rastreabilidade:** Mapeamento que conecta os OEs às características do produto (CPs) e aos requisitos técnicos, garantindo que nada se perca durante a rotação de papéis da equipe.
-
-**—----------------**
-
-**Fase de Concepção**
-
-**Elicitação e Descoberta:**
-
-* **Entrevistas:** Realizadas com a representante Alexia Naara para capturar as necessidades da comunidade Munduruku e entender os gargalos da aplicação atual em Flask.  
-* **Brainstorming:** Sessões com a equipe para idealizar mecanismos de gamificação e o feed social que incentivem o uso recorrente do app.
-
-  **Análise e Consenso:**
+#### **Análise e Consenso:**
 
 * **Priorização MoSCoW:** Classificação dos requisitos em essenciais (*Must Have*), como o acesso offline, e desejáveis (*Should Have*), como o feed social, para determinar o sequenciamento da implementação baseado no valor para o cliente.
 
-**Fase de Elaboração**
+### **Fase de Elaboração**
 
-**Elicitação e Descoberta:**
+#### **Elicitação e Descoberta:**
 
 * **Análise Documental:** Revisão contínua do código-fonte e da documentação do TCC original para identificar funcionalidades legadas que precisam de refatoração, detalhando primeiro os itens de alto risco (como as limitações de arquitetura).
 
-  **Declaração de Requisitos:**
+#### **Declaração de Requisitos:**
 
 * **User Stories (Histórias de Usuário):** Utilizadas como requisitos funcionais. Descrição das funcionalidades sob a perspectiva dos diferentes perfis, como crianças e professores, mantendo o foco no valor cultural.  
 * **Especificação Suplementar:** Agrupa os requisitos técnicos (restrições de implementação, como React Native/Firebase) e os requisitos não funcionais (qualidades do sistema, como suporte a cenários de baixa conectividade).
 
-  **Representação de Requisitos:**
+#### **Representação de Requisitos:**
 
-* **Protótipos e Wireframes:** Representação visual das funcionalidades a serem implementadasinterações no feed comunitário e nos questionários de gamificação para facilitar o entendimento da equipe e alinhamento com os stakeholders.
+* **Protótipos e Wireframes:** Representação visual das funcionalidades a serem implementadas para facilitar o entendimento da equipe e alinhamento com os stakeholders.
 
-**Fase de Construção**
 
-**Verificação e Validação de Requisitos:**
+### **Fase de Construção**
+
+#### **Verificação e Validação de Requisitos:**
 
 * **Checklists de Qualidade:** Verificação contínua se cada requisito mapeado contribui diretamente para os Objetivos Específicos (OE) e se atende aos critérios técnicos estabelecidos.  
 * **Demonstração (Review) e Prototipação:** Apresentação de telas e incrementos à cliente Alexia para validar se a refatoração técnica mantém a fidelidade linguística pretendida e atende à usabilidade da aldeia. O feedback é incorporado nas iterações subsequentes.
 
-  **Organização e Atualização de Requisitos:**
+#### **Organização e Atualização de Requisitos:**
 
 * **Matriz de Rastreabilidade:** Mapeamento que conecta os OEs às características do produto (CPs) e aos requisitos técnicos, garantindo que nada se perca durante a rotação de papéis da equipe no desenvolvimento.
 
-**Fase de Transição**
+### **Fase de Transição**
 
-**Verificação e Validação de Requisitos:**
+#### **Verificação e Validação de Requisitos:**
 
 * **Testes de Aceitação e Demonstração Final:** Apresentação da versão finalizada para a cliente e para a comunidade (via representante) para homologação do sistema, garantindo que a aplicação está pronta para o uso no dia a dia da aldeia.
 
@@ -343,106 +341,134 @@ As técnicas adotadas pela equipe para o projeto Nativo estão organizadas confo
 | Fases do Processo | Atividades ER | Prática | Técnica | Resultado Esperado |
 | :---: | :---: | :---: | :---: | :---: |
 | **Concepção** | Elicitação e Descoberta | Colaboração direta com stakeholders para entendimento do domínio. | Entrevistas, Brainstorming e Análise Documental | Escopo preliminar definido, identificação das necessidades da comunidade Munduruku e mapeamento dos gargalos do Flask. |
-|  | Análise e Consenso | Sequenciamento da implementação baseado em valor. | Priorização MoSCoW | MVP definido com clareza, priorizando requisitos essenciais como o suporte ao acesso offline. |
-| **Elaboração** | Declaração | Documentação essencial com foco no valor cultural e restrições técnicas. | User Stories e Especificação Suplementar | Requisitos funcionais (perfis de usuário) e requisitos técnicos/não-funcionais (React Native, Firebase) devidamente documentados. |
-|  | Representação | Modelagem visual inicial para alinhamento de expectativas. | Protótipos e Wireframes | Interfaces de gamificação e do feed comunitário desenhadas e validadas visualmente com a representante. |
+|  | Análise e Consenso | Sequenciamento da implementação baseado em valor. | Priorização MoSCoW | MVP definido com clareza, priorizando requisitos essenciais.  |
+| **Elaboração** | Declaração | Documentação essencial com foco no valor cultural e restrições técnicas. | User Stories e Especificação Suplementar | Requisitos funcionais e requisitos técnicos/não-funcionais devidamente documentados. |
+|  | Representação | Modelagem visual inicial para alinhamento de expectativas. | Protótipos e Wireframes | Interfaces desenhadas e validadas visualmente com a representante. |
 |  | Organização e Atualização | Detalhamento progressivo (Refinamento) focado em mitigar riscos. | Análise Documental | Requisitos de refatoração do código legado detalhados para garantir uma arquitetura base segura. |
-| **Construção** | Verificação e Validação | Validação contínua e iterativa dos incrementos gerados. | Demonstração (Review) e Checklists de Qualidade | Incrementos funcionais (áudio, vídeo, feed social) validados e aderentes aos Objetivos Específicos (OE) do projeto. |
+| **Construção** | Verificação e Validação | Validação contínua e iterativa dos incrementos gerados. | Demonstração (Review) e Checklists de Qualidade | Incrementos funcionais validados e aderentes aos Objetivos Específicos (OE) do projeto. |
 |  | Organização e Atualização | Gerenciamento de mudanças e controle de dependências de forma leve. | Matriz de Rastreabilidade | Continuidade do conhecimento do projeto garantida, sem perda de rastreabilidade durante a rotação técnica da equipe. |
 | **Transição** | Verificação e Validação | Homologação final do sistema com o cliente e usuários finais. | Demonstração (Review) e Testes de Aceitação | Sistema Nativo integralmente validado pela aldeia, atestando a fidelidade linguística e o suporte em baixa conectividade. |
 
 # **5. CRONOGRAMA E ENTREGAS**
 
+O planejamento do projeto será atualizado de maneira sucessiva, a partir da realização de cada ciclo (iteração) de desenvolvimento.
+
 | Fase | Período | Foco Principal | Entregas/Marcos |
 | :---- | :---- | :---- | :---- |
-| Concepção | 02/04 – 22/04 | Definição de escopo, visão e viabilidade. | Documento de Visão finalizado, MVP definido e Priorização MoSCoW. |
-| Elaboração | 23/04 – 20/05 | Arquitetura executável e detalhamento de requisitos de alto risco. | User Stories, Protótipos/Wireframes e Especificação Suplementar. |
-| Construção | 21/05 – 24/06 | Desenvolvimento iterativo das funcionalidades (multimídia, gamificação, feed). | Incrementos funcionais testados (áudio, vídeo, social) e Matriz de Rastreabilidade. |
+| Concepção | 02/04 – 22/04 | Definição de escopo, visão e viabilidade. | Documento de Visão parcial, MVP definido e Priorização MoSCoW. |
+| Elaboração | 23/04 – 10/05 | Arquitetura executável e detalhamento de requisitos de alto risco. | User Stories, Protótipos/Wireframes, Documento de Visão final e Especificação Suplementar. |
+| Construção | 11/05 – 24/06 | Desenvolvimento iterativo das funcionalidades (multimídia, gamificação, feed). | Incrementos funcionais testados (áudio, vídeo, social) e Matriz de Rastreabilidade. |
 | Transição | 25/06 – 03/07 | Homologação, correção de bugs finais e entrega. | Sistema integralmente validado pela aldeia e pronto para uso. |
 
-**Detalhamento das Atividades por Fase:**
+### **Fase de Concepção (02/04 – 22/04)** Foco: Definição do problema, viabilidade e escopo.
 
-**Fase de Concepção (Sprints 1 e 2\)**
+* #### **Iteração 1 (02/04 a 11/04)**  
+  * **Objetivos:** Mapear gargalos técnicos (Flask) e problemas de uso (adesão).  
+  * **Atividades:** Entrevistas com a representante e brainstorming da equipe.  
+  * **Entregáveis:** Documento de Visão (tópicos de 1 a 6\) e Diagrama de Ishikawa.  
+* #### **Iteração 2 (12/04 a 22/04)**  
+  * **Objetivos:** Definir o escopo do MVP e priorizar requisitos.  
+  * **Atividades:** Aplicação da técnica MoSCoW e definição do fluxo de comunicação.  
+  * **Entregáveis:** Documento de Visão parcial e Lista de funcionalidades priorizadas.
 
-* Elicitação e Descoberta: Realização de entrevistas com a cliente Alexia para alinhar necessidades da comunidade e identificar gargalos técnicos do Flask.
+### **Fase de Elaboração (23/04 – 10/05)** Foco: Refatoração da base técnica, arquitetura executável, prototipação.
 
-* Análise e Consenso: Definição do MVP focando em requisitos essenciais como o acesso offline.
+* #### **Iteração 3 (23/04 a 01/05)**  
+  * **Objetivos:** Configurar ambiente e iniciar a refatoração.  
+  * **Atividades:** Configuração do ambiente React Native (Frontend) e integração com Firebase (Banco NoSQL e Storage). Início da refatoração da API legado em Flask (Backend).  
+  * **Entregáveis:** Repositórios configurados e ambiente de desenvolvimento unificado.  
+* #### **Iteração 4 (02/05 a 10/05)**  
+  * **Objetivos:** Detalhar e prototipar os requisitos prioritários.  
+  * **Atividades:** Escrita de User Stories e criação de wireframes focados nos primeiros incrementos a serem desenvolvidos e validação com cliente.  
+  * **Entregáveis:** User Stories e protótipos do incremento validados. Documento de Visão (tópicos 7 a 9\) iniciado.
 
- **Fase de Elaboração (Sprints 3 a 5\)**
+### **Fase de Construção (11/05 – 24/06)** Foco: Desenvolvimento iterativo e validação contínua.
 
-* Arquitetura: Refatoração da base técnica para suportar a nova stack (React Native, Firebase e Python/Flask).
+* #### **Iteração 5 (11/05 a 19/05)**  
+  * **Objetivos:** Validar a arquitetura base (Prova de Conceito).  
+  * **Atividades:** Implementação do CP1 (Sincronização Offline) e testes de comunicação com o Firebase.  
+  * **Entregáveis:** Arquitetura validada e Documento de Visão finalizado.  
+* #### **Iteração 6 (21/05 a 27/05)**  
+  * **Objetivos:** Implementar suporte a áudio, vídeo e imagem.  
+  * **Atividades:** Desenvolvimento do CP2 (Multimídia), testes de desenvolvedor e validação funcional com a representante.  
+  * **Entregáveis:** Módulo multimídia integrado e validado.  
+* #### **Iteração 7 (28/05 a 03/06)**  
+  * **Objetivos:** Desenvolver a criação e resolução de questionários.  
+  * **Atividades:** Desenvolvimento do CP3 (Questionários), testes de desenvolvedor e validação funcional com a representante.  
+  * **Entregáveis:** Módulo de questionários integrado e validado.  
+* #### **Iteração 8 (04/06 a 10/06)**  
+  * **Objetivos:** Implementar pontuação e perfis de usuário.  
+  * **Atividades:** Desenvolvimento do CP6 (Gamificação) e CP7 (Perfis), testes de desenvolvedor e validação funcional com a representante.  
+  * **Entregáveis:** Sistema de gamificação integrado e validado.  
+* #### **Iteração 9 (11/06 a 17/06)**  
+  * **Objetivos:** Desenvolver o feed social e o painel de moderação.  
+  * **Atividades:** Desenvolvimento do CP4 (Feed) e CP5 (Moderação), testes de desenvolvedor e validação funcional com a representante.  
+  * **Entregáveis:** Feed e painel de moderação integrados e validados.  
+* #### **Iteração 10 (18/06 a 24/06)**  
+  * **Objetivos:** Integrar sistema e verificar rastreabilidade.  
+  * **Atividades:** Refinamento de interface, verificação da Matriz de Rastreabilidade e testes de integração, verificando se todos os *User Stories* atendem aos Objetivos Específicos (OEs).  
+  * **Entregáveis:** Primeira versão da aplicação.
 
-* Representação: Desenho e validação visual das interfaces de gamificação e do feed comunitário com a representante.
+### **Fase de Transição (25/06 – 03/07)** Foco: Testes de campo, homologação e deploy.
 
-* Declaração: Documentação das User Stories sob a perspectiva de perfis como crianças e professores.
-
- **Fase de Construção (Sprints 6 a 10\)**
-
-* Desenvolvimento: Implementação do suporte a multimídia para auxiliar no ensino da pronúncia.
-
-* Validação Técnica: Aplicação de testes unitários e de integração em cada micro-incremento.
-
-* Refinamento: Revisão contínua do código legado para garantir uma arquitetura segura e escalável.
-
-**Fase de Transição (Sprints 11 e 12\)**
-
-* Verificação e Validação: Execução de testes de aceitação e demonstração final para a cliente e comunidade via representante.
-
-* Homologação: Garantia da fidelidade linguística Munduruku e da usabilidade em cenários de baixa conectividade.
+* #### **Iteração 11 (25/06 a 29/06)**  
+  * **Objetivos:** Testar o sistema o mais próximo possível da realidade de uso.  
+  * **Atividades:** Envio do aplicativo para testes de aceitação com a representante. Simulação de uso em condições de baixa internet. Correção de erros apontados na revisão.  
+  * **Entregáveis:** Relatório de homologação e código estabilizado.  
+* #### **Iteração 12 (30/06 a 03/07)**  
+  * **Objetivos:** Realizar a entrega oficial do aplicativo.  
+  * **Atividades:** Geração do APK (Gradle) e demonstração final do produto.  
+  * **Entregáveis:** Aplicativo entregue e pronto para uso.
 
 # **6. INTERAÇÃO ENTRE EQUIPE E CLIENTE**
 
 ## **6.1. Composição da Equipe**
 
-*A equipe de desenvolvimento será composta por:*
+A equipe de desenvolvimento será composta por:
 
 | Papel | Descrição | Participantes |
 | :---- | :---- | :---- |
-| Gerente de projeto | Coordena o projeto, garante a comunicação entre cliente e equipe, controla prazos e entregas | Johnnatan Salles, Pedro Silva???? |
+| Gerente de projeto | Coordena o projeto, garante a comunicação entre cliente e equipe, controla prazos e entregas | Pedro Silva |
 | Desenvolvimento Backend | Implementa a lógica de negócios, integração com banco de dados e APIs | André Henrique, Johnnatan Salles, Giovanna Felipe, Arthur Mendes, Pedro Silva, Renan Camara |
 | Desenvolvimento Frontend | Implementa a interface do usuário, design e funcionalidades no lado do cliente | André Henrique, Johnnatan Salles, Giovanna Felipe, Arthur Mendes |
 | Análise de requisitos  | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos | André Henrique, Johnnatan Salles, Giovanna Felipe, Arthur Mendes, Pedro Silva, Renan Camara |
 | Análise de QA | Garante a qualidade do produto, executando testes de funcionalidade, performance e usabilidade. | André Henrique, Johnnatan Salles, Giovanna Felipe, Arthur Mendes, Pedro Silva, Renan Camara |
 
-Os responsáveis pelo backend, frontend e qualidade serão rotacionados ao longo das sprints, com objetivo de melhorar o conhecimento dos integrantes em áreas de menor domínio e apoiar o entendimento do andamento do projeto no geral.
+Os responsáveis pelo backend, frontend e qualidade serão rotacionados ao longo das iterações, com objetivo de melhorar o conhecimento dos integrantes em áreas de menor domínio e apoiar o entendimento do andamento do projeto no geral.
 
 ## **6.2. Comunicação**
 
-**Ferramentas de comunicação**
+### **Ferramentas de comunicação**
 
 * **Teams/Google Meet:**Foram definidas entrevistas semanais para manter os conceitos e as ideias alinhadas. As reuniões serão realizadas na plataforma Teams ou, em caso de falhas, Google Meet.
 
 * **Whatsapp/Discord:**O Whatsapp é o principal meio de comunicação por texto entre os membros da equipe. Além disso, foi criado um servidor do Discord para as reuniões entre os membros.
 
-	**Frequência de Reuniões** 
+### **Frequência de Reuniões** 
 
-* **Reunião de revisão da Sprint:** Ao final de cada sprint (1 semana), haverá uma reunião de revisão com a cliente e toda a equipe. Nessas reuniões, a equipe apresentará as funcionalidades desenvolvidas, desafios e soluções implementadas.
+* **Reunião de revisão da iteração (microciclo):** Ao final de cada iteração (1 semana), haverá uma reunião de revisão com a cliente e toda a equipe. Nessas reuniões, a equipe apresentará as funcionalidades desenvolvidas, desafios e soluções implementadas.
 
-* **Reunião de Planejamento da Sprint:** Após a reunião de revisão, a equipe e o cliente planejam a próxima sprint, revisando os requisitos e cronograma, definindo as prioridades de acordo com os feedbacks.
+* **Reunião de Planejamento da iteração:** Após a reunião de revisão, a equipe e o cliente planejam a próxima iteração, revisando os requisitos e cronograma, definindo as prioridades de acordo com os feedbacks.
 
-	**Frequência de Interações com a cliente**
+### **Frequência de Interações com a cliente**
 
-* **Revisões de Sprint:** A cliente estará envolvida nas revisões de sprint semanalmente, podendo testar, validar e fornecer feedbacks das entregas
+* **Revisões de iteração:** A cliente estará envolvida nas revisões de iteração semanalmente, podendo testar, validar e fornecer feedbacks das entregas
 
 * **Interações informais:** A cliente tem acesso ao grupo de Whatsapp da equipe, facilitando interações rápidas e dúvidas pontuais caso precise.
-
-	
-
-	
 
 ## **6.3. Processo de Validação**
 
 O processo de validação do produto seguirá os princípios iterativos e incrementais do **OpenUP**. Para garantir que a solução atenda às expectativas e mantenha a integridade técnica e cultural, a validação ocorrerá em três frentes principais:
 
-**1\. Validação de Especificação (Critérios de Prontidão na *Work Items List*):**
+### **1\. Validação de Especificação (Critérios de Prontidão na *Work Items List*):**
 
-* Antes de iniciar o desenvolvimento de qualquer funcionalidade nas *sprints*, a equipe valida a Lista de Itens de Trabalho. Um item ou História de Usuário só será selecionado para implementação se os seus requisitos estiverem claramente definidos, documentados e com os respectivos critérios de aceitação preestabelecidos em consenso com a representante.
+* Antes de iniciar o desenvolvimento de qualquer funcionalidade nas *iterações*, a equipe valida a Lista de Itens de Trabalho. Um item ou História de Usuário só será selecionado para implementação se os seus requisitos estiverem claramente definidos, documentados e com os respectivos critérios de aceitação preestabelecidos em consenso com a representante.
 
-**2\. Validação Técnica Contínua (Micro-incrementos e Testes de Desenvolvedor):**
+### **2\. Validação Técnica Contínua (Micro-incrementos e Testes de Desenvolvedor):**
 
 * Durante a fase de Construção, a equipe aplicará a prática de **Testes de Desenvolvedor** (*Developer Testing*), recomendada pelo OpenUP, garantindo que o código seja testado por quem o produziu em ciclos curtos. Um micro-incremento só será considerado concluído (*Done*) quando passar por testes unitários e de integração, for anexado com sucesso à base de código principal e obtiver aprovação funcional em revisões internas da equipe.
 
-**3\. Validação de Marcos e Aceitação do Cliente (*Milestones*):**
+### **3\. Validação de Marcos e Aceitação do Cliente (*Milestones*):**
 
 * Ao final de cada iteração, os incrementos funcionais e testados do aplicativo serão empacotados e disponibilizados para validação de negócio. Durante essa etapa de revisão, a cliente atuará como homologadora, testando a aplicação na prática para verificar se o sistema atende aos requisitos estabelecidos e aos Objetivos Específicos (OEs), à usabilidade esperada para a aldeia e às regras de integridade cultural da língua Munduruku. Funcionalidades só serão integradas à versão final (Transição) após o *feedback* positivo nesses marcos.
 
@@ -452,12 +478,27 @@ O processo de validação do produto seguirá os princípios iterativos e increm
 
 Durante a escrita do documento de visão de produto e projeto, algumas lições foram aprendidas que ajudaram muito no nosso crescimento e aprendizado. Abaixo estão as lições aprendidas, focando nas ações de melhoria, desafios enfrentados e como foram (ou não) superados.
 
-**Dificuldades e Ações para Superá-las**
+### **Lições Aprendidas e Melhorias para o Processo**
 
-1.  Dificuldades de entender o real escopo do projeto  
-   * **Desafio:**   
-   * **Como foi superada:**
+1. **Desafio:** No começo da disciplina, a equipe estava insegura e confusa sobre qual processo de Engenharia de Software utilizar para guiar o projeto. A tendência natural do grupo era simplesmente adotar o Scrum, apenas por ser o mais famoso e comentado no mercado, sem parar para analisar se as exigências dele (como contato diário com o cliente) realmente funcionaria na nossa realidade.  
+
+2. **Ação de Melhoria:** A nossa maior lição aprendida nesta etapa foi a necessidade de "dar um passo para trás" e estudar de verdade a teoria dos processos. Ao dedicarmos tempo para ler, entender e comparar diferentes metodologias (como o RAD e o OpenUP), percebemos que não existe uma "receita mágica" que serve para tudo. Esse estudo nos deu a maturidade necessária para descartar o Scrum e escolher o OpenUP de forma consciente e bem justificada, entendendo que ele oferece as pausas de validação e o foco na arquitetura que o projeto Nativo precisa.
+
+### **Dificuldades e Ações para Superá-las**
+
+#### **3. Dificuldades de entender o real escopo do projeto**  
+   * **Desafio:** No início, a equipe teve muita dificuldade em identificar e articular qual era o verdadeiro problema que o projeto precisava resolver. Tínhamos várias ideias de funcionalidades (como criar gamificação e feed social), mas não conseguíamos definir claramente o *objetivo* por trás delas. O grande desafio foi sair da mentalidade focada apenas em "quais telas vamos fazer" para entender o "por que estamos fazendo isso", demorando a perceber que a dor real a ser atacada era a baixa adesão e a falta de engajamento da comunidade com a plataforma.
+
+   * **Como foi superado**: Esse obstáculo foi superado por meio de debates internos e reuniões de alinhamento com a representante do projeto. Ao investigar a fundo o cenário atual da aldeia, a equipe conseguiu mudar a perspectiva e entender que o nosso objetivo central não é apenas entregar novos recursos de software, mas sim criar mecanismos que promovam a retenção e o uso contínuo da língua. Com essa clareza, conseguimos definir o problema central e estruturar os Objetivos Específicos (OEs) no Documento de Visão, o que acabou destravando todo o resto do nosso planejamento.
 
 # **11. REFERÊNCIAS BIBLIOGRÁFICAS**
 
-*1\.	\[Descrição da referência\]*
+<a id="ref1"></a>**[1]** GOOGLE ARTS & CULTURE. **Woolaroo**. Disponível em: <https://artsandculture.google.com/project/woolaroo>. Acesso em: 12 abr. 2026.
+
+<a id="ref2"></a>**[2]** GOOGLE PLAY. **MANGUARÉ Lenguas Indígenas**. Disponível em: <https://play.google.com/store/apps/details?id=com.traductor.app>. Acesso em: 12 abr. 2026.
+
+<a id="ref3"></a>**[3]** CEDISUNB. **GitHub - CedisUnB/Nativo: Aplicativo Tradutor de Línguas Indígenas**. 2025. Disponível em: <https://github.com/CedisUnB/Nativo>. Acesso em: 12 abr. 2026.
+
+<a id="ref4"></a>**[4]** MARSICANO, George. **Requisitos de Software: a comunicação é tudo**. v. 1.1, Draft. 18 mar. 2026.
+
+<a id="ref5"></a>**[5]** CARDOSO, Alexia Naara da Silva. **Aplicativo tradutor de línguas indígenas: Munduruku**. 2025. 75 f. Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Software) – Universidade de Brasília, Brasília, 2025.

@@ -17,13 +17,26 @@
     border: 1px solid #dddddd;
     text-align: center;
   }
-  
 </style>
 
 # **<span style="color: #990000;"> NATIVO </span>**
+
+## 🎥 Apresentação da Unidade 1
+
+Confira abaixo o vídeo da nossa apresentação referente ao escopo e planejamento da Unidade 1:
+
+<div align="center">
+  <a href="https://youtu.be/tyH6bzHgekI" target="_blank">
+    <img src="https://img.youtube.com/vi/tyH6bzHgekI/maxresdefault.jpg" alt="Apresentação Nativo - Unidade 1" width="700">
+  </a>
+</div>
+
+---
+
 ## **VISÃO DE PRODUTO E PROJETO**
 
 Versão 1.13
+
 
 ## **Histórico de revisão**
 
@@ -51,7 +64,7 @@ Versão 1.13
 | 13/04/26 | 1.12 | Refatoração da seção 5, complemento no tópico 2.6 e revisão do documento | André e Giovanna |
 | 13/04/26 | 1.13 | Refatoração rich picture da seção 1.3 e refatoração diagrama de ishikawa da seção 1.4 | Johnnatan Salles |
 
-## 📑 Sumário de Navegação
+## **Sumário de Navegação**
 * [1. Cenário Atual do Cliente e do Negócio](#1-cenário-atual-do-cliente-e-do-negócio)
 * [2. Solução Proposta](#2-solução-proposta)
 * [3. Estratégias de Engenharia de Software](#3-estratégias-de-engenharia-de-software)
@@ -124,7 +137,7 @@ Os principais stakeholders do projeto são: Alexia Naara da Silva Cardoso, como 
 | Professor Márcio | Representante da aldeia e interlocutor com a equipe | Representar a aldeia, comunicar necessidades do contexto real e intermediar a validação da solução | Alta |
 | Equipe de desenvolvimento | Desenvolvedores da aplicação | Implementar as melhorias e garantir a viabilidade técnica | Alta | 
 
-## **1.7 Segmentação de Clientes**
+## **1.7 Segmentação de Usuários**
 
 O aplicativo Nativo atende a quatro principais segmentos de usuários:
 
@@ -160,13 +173,13 @@ O objetivo do projeto é **melhorar a escalabilidade e engajamento da plataforma
 
 | ID | Característica de Produto (CP) | Descrição resumida | ID | Valor de negócio (VN) principal |  Contribuição principal | Contribuição secundária |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CCP1** | **Sincronização e Acesso Offline de Traduções** | **A consulta de traduções deverá funcionar mesmo sem  acesso à internet.** | **VVN1** | **Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade.** |  **OE6** | **OE1** |
-| **CCP2** | **Suporte a Multimídia nas Traduções** | **A solução deverá disponibilizar o upload e a exibição de arquivos de áudio, vídeo e fotos, apoiando o ensino da pronúncia e o contexto cultural de cada termo.** | **VVN2** | **Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva.** | **OE1** | **OE6** |
-| **CCP3** | **Criação e elaboração de questionários** | **A solução deverá oferecer uma ferramenta onde os Professores podem elaborar questionários baseados em perguntas e respostas de múltipla escolha, com objetivo de outros usuários testarem seus conhecimentos.** | **VVN3** | **Aceleração do aprendizado e fixação através da prática ativa da língua, permitindo aos professores avaliarem o progresso da comunidade**  | **OE2** | **OE5** |
-| **CCP4** | **Feed Social Comunitário** | **A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia, permitindo reações e comentários nas publicações.** | **VVN4** | **Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes.** | **OE3** | **OE2** |
-| **CCP5** | **Administração e Moderação de Conteúdo** | **A solução deverá permitir aos moderadores o poder de avaliar denúncias e remover postagens inadequadas do aplicativo.** | **VVN5** | **Redução de riscos de conteúdos inadequados, garantia da qualidade, veracidade e segurança da plataforma.** | **OE4** | **OE3** |
-| **CCP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VVN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
-| **CCP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VVN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |
+| **CP1** | **Sincronização e Acesso Offline de Traduções** | **A consulta de traduções deverá funcionar mesmo sem  acesso à internet.** | **VN1** | **Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade.** |  **OE6** | **OE1** |
+| **CP2** | **Suporte a Multimídia nas Traduções** | **A solução deverá disponibilizar o upload e a exibição de arquivos de áudio, vídeo e fotos, apoiando o ensino da pronúncia e o contexto cultural de cada termo.** | **VN2** | **Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva.** | **OE1** | **OE6** |
+| **CP3** | **Criação e elaboração de questionários** | **A solução deverá oferecer uma ferramenta onde os Professores podem elaborar questionários baseados em perguntas e respostas de múltipla escolha, com objetivo de outros usuários testarem seus conhecimentos.** | **VN3** | **Aceleração do aprendizado e fixação através da prática ativa da língua, permitindo aos professores avaliarem o progresso da comunidade**  | **OE2** | **OE5** |
+| **CP4** | **Feed Social Comunitário** | **A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia, permitindo reações e comentários nas publicações.** | **VN4** | **Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes.** | **OE3** | **OE2** |
+| **CP5** | **Administração e Moderação de Conteúdo** | **A solução deverá permitir aos moderadores o poder de avaliar denúncias e remover postagens inadequadas do aplicativo.** | **VN5** | **Redução de riscos de conteúdos inadequados, garantia da qualidade, veracidade e segurança da plataforma.** | **OE4** | **OE3** |
+| **CP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
+| **CP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |
 
 ## **2.4 Tecnologias a serem utilizadas**
 
@@ -338,16 +351,71 @@ Dessa forma, o OpenUP se mostra a escolha mais adequada por oferecer maior organ
 
 ## **4.2. Engenharia de Requisitos e o OpenUP**
 
-| Fases do Processo | Atividades ER | Prática | Técnica | Resultado Esperado |
-| :---: | :---: | :---: | :---: | :---: |
-| **Concepção** | Elicitação e Descoberta | Colaboração direta com stakeholders para entendimento do domínio. | Entrevistas, Brainstorming e Análise Documental | Escopo preliminar definido, identificação das necessidades da comunidade Munduruku e mapeamento dos gargalos do Flask. |
-|  | Análise e Consenso | Sequenciamento da implementação baseado em valor. | Priorização MoSCoW | MVP definido com clareza, priorizando requisitos essenciais.  |
-| **Elaboração** | Declaração | Documentação essencial com foco no valor cultural e restrições técnicas. | User Stories e Especificação Suplementar | Requisitos funcionais e requisitos técnicos/não-funcionais devidamente documentados. |
-|  | Representação | Modelagem visual inicial para alinhamento de expectativas. | Protótipos e Wireframes | Interfaces desenhadas e validadas visualmente com a representante. |
-|  | Organização e Atualização | Detalhamento progressivo (Refinamento) focado em mitigar riscos. | Análise Documental | Requisitos de refatoração do código legado detalhados para garantir uma arquitetura base segura. |
-| **Construção** | Verificação e Validação | Validação contínua e iterativa dos incrementos gerados. | Demonstração (Review) e Checklists de Qualidade | Incrementos funcionais validados e aderentes aos Objetivos Específicos (OE) do projeto. |
-|  | Organização e Atualização | Gerenciamento de mudanças e controle de dependências de forma leve. | Matriz de Rastreabilidade | Continuidade do conhecimento do projeto garantida, sem perda de rastreabilidade durante a rotação técnica da equipe. |
-| **Transição** | Verificação e Validação | Homologação final do sistema com o cliente e usuários finais. | Demonstração (Review) e Testes de Aceitação | Sistema Nativo integralmente validado pela aldeia, atestando a fidelidade linguística e o suporte em baixa conectividade. |
+<table>
+  <thead>
+    <tr>
+      <th>Fases do Processo</th>
+      <th>Atividades ER</th>
+      <th>Prática</th>
+      <th>Técnica</th>
+      <th>Resultado Esperado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Concepção</td>
+      <td>Elicitação e Descoberta</td>
+      <td>Colaboração direta com stakeholders para entendimento do domínio.</td>
+      <td>Entrevistas, Brainstorming e Análise Documental</td>
+      <td>Escopo preliminar definido, identificação das necessidades da comunidade Munduruku e mapeamento dos gargalos do Flask.</td>
+    </tr>
+    <tr>
+      <td>Análise e Consenso</td>
+      <td>Sequenciamento da implementação baseado em valor.</td>
+      <td>Priorização MoSCoW</td>
+      <td>MVP definido com clareza, priorizando requisitos essenciais.</td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Elaboração</td>
+      <td>Declaração</td>
+      <td>Documentação essencial com foco no valor cultural e restrições técnicas.</td>
+      <td>User Stories e Especificação Suplementar</td>
+      <td>Requisitos funcionais e requisitos técnicos/não-funcionais devidamente documentados.</td>
+    </tr>
+    <tr>
+      <td>Representação</td>
+      <td>Modelagem visual inicial para alinhamento de expectativas.</td>
+      <td>Protótipos e Wireframes</td>
+      <td>Interfaces desenhadas e validadas visualmente com a representante.</td>
+    </tr>
+    <tr>
+      <td>Organização e Atualização</td>
+      <td>Detalhamento progressivo (Refinamento) focado em mitigar riscos.</td>
+      <td>Análise Documental</td>
+      <td>Requisitos de refatoração do código legado detalhados para garantir uma arquitetura base segura.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Construção</td>
+      <td>Verificação e Validação</td>
+      <td>Validação contínua e iterativa dos incrementos gerados.</td>
+      <td>Demonstração (Review) e Checklists de Qualidade</td>
+      <td>Incrementos funcionais validados e aderentes aos Objetivos Específicos (OE) do projeto.</td>
+    </tr>
+    <tr>
+      <td>Organização e Atualização</td>
+      <td>Gerenciamento de mudanças e controle de dependências de forma leve.</td>
+      <td>Matriz de Rastreabilidade</td>
+      <td>Continuidade do conhecimento do projeto garantida, sem perda de rastreabilidade durante a rotação técnica da equipe.</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Transição</td>
+      <td>Verificação e Validação</td>
+      <td>Homologação final do sistema com o cliente e usuários finais.</td>
+      <td>Demonstração (Review) e Testes de Aceitação</td>
+      <td>Sistema Nativo integralmente validado pela aldeia, atestando a fidelidade linguística e o suporte em baixa conectividade.</td>
+    </tr>
+  </tbody>
+</table>
 
 # **5. CRONOGRAMA E ENTREGAS**
 

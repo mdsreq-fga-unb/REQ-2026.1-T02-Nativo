@@ -1,0 +1,25 @@
+# 2.3 Características do Produto
+
+As características do produto (CPs) foram mapeadas diretamente aos Objetivos Específicos (OEs), garantindo rastreabilidade entre funcionalidades e objetivos de negócio.
+
+| ID | Característica (CP) | Descrição | Valor de Negócio | Contribuição Principal | Contribuição Secundária |
+| :---: | :--- | :--- | :--- | :---: | :---: |
+| **CP1** | Sincronização e Acesso Offline de Traduções | A consulta de traduções deverá funcionar mesmo sem acesso à internet. | Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade. | OE6 | OE1 |
+| **CP2** | Suporte a Multimídia nas Traduções | Upload e exibição de arquivos de áudio, vídeo e fotos, apoiando o ensino da pronúncia e o contexto cultural de cada termo. | Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva. | OE1 | OE6 |
+| **CP3** | Criação e elaboração de questionários | Ferramenta para professores elaborarem questionários de múltipla escolha para testar os conhecimentos dos usuários. | Aceleração do aprendizado e fixação através da prática ativa da língua, permitindo avaliar o progresso da comunidade. | OE2 | OE5 |
+| **CP4** | Feed Social Comunitário | Mural de publicações para compartilhar novidades, eventos e saberes da aldeia, com reações e comentários. | Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes. | OE3 | OE2 |
+| **CP5** | Administração e Moderação de Conteúdo | Permite aos moderadores avaliar denúncias e remover postagens inadequadas do aplicativo. | Redução de riscos de conteúdos inadequados, garantia da qualidade, veracidade e segurança da plataforma. | OE4 | OE3 |
+| **CP6** | Atividades e Desafios Gamificados | Sistema de recompensa baseado nos questionários e na performance do usuário. | Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua. | OE2 | OE3 |
+| **CP7** | Visualização de Perfis de Usuário | Exibição do histórico de tradução e gamificação do usuário, listando conquistas e conhecimentos. | Impulsiona a retenção através do acompanhamento do progresso individual. | OE5 | OE2 |
+
+## **2.3 Característica do Produto (mapeadas com os Objetivos Específicos do produto)**
+
+| ID | Característica de Produto (CP) | Descrição resumida | ID | Valor de negócio (VN) principal |  Contribuição principal | Contribuição secundária |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **CP1** | **Sincronização e Acesso Offline de Traduções** | **A consulta de traduções deverá funcionar mesmo sem  acesso à internet.** | **VN1** | **Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade.** |  **OE6** | **OE1** |
+| **CP2** | **Suporte a Multimídia nas Traduções** | **A solução deverá disponibilizar o upload e a exibição de arquivos de áudio, vídeo e fotos, apoiando o ensino da pronúncia e o contexto cultural de cada termo.** | **VN2** | **Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva.** | **OE1** | **OE6** |
+| **CP3** | **Criação e elaboração de questionários** | **A solução deverá oferecer uma ferramenta onde os Professores podem elaborar questionários baseados em perguntas e respostas de múltipla escolha, com objetivo de outros usuários testarem seus conhecimentos.** | **VN3** | **Aceleração do aprendizado e fixação através da prática ativa da língua, permitindo aos professores avaliarem o progresso da comunidade**  | **OE2** | **OE5** |
+| **CP4** | **Feed Social Comunitário** | **A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia, permitindo reações e comentários nas publicações.** | **VN4** | **Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes.** | **OE3** | **OE2** |
+| **CP5** | **Administração e Moderação de Conteúdo** | **A solução deverá permitir aos moderadores o poder de avaliar denúncias e remover postagens inadequadas do aplicativo.** | **VN5** | **Redução de riscos de conteúdos inadequados, garantia da qualidade, veracidade e segurança da plataforma.** | **OE4** | **OE3** |
+| **CP6** | **Atividades e Desafios Gamificados** | **A solução deverá disponibilizar um sistema de recompensa baseado nos questionários e na performance que o usuário teve em cada um deles** | **VN6** | **Aumento da retenção e do engajamento qualificado, utilizando o reconhecimento do desempenho individual como motor para motivar a prática contínua e acelerar o domínio do idioma.** | **OE2** | **OE3** |
+| **CP7** | **Visualização de Perfis de Usuário** | **A solução permite a visualização do histórico de tradução e gamificação do usuário, listando suas conquistas e conhecimentos.** | **VN7** | **Impulsiona a retenção através do acompanhamento do progresso individual.** | **OE5** | **OE2** |

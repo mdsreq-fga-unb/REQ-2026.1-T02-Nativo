@@ -1,3 +1,78 @@
+# Visão de Produto e Projeto
+
+<span class="version-badge">Versão 1.13</span>
+
+Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo tradutor de línguas indígenas com foco na língua Munduruku, desenvolvido para apoiar a revitalização linguística na Aldeia Munduruku de Bragança.
+
+---
+
+## Navegue pelo Documento
+
+<div class="section-cards">
+  <a class="section-card" href="01-cenario/">
+    <h3>1 · Cenário</h3>
+    <p>Contexto do cliente, negócio, rich picture, problema identificado e stakeholders.</p>
+  </a>
+  <a class="section-card" href="02-solucao/">
+    <h3>2 · Solução</h3>
+    <p>Objetivos, características do produto, tecnologias e análise competitiva.</p>
+  </a>
+  <a class="section-card" href="03-estrategias/">
+    <h3>3 · Estratégias</h3>
+    <p>Processo adotado (OpenUP), quadro comparativo e justificativa da escolha.</p>
+  </a>
+  <a class="section-card" href="04-requisitos/">
+    <h3>4 · Requisitos</h3>
+    <p>Atividades e técnicas de engenharia de requisitos por fase do OpenUP.</p>
+  </a>
+  <a class="section-card" href="05-cronograma/">
+    <h3>5 · Cronograma</h3>
+    <p>Fases, iterações e marcos de entrega ao longo do semestre.</p>
+  </a>
+  <a class="section-card" href="06-interacao/">
+    <h3>6 · Interação</h3>
+    <p>Composição da equipe, comunicação e processo de validação com o cliente.</p>
+  </a>
+  <a class="section-card" href="10-licoes/">
+    <h3>10 · Lições</h3>
+    <p>Lições aprendidas por unidade, desafios enfrentados e ações de melhoria.</p>
+  </a>
+  <a class="section-card" href="11-referencias/">
+    <h3>11 · Referências</h3>
+    <p>Referências bibliográficas utilizadas no documento.</p>
+  </a>
+</div>
+
+---
+
+## Histórico de Revisão
+
+| Data | Versão | Descrição | Autor |
+| :---: | :---: | :--- | :--- |
+| 01/04/26 | 0.1 | Criação do documento e preenchimento do tópico 1.1 e 1.3 | Pedro Silva |
+| 05/04/26 | 0.2 | Preenchimento tópico 1.3 e 1.4 | Renan Camara |
+| 05/04/26 | 0.3 | Preenchimento tópico 2.1 e 2.2 | André Henrique |
+| 05/04/26 | 0.4 | Preenchimento tópico 2.3 | Johnnatan Salles |
+| 05/04/26 | 0.5 | Preenchimento tópico 1.2 | Arthur Mendes |
+| 05/04/26 | 0.6 | Preenchimento tópico 1.7 | Giovanna Guimarães |
+| 05/04/26 | 0.7 | Adição do Diagrama de Ishikawa e Rich Picture | Pedro Silva e Giovanna Guimarães |
+| 05/04/26 | 1.0 | Revisão e validação do documento | Pedro Silva |
+| 07/04/26 | 1.1 | Refatoração dos Objetivos | André, Arthur, Giovanna, Renan |
+| 07/04/26 | 1.2 | Refatoração dos tópicos 1.2, 1.4, 2.1 e 2.2 | André, Arthur e Giovanna |
+| 08/04/26 | 1.3 | Refatoração dos tópicos 1.5 e 2.3 | André, Arthur e Pedro |
+| 08/04/26 | 1.4 | Preenchimento tópico 2.7 | Johnnatan Salles |
+| 08/04/26 | 1.5 | Refatoração dos tópicos 1.4, 2.1 e 2.2 | André, Johnnatan |
+| 09/04/26 | 1.6 | Preenchimento dos tópicos 3.1, 3.2 e 3.3 | Pedro Silva |
+| 10/04/26 | 1.7 | Preenchimento dos tópicos 2.4 e 2.5 | Pedro Silva |
+| 10/04/26 | 1.8 | Preenchimento dos tópicos 4.1, 4.2 e revisão | Giovanna Guimarães |
+| 11/04/26 | 1.9 | Preenchimento da seção 6 e revisão dos tópicos 4.1 e 4.2 | André Henrique |
+| 11/04/26 | 1.10 | Preenchimento da seção 5 e revisão | Renan |
+| 12/04/26 | 1.11 | Preenchimento da seção 11 e revisão do documento | Pedro Silva |
+| 13/04/26 | 1.12 | Refatoração da seção 5, complemento no tópico 2.6 e revisão | André e Giovanna |
+| 13/04/26 | 1.13 | Refatoração rich picture e diagrama de Ishikawa | Johnnatan Salles |
+
+---
+
 <style>
   table {
     width: 100%;
@@ -21,7 +96,7 @@
 
 # **<span style="color: #990000;"> NATIVO </span>**
 
-## 🎥 Apresentação da Unidade 1
+## 🎥 **Apresentação da Unidade 1**
 
 Confira abaixo o vídeo da nossa apresentação referente ao escopo e planejamento da Unidade 1:
 
@@ -36,7 +111,6 @@ Confira abaixo o vídeo da nossa apresentação referente ao escopo e planejamen
 ## **VISÃO DE PRODUTO E PROJETO**
 
 Versão 1.13
-
 
 ## **Histórico de revisão**
 
@@ -234,10 +308,6 @@ Dessa forma, a viabilidade da proposta está condicionada a alguns fatores-chave
 
 
 * Para os **usuários**: uma experiência de aprendizado mais interativa, acessível e envolvente, com melhor compreensão da língua por meio de recursos multimídia, uso mais dinâmico da plataforma através de gamificação e maior conexão cultural local por meio do feed comunitário. Além disso, os usuários terão acesso mais estável mesmo sem internet, maior clareza no acompanhamento do próprio progresso e uma participação mais ativa no processo de preservação da língua.
-
-
-  
-
 
 # **3. ESTRATÉGIAS DE ENGENHARIA DE SOFTWARE**
 

@@ -1,4 +1,114 @@
-site_name: My Docs
-site_url: http://nativo.com/docs
+site_name: Nativo
+site_description: Documentação de Visão de Produto e Projeto
+site_author: Equipe Nativo
+
 theme:
   name: material
+  language: pt-BR
+  logo: img/IconNativo.png
+  favicon: img/IconNativo.png
+  icon:
+    repo: material/github
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.follow
+    - navigation.logo
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - tables
+  - md_in_html
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+# ==========================================
+# ESTRUTURA DO MENU (NAVBAR) E DAS PÁGINAS
+# ==========================================
+nav:
+  - Início: index.md
+
+  - 1. Cenário:
+    - Visão Geral: 01-cenario/index.md
+    - 1.1 Identificação do Cliente: 01-cenario/cliente.md
+    - 1.2 Introdução ao Negócio: 01-cenario/negocio.md
+    - 1.3 Rich Picture: 01-cenario/rich-picture.md
+    - 1.4 Oportunidade / Problema: 01-cenario/oportunidade.md
+    - 1.5 Desafios do Projeto: 01-cenario/desafios.md
+    - 1.6 Mapa de Stakeholders: 01-cenario/stakeholders.md
+    - 1.7 Segmentação de Usuários: 01-cenario/segmentacao.md
+
+  - 2. Solução:
+    - Visão Geral: 02-solucao/index.md
+    - 2.1 Objetivo Geral: 02-solucao/objetivo-geral.md
+    - 2.2 Objetivos Específicos: 02-solucao/objetivos-especificos.md
+    - 2.3 Características do Produto: 02-solucao/caracteristicas.md
+    - 2.4 Tecnologias: 02-solucao/tecnologias.md
+    - 2.5 Análise Competitiva: 02-solucao/mercado.md
+    - 2.6 Viabilidade: 02-solucao/viabilidade.md
+    - 2.7 Benefícios Esperados: 02-solucao/beneficios.md
+
+  - 3. Estratégias:
+    - Visão Geral: 03-estrategias/index.md
+    - 3.1 Estratégia Priorizada: 03-estrategias/estrategia.md
+    - 3.2 Quadro Comparativo: 03-estrategias/comparativo.md
+    - 3.3 Justificativa: 03-estrategias/justificativa.md
+
+  - 4. Requisitos:
+    - Visão Geral: 04-requisitos/index.md
+    - 4.1 Atividades e Técnicas de ER: 04-requisitos/atividades.md
+    - 4.2 ER e o OpenUP: 04-requisitos/mapeamento.md
+
+  - 5. Cronograma:
+    - Visão Geral: 05-cronograma/index.md
+    - Fase de Concepção: 05-cronograma/concepcao.md
+    - Fase de Elaboração: 05-cronograma/elaboracao.md
+    - Fase de Construção: 05-cronograma/construcao.md
+    - Fase de Transição: 05-cronograma/transicao.md
+
+  - 6. Interação:
+    - Visão Geral: 06-interacao/index.md
+    - 6.1 Composição da Equipe: 06-interacao/equipe.md
+    - 6.2 Comunicação: 06-interacao/comunicacao.md
+    - 6.3 Processo de Validação: 06-interacao/validacao.md
+
+  - 10. Lições:
+    - Visão Geral: 10-licoes/index.md
+    - Unidade 1: 10-licoes/unidade1.md
+
+  - 11. Referências:
+    - Visão Geral: 11-referencias/index.md
+    - Aplicativos e Plataformas: 11-referencias/aplicativos.md
+    - Referências Acadêmicas: 11-referencias/academicas.md

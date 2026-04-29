@@ -1,20 +1,5 @@
-# 4.2 Engenharia de Requisitos e o OpenUP
-
+# **4.2. Engenharia de Requisitos e o OpenUP**
 A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalhando a prática adotada, a técnica utilizada e o resultado esperado em cada etapa.
-
-| Fase | Atividade de ER | Prática | Técnica | Resultado Esperado |
-| :---: | :--- | :--- | :--- | :--- |
-| **Concepção** | Elicitação e Descoberta | Colaboração direta com stakeholders para entendimento do domínio | Entrevistas, Brainstorming e Análise Documental | Escopo preliminar definido, identificação das necessidades da comunidade Munduruku e mapeamento dos gargalos do Flask |
-| **Concepção** | Análise e Consenso | Sequenciamento da implementação baseado em valor | Priorização MoSCoW | MVP definido com clareza, priorizando requisitos essenciais |
-| **Elaboração** | Declaração | Documentação essencial com foco no valor cultural e restrições técnicas | User Stories e Especificação Suplementar | Requisitos funcionais e não-funcionais devidamente documentados |
-| **Elaboração** | Representação | Modelagem visual inicial para alinhamento de expectativas | Protótipos e Wireframes | Interfaces desenhadas e validadas com a representante |
-| **Elaboração** | Organização e Atualização | Detalhamento progressivo focado em mitigar riscos | Análise Documental | Requisitos de refatoração do código legado detalhados para garantir uma arquitetura base segura |
-| **Construção** | Verificação e Validação | Validação contínua e iterativa dos incrementos gerados | Demonstração (Review) e Checklists de Qualidade | Incrementos funcionais validados e aderentes aos OEs do projeto |
-| **Construção** | Organização e Atualização | Gerenciamento de mudanças e controle de dependências | Matriz de Rastreabilidade | Continuidade do conhecimento garantida, sem perda de rastreabilidade durante a rotação técnica |
-| **Transição** | Verificação e Validação | Homologação final com o cliente e usuários finais | Demonstração (Review) e Testes de Aceitação | Sistema integralmente validado pela aldeia, atestando fidelidade linguística e suporte a baixa conectividade |
-
-
-## **4.2. Engenharia de Requisitos e o OpenUP**
 
 <table>
   <thead>
@@ -28,7 +13,7 @@ A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalh
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Concepção</td>
+      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgb(255, 255, 255);">Concepção</td>
       <td>Elicitação e Descoberta</td>
       <td>Colaboração direta com stakeholders para entendimento do domínio.</td>
       <td>Entrevistas, Brainstorming e Análise Documental</td>
@@ -41,7 +26,7 @@ A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalh
       <td>MVP definido com clareza, priorizando requisitos essenciais.</td>
     </tr>
     <tr>
-      <td rowspan="3" style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Elaboração</td>
+      <td rowspan="3" style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Elaboração</td>
       <td>Declaração</td>
       <td>Documentação essencial com foco no valor cultural e restrições técnicas.</td>
       <td>User Stories e Especificação Suplementar</td>
@@ -60,7 +45,7 @@ A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalh
       <td>Requisitos de refatoração do código legado detalhados para garantir uma arquitetura base segura.</td>
     </tr>
     <tr>
-      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Construção</td>
+      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Construção</td>
       <td>Verificação e Validação</td>
       <td>Validação contínua e iterativa dos incrementos gerados.</td>
       <td>Demonstração (Review) e Checklists de Qualidade</td>
@@ -73,7 +58,7 @@ A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalh
       <td>Continuidade do conhecimento do projeto garantida, sem perda de rastreabilidade durante a rotação técnica da equipe.</td>
     </tr>
     <tr>
-      <td style="font-weight: bold; vertical-align: middle; background-color: rgba(153, 0, 0, 0.05);">Transição</td>
+      <td style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Transição</td>
       <td>Verificação e Validação</td>
       <td>Homologação final do sistema com o cliente e usuários finais.</td>
       <td>Demonstração (Review) e Testes de Aceitação</td>

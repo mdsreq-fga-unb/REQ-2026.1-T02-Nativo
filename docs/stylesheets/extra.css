@@ -1,199 +1,590 @@
-/* =========================================
-   MODO CLARO
-   ========================================= */
-[data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #1A1A1A;
-  --md-primary-fg-color--light: #3a3a3a;
-  --md-primary-fg-color--dark:  #1A1A1A;
-  --md-accent-fg-color:         #0C6B3E;
+/* =====================================================
+   NATIVO — DESIGN SYSTEM
+   Paleta oficial:
+     Shadow Black     #171918
+     Evergreen Shadow #043222
+     Olive Sage       #91996B
+     Almond Cream     #F6E9D9
+     Light Cinnamon   #B67150
+     Soft Ivory       #F6F3F4
+   ===================================================== */
 
-  /* Cores customizadas para tabelas e cards */
-  --nativo-green:     #0C6B3E;
-  --nativo-green-bg:  rgba(12, 107, 62, 0.08);
-  --nativo-border:    rgba(12, 107, 62, 0.25);
-  --nativo-table-hd:  #0C3B2E;
-}
+/* ---------- TIPOGRAFIA ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* =========================================
-   MODO ESCURO
-   ========================================= */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #F5E6D3;
-  --md-primary-bg-color:        #000000;
-  --md-primary-fg-color--dark:  #1A1A1A;
-  --md-accent-fg-color:         #6DBF8C;
-
-  --nativo-green:     #6DBF8C;
-  --nativo-green-bg:  rgba(109, 191, 140, 0.1);
-  --nativo-border:    rgba(109, 191, 140, 0.3);
-  --nativo-table-hd:  #2a4a3a;
-}
-
-/* =========================================
-   NAVBAR: ALTURA E LOGO
-   ========================================= */
 :root {
+  --nativo-black:       #171918;
+  --nativo-evergreen:   #043222;
+  --nativo-sage:        #91996B;
+  --nativo-cream:       #F6E9D9;
+  --nativo-cinnamon:    #B67150;
+  --nativo-ivory:       #F6F3F4;
+  --nativo-font-heading: 'Lora', Georgia, serif;
+  --nativo-font-body:    'Inter', system-ui, sans-serif;
   --md-header-height: 4rem;
+}
+
+body, .md-typeset {
+  font-family: var(--nativo-font-body) !important;
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+/* =====================================================
+   MODO CLARO
+   ===================================================== */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:          var(--nativo-evergreen);
+  --md-primary-fg-color--light:   #1a5c3a;
+  --md-primary-fg-color--dark:    var(--nativo-evergreen);
+  --md-primary-bg-color:          var(--nativo-ivory);
+  --md-accent-fg-color:           var(--nativo-cinnamon);
+  --md-accent-fg-color--transparent: rgba(182, 113, 80, 0.12);
+  --md-typeset-color:             var(--nativo-black);
+  --md-typeset-a-color:           var(--nativo-cinnamon);
+  --md-default-bg-color:          var(--nativo-ivory);
+  --md-default-fg-color:          var(--nativo-black);
+  --md-code-bg-color:             #EDE5D8;
+  --md-code-fg-color:             var(--nativo-evergreen);
+}
+
+[data-md-color-scheme="default"] .md-main {
+  background-color: var(--nativo-ivory);
+}
+[data-md-color-scheme="default"] .md-content {
+  background-color: #FFFFFF;
+}
+[data-md-color-scheme="default"] .md-sidebar {
+  background-color: var(--nativo-ivory);
+}
+
+/* =====================================================
+   MODO ESCURO
+   ===================================================== */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:          var(--nativo-cream);
+  --md-primary-fg-color--dark:    var(--nativo-evergreen);
+  --md-primary-bg-color:          var(--nativo-evergreen);
+  --md-accent-fg-color:           var(--nativo-cinnamon);
+  --md-accent-fg-color--transparent: rgba(182, 113, 80, 0.15);
+  --md-typeset-color:             #e8ddd0;
+  --md-typeset-a-color:           var(--nativo-cinnamon);
+  --md-default-bg-color:          #0e1c16;
+  --md-default-fg-color:          var(--nativo-cream);
+  --md-code-bg-color:             #152a1e;
+  --md-code-fg-color:             var(--nativo-cream);
+}
+
+[data-md-color-scheme="slate"] .md-content {
+  background-color: #122019;
+}
+[data-md-color-scheme="slate"] .md-sidebar {
+  background-color: #0e1c16;
+}
+
+/* =====================================================
+   HEADER / NAVBAR
+   ===================================================== */
+.md-header {
+  background-color: var(--nativo-evergreen) !important;
+  box-shadow: 0 2px 12px rgba(4, 50, 34, 0.35);
+}
+
+.md-header__title {
+  font-family: var(--nativo-font-heading) !important;
+  font-size: 1.05rem !important;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--nativo-cream) !important;
 }
 
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   width: auto;
-  height: 3rem;
+  height: 2.8rem;
 }
 
-/* =========================================
-   TABELAS — ESTILO ELEGANTE
-   ========================================= */
+.md-tabs {
+  background-color: var(--nativo-evergreen) !important;
+  border-top: 1px solid rgba(246, 233, 217, 0.12);
+}
+
+.md-tabs__link {
+  font-family: var(--nativo-font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: rgba(246, 233, 217, 0.7) !important;
+  text-transform: uppercase;
+  opacity: 1 !important;
+  transition: color 0.2s ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: var(--nativo-cream) !important;
+}
+
+.md-tabs__link--active::after {
+  background-color: var(--nativo-cinnamon) !important;
+  height: 2px;
+}
+
+.md-header__button {
+  color: rgba(246, 233, 217, 0.85) !important;
+}
+
+.md-header__button:hover {
+  color: var(--nativo-cream) !important;
+}
+
+/* =====================================================
+   SIDEBAR / NAVEGAÇÃO LATERAL
+   ===================================================== */
+.md-nav__title {
+  font-family: var(--nativo-font-heading) !important;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nativo-sage) !important;
+  padding: 0.6rem 0.8rem 0.3rem;
+}
+
+.md-nav__link {
+  font-family: var(--nativo-font-body);
+  font-size: 0.82rem;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.md-nav__link:hover {
+  color: var(--nativo-cinnamon) !important;
+  background-color: rgba(182, 113, 80, 0.08);
+}
+
+.md-nav__item--active > .md-nav__link,
+.md-nav__link--active {
+  font-weight: 600;
+  color: var(--nativo-evergreen) !important;
+  background-color: rgba(4, 50, 34, 0.07);
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: var(--nativo-cream) !important;
+  background-color: rgba(246, 233, 217, 0.08);
+}
+
+/* =====================================================
+   TÍTULOS — Fonte Lora
+   ===================================================== */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: var(--nativo-font-heading) !important;
+  font-weight: 700;
+  color: var(--nativo-evergreen);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: var(--nativo-cream);
+}
+
+.md-typeset h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  border-bottom: 3px solid var(--nativo-cinnamon);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.3rem;
+  margin-top: 2.2rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid var(--nativo-sage);
+}
+
+.md-typeset h3 {
+  font-size: 1.05rem;
+  color: var(--nativo-cinnamon) !important;
+  margin-top: 1.6rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: var(--nativo-cinnamon) !important;
+}
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+.md-typeset a {
+  color: var(--nativo-cinnamon) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.md-typeset a:hover {
+  opacity: 0.8;
+  border-bottom-color: var(--nativo-cinnamon);
+}
+
+/* =====================================================
+   TABELAS
+   ===================================================== */
 .md-typeset table:not([class]) {
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--nativo-border);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  font-size: 0.85rem;
+  border: 1px solid rgba(145, 153, 107, 0.35);
+  box-shadow: 0 2px 12px rgba(4, 50, 34, 0.07);
+  font-size: 0.84rem;
+  width: 100%;
 }
 
 .md-typeset table:not([class]) th {
-  background-color: var(--nativo-green);
-  color: #ffffff !important;
+  background-color: var(--nativo-evergreen) !important;
+  color: var(--nativo-cream) !important;
+  font-family: var(--nativo-font-body);
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.8rem 1rem;
   text-align: center;
-  padding: 0.75rem 1rem;
 }
 
 .md-typeset table:not([class]) td {
   padding: 0.65rem 1rem;
-  border-bottom: 1px solid var(--nativo-border);
+  border-bottom: 1px solid rgba(145, 153, 107, 0.2);
+  vertical-align: top;
 }
 
 .md-typeset table:not([class]) tr:last-child td {
   border-bottom: none;
 }
 
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background-color: rgba(246, 233, 217, 0.4);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) td {
+  background-color: rgba(246, 233, 217, 0.04);
+}
+
 .md-typeset table:not([class]) tr:hover td {
-  background-color: var(--nativo-green-bg);
+  background-color: rgba(182, 113, 80, 0.08) !important;
   transition: background-color 0.15s ease;
 }
 
-/* =========================================
-   CARDS DE SEÇÃO (para páginas de visão geral)
-   ========================================= */
+/* =====================================================
+   CARDS DE SEÇÃO
+   ===================================================== */
 .section-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
-  margin: 1.5rem 0;
+  margin: 1.8rem 0 2rem;
 }
 
 .section-card {
-  border: 1px solid var(--nativo-border);
-  border-radius: 10px;
-  padding: 1.2rem 1.4rem;
-  background-color: var(--nativo-green-bg);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border: 1px solid rgba(145, 153, 107, 0.4);
+  border-radius: 12px;
+  padding: 1.3rem 1.3rem 1.3rem 1.6rem;
+  background: linear-gradient(135deg, rgba(246, 233, 217, 0.55) 0%, rgba(246, 243, 244, 0.9) 100%);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
   text-decoration: none !important;
   display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--nativo-sage);
+  transition: background-color 0.18s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-  border-color: var(--nativo-green);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(4, 50, 34, 0.13);
+  border-color: var(--nativo-cinnamon);
+}
+
+.section-card:hover::before {
+  background-color: var(--nativo-cinnamon);
 }
 
 .section-card h3 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--nativo-green) !important;
-  margin: 0 0 0.4rem 0;
+  font-family: var(--nativo-font-heading) !important;
+  font-size: 0.97rem !important;
+  font-weight: 700 !important;
+  color: var(--nativo-evergreen) !important;
+  margin: 0 0 0.45rem 0 !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 .section-card p {
-  font-size: 0.82rem;
+  font-size: 0.81rem;
   margin: 0;
-  opacity: 0.85;
+  color: rgba(23, 25, 24, 0.7);
+  line-height: 1.5;
 }
 
-/* =========================================
-   TÍTULOS DAS SEÇÕES
-   ========================================= */
-.md-typeset h1 {
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  border-bottom: 3px solid var(--nativo-green);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+[data-md-color-scheme="slate"] .section-card {
+  background: linear-gradient(135deg, rgba(4, 50, 34, 0.5) 0%, rgba(18, 32, 25, 0.85) 100%);
+  border-color: rgba(145, 153, 107, 0.3);
 }
 
-.md-typeset h2 {
-  font-weight: 700;
-  border-left: 4px solid var(--nativo-green);
-  padding-left: 0.75rem;
-  margin-top: 2rem;
+[data-md-color-scheme="slate"] .section-card h3 {
+  color: var(--nativo-cream) !important;
 }
 
-.md-typeset h3 {
-  font-weight: 600;
-  color: var(--nativo-green);
+[data-md-color-scheme="slate"] .section-card p {
+  color: rgba(246, 233, 217, 0.65);
 }
 
-/* =========================================
-   BADGE DE VERSÃO (para o index)
-   ========================================= */
+[data-md-color-scheme="slate"] .section-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* =====================================================
+   BADGE DE VERSÃO
+   ===================================================== */
 .version-badge {
-  display: inline-block;
-  background-color: var(--nativo-green);
-  color: #fff !important;
-  padding: 0.2rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--nativo-evergreen);
+  color: var(--nativo-cream) !important;
+  padding: 0.25rem 0.85rem;
   border-radius: 100px;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 2px 8px rgba(4, 50, 34, 0.2);
 }
 
-/* =========================================
-   SIDEBAR: NAVIGATION
-   ========================================= */
-.md-nav__item--active > .md-nav__link {
-  font-weight: 700;
-  color: var(--nativo-green) !important;
+.version-badge::before {
+  content: '●';
+  font-size: 0.5rem;
+  color: var(--nativo-sage);
 }
 
-.md-nav__link:hover {
-  color: var(--nativo-green) !important;
-}
-
-/* =========================================
-   BOTÃO "VOLTAR AO TOPO"
-   ========================================= */
-.md-top {
-  background-color: var(--nativo-green) !important;
-}
-
-/* =========================================
-   ADMONITIONS CUSTOMIZADOS
-   ========================================= */
+/* =====================================================
+   ADMONITIONS
+   ===================================================== */
 .md-typeset .admonition,
 .md-typeset details {
-  border-radius: 8px;
+  border-radius: 10px;
   border-left-width: 4px;
+  box-shadow: 0 2px 8px rgba(4, 50, 34, 0.06);
+  font-size: 0.87rem;
 }
 
-/* =========================================
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-left-color: var(--nativo-sage) !important;
+  background-color: rgba(145, 153, 107, 0.1) !important;
+}
+
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset details.info > summary {
+  background-color: rgba(145, 153, 107, 0.2) !important;
+  color: #4a4e2a !important;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: var(--nativo-cinnamon) !important;
+  background-color: rgba(182, 113, 80, 0.08) !important;
+}
+
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset details.warning > summary {
+  background-color: rgba(182, 113, 80, 0.15) !important;
+  color: #7a3b1a !important;
+}
+
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-left-color: var(--nativo-evergreen) !important;
+  background-color: rgba(4, 50, 34, 0.07) !important;
+}
+
+.md-typeset .admonition.success > .admonition-title,
+.md-typeset details.success > summary {
+  background-color: rgba(4, 50, 34, 0.12) !important;
+  color: var(--nativo-evergreen) !important;
+}
+
+/* =====================================================
    CÓDIGO INLINE
-   ========================================= */
+   ===================================================== */
 .md-typeset code {
-  background-color: var(--nativo-green-bg);
-  border: 1px solid var(--nativo-border);
+  background-color: rgba(145, 153, 107, 0.15);
+  border: 1px solid rgba(145, 153, 107, 0.3);
   border-radius: 4px;
-  padding: 0.1em 0.4em;
-  font-size: 0.85em;
+  padding: 0.12em 0.45em;
+  font-size: 0.83em;
+  color: var(--nativo-evergreen);
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
-.md-footer {
-  border-top: 2px solid var(--nativo-border);
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(145, 153, 107, 0.12);
+  color: var(--nativo-cream);
+}
+
+/* =====================================================
+   BARRA DE PESQUISA
+   ===================================================== */
+.md-search__form {
+  background-color: rgba(246, 243, 244, 0.15) !important;
+  border-radius: 8px;
+}
+
+.md-search__input {
+  color: var(--nativo-cream) !important;
+}
+
+.md-search__input::placeholder {
+  color: rgba(246, 243, 244, 0.6) !important;
+}
+
+/* =====================================================
+   BOTÃO "VOLTAR AO TOPO"
+   ===================================================== */
+.md-top {
+  background-color: var(--nativo-cinnamon) !important;
+  color: var(--nativo-ivory) !important;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 12px rgba(182, 113, 80, 0.4);
+}
+
+/* =====================================================
+   NAVEGAÇÃO PREV / NEXT
+   ===================================================== */
+.md-footer__link {
+  background-color: var(--nativo-ivory);
+  border: 1px solid rgba(145, 153, 107, 0.3);
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.md-footer__link:hover {
+  border-color: var(--nativo-cinnamon);
+  box-shadow: 0 4px 12px rgba(182, 113, 80, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-footer__link {
+  background-color: #152a1e;
+  border-color: rgba(145, 153, 107, 0.2);
+}
+
+.md-footer__title {
+  font-family: var(--nativo-font-heading) !important;
+  color: var(--nativo-evergreen) !important;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-footer__title {
+  color: var(--nativo-cream) !important;
+}
+
+.md-footer__direction {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--nativo-sage) !important;
+  font-weight: 600;
+}
+
+/* =====================================================
+   FOOTER INFERIOR
+   ===================================================== */
+.md-footer-meta {
+  background-color: var(--nativo-evergreen) !important;
+}
+
+.md-footer-meta__inner {
+  font-size: 0.75rem;
+  color: rgba(246, 233, 217, 0.6) !important;
+}
+
+.md-footer-meta a {
+  color: var(--nativo-cream) !important;
+}
+
+/* =====================================================
+   ÍNDICE TOC (lateral direito)
+   ===================================================== */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.79rem;
+}
+
+.md-nav--secondary .md-nav__link--active {
+  color: var(--nativo-cinnamon) !important;
+  font-weight: 600;
+}
+
+/* =====================================================
+   SEPARADORES E BLOCKQUOTES
+   ===================================================== */
+.md-typeset hr {
+  border-color: rgba(145, 153, 107, 0.3);
+  margin: 2rem 0;
+}
+
+.md-typeset blockquote {
+  border-left: 4px solid var(--nativo-sage);
+  background-color: rgba(246, 233, 217, 0.45);
+  border-radius: 0 8px 8px 0;
+  padding: 0.8rem 1.2rem;
+  color: rgba(23, 25, 24, 0.8);
+  font-style: italic;
+  font-family: var(--nativo-font-heading);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background-color: rgba(4, 50, 34, 0.3);
+  color: rgba(246, 233, 217, 0.8);
+}
+
+/* =====================================================
+   LISTAS E STRONG
+   ===================================================== */
+.md-typeset ul li::marker {
+  color: var(--nativo-sage);
+}
+
+.md-typeset ol li::marker {
+  color: var(--nativo-cinnamon);
+  font-weight: 700;
+}
+
+.md-typeset strong {
+  color: var(--nativo-evergreen);
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset strong {
+  color: var(--nativo-cream);
 }

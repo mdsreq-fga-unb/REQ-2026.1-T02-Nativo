@@ -6,6 +6,9 @@ theme:
   name: material
   language: pt-BR
   logo: img/IconNativo.png
+  font:
+    text: Inter
+    code: JetBrains Mono
   favicon: img/IconNativo.png
   icon:
     repo: material/github
@@ -13,11 +16,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Mudar para modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Mudar para modo claro

@@ -4,28 +4,36 @@
 
 Com base nas características do projeto Nativo e nos desafios identificados, o **OpenUP** se apresenta como o processo mais adequado pelos seguintes motivos:
 
-### 1. **Organização e Estrutura do Desenvolvimento:**
+### 1. **Sustentabilidade técnica e organização do desenvolvimento:**
 
-* Diante da complexidade do projeto, especialmente no que se refere à necessidade de evolução arquitetural da aplicação e à organização das funcionalidades planejadas, o OpenUP é ideal por focar na criação de uma arquitetura executável logo nas fases iniciais (*Elaboração*). Isso garante uma base técnica sólida e sustentável, reduzindo o risco de retrabalho antes da construção em larga escala.
+* O projeto apresenta desafios técnicos relevantes, especialmente relacionados à arquitetura existente e sua evolução. Nesse contexto, o OpenUP contribui ao incentivar a definição de uma arquitetura executável desde as fases iniciais, reduzindo retrabalho e favorecendo a evolução sustentável do sistema.
 
-### 2. **Ênfase em Arquitetura e Sustentabilidade Técnica:**
+### 2. **Adequação ao modelo de validação do projeto:**
 
-* O projeto enfrenta limitações técnicas relevantes, como gargalos na aplicação atual desenvolvida em Flask. O OpenUP, por valorizar a definição e evolução da arquitetura desde as etapas iniciais, contribui para a construção de uma base mais sólida e sustentável, reduzindo riscos de retrabalho e problemas de escalabilidade ao longo do desenvolvimento .
+* A validação com a comunidade ocorre de forma mediada, o que reduz a eficácia de abordagens altamente dependentes de interação contínua e imediata com o usuário, como o RAD. O OpenUP permite organizar momentos de validação em marcos definidos, tornando o processo mais adequado a esse contexto e reduzindo ruídos de comunicação. 
 
-### 3. **Melhor Adequação ao Fluxo de Validação:**
+### 3. **Integração com Engenharia de Requisitos:**
 
-* Considerando que o contato com a comunidade ocorre de forma indireta, por meio de um representante, o OpenUP se mostra mais adequado por permitir uma maior estruturação para os momentos de validação e alinhamento. Diferente de abordagens que dependem de feedback contínuo e imediato, o processo permite consolidar entregas e validar em pontos mais definidos, reduzindo impactos causados por atrasos ou ruídos na comunicação .
+A escolha também se justifica pela melhor aderência do OpenUP às necessidades de Engenharia de Requisitos, permitindo: 
 
-### 4. **Suporte à Documentação:**
+* Rastreabilidade entre objetivos específicos (OE), características de produto (CP) e requisitos.
 
-* Por se tratar de um projeto desenvolvido no contexto de disciplina, há a necessidade de documentação clara, rastreabilidade de decisões e organização dos artefatos produzidos. O OpenUP atende melhor a esse requisito ao incentivar uma documentação mais estruturada, sem perder a flexibilidade do desenvolvimento iterativo.
+* Gestão controlada de mudanças.
 
-### 5. **Controle do Escopo e Evolução Incremental:**
+* Refinamento progressivo dos requisitos ao longo das iterações.
 
-* O projeto apresenta diversas possibilidades de expansão, como gamificação, feed social e suporte multimídia. O OpenUP permite que essas funcionalidades sejam organizadas e priorizadas de forma incremental, garantindo que o escopo seja controlado e que as entregas ocorram de maneira consistente ao longo do tempo.
+* Validação contínua estruturada por meio de marcos.
 
-### 6. **Equilíbrio entre Flexibilidade e Controle:**
+### 4. **Adequação ao contexto acadêmico:**
 
-* Embora permita adaptação ao longo das iterações, o OpenUP mantém um nível adequado de controle sobre o processo, evitando que o desenvolvimento se torne desorganizado. Esse equilíbrio é essencial para o Nativo, que precisa evoluir continuamente, mas sem comprometer a qualidade técnica e a coerência do produto final.
+* O projeto exige documentação clara, organização do processo e justificativa das decisões. O OpenUP atende a esses requisitos ao oferecer maior disciplina na definição de artefatos e marcos, sem comprometer a flexibilidade.
 
-Dessa forma, o OpenUP se mostra a escolha mais adequada por oferecer maior organização, melhor suporte à evolução técnica e alinhamento com as necessidades de validação e documentação do projeto, contribuindo para uma condução mais segura e estruturada do desenvolvimento.
+### 5. **Uso complementar do RAD:**
+
+Embora o RAD não tenha sido adotado como processo principal, suas práticas são relevantes para o projeto, especialmente: 
+
+* Prototipação rápida.
+
+* Validação de interfaces.
+
+* Foco na experiência do usuário.

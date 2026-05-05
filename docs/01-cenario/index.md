@@ -2,16 +2,6 @@
 
 Esta seção apresenta o contexto do cliente, o negócio envolvido e os problemas identificados que motivam o projeto Nativo.
 
-| Subseção | Conteúdo |
-| :--- | :--- |
-| [1.1 Identificação do Cliente](cliente.md) | Dados do cliente, representante e forma de contato |
-| [1.2 Introdução ao Negócio](negocio.md) | Contexto e missão do aplicativo Nativo |
-| [1.3 Rich Picture](rich-picture.md) | Representação visual do sistema e seu contexto |
-| [1.4 Oportunidade / Problema](oportunidade.md) | Problema central identificado e seu diagrama de causa |
-| [1.5 Desafios do Projeto](desafios.md) | Principais desafios estratégicos e técnicos |
-| [1.6 Mapa de Stakeholders](stakeholders.md) | Identificação e análise dos stakeholders |
-| [1.7 Segmentação de Usuários](segmentacao.md) | Perfis de usuários da plataforma |
-
 <div class="section-cards">
   <a class="section-card" href="cliente/">
     <h3>1.1 Identificação do Cliente</h3>

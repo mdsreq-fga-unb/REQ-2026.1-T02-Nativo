@@ -2,16 +2,6 @@
 
 Esta seção descreve a solução proposta para o Nativo, seus objetivos, características, tecnologias e análise de mercado.
 
-| Subseção | Conteúdo |
-| :--- | :--- |
-| [2.1 Objetivo Geral](objetivo-geral.md) | O que se espera alcançar com o produto |
-| [2.2 Objetivos Específicos](objetivos-especificos.md) | Objetivos mensuráveis do produto (OEs) |
-| [2.3 Características do Produto](caracteristicas.md) | Mapeamento das CPs com os OEs |
-| [2.4 Tecnologias](tecnologias.md) | Stack e ferramentas utilizadas |
-| [2.5 Análise Competitiva](mercado.md) | Soluções similares e diferenciais do Nativo |
-| [2.6 Viabilidade](viabilidade.md) | Avaliação de viabilidade e gestão de riscos |
-| [2.7 Benefícios Esperados](beneficios.md) | Benefícios para o cliente e para os usuários |
-
 <div class="section-cards">
   <a class="section-card" href="objetivo-geral/">
     <h3>2.1 Objetivo Geral</h3>

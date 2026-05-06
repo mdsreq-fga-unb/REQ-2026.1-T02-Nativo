@@ -1,4 +1,4 @@
-# 4 · Engenharia de Requisitos
+# 5 · Engenharia de Requisitos
 
 Esta seção descreve as atividades e técnicas de Engenharia de Requisitos (ER) adotadas em cada fase do projeto, e como elas se integram ao processo OpenUP.
 

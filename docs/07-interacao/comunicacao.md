@@ -1,4 +1,4 @@
-# **6.2. Comunicação**
+# 7.2 Comunicação
 
 ### **Ferramentas de comunicação**
 

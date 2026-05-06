@@ -1,4 +1,4 @@
-# 5 · Cronograma e Entregas
+# 6 · Cronograma e Entregas
 
 O planejamento do projeto é estruturado em quatro fases do OpenUP, com iterações semanais dentro de cada fase. O cronograma será atualizado de maneira sucessiva a partir da realização de cada ciclo de desenvolvimento.
 

@@ -1,4 +1,4 @@
-# 6 · Interação entre Equipe e Cliente
+# 7 · Interação entre Equipe e Cliente
 
 Esta seção descreve a composição da equipe, os canais de comunicação adotados e o processo de validação das entregas junto ao cliente.
 

@@ -1,4 +1,4 @@
-# **6.3. Processo de Validação**
+# 7.3 Processo de Validação
 
 O processo de validação do produto seguirá os princípios iterativos e incrementais do **OpenUP**. Para garantir que a solução atenda às expectativas e mantenha a integridade técnica e cultural, a validação ocorrerá em três frentes principais:
 

@@ -1,4 +1,4 @@
-# 3 · Estratégias de Engenharia de Software
+# 4 · Estratégias de Engenharia de Software
 
 Esta seção apresenta as estratégias de engenharia de software adotadas no projeto, a justificativa para a escolha do processo e o quadro comparativo entre as abordagens analisadas.
 

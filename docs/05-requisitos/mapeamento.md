@@ -1,4 +1,5 @@
-# **4.2. Engenharia de Requisitos e o OpenUP**
+# 5.2 Engenharia de Requisitos e o OpenUP
+
 A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalhando a prática adotada, a técnica utilizada e o resultado esperado em cada etapa.
 
 <table>

@@ -1,4 +1,4 @@
-# 10 · Lições Aprendidas
+# 11 · Lições Aprendidas
 
 Esta seção reúne as lições aprendidas ao longo das unidades da disciplina, com foco nas ações de melhoria, desafios enfrentados e como foram superados.
 

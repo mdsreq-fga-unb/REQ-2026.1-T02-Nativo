@@ -1,4 +1,4 @@
-# 3.1 Estratégia Priorizada
+# 4.1 Estratégia Priorizada
 
 | Campo | Decisão |
 | :--- | :--- |

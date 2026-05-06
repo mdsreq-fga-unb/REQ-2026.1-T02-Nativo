@@ -1,4 +1,4 @@
-# **3.2. Quadro Comparativo**
+# 4.2 Quadro Comparativo
 
 O quadro apresenta algumas características que podem ser relacionadas ao OpenUP e RAD, visando auxiliar o entendimento e justificativa do processo mais adequado para o projeto
 

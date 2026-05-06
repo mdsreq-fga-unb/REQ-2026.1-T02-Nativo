@@ -1,4 +1,4 @@
-# **6.1. Composição da Equipe**
+# 7.1 Composição da Equipe
 
 A equipe de desenvolvimento será composta por:
 

@@ -22,27 +22,27 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
     <p>Impactos sociais pretendidos da solução e efeitos emergentes.</p>
   </a>
   <a class="section-card" href="04-estrategias/">
-    <h3>3 · Estratégias</h3>
+    <h3>4 · Estratégias</h3>
     <p>Processo adotado (OpenUP), quadro comparativo e justificativa da escolha.</p>
   </a>
   <a class="section-card" href="05-requisitos/">
-    <h3>4 · Requisitos</h3>
+    <h3>5 · Requisitos</h3>
     <p>Atividades e técnicas de engenharia de requisitos por fase do OpenUP.</p>
   </a>
   <a class="section-card" href="06-cronograma/">
-    <h3>5 · Cronograma</h3>
+    <h3>6 · Cronograma</h3>
     <p>Fases, iterações e marcos de entrega ao longo do semestre.</p>
   </a>
   <a class="section-card" href="07-interacao/">
-    <h3>6 · Interação</h3>
+    <h3>7 · Interação</h3>
     <p>Composição da equipe, comunicação e processo de validação com o cliente.</p>
   </a>
   <a class="section-card" href="11-licoes/">
-    <h3>10 · Lições</h3>
+    <h3>11 · Lições</h3>
     <p>Lições aprendidas por unidade, desafios enfrentados e ações de melhoria.</p>
   </a>
   <a class="section-card" href="12-referencias/">
-    <h3>11 · Referências</h3>
+    <h3>12 · Referências</h3>
     <p>Referências bibliográficas utilizadas no documento.</p>
   </a>
 </div>

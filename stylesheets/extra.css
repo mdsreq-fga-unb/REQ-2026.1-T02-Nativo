@@ -117,34 +117,93 @@ body, .md-typeset {
   align-items: center;
 }
 
-.md-tabs__list {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+@media screen and (min-width: 76.25em) {
+  :root {
+    --md-header-height: 4.8rem;
+  }
+
+  .md-header {
+    min-height: 4.8rem;
+  }
+
+  .md-tabs {
+    min-height: 2.35rem;
+    padding: 0.1rem 0 0.15rem;
+  }
+
+  .md-tabs__inner {
+    width: 100%;
+  }
+
+  .md-tabs__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.05rem;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .md-tabs__item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 2rem;
+  }
+
+  .md-tabs__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 1.85rem;
+    padding: 0.12rem 0.14rem;
+    font-family: var(--nativo-font-body);
+    font-weight: 600;
+    font-size: 0.50rem;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: rgba(246, 233, 217, 0.78) !important;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    transition: color 0.2s ease;
+  }
 }
 
-.md-tabs__item {
-  display: flex;
-  align-items: center;
-  height: 2.5rem;
-}
+@media screen and (max-width: 76.24em) {
+  .md-tabs__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-.md-tabs__link {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  font-family: var(--nativo-font-body);
-  font-weight: 500;
-  font-size: 0.70rem;
-  letter-spacing: 0.015em;
-  color: rgba(246, 233, 217, 0.7) !important;
-  text-transform: uppercase;
-  opacity: 1 !important;
-  transition: color 0.2s ease;
-  padding-top: 0;
-  padding-bottom: 0;
+  .md-tabs__item {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+  }
+
+  .md-tabs__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: var(--nativo-font-body);
+    font-weight: 500;
+    font-size: 0.70rem;
+    letter-spacing: 0.015em;
+    color: rgba(246, 233, 217, 0.7) !important;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    transition: color 0.2s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .md-tabs__link:hover,

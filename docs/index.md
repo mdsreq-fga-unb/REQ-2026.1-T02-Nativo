@@ -17,27 +17,31 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
     <h3>2 · Solução</h3>
     <p>Objetivos, características do produto, tecnologias e análise competitiva.</p>
   </a>
-  <a class="section-card" href="03-estrategias/">
+  <a class="section-card" href="03-intervencao/">
+    <h3>3 · Intervenção</h3>
+    <p>Impactos sociais pretendidos da solução e efeitos emergentes.</p>
+  </a>
+  <a class="section-card" href="04-estrategias/">
     <h3>3 · Estratégias</h3>
     <p>Processo adotado (OpenUP), quadro comparativo e justificativa da escolha.</p>
   </a>
-  <a class="section-card" href="04-requisitos/">
+  <a class="section-card" href="05-requisitos/">
     <h3>4 · Requisitos</h3>
     <p>Atividades e técnicas de engenharia de requisitos por fase do OpenUP.</p>
   </a>
-  <a class="section-card" href="05-cronograma/">
+  <a class="section-card" href="06-cronograma/">
     <h3>5 · Cronograma</h3>
     <p>Fases, iterações e marcos de entrega ao longo do semestre.</p>
   </a>
-  <a class="section-card" href="06-interacao/">
+  <a class="section-card" href="07-interacao/">
     <h3>6 · Interação</h3>
     <p>Composição da equipe, comunicação e processo de validação com o cliente.</p>
   </a>
-  <a class="section-card" href="10-licoes/">
+  <a class="section-card" href="11-licoes/">
     <h3>10 · Lições</h3>
     <p>Lições aprendidas por unidade, desafios enfrentados e ações de melhoria.</p>
   </a>
-  <a class="section-card" href="11-referencias/">
+  <a class="section-card" href="12-referencias/">
     <h3>11 · Referências</h3>
     <p>Referências bibliográficas utilizadas no documento.</p>
   </a>

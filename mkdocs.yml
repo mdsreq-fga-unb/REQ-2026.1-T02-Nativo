@@ -87,33 +87,36 @@ nav:
     - 2.6 Viabilidade: 02-solucao/viabilidade.md
     - 2.7 Benefícios Esperados: 02-solucao/beneficios.md
 
-  - 3. Estratégias:
-    - Visão Geral: 03-estrategias/index.md
-    - 3.1 Estratégia Priorizada: 03-estrategias/estrategia.md
-    - 3.2 Quadro Comparativo: 03-estrategias/comparativo.md
-    - 3.3 Justificativa: 03-estrategias/justificativa.md
+  - 3. Intervenção:
+    - Visão Geral: 03-intervencao/index.md
 
-  - 4. Requisitos:
-    - Visão Geral: 04-requisitos/index.md
-    - 4.1 Atividades e Técnicas de ER: 04-requisitos/atividades.md
-    - 4.2 ER e o OpenUP: 04-requisitos/mapeamento.md
+  - 4. Estratégias:
+    - Visão Geral: 04-estrategias/index.md
+    - 4.1 Estratégia Priorizada: 04-estrategias/estrategia.md
+    - 4.2 Quadro Comparativo: 04-estrategias/comparativo.md
+    - 4.3 Justificativa: 04-estrategias/justificativa.md
 
-  - 5. Cronograma:
-    - Visão Geral: 05-cronograma/index.md
-    - Fase de Concepção: 05-cronograma/concepcao.md
-    - Fase de Elaboração: 05-cronograma/elaboracao.md
-    - Fase de Construção: 05-cronograma/construcao.md
-    - Fase de Transição: 05-cronograma/transicao.md
+  - 5. Requisitos:
+    - Visão Geral: 05-requisitos/index.md
+    - 5.1 Atividades e Técnicas de ER: 05-requisitos/atividades.md
+    - 5.2 ER e o OpenUP: 05-requisitos/mapeamento.md
 
-  - 6. Interação:
-    - Visão Geral: 06-interacao/index.md
-    - 6.1 Composição da Equipe: 06-interacao/equipe.md
-    - 6.2 Comunicação: 06-interacao/comunicacao.md
-    - 6.3 Processo de Validação: 06-interacao/validacao.md
+  - 6. Cronograma:
+    - Visão Geral: 06-cronograma/index.md
+    - Fase de Concepção: 06-cronograma/concepcao.md
+    - Fase de Elaboração: 06-cronograma/elaboracao.md
+    - Fase de Construção: 06-cronograma/construcao.md
+    - Fase de Transição: 06-cronograma/transicao.md
 
-  - 10. Lições:
-    - Visão Geral: 10-licoes/index.md
-    - Unidade 1: 10-licoes/unidade1.md
+  - 7. Interação:
+    - Visão Geral: 07-interacao/index.md
+    - 7.1 Composição da Equipe: 07-interacao/equipe.md
+    - 7.2 Comunicação: 07-interacao/comunicacao.md
+    - 7.3 Processo de Validação: 07-interacao/validacao.md
 
-  - 11. Referências:
-    - Visão Geral: 11-referencias/index.md
+  - 11. Lições:
+    - Visão Geral: 11-licoes/index.md
+    - Unidade 1: 11-licoes/unidade1.md
+
+  - 12. Referências:
+    - Visão Geral: 12-referencias/index.md

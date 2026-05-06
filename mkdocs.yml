@@ -67,6 +67,10 @@ markdown_extensions:
 nav:
   - Início: index.md
 
+  - 0. Entregas:
+    - Visão Geral: 00-entregas/index.md
+    - Unidade 1: 00-entregas/unidade1.md
+
   - 1. Cenário:
     - Visão Geral: 01-cenario/index.md
     - 1.1 Identificação do Cliente: 01-cenario/cliente.md
@@ -113,6 +117,21 @@ nav:
     - 7.1 Composição da Equipe: 07-interacao/equipe.md
     - 7.2 Comunicação: 07-interacao/comunicacao.md
     - 7.3 Processo de Validação: 07-interacao/validacao.md
+
+  - 8. Requisitos:
+    - Visão Geral: 08-requisitos/index.md
+    - 8.1 Requisitos Funcionais: 08-requisitos/rf.md
+    - 8.2 Requisitos Não Funcionais: 08-requisitos/rnf.md
+
+  - 9. DoR e DoD:
+    - Visão Geral: 09-dor&dod/index.md
+    - 9.1 Definition of Ready (DoR): 09-dor&dod/dor.md
+    - 9.2 Definition of Done (DoD): 09-dor&dod/dod.md
+
+  - 10. Backlog:
+    - Visão Geral: 10-backlog/index.md
+    - 10.1 Backlog Geral: 10-backlog/backlog.md
+    - 10.2 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
 
   - 11. Lições:
     - Visão Geral: 11-licoes/index.md

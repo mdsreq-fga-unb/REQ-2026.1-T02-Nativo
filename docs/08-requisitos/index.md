@@ -1,15 +1,14 @@
 # 8 · Requisitos de Software
 
-Esta seção apresenta os requisitos de software do projeto, organizando as necessidades funcionais e não funcionais que orientam a construção da solução e garantem seu alinhamento com os objetivos definidos.
+Esta seção reúne os requisitos que orientam o desenvolvimento da solução, cobrindo tanto o que o sistema deve fazer quanto as qualidades e restrições que ele precisa atender para apoiar os objetivos do projeto.
 
 <div class="section-cards">
   <a class="section-card" href="rf/">
     <h3>8.1 Lista de Requisitos Funcionais</h3>
-    <p>Levantamento dos requisitos que descrevem as funcionalidades esperadas da solução.</p>
+    <p>Lista das funcionalidades, comportamentos e interações que o sistema deve oferecer aos usuários.</p>
   </a>
   <a class="section-card" href="rnf/">
     <h3>8.2 Lista de Requisitos Não Funcionais</h3>
-    <p>Definição dos critérios de qualidade, restrições e atributos que complementam
-    sistema</p>
+    <p>Conjunto de critérios de qualidade, desempenho, segurança e usabilidade que complementam a solução.</p>
   </a>
 </div>

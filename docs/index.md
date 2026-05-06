@@ -37,6 +37,18 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
     <h3>7 · Interação</h3>
     <p>Composição da equipe, comunicação e processo de validação com o cliente.</p>
   </a>
+  <a class="section-card" href="08-requisitos/">
+    <h3>8 · Requisitos</h3>
+    <p>Requisitos funcionais e não funcionais que orientam o desenvolvimento da solução.</p>
+  </a>
+  <a class="section-card" href="09-dor&dod/">
+    <h3>9 · DoR e DoD</h3>
+    <p>Critérios de entrada e saída usados para planejar, validar e concluir as entregas.</p>
+  </a>
+  <a class="section-card" href="10-backlog/">
+    <h3>10 · Backlog de Produto</h3>
+    <p>Organização, refinamento e priorização dos itens que compõem o produto e o MVP.</p>
+  </a>
   <a class="section-card" href="11-licoes/">
     <h3>11 · Lições</h3>
     <p>Lições aprendidas por unidade, desafios enfrentados e ações de melhoria.</p>

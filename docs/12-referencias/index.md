@@ -16,13 +16,13 @@ Esta seção lista todas as referências utilizadas na elaboração do Documento
 
 **[3]** CEDISUNB. **GitHub - CedisUnB/Nativo: Aplicativo Tradutor de Línguas Indígenas**. 2025. Disponível em: <https://github.com/CedisUnB/Nativo>. Acesso em: 12 abr. 2026.
 
-> Repositório original do aplicativo Nativo, desenvolvido como projeto de TCC. Utilizado na [Análise Documental (4.1)](../04-requisitos/atividades.md) para identificação de funcionalidades legadas e gargalos técnicos.
+> Repositório original do aplicativo Nativo, desenvolvido como projeto de TCC. Utilizado na [Análise Documental (5.1)](../05-requisitos/atividades.md) para identificação de funcionalidades legadas e gargalos técnicos.
 
 ---
 
 **[4]** MARSICANO, George. **Requisitos de Software: a comunicação é tudo**. v. 1.1, Draft. 18 mar. 2026.
 
-> Material base da disciplina de Requisitos de Software. Fundamenta as escolhas metodológicas de ER descritas na [Seção 4](../04-requisitos/index.md) e orienta a estrutura do processo de validação da [Seção 6.3](../06-interacao/validacao.md).
+> Material base da disciplina de Requisitos de Software. Fundamenta as escolhas metodológicas de ER descritas na [Seção 5](../05-requisitos/index.md) e orienta a estrutura do processo de validação da [Seção 7.3](../07-interacao/validacao.md).
 
 ---
 

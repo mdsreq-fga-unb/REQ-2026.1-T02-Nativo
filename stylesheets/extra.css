@@ -107,17 +107,44 @@ body, .md-typeset {
 .md-tabs {
   background-color: var(--nativo-evergreen) !important;
   border-top: 1px solid rgba(246, 233, 217, 0.12);
+  min-height: 2.5rem;
+  overflow-y: visible;
+}
+
+.md-tabs__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.md-tabs__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.md-tabs__item {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
 }
 
 .md-tabs__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-family: var(--nativo-font-body);
   font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
+  font-size: 0.70rem;
+  letter-spacing: 0.015em;
   color: rgba(246, 233, 217, 0.7) !important;
   text-transform: uppercase;
   opacity: 1 !important;
   transition: color 0.2s ease;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .md-tabs__link:hover,

@@ -8,7 +8,7 @@ Esta seção apresenta as entregas das unidades.
     <p>Entregas referentes à unidade 1.</p>
   </a>
   <a class="section-card" href="unidade2/">
-    <h3>1.2 Introdução ao Negócio</h3>
+    <h3>Unidade 2</h3>
     <p>Entregas referentes à unidade 2.</p>
   </a>
 </div>

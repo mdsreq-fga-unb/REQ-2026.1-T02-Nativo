@@ -61,6 +61,13 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
 
 ---
 
+## Integrantes da Equipe
+
+|  |  |  |
+| :---: | :---: | :---: |
+| <a href="https://github.com/314dro" target="_blank"><img src="https://github.com/314dro.png?size=120" alt="Pedro Silva" width="96"><br>Pedro Silva</a> | <a href="https://github.com/andrehsb" target="_blank"><img src="https://github.com/andrehsb.png?size=120" alt="Andre Henrique" width="96"><br>Andre Henrique</a> | <a href="https://github.com/jsalless" target="_blank"><img src="https://github.com/jsalless.png?size=120" alt="Johnnatan Salles" width="96"><br>Johnnatan Salles</a> |
+| <a href="https://github.com/giovannafg" target="_blank"><img src="https://github.com/giovannafg.png?size=120" alt="Giovanna Felipe" width="96"><br>Giovanna Felipe</a> | <a href="https://github.com/artmendess" target="_blank"><img src="https://github.com/artmendess.png?size=120" alt="Arthur Mendes" width="96"><br>Arthur Mendes</a> | <a href="https://github.com/Renurin" target="_blank"><img src="https://github.com/Renurin.png?size=120" alt="Renan Camara" width="96"><br>Renan Camara</a> |
+
 ## Histórico de Revisão
 
 | Data | Versão | Descrição | Autor |

@@ -13,6 +13,6 @@ Esta seção reúne os requisitos que orientam o desenvolvimento da solução, c
   </a>
   <a class="section-card" href="matriz/">
     <h3>8.3 Matriz-síntese de Rastreabilidade</h3>
-    <p>Conjunto de critérios de qualidade, desempenho, segurança e usabilidade que complementam a solução.</p>
+    <p>Relação entre objetivos, requisitos e entregas para acompanhar a rastreabilidade da solução.</p>
   </a>
 </div>

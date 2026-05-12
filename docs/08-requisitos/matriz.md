@@ -12,4 +12,3 @@ A matriz, a seguir, representa a rastreabilidade entre objetivos específicos (O
 | OE4 | OE3 | CP6 | VN6 | RF17, RF21, RF23, RF29, RF30, RF31, RF32, RF33 | RNF03 |
 | OE2 | OE3 | CP7 | VN7 | RF34, RF35, RF36 | RNF04 |
 | OE5 | OE2 | CP8 | VN8 | RF35, RF37, RF38, RF39, RF40, RF41, RF43 | RNF04 |
-| OE5 | OE3 | CP7 | VN7 | — | RNF03 |

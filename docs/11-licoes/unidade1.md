@@ -10,7 +10,7 @@ Durante a escrita do documento de visão de produto e projeto, algumas lições 
 
 ## **Dificuldades e Ações para Superá-las**
 
-### **3. Dificuldades de entender o real escopo do projeto**  
+3. **Dificuldades de entender o real escopo do projeto**  
    * **Desafio:** No início, a equipe teve muita dificuldade em identificar e articular qual era o verdadeiro problema que o projeto precisava resolver. Tínhamos várias ideias de funcionalidades (como criar gamificação e feed social), mas não conseguíamos definir claramente o *objetivo* por trás delas. O grande desafio foi sair da mentalidade focada apenas em "quais telas vamos fazer" para entender o "por que estamos fazendo isso", demorando a perceber que a dor real a ser atacada era a baixa adesão e a falta de engajamento da comunidade com a plataforma.
 
    * **Como foi superado**: Esse obstáculo foi superado por meio de debates internos e reuniões de alinhamento com a representante do projeto. Ao investigar a fundo o cenário atual da aldeia, a equipe conseguiu mudar a perspectiva e entender que o nosso objetivo central não é apenas entregar novos recursos de software, mas sim criar mecanismos que promovam a retenção e o uso contínuo da língua. Com essa clareza, conseguimos definir o problema central e estruturar os Objetivos Específicos (OEs) no Documento de Visão, o que acabou destravando todo o resto do nosso planejamento.

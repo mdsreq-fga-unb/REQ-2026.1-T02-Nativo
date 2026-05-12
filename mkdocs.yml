@@ -100,7 +100,7 @@ nav:
     - 4.2 Quadro Comparativo: 04-estrategias/comparativo.md
     - 4.3 Justificativa: 04-estrategias/justificativa.md
 
-  - 5. Requisitos:
+  - 5. Engenharia de Requisitos:
     - Visão Geral: 05-engenhariaRequisitos/index.md
     - 5.1 Atividades e Técnicas de ER: 05-engenhariaRequisitos/atividades.md
     - 5.2 ER e o OpenUP: 05-engenhariaRequisitos/mapeamento.md
@@ -122,6 +122,7 @@ nav:
     - Visão Geral: 08-requisitos/index.md
     - 8.1 Requisitos Funcionais: 08-requisitos/rf.md
     - 8.2 Requisitos Não Funcionais: 08-requisitos/rnf.md
+    - 8.3 Matriz-síntese de Rastreabilidade: 08-requisitos/matriz.md
 
   - 9. DoR e DoD:
     - Visão Geral: 09-dor&dod/index.md

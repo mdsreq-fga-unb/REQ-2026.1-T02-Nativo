@@ -1,6 +1,8 @@
 # 9 · DoR e DoD
 
-Esta seção apresenta os critérios usados para preparar e encerrar itens de trabalho no backlog. A Definition of Ready (DoR) mostra quando uma demanda está madura para entrar em desenvolvimento, enquanto a Definition of Done (DoD) define o que precisa estar concluído para que a entrega seja considerada finalizada.
+Para apoiar a condução iterativa e incremental do projeto Nativo, foram definidos critérios de Definition of Ready (DoR) e Definition of Done (DoD). Esses acordos têm como finalidade tornar explícito quando um item está suficientemente preparado para ser desenvolvido e quando uma entrega pode ser considerada efetivamente concluída.
+
+A adoção desses critérios se relaciona diretamente ao processo de validação definido para o projeto, no qual as histórias de usuário devem estar claras antes de entrarem em desenvolvimento e os incrementos produzidos precisam passar por testes, integração e validação funcional antes de compor a versão final da aplicação. Além disso, esses acordos contribuem para manter a rastreabilidade entre os objetivos específicos, as características do produto, os requisitos e as entregas realizadas ao longo das iterações.
 
 <div class="section-cards">
   <a class="section-card" href="dor/">

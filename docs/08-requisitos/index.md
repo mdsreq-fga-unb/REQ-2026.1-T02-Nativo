@@ -11,4 +11,8 @@ Esta seção reúne os requisitos que orientam o desenvolvimento da solução, c
     <h3>8.2 Lista de Requisitos Não Funcionais</h3>
     <p>Conjunto de critérios de qualidade, desempenho, segurança e usabilidade que complementam a solução.</p>
   </a>
+  <a class="section-card" href="matriz/">
+    <h3>8.3 Matriz-síntese de Rastreabilidade</h3>
+    <p>Conjunto de critérios de qualidade, desempenho, segurança e usabilidade que complementam a solução.</p>
+  </a>
 </div>

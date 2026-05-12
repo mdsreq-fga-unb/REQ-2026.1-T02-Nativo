@@ -101,9 +101,9 @@ nav:
     - 4.3 Justificativa: 04-estrategias/justificativa.md
 
   - 5. Requisitos:
-    - Visão Geral: 05-requisitos/index.md
-    - 5.1 Atividades e Técnicas de ER: 05-requisitos/atividades.md
-    - 5.2 ER e o OpenUP: 05-requisitos/mapeamento.md
+    - Visão Geral: 05-engenhariaRequisitos/index.md
+    - 5.1 Atividades e Técnicas de ER: 05-engenhariaRequisitos/atividades.md
+    - 5.2 ER e o OpenUP: 05-engenhariaRequisitos/mapeamento.md
 
   - 6. Cronograma:
     - Visão Geral: 06-cronograma/index.md

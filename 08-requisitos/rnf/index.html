@@ -16,7 +16,7 @@
         <link rel="prev" href="../rf/">
       
       
-        <link rel="next" href="../../09-dor%26dod/">
+        <link rel="next" href="../matriz/">
       
       
         
@@ -78,6 +78,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#82-lista-de-requisitos-nao-funcionais" class="md-skip">
+          Pular para conteúdo
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -347,7 +352,7 @@
   
     
   
-  5. Requisitos
+  5. Engenharia de Requisitos
 
         </a>
       </li>
@@ -1534,7 +1539,7 @@
   <span class="md-ellipsis">
     
   
-    5. Requisitos
+    5. Engenharia de Requisitos
   
 
     
@@ -1556,7 +1561,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    5. Requisitos
+    5. Engenharia de Requisitos
   
 
           </label>
@@ -2008,6 +2013,8 @@
       
         
       
+        
+      
     
     
     
@@ -2106,6 +2113,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -2124,6 +2133,34 @@
 
       </a>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matriz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.3 Matriz-síntese de Rastreabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2602,6 +2639,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -2618,9 +2657,25 @@
 
 
 
-  <h1>8.2 Requisitos Não Funcionais</h1>
-
-
+<h1 id="82-lista-de-requisitos-nao-funcionais">8.2 · Lista de Requisitos Não Funcionais<a class="headerlink" href="#82-lista-de-requisitos-nao-funcionais" title="Permanent link">&para;</a></h1>
+<p>Os requisitos não funcionais definem critérios de qualidade do sistema Nativo. A seguir é apresentado um conjunto preliminar dos requisitos não funcionais:</p>
+<ul>
+<li>
+<p><strong>RNF01 - Usabilidade</strong>: A interface deve permitir que os usuários realizem as ações principais da aplicação, como buscar traduções, acessar mídias associadas e interagir com publicações, com navegação clara e consistente, sem necessidade de suporte externo, em no máximo 2 interações para tradução e no máximo 3 cliques para rede social.</p>
+</li>
+<li>
+<p><strong>RNF02 - Desempenho</strong>: O sistema deve suportar até 250 usuários simultâneos em funcionalidades síncronas e até 1.000 usuários simultâneos nas demais funcionalidades da aplicação, mantendo a estabilidade do serviço durante o uso concorrente.</p>
+</li>
+<li>
+<p><strong>RNF03 - Segurança e moderação</strong>: O sistema deve restringir as funcionalidades administrativas e de moderação aos perfis autorizados e manter registros das denúncias e ações de moderação realizadas, de modo a preservar a segurança e a rastreabilidade do ambiente comunitário.</p>
+</li>
+<li>
+<p><strong>RNF04 - Disponibilidade em baixa conectividade</strong>: O aplicativo deve manter disponíveis para consulta as traduções previamente sincronizadas quando o dispositivo estiver sem acesso à internet, garantindo o uso essencial da aplicação em cenários de baixa &lt;100kbps, ou nenhuma conectividade.</p>
+</li>
+<li>
+<p><strong>RNF05 - Restrição de implementação</strong>: O sistema deve ser desenvolvido utilizando React Native no frontend, Python com Flask no backend e Firebase para persistência e armazenamento de arquivos, mantendo a comunicação entre os componentes por meio de APIs RESTful.</p>
+</li>
+</ul>
 
 
 

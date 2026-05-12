@@ -25,8 +25,8 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
     <h3>4 · Estratégias</h3>
     <p>Processo adotado (OpenUP), quadro comparativo e justificativa da escolha.</p>
   </a>
-  <a class="section-card" href="05-requisitos/">
-    <h3>5 · Requisitos</h3>
+  <a class="section-card" href="05-engenhariaRequisitos/">
+    <h3>5 · Engenharia de Requisitos</h3>
     <p>Atividades e técnicas de engenharia de requisitos por fase do OpenUP.</p>
   </a>
   <a class="section-card" href="06-cronograma/">

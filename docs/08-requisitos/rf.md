@@ -4,7 +4,7 @@ Os requisitos funcionais estabelecem um consenso no qual fomentam a implementaç
 
 | ID | Nome do requisito | Descrição |
 | --- | --- | --- |
-| RF01 | Baixar traduções | Permitir que os usuários baixem as traduções textuais e em áudio. |
+| RF01 | Baixar traduções |  Permitir que os usuários façam download  das traduções textuais e auditivas. |
 | RF02 | Cadastrar vídeo | Permitir o cadastro de vídeos, pelos administradores e moderadores, ao sistema. |
 | RF03 | Associar vídeo à tradução | Permitir que administradores e moderadores vinculem vídeos cadastrados a uma tradução específica. |
 | RF04 | Visualizar vídeo | Permitir que os usuários visualizem os vídeos vinculados a uma tradução. |
@@ -26,26 +26,21 @@ Os requisitos funcionais estabelecem um consenso no qual fomentam a implementaç
 | RF20 | Criar publicação no feed | Permitir que todos os usuários publiquem conteúdos na área de feed. |
 | RF21 | Editar publicação | Permitir que os usuários editem suas próprias publicações no feed. |
 | RF22 | Acessar publicação | Permitir que todos os usuários visualizem publicações de outros usuários. |
-| RF23 | Excluir publicação | Permitir que o autor da publicação, professores, administradores e moderadores excluam uma publicação. |
+| RF23 | Excluir publicação | Permitir que o autor da publicação e moderadores excluam uma publicação. |
 | RF24 | Interagir com a publicação | Permitir que todos os usuários interajam com as publicações postadas no app. |
 | RF25 | Denunciar publicação | Permitir que todos os usuários denunciem publicações postadas. |
-| RF26 | Criar níveis de acesso | Permitir que administradores criem os papéis dos usuários na aplicação. |
-| RF27 | Editar níveis de acesso | Permitir que administradores alterem os papéis dos usuários da aplicação. |
-| RF28 | Visualizar níveis de acesso | Permitir que administradores visualizem os papéis dos usuários da aplicação. |
-| RF29 | Excluir níveis de acesso | Permitir que administradores excluam os papéis dos usuários da aplicação. |
-| RF30 | Candidatar-se a professor | Permitir que usuários solicitem o papel de professor. |
-| RF31 | Banir usuário | Permitir que moderadores banam usuários da aplicação. |
-| RF32 | Listar denúncias | Permitir que moderadores e administradores visualizem as denúncias realizadas na aplicação. |
-| RF33 | Gerir denúncias | Permitir que moderadores e administradores atualizem o status das denúncias feitas na aplicação. |
-| RF34 | Buscar traduções | Permitir que os usuários encontrem traduções já cadastradas pelos professores. |
-| RF35 | Denunciar tradução | Permitir que os usuários denunciem traduções incorretas. |
-| RF36 | Exibir insígnia | Permitir que o usuário apresente sua insígnia no app. |
-| RF37 | Criar insígnia | Permitir que administradores, professores e moderadores criem insígnias. |
-| RF38 | Visualizar perfil | Permitir que os usuários visualizem seus perfis com conquistas, dados pessoais, histórico de traduções e traduções favoritas. |
-| RF39 | Editar perfil | Permitir que os usuários editem seus perfis. |
-| RF40 | Recuperar senha | Permitir que o usuário recupere sua senha por e-mail. |
-| RF41 | Listar histórico de traduções | Permitir que os usuários visualizem o histórico de traduções realizadas, com data, fonte (origem) e resultado. |
-| RF42 | Favoritar tradução | Permitir que o usuário marque traduções como favoritas. |
-| RF43 | Listar favoritos | Permitir que o usuário visualize suas traduções favoritas. |
-| RF44 | Compartilhar eventos | Permitir que o usuário compartilhe eventos da comunidade na rede social. |
-| RF45 | Tradução sem login | Permitir que o usuário traduza um discurso sem precisar fazer login. |
+| RF26 | Candidatar-se a professor | Permitir que usuários solicitem o papel de professor. |
+| RF27 | Banir usuário | Permitir que moderadores banam usuários da aplicação. |
+| RF28 | Listar denúncias | Permitir que moderadores e administradores visualizem as denúncias realizadas na aplicação. |
+| RF29 | Gerir denúncias | Permitir que moderadores e administradores atualizem o status das denúncias feitas na aplicação. |
+| RF30 | Buscar traduções | Permitir que os usuários encontrem traduções já cadastradas pelos professores. |
+| RF31 | Denunciar tradução | Permitir que os usuários denunciem traduções incorretas. |
+| RF32 | Compartilhar insígnia | Permitir que o usuário compartilhe a sua insígia com a rede social. |
+| RF33 | Criar insígnia | Permitir que administradores, professores e moderadores criem insígnias. |
+| RF34 | Editar perfil | Permitir que os usuários editem seus perfis. |
+| RF35 | Listar histórico de traduções | Permitir que os usuários visualizem o histórico de traduções realizadas, com data, fonte (origem) e resultado. |
+| RF36 | Recuperar senha | Permitir que o usuário recupere sua senha por e-mail. |
+| RF37 | Favoritar tradução | Permitir que o usuário marque traduções como favoritas. |
+| RF38 | Listar favoritos | Permitir que o usuário visualize suas traduções favoritas. |
+| RF39 | Compartilhar eventos | Permitir que o usuário compartilhe eventos da comunidade na rede social. |
+| RF40 | Tradução sem login | Permitir que o usuário traduza um discurso sem precisar fazer login. |

@@ -22,10 +22,9 @@ A documentação será disponibilizada em `http://localhost:8000`
 
 | Foto | Nome |
 | :---: | :--- |
-| ![Pedro Silva](/docs/assets/fotos/pedro.jpg) | **Pedro Silva** |
-| ![André Henrique](/docs/assets/fotos/andre.jpg) | **André Henrique** |
-| ![Johnnatan Salles](/docs/assets/fotos/johnnatan.jpg) | **Johnnatan Salles** |
-| ![Giovanna Felipe](/docs/assets/fotos/giovanna.jpg) | **Giovanna Felipe** |
-| ![Arthur Mendes](/docs/assets/fotos/arthur.jpg) | **Arthur Mendes** |
-| ![Renan Câmara](/docs/assets/fotos/renan.jpg) | **Renan Câmara** |
-
+| ![Pedro Silva](https://github.com/314dro.png?size=100) | **Pedro Silva** |
+| ![André Henrique](https://github.com/andrehsb.png?size=100) | **André Henrique** |
+| ![Johnnatan Salles](https://github.com/jsalless.png?size=100) | **Johnnatan Salles** |
+| ![Giovanna Felipe](https://github.com/giovannafg.png?size=100) | **Giovanna Felipe** |
+| ![Arthur Mendes](https://github.com/artmendess.png?size=100) | **Arthur Mendes** |
+| ![Renan Câmara](https://github.com/Renurin.png?size=100) | **Renan Câmara** |

@@ -4,27 +4,27 @@
 
 Foco: Desenvolvimento iterativo e validação contínua.
 
-## **Iteração 5 (11/05 a 19/05)**  
-  * **Objetivos:** Validar a arquitetura base (Prova de Conceito).  
-  * **Atividades:** Implementação do CP1 (Sincronização Offline) e testes de comunicação com o Firebase.  
-  * **Entregáveis:** Arquitetura validada e Documento de Visão finalizado.  
-## **Iteração 6 (21/05 a 27/05)**  
-  * **Objetivos:** Implementar suporte a áudio, vídeo e imagem.  
-  * **Atividades:** Desenvolvimento do CP2 (Multimídia), testes de desenvolvedor e validação funcional com a representante.  
-  * **Entregáveis:** Módulo multimídia integrado e validado.  
-## **Iteração 7 (28/05 a 03/06)**  
-  * **Objetivos:** Desenvolver a criação e resolução de questionários.  
-  * **Atividades:** Desenvolvimento do CP3 (Questionários), testes de desenvolvedor e validação funcional com a representante.  
+## **Iteração 6 (11/05 a 19/05)**  
+  * **Objetivos:** Implementar o suporte a multimídia (CP5).  
+  * **Atividades:** Desenvolvimento do cadastro e reprodução de áudios (CP5), com verificação de maturidade via DoR; codificação dos módulos principais de mídia; testes unitários e validação do incremento conforme a DoD.  
+  * **Entregáveis:** Incremento funcional de Multimídia validado e documentação atualizada.  
+## **Iteração 7 (21/05 a 27/05)**  
+  * **Objetivos:** Implementar vinculação das mídias às traduções e iniciar o módulo pedagógico (CP1).  
+  * **Atividades:** Implementação da associação e desassociação de mídias e traduções sob validação da DoR, testes de integração e homologação via DoD. Iniciar a implementação do módulo de atividades interativas.  
+  * **Entregáveis:** Sistema de gestão de mídias completo e CP1 Iniciada.  
+## **Iteração 8 (28/05 a 03/06)**  
+  * **Objetivos:** Construir o fluxo principal de criação e resolução de tarefas, habilitar suporte offline para tradução.  
+  * **Atividades:** Levantamento contínuo de regras do módulo pedagógico e download de dados; detalhamento de histórias de usuário guiado pela DoR; codificação da persistência local de dados; testes de desenvolvedor e aplicação de checklists de qualidade baseados na DoD para certificar o funcionamento offline estável; vinculação de artefatos na Matriz de Rastreabilidade.  
   * **Entregáveis:** Módulo de questionários integrado e validado.  
-## **Iteração 8 (04/06 a 10/06)**  
-  * **Objetivos:** Implementar pontuação e perfis de usuário.  
-  * **Atividades:** Desenvolvimento do CP6 (Gamificação) e CP7 (Perfis), testes de desenvolvedor e validação funcional com a representante.  
-  * **Entregáveis:** Sistema de gamificação integrado e validado.  
-## **Iteração 9 (11/06 a 17/06)**  
-  * **Objetivos:** Desenvolver o feed social e o painel de moderação.  
-  * **Atividades:** Desenvolvimento do CP4 (Feed) e CP5 (Moderação), testes de desenvolvedor e validação funcional com a representante.  
-  * **Entregáveis:** Feed e painel de moderação integrados e validados.  
-## **Iteração 10 (18/06 a 24/06)**  
-  * **Objetivos:** Integrar sistema e verificar rastreabilidade.  
-  * **Atividades:** Refinamento de interface, verificação da Matriz de Rastreabilidade e testes de integração, verificando se todos os *User Stories* atendem aos Objetivos Específicos (OEs).  
-  * **Entregáveis:** Primeira versão da aplicação.
+## **Iteração 9 (04/06 a 10/06)**  
+  * **Objetivos:** Concluir as ferramentas de edição de atividades e sistema de administração de acesso.  
+  * **Atividades:** Desenvolvimento das interfaces de edição de atividades do professor, desenvolvimento do sistema de gerenciamento de cargos de usuário (CP3), validação dos incrementos via checklists da DoD.  
+  * **Entregáveis:** Sistema de atividades integrado e validado.  
+## **Iteração 10 (11/06 a 17/06)**  
+  * **Objetivos:** Desenvolver o Sistema de gamificação.  
+  * **Atividades:** Levantamento e refinamento das regras de negócio do sistema de pontuação (definindo quantos pontos cada atividade concluída ou tradução realizada gera para o usuário); detalhamento dos critérios de aceitação para a criação e compartilhamento de insígnias; desenvolvimento da lógica de ganho de pontos e da interface de exibição de conquistas;  
+  * **Entregáveis:** Mecanismo de pontuação gamificado operacional, módulo de insígnias integrado e regras de recompensa validadas com a cliente.  
+## **Iteração 11 (18/06 a 24/06)**  
+  * **Objetivos:** Implementar funcionalidades do perfil do usuário (CP3) e auditoria completa de rastreabilidade sistêmica global.  
+  * **Atividades:** Desenvolvimento das funcionalidades de adicionar, remover e listar traduções favoritas, e listagem de todo histórico de traduções; Revisão da Matriz de Rastreabilidade para assegurar a relação OE → CP → RF/RNF e homologação do MVP em conformidade com a DoD.  
+  * **Entregáveis:** Recursos de favoritos e histórico ativos no perfil do usuário, e Versão Candidata à Entrega (Release Candidate) totalmente implementada, testada e mapeada na Matriz de Rastreabilidade.

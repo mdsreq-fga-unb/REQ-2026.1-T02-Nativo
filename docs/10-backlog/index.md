@@ -7,6 +7,10 @@ O Backlog de Produto organiza, em ordem de prioridade, todas as entregas previst
     <h3>10.1 Backlog Geral</h3>
     <p>Visão geral da composição do backlog, com a organização dos itens, seus agrupamentos e o processo de refinamento.</p>
   </a>
+    <a class="section-card" href="cdu/">
+    <h3>Casos de Uso</h3>
+    <p>Fluxos de cada caso de uso apresentado no Backlog Geral</p>
+  </a>
   <a class="section-card" href="mvp/">
     <h3>10.2 Priorização do Backlog Geral e MVP</h3>
     <p>Descrição dos critérios usados para ordenar os itens e selecionar o conjunto mínimo de funcionalidades que compõe o MVP.</p>

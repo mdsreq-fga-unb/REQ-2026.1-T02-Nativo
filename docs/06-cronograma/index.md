@@ -7,7 +7,7 @@ O planejamento do projeto será atualizado de maneira sucessiva, a partir da rea
 | Fase | Período | Foco Principal | Entregas / Marcos |
 | :--- | :---: | :--- | :--- |
 | **Concepção** | 02/04 – 22/04 | Definição de escopo, visão e viabilidade inicial baseada em valor de negócio | Documento de Visão parcial, Definição de Objetivos Específicos e Características do Produto (CPs). |
-| **Elaboração** | 23/04 – 22/05 | Detalhes de usabilidade, modelagem de interface, refatoração arquitetural (PoC) e fixação do MVP | Lista de Requisitos consolidada, User Stories, Protótipos validados e Prova de Conceito (PoC) estável. |
+| **Elaboração** | 23/04 – 22/05 | Detalhes de usabilidade, modelagem de interface, refatoração arquitetural (PoC) e fixação do MVP | Lista de Requisitos consolidada, Casos de uso, Protótipos validados e Prova de Conceito (PoC) estável. |
 | **Construção** | 11/05 – 24/06 | Desenvolvimento incremental (mídia, atividades pedagógicas, gamificação e perfis) com governança DoR/DoD | Incrementos funcionais testados e homologados (mídias, tarefas, conquistas, históricos) e Versão Release Candidate. |
 | **Transição** | 25/06 – 03/07 | Testes de aceitação em campo, homologação de restrições offline e deploy da versão final | Sistema integralmente validado pela representante, APK gerado e Matriz de Rastreabilidade final atualizada (As-Built). |
 

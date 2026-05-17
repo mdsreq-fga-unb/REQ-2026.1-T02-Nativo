@@ -132,7 +132,8 @@ nav:
   - 10. Backlog:
     - Visão Geral: 10-backlog/index.md
     - 10.1 Backlog Geral: 10-backlog/backlog.md
-    - 10.2 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
+    - 10.2 Casos de Uso: 10-backlog/cdu.md
+    - 10.3 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
 
   - 11. Lições:
     - Visão Geral: 11-licoes/index.md

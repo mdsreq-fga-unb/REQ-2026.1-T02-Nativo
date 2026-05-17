@@ -1,4 +1,4 @@
-# 8.2 · Lista de Requisitos Não Funcionais
+# 8.2 · Lista de Requisitos Não Funcionais (Especificação Suplementar)
 
 Os requisitos não funcionais definem critérios de qualidade do sistema Nativo. A tabela a seguir apresenta os RNFs com sua categoria segundo a sigla URPS (Usabilidade, Confiabilidade, Desempenho, Segurança).
 

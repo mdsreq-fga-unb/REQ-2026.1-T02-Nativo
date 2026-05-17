@@ -34,6 +34,7 @@
 
 * **Lista de Requisitos (Funcionais e Técnicos):** Compilação, estruturação e formalização de todos os requisitos extraídos da análise do legado e das interações iniciais. Essa listagem unificada serve como o inventário oficial de escopo do sistema que será submetido à filtragem.
 * **User Stories (Histórias de Usuário):** Utilizadas como requisitos funcionais. Descrição das funcionalidades sob a perspectiva dos diferentes perfis, como crianças e professores, mantendo o foco no valor cultural.
+Utilizado para estruturar os requisitos funcionais do sistema. Consiste na identificação dos Atores (como Usuário Comunitário/Criança e Professor/Moderador) e dos Casos de Uso, que descrevem as interações e os fluxos de comportamento do sistema sob a perspectiva de quem o utiliza.
 * **Especificação Suplementar:** Agrupa os requisitos não funcionais (qualidades do sistema, como suporte a cenários de baixa conectividade).
 
 ### **Análise e Consenso:**

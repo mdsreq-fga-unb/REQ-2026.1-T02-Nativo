@@ -1,4 +1,4 @@
-# 8 · DoR e DoD
+# 9 · DoR e DoD
 
 Para apoiar a condução iterativa e incremental do projeto Nativo, foram definidos critérios de Definition of Ready (DoR) e Definition of Done (DoD). Esses acordos têm como finalidade tornar explícito quando um item está suficientemente preparado para ser desenvolvido e quando uma entrega pode ser considerada efetivamente concluída.
 

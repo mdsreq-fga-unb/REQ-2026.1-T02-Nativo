@@ -1,4 +1,4 @@
-# 8.2 Definition of Done (DoD)
+# 9.2 Definition of Done (DoD)
 
 O Definition of Done define os critérios que devem ser atendidos para que uma funcionalidade seja considerada concluída pela equipe. No projeto Nativo, um item não será tratado como finalizado apenas por estar implementado no código; ele deverá demonstrar que entrega valor ao produto, mantém a qualidade técnica esperada e está validado em relação às necessidades do projeto.
 

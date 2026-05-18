@@ -1,4 +1,4 @@
-# 8.1 Definition of Ready (DoR)
+# 9.1 Definition of Ready (DoR)
 
 O Definition of Ready estabelece as condições mínimas para que um Caso de Uso ou cenário da lista de trabalho esteja apto a ser selecionado para uma iteração de desenvolvimento. No contexto do Nativo, um item será considerado pronto quando apresentar informações suficientes para que a equipe consiga implementá-lo com segurança, sem depender de decisões essenciais ainda em aberto.
 

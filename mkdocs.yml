@@ -69,7 +69,8 @@ nav:
 
   - 0. Entregas:
     - Visão Geral: 00-entregas/index.md
-    - Unidade 1: 00-entregas/unidade1.md
+    - 0.1 Unidade 1: 00-entregas/unidade1.md
+    - 0.2 Unidade 2: 00-entregas/unidade2.md
 
   - 1. Cenário:
     - Visão Geral: 01-cenario/index.md

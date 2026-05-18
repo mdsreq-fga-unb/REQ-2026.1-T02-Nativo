@@ -8,7 +8,7 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 | RNF02 | Navegação da tradução | O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial. | Usabilidade |
 | RNF03 | Navegação da rede social | O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial. | Usabilidade |
 | RNF04 | Suporte simultâneo geral | O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta inferior a 3 segundos. | Desempenho |
-| RNF05 | Tempo de carregamento inicial | O aplicativo deve carregar a tela inicial em até 4 segundos em dispositivos Android intermediários sob conexão de internet com largura de banda mínima de 100 kbps e latência máxima de 300 ms. | Desempenho |
+| RNF05 | Tempo de carregamento | Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android intermediários sob conexão de internet com largura de banda mínima de 100 kbps e latência máxima de 300 ms. | Desempenho |
 | RNF06 | Funcionamento offline | O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet. | Confiabilidade |
 | RNF07 | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
 | RNF08 | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |

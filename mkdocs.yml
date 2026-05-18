@@ -133,7 +133,7 @@ nav:
       - Visão Geral: 10-backlog/index.md
       - 10.1 Backlog Geral: 10-backlog/backlog.md
       - 10.2 Casos de Uso:
-        - Visão Geral: 10-backlog/cdu.md
+          - Visão Geral (Menu): 10-backlog/cdu.md
           - UC01 - Gerenciar Atividades: 10-backlog/uc01.md
           - UC02 - Realizar Atividades: 10-backlog/uc02.md
           - UC03 - Gerenciar Insígnias: 10-backlog/uc03.md

@@ -12,5 +12,5 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 | RNF06 | Funcionamento offline | O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet. | Confiabilidade |
 | RNF07 | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
 | RNF08 | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
-| RNF09 | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB por publicação. | Desempenho |
+| RNF09 | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |
 | RNF10 | Ajuste de fonte | O aplicativo deve permitir ao usuário selecionar pelo menos 5 níveis distintos de tamanho de fonte. | Usabilidade |

@@ -45,7 +45,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | RF21 | Atribuir cargos de usuário | Permitir que administradores atribuam permissões específicas (ex: professor, moderador) aos usuários. |
 | RF22 | Editar cargos de usuário | Permitir que administradores modifiquem os níveis de acesso de um usuário existente. |
 | RF23 | Listar cargos de usuário | Permitir que administradores visualizem os cargos disponíveis e quem os ocupa. |
-| RF24 | Excluir cargos de usuário | Permitir que administradores removam um cargo atribuído a um usuário. |
+| RF24 | Desatribuir cargos de usuário | Permitir que administradores removam um cargo atribuído a um usuário. |
 | RF25 | Candidatar-se a professor | Permitir que usuários solicitem oficialmente o papel de professor no sistema. |
 | RF26 | Recuperar senha | Permitir que o usuário recupere o acesso à sua conta via redefinição de senha por e-mail. |
 

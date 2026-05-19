@@ -54,52 +54,52 @@ A tabela abaixo apresenta a distribuição detalhada dos 49 requisitos funcionai
 
 | ID | Requisito Funcional (RF) | Impacto | Esforço | Valor (Imp/Esf) | Quadrante Resultante | Compõe a Entrega? |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| **RF35** | Exibir vídeo | 5 | 1 | 5.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF40** | Reproduzir áudio | 5 | 1 | 5.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF36** | Excluir vídeo | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF38** | Desassociar vídeo | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
-| **RF41** | Excluir áudio | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF43** | Desassociar áudio | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
-| **RF22** | Editar cargos de usuário | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
-| **RF23** | Listar cargos de usuário | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
-| **RF24** | Excluir cargos de usuário | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
 | **RF34** | Cadastrar vídeo | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| **RF35** | Exibir vídeo | 5 | 1 | 5.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| **RF36** | Excluir vídeo | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
 | **RF37** | Associar vídeo | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
+| **RF38** | Desassociar vídeo | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
 | **RF39** | Cadastrar áudio | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| **RF40** | Reproduzir áudio | 5 | 1 | 5.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| **RF41** | Excluir áudio | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
 | **RF42** | Associar áudio | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
+| **RF43** | Desassociar áudio | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
 | **RF25** | Candidatar-se a professor | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
-| **RF20** | Banir usuário | 4 | 2 | 2.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
-| **RF21** | Atribuir cargos de usuário | 4 | 2 | 2.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
+| **RF49** | Baixar traduções (Acesso Offline) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
+| **RF26** | Recuperar senha | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
 | **RF01** | Criar atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
+| **RF02** | Listar atividades educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
 | **RF03** | Responder atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
 | **RF04** | Visualizar resultado da atividade | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **RF02** | Listar atividades educacional | 4 | 4 | 1.00 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
-| **RF05** | Editar atividade educacional | 4 | 4 | 1.00 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **RF06** | Excluir atividade educacional | 4 | 4 | 1.00 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **RF26** | Recuperar senha | 4 | 4 | 1.00 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **RF49** | Baixar traduções (Acesso Offline) | 5 | 5 | 1.00 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **RF09** | Excluir insígnias | 3 | 1 | 3.00 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
-| **RF48** | Listar insígnias | 3 | 1 | 3.00 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
-| **RF44** | Editar usuário | 3 | 1 | 3.00 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF46** | Favoritar tradução | 3 | 1 | 3.00 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF47** | Listar traduções favoritadas | 3 | 1 | 3.00 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
+| **RF05** | Editar atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| **RF06** | Excluir atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
 | **RF07** | Criar insígnia | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
 | **RF08** | Editar insígnia | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
+| **RF09** | Excluir insígnias | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
+| **RF20** | Banir usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
+| **RF27** | Criar denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF21** | Atribuir cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
+| **RF22** | Editar cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
+| **RF23** | Listar cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
+| **RF24** | Desatribuir cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
+| **RF28** | Atualizar status de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF15** | Criar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
+| **RF16** | Editar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
+| **RF17** | Listar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
+| **RF18** | Excluir eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
+| **RF29** | Listar denúncias | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF19** | Compartilhar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
 | **RF45** | Listar histórico de traduções | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF15** | Criar eventos | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF16** | Editar eventos | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF17** | Listar eventos | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF18** | Excluir eventos | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF19** | Compartilhar eventos | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF27** | Criar denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF28** | Atualizar status de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF29** | Listar denúncias | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF30** | Criar categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF31** | Editar categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF32** | Listar categorias de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF33** | Excluir categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | NÃO |
-| **RF10** | Criar publicação | 2 | 4 | 0.50 | Q4 - Consumidores Tempo | NÃO |
-| **RF11** | Editar publicação | 2 | 4 | 0.50 | Q4 - Consumidores Tempo | NÃO |
-| **RF12** | Listar publicações | 2 | 4 | 0.50 | Q4 - Consumidores Tempo | NÃO |
-| **RF13** | Excluir publicação | 2 | 4 | 0.50 | Q4 - Consumidores Tempo | NÃO |
-| **RF14** | Interagir com a publicação | 2 | 4 | 0.50 | Q4 - Consumidores Tempo | NÃO |
+| **RF46** | Favoritar tradução | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
+| **RF47** | Listar traduções favoritadas | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
+| **RF30** | Criar categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF44** | Editar usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
+| **RF48** | Listar insígnias | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
+| **RF31** | Editar categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF32** | Listar categorias de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF33** | Excluir categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
+| **RF10** | Criar publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
+| **RF11** | Editar publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
+| **RF12** | Listar publicações | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
+| **RF13** | Excluir publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
+| **RF14** | Interagir com a publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |

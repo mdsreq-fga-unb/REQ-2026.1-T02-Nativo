@@ -178,20 +178,27 @@ body, .md-typeset {
     opacity: 1 !important;
     transition: color 0.2s ease;
   }
+}
 
-  /* esconder scrollbar visualmente mas ainda permitir scroll por touch/trackpad/shift+wheel */
-  .md-tabs__list::-webkit-scrollbar {
-    height: 8px;
-  }
-  .md-tabs__list::-webkit-scrollbar-thumb {
-    background: rgba(246,233,217,0.08);
-    border-radius: 8px;
-  }
-  .md-tabs__list::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  @supports (scrollbar-width: thin) {
-    .md-tabs__list { scrollbar-width: thin; scrollbar-color: rgba(246,233,217,0.08) transparent; }
+ /* scrollbar visível com cor da marca */
+.md-tabs__list::-webkit-scrollbar {
+  height: 5px;
+}
+.md-tabs__list::-webkit-scrollbar-thumb {
+  background: var(--nativo-cream) !important; /* ALTURA DA ALTERAÇÃO: Mudado para creme */
+  border-radius: 8px;
+}
+.md-tabs__list::-webkit-scrollbar-thumb:hover {
+  background: var(--nativo-cinnamon) !important; /* Invertido para marrom no hover para dar destaque ao passar o mouse */
+}
+.md-tabs__list::-webkit-scrollbar-track {
+  background: transparent !important; /* Mudado para transparente para o batedor creme contrastar com o cabeçalho */
+  border-radius: 8px;
+}
+@supports (scrollbar-width: thin) {
+  .md-tabs__list { 
+    scrollbar-width: thin; 
+    scrollbar-color: var(--nativo-cream) transparent !important; /* ALTERAÇÃO PARA FIREFOX: batedor creme, pista transparente */
   }
 }
 

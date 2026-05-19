@@ -1,97 +1,97 @@
-# 8.1 · Lista de Requisitos Funcionais
+# 8.1 · Lista de Requisitos Funcionais (Especificação Suplementar)
 
-Os requisitos funcionais estabelecem um consenso no qual fomentam a implementação dos objetivos planejados para o app Nativo. A seguir são apresentados um conjunto preliminar dos requisitos funcionais:
+Os requisitos funcionais estabelecem um consenso que fomenta a implementação dos objetivos planejados para o app Nativo. A seguir, é apresentado o escopo atualizado do sistema, totalizando 49 requisitos funcionais organizados de acordo com as Características do Produto (CPs) e os Objetivos Estratégicos (OEs) do projeto. 
 
-* **RF01 - Baixar discurso**: Permitir que os usuários façam download  das traduções textuais e auditivas.
+### (OE1) Aumentar a retenção e o engajamento na plataforma
 
-* **RF02 - Cadastrar vídeo**: Permitir o cadastro de vídeos, pelos administradores e moderadores, ao sistema.
+**CP1 - Criação de Mecanismos interativos de aprendizagem e engajamento**
 
-* **RF03 - Adicionar vídeo**: Permitir a adição de vídeos, pelos administradores e moderadores, às traduções.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF01 | Criar atividade educacional | Permitir que professores criem atividades para os usuários resolverem. |
+| RF02 | Listar atividades educacionais | Permitir que os usuários visualizem a lista de atividades disponíveis para resolução. |
+| RF03 | Responder atividade educacional | Permitir que os usuários submetam respostas às atividades publicadas. |
+| RF04 | Visualizar resultado da atividade | Permitir que os usuários visualizem a correção e a pontuação obtida após responderem a uma atividade. |
+| RF05 | Editar atividade educacional | Permitir que professores, administradores e moderadores editem o conteúdo de uma atividade. |
+| RF06 | Excluir atividade educacional | Permitir que professores, administradores e moderadores excluam uma atividade. |
+| RF07 | Criar insígnia | Permitir que administradores, professores e moderadores criem insígnias de engajamento. |
+| RF08 | Editar insígnia | Permitir que administradores e moderadores alterem o nome, arte ou regras de uma insígnia. |
+| RF09 | Excluir insígnias | Permitir que administradores e moderadores removam insígnias do sistema. |
 
-* **RF04 - Visualizar vídeo**: Permitir a visualização dos usuários aos vídeos adicionados à tradução.
+**CP2 - Criação de Feed Social Comunitário**
 
-* **RF05 - Editar vídeos associados**: Permitir a edição, pelos administradores e moderadores, de qual vídeo está associado à cada tradução.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF10 | Criar publicação | Permitir que todos os usuários publiquem conteúdos na área de feed. |
+| RF11 | Editar publicação | Permitir que os usuários editem suas próprias publicações no feed. |
+| RF12 | Listar publicações | Permitir que os usuários visualizem o histórico de postagens no feed comunitário. |
+| RF13 | Excluir publicação | Permitir que o autor da publicação e moderadores excluam uma postagem. |
+| RF14 | Interagir com a publicação | Permitir que todos os usuários interajam (ex: curtir/comentar) com as publicações postadas. |
+| RF15 | Criar eventos | Permitir que usuários criem eventos da comunidade na plataforma. |
+| RF16 | Editar eventos | Permitir que os criadores de um evento alterem suas informações e datas. |
+| RF17 | Listar eventos | Permitir que os usuários visualizem a agenda de eventos da comunidade. |
+| RF18 | Excluir eventos | Permitir que o criador do evento e moderadores excluam o evento do sistema. |
+| RF19 | Compartilhar eventos | Permitir que o usuário compartilhe eventos da comunidade para outras redes ou usuários. |
 
-* **RF06 - Remover vídeo**: O sistema deve permitir que administradores e moderadores removam a associação (vínculo) entre um vídeo e uma tradução específica.
+---
 
-* **RF07 - Excluir vídeo**: O sistema deve permitir que os moderadores apaguem (excluam definitivamente) um vídeo da base de dados.
+### (OE2) Assegurar a integridade e segurança do acervo cultural
 
-* **RF08 - Cadastrar áudio**:  O Sistema deve permitir o cadastro de áudios, pelos administradores e moderadores, no sistema.
+**CP3 - Controle de usuário**
 
-* **RF09 - Adicionar áudio à tradução**: O sistema deve permitir a adição de áudios, pelos administradores e moderadores, às traduções.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF20 | Banir usuário | Permitir que moderadores e administradores banam usuários infratores da aplicação. |
+| RF21 | Atribuir cargos de usuário | Permitir que administradores atribuam permissões específicas (ex: professor, moderador) aos usuários. |
+| RF22 | Editar cargos de usuário | Permitir que administradores modifiquem os níveis de acesso de um usuário existente. |
+| RF23 | Listar cargos de usuário | Permitir que administradores visualizem os cargos disponíveis e quem os ocupa. |
+| RF24 | Desatribuir cargos de usuário | Permitir que administradores removam um cargo atribuído a um usuário. |
+| RF25 | Candidatar-se a professor | Permitir que usuários solicitem oficialmente o papel de professor no sistema. |
+| RF26 | Recuperar senha | Permitir que o usuário recupere o acesso à sua conta via redefinição de senha por e-mail. |
 
-* **RF10 - Reproduzir áudio**: O sistema deve permitir a reprodução, pelos usuários, dos áudios adicionados às traduções.
+**CP4 - Sistema de denúncias**
 
-* **RF11 - Editar áudio associado**: Permitir a edição, pelos administradores e moderadores, de qual áudio está associado à tradução.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF27 | Criar denúncia | Permitir que os usuários relatem publicações, comportamentos indevidos ou traduções incorretas. |
+| RF28 | Atualizar status de denúncia | Permitir que moderadores e administradores alterem o status (ex: em análise, resolvida) de uma denúncia. |
+| RF29 | Listar denúncias | Permitir que moderadores e administradores visualizem todas as denúncias realizadas na aplicação. |
+| RF30 | Criar categoria de denúncia | Permitir que administradores criem novas classificações para organizar os tipos de denúncia. |
+| RF31 | Editar categoria de denúncia | Permitir que administradores alterem o título ou descrição de uma categoria existente. |
+| RF32 | Listar categorias de denúncia | Permitir que o sistema exiba as categorias disponíveis no momento do preenchimento de uma denúncia. |
+| RF33 | Excluir categoria de denúncia | Permitir que administradores removam categorias de denúncias obsoletas. |
 
-* **RF12 - Remover áudio**: O sistema deve permitir que administradores e moderadores removam a associação (vínculo) entre um áudio e uma tradução específica.
+---
 
-* **RF13 - Excluir áudio**: O sistema deve permitir que os moderadores apaguem (excluam definitivamente) um áudio da base de dados.
+### (OE3) Enriquecer a experiência do usuário na aplicação
 
-* **RF14 - Criar atividade**: O Sistema deve permitir a criação de atividades educacionais pelos professores.
+**CP5 - Suporte a Multimídia nas Traduções**
 
-* **RF15 - Listar atividades**: Permitir que os usuários visualizem a lista de atividades disponíveis para resolução.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF34 | Cadastrar vídeo | Permitir o cadastro de vídeos, pelos administradores e moderadores, ao sistema. |
+| RF35 | Exibir vídeo | Permitir que os usuários visualizem os vídeos vinculados a uma tradução. |
+| RF36 | Excluir vídeo | Permitir que os moderadores apaguem definitivamente um vídeo da base de dados. |
+| RF37 | Associar vídeo | Permitir que administradores e moderadores vinculem vídeos cadastrados a uma tradução específica. |
+| RF38 | Desassociar vídeo | Permitir que administradores e moderadores removam a vinculação entre um vídeo e uma tradução. |
+| RF39 | Cadastrar áudio | Permitir o cadastro de arquivos de áudio, pelos administradores e moderadores, no sistema. |
+| RF40 | Reproduzir áudio | Permitir que os usuários reproduzam os áudios vinculados às traduções. |
+| RF41 | Excluir áudio | Permitir que os moderadores apaguem definitivamente um arquivo de áudio da base de dados. |
+| RF42 | Associar áudio | Permitir que administradores e moderadores vinculem áudios cadastrados a uma tradução específica. |
+| RF43 | Desassociar áudio | Permitir que administradores e moderadores removam a vinculação entre um áudio e uma tradução. |
 
-* **RF16 - Responder atividade**: Permitir que os usuários submetam respostas para as atividades publicadas.
+**CP6 - Perfil de Usuário**
 
-* **RF17 - Visualizar resultado da atividade**: Permitir que os usuários visualizem a correção e a pontuação obtida após responderem a uma atividade.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF44 | Editar usuário | Permitir que os usuários editem as informações pessoais de seus perfis. |
+| RF45 | Listar histórico de traduções | Permitir que os usuários visualizem o histórico de traduções realizadas, com data e resultado. |
+| RF46 | Favoritar tradução | Permitir que o usuário marque traduções específicas como favoritas. |
+| RF47 | Listar traduções favoritadas | Permitir que o usuário visualize rapidamente a lista de suas traduções marcadas como favoritas. |
+| RF48 | Listar insígnias | Permitir que os usuários visualizem as insígnias conquistadas em seus perfis. |
 
-* **RF18 - Editar atividade**: Permitir a edição, por professores, administradores e moderadores, do conteúdo de uma atividade.
+**CP7 - Sincronização e Acesso Offline de Traduções**
 
-* **RF19 - Excluir atividade**: Permitir a exclusão, por professores, administradores e moderadores, de uma atividade.
-
-* **RF20 - Criar publicação**: Permitir a criação de publicações, por todos os usuários da aplicação, na área de feed.
-
-* **RF21 - Editar publicação**: Permitir a edição de publicações, por todos os usuários da aplicação, em sua publicação no feed.
-
-* **RF22 - Acessar publicação**: Permitir o acesso às publicações postadas por outros para todos os usuários da aplicação.
-
-* **RF23 - Excluir publicação**: Permitir a exclusão de publicações pelo usuário dono da publicação, professores, administradores e moderadores.
-
-* **RF24 - Interagir com a publicação**: Permitir que todos usuários interajam com as publicações postadas no app.
-
-* **RF25 - Denunciar publicação**: Permitir que todos os usuários denunciem publicações postadas.
-
-* **RF26 - Gerenciar níveis de acesso**: Permitir que administradores gerenciem papéis dos usuário na aplicação.
-
-* **RF27 - Editar níveis de acesso**: Permitir que administradores editem papéis dos usuários da aplicação.
-
-* **RF28 - Visualizar níveis de acesso**: Permitir que administradores visualizem papéis dos usuários da aplicação.
-
-* **RF29 - Excluir níveis de acesso**: Permitir que administradores excluam papéis dos usuários da aplicação.
-
-* **RF30 - Candidatar à professor**: Permitir a candidatura de usuários para o papel de professor.
-
-* **RF31 - Banir usuário**: Permitir o banimento de usuários pelos moderadores.
-
-* **RF32 - Listar denúncias**: Permitir a visualização das denúncias realizadas pelos usuários. 
-
-* **RF33 - Gerir denúncias**: Permitir a gerência de denúncias feitas na aplicação.
-
-* **RF34 - Buscar traduções**: Permitir a busca de traduções já cadastradas pelos professores.
-
-* **RF35 - Denunciar tradução**: Permitir a denúncia de traduções erradas pelos usuários.
-
-* **RF36 - Obter recompensa**: Permitir que o usuário receba uma recompensa após sua participação e/ou criação em uma atividade e/ou interagir com a rede social.
-
-* **RF37 - Expor recompensa**: Permitir que o usuário exponha sua recompensa no app.
-
-* **RF38 - Criar recompensa**: Permitir que os administradores, professores e moderadores possam criar e cadastrar possíveis recompensas para atividades ou para rede social.
-
-* **RF39 - Visualizar perfil**: Permitir que os usuários visualizem seus perfis com suas conquistas, dados pessoais e traduções favoritas.
-
-* **RF40 - Editar perfil**: Permitir que os usuários editem seus perfis.
-
-* **RF41 - Visualizar histórico de tradução**: Permitir a visualização do histórico de tradução do usuário.
-
-* **RF42 - Alterar fonte**: Permitir a alteração do tamanho da fonte do aplicativo.
-
-* **RF43 - Recuperar senha**: Permitir a recuperação de senha via e-mail.
-
-* **RF44 - Favoritar tradução**: Permitir que o usuário favorite traduções.
-
-* **RF45 - Listar favoritos**: Permitir que o usuário liste traduções favoritas.
-
-* **RF46 - Compartilhar eventos**: Permitir que o usuário compartilhe eventos da comunidade na rede social.
-
-* **RF47 - Tradução sem login**: Permitir que o usuário traduza um discurso sem a obrigação logar.
+| ID | Nome do requisito | Descrição |
+| :--- | :--- | :--- |
+| RF49 | Baixar traduções | Permitir que os usuários façam o download das traduções textuais e auditivas para acesso offline. |

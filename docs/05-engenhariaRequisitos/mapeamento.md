@@ -30,7 +30,7 @@ A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalh
       <td rowspan="3" style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Elaboração</td>
       <td>Declaração</td>
       <td>Documentação essencial com foco no valor cultural e restrições técnicas.</td>
-      <td>User Stories e Especificação Suplementar</td>
+      <td>Casos de Uso e Especificação Suplementar</td>
       <td>Requisitos funcionais e requisitos técnicos/não-funcionais devidamente documentados.</td>
     </tr>
     <tr>

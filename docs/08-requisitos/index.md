@@ -8,7 +8,7 @@ Esta seção reúne os requisitos que orientam o desenvolvimento da solução, c
     <p>Lista das funcionalidades, comportamentos e interações que o sistema deve oferecer aos usuários.</p>
   </a>
   <a class="section-card" href="rnf/">
-    <h3>8.2 Lista de Requisitos Não Funcionais</h3>
+    <h3>8.2 Lista de Requisitos Não Funcionais (Especificação Suplementar)</h3>
     <p>Conjunto de critérios de qualidade, desempenho, segurança e usabilidade que complementam a solução.</p>
   </a>
   <a class="section-card" href="matriz/">

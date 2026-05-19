@@ -2,7 +2,7 @@
 
 Para apoiar a condução iterativa e incremental do projeto Nativo, foram definidos critérios de Definition of Ready (DoR) e Definition of Done (DoD). Esses acordos têm como finalidade tornar explícito quando um item está suficientemente preparado para ser desenvolvido e quando uma entrega pode ser considerada efetivamente concluída.
 
-A adoção desses critérios se relaciona diretamente ao processo de validação definido para o projeto, no qual as histórias de usuário devem estar claras antes de entrarem em desenvolvimento e os incrementos produzidos precisam passar por testes, integração e validação funcional antes de compor a versão final da aplicação. Além disso, esses acordos contribuem para manter a rastreabilidade entre os objetivos específicos, as características do produto, os requisitos e as entregas realizadas ao longo das iterações.
+A adoção desses critérios se relaciona diretamente ao processo de validação definido para o projeto, no qual as especificações e cenários dos Casos de Uso devem estar claros antes de entrarem em desenvolvimento, e os incrementos produzidos precisam passar por testes de cobertura de fluxos, integração e validação funcional antes de compor a versão final da aplicação. Além disso, esses acordos contribuem para manter a rastreabilidade entre os objetivos específicos, as características do produto, os requisitos, os Casos de Uso e as entregas realizadas ao longo das iterações.
 
 <div class="section-cards">
   <a class="section-card" href="dor/">

@@ -1,14 +1,17 @@
 # 8.3 · Matriz-síntese de Rastreabilidade
 
-A matriz, a seguir, representa a rastreabilidade entre objetivos específicos (OE), características de produto (CP), valor de negócio (VN), requisitos funcionais (RFs) e não funcionais (RNFs).
- 
+A matriz a seguir representa a rastreabilidade entre os Objetivos Específicos (OE), Características de Produto (CP), Valores de Negócio (VN), Requisitos Funcionais (RFs) e Requisitos Não Funcionais (RNFs). Essa estrutura garante que todas as funcionalidades e critérios de qualidade desenvolvidos estejam diretamente alinhados às necessidades estratégicas da plataforma Nativo.
+
 | Contribuição principal | Contribuição secundária | CP | VN | RFs relacionados | RNFs relacionados |
-|:---:|:---:|:---:|:---:|---|:---:|
-| OE6 | OE1 | CP1 | VN1 | RF01 | RNF01 |
-| OE1 | OE6 | CP2 | VN2 | RF02, RF03, RF04, RF05, RF06, RF07, RF08, RF09, RF10, RF11, RF12, RF13, RF46 | RNF01 |
-| OE2 | OE5, OE3 | CP3 | VN3 | RF14, RF15, RF16, RF17, RF42 | RNF02 |
-| OE3 | OE2, OE4 | CP4 | VN4 | RF18, RF19, RF20, RF21, RF22, RF23, RF44, RF45 | RNF01, RNF03 |
-| OE4 | OE5 | CP5 | VN5 | RF24, RF25, RF26, RF27, RF28 | RNF03, RNF01 |
-| OE4 | OE3 | CP6 | VN6 | RF17, RF21, RF23, RF29, RF30, RF31, RF32, RF33 | RNF03 |
-| OE2 | OE3 | CP7 | VN7 | RF34, RF35, RF36 | RNF04 |
-| OE5 | OE2 | CP8 | VN8 | RF35, RF37, RF38, RF39, RF40, RF41, RF43 | RNF04 |
+| :---: | :---: | :--- | :---: | :--- | :--- |
+| **OE1** | **OE3** | **CP1** - Mecanismos interativos de aprendizagem e engajamento | **VN1** | RF01 ao RF09 |
+| **OE1** | **OE3** | **CP2** - Feed Social Comunitário | **VN2** | RF10 ao RF19 | RNF03, RNF09 |
+| **OE2** | **OE3** | **CP3** - Controle de usuário | **VN3** | RF20 ao RF26 |
+| **OE2** | **OE3** | **CP4** - Sistema de denúncias | **VN4** | RF27 ao RF33 |
+| **OE3** | **OE1** | **CP5** - Suporte a Multimídia nas Traduções | **VN5** | RF34 ao RF43 | RNF01, RNF02, RNF09 |
+| **OE3** | **OE1** | **CP6** - Perfil de Usuário | **VN6** | RF44 ao RF48 |
+| **OE3** | **OE1** | **CP7** - Sincronização e Acesso Offline de Traduções | **VN7** | RF49 | RNF06 |
+
+**Observação:** Apesar de não estarem mencionados em cada uma das características de produto, os requisitos **RNF04**, **RNF05**, **RNF07**, **RNF08** e **RNF10** (referentes a desempenho, confiabilidade, compatibilidade e usabilidade global) aplicam-se transversalmente a todas as Características de Produto, Requisitos Funcionais e Casos de Uso, por definirem a base da solução. Assim, embora não estejam repetidos em cada linha da matriz de rastreabilidade, eles devem ser considerados válidos, aplicáveis e rastreáveis para todo o produto.
+
+De maneira análoga, o requisito **RNF09** (Escalabilidade de mídia) possui aplicação transversal às características **CP2** e **CP5** , regendo o limite de upload para todas as operações de arquivos vinculadas a esses módulos sem a necessidade de repetição individualizada.

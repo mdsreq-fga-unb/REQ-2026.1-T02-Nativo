@@ -69,7 +69,8 @@ nav:
 
   - 0. Entregas:
     - Visão Geral: 00-entregas/index.md
-    - Unidade 1: 00-entregas/unidade1.md
+    - 0.1 Unidade 1: 00-entregas/unidade1.md
+    - 0.2 Unidade 2: 00-entregas/unidade2.md
 
   - 1. Cenário:
     - Visão Geral: 01-cenario/index.md
@@ -130,13 +131,28 @@ nav:
     - 9.2 Definition of Done (DoD): 09-dor&dod/dod.md
 
   - 10. Backlog:
-    - Visão Geral: 10-backlog/index.md
-    - 10.1 Backlog Geral: 10-backlog/backlog.md
-    - 10.2 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
+      - Visão Geral: 10-backlog/index.md
+      - 10.1 Backlog Geral: 10-backlog/backlog.md
+      - 10.2 Casos de Uso: 10-backlog/cdu.md
+      - UC01 - Gerenciar Atividades: 10-backlog/uc01.md
+      - UC02 - Realizar Atividades: 10-backlog/uc02.md
+      - UC03 - Gerenciar Insígnias: 10-backlog/uc03.md
+      - UC04 - Gerenciar Feed Social: 10-backlog/uc04.md
+      - UC05 - Gerenciar Eventos: 10-backlog/uc05.md
+      - UC06 - Gerenciar Acessos: 10-backlog/uc06.md
+      - UC07 - Gerenciar Credenciais: 10-backlog/uc07.md
+      - UC08 - Moderação de Conteúdo: 10-backlog/uc08.md
+      - UC09 - Categorias de Denúncia: 10-backlog/uc09.md
+      - UC10 - Acervo de Vídeos: 10-backlog/uc10.md
+      - UC11 - Acervo de Áudios: 10-backlog/uc11.md
+      - UC12 - Perfil Pessoal: 10-backlog/uc12.md
+      - UC13 - Sincronização Offline: 10-backlog/uc13.md
+      - 10.3 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
 
   - 11. Lições:
     - Visão Geral: 11-licoes/index.md
     - Unidade 1: 11-licoes/unidade1.md
+    - Unidade 2: 11-licoes/unidade2.md
 
   - 12. Referências:
     - Visão Geral: 12-referencias/index.md

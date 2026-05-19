@@ -1,6 +1,6 @@
 # Visão de Produto e Projeto
 
-<span class="version-badge">Versão 1.13</span>
+<span class="version-badge">Versão 2.2</span>
 
 Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo tradutor de línguas indígenas com foco na língua Munduruku, desenvolvido para apoiar a revitalização linguística na Aldeia Munduruku de Bragança.
 

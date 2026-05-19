@@ -133,6 +133,11 @@ Os itens foram mapeados em quatro quadrantes orientadores para a tomada de decis
 
 Essa abordagem serviu como uma organização inicial e ponto de partida para debates técnicos amadurecidos. Cruzando os dados da matriz com os alinhamentos de regras de negócio feitos com a cliente e as dependências estruturais do sistema, a equipe obteve uma visão holística que evitou escolhas arbitrárias ou individuais, blindando o planejamento e selecionando os requisitos mais críticos para consolidar a experiência principal do aplicativo de forma estável.
 
+## Board do Miro
+
+<iframe width="100%" height="500" src="https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657" title="Matriz de impacto e esforçp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[Matriz de valo e impacto](https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657)
+
 ### Matriz de Priorização
 
 ![](../img/Matriz.png)
@@ -143,7 +148,9 @@ Essa abordagem serviu como uma organização inicial e ponto de partida para deb
 
 ---
 
-## Board do Miro
+### Árvore de Rastreabilidade
+
+
 
 ![](../img/Problema-ObjGeral.png)
 ![](../img/ObjGeral-ObjEsps.png)

@@ -6,8 +6,6 @@ Um item será considerado concluído quando:
 
 * A funcionalidade estiver implementada conforme a especificação textual do Caso de Uso, cobrindo com sucesso o fluxo principal, alternativos e seus critérios de aceitação.
 
-* Os testes de desenvolvedor aplicáveis, incluindo testes unitários e de integração, tiverem sido executados com sucesso.
-
 * O incremento estiver integrado à base principal do projeto sem comprometer funcionalidades existentes.
 
 * O código estiver revisado pela equipe e aderente aos padrões técnicos definidos para o projeto.

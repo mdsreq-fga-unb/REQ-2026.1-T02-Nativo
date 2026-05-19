@@ -6,18 +6,16 @@ Esta seção reúne os artefatos, apresentações e registros de validação ref
 
 ## Apresentação da Unidade
 
-*(Os vídeos e slides oficiais serão adicionados aqui quando finalizados)*
-
 ### Vídeo da Apresentação
 
-<div style="display: flex; justify-content: center; margin: 20px 0;">
-  <iframe width="800" height="450" src="https://www.youtube.com/embed/ID_DO_SEU_VIDEO_AQUI" title="Apresentação Unidade 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=7c11bae5-28c3-4bf5-99d3-3587cb6ff0a8&embed=%7B%22ust%22%3Afalse%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Apresentação unidade 2-20260518_234336-Gravação de Reunião.mp4"></iframe>
 </div>
 
 ### Slides
 
 <div style="margin: 20px 0; overflow: hidden; background-color: #111;">
-  <iframe src="../../assets/unidade2/Unidade2.pdf" title="Visualização dos slides da Unidade 2" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>
+  <iframe src="../../assets/unidade2/Unidade2.pdf" title="Visualização dos slides da Unidade 1" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>
 </div>
 
 <div style="display: flex; gap: 15px; justify-content: center; margin: 20px 0; flex-wrap: wrap;">
@@ -81,9 +79,15 @@ Abaixo estão os registros, players de gravação e atas das reuniões realizada
 
 **Resumo da Reunião:** Avançando para a Fase de Elaboração (Iteração 2 e 3), a equipe traduziu as Características do Produto (CPs) em Histórias de Usuário. Durante a sessão, as "User Stories" foram avaliadas pela cliente utilizando a técnica MoSCoW, separando o que é essencial para o sucesso do projeto daquilo que pode ser tratado como diferencial (desejável) em entregas futuras.
 
+### Priorização MoSCoW 
+
+<div style="margin: 20px 0; overflow: hidden; background-color: #111;">
+  <iframe src="../../assets/unidade2/Histórias de Usuário.pdf" title="Visualização dos slides da Unidade 1" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>
+</div>
+
 ---
 
-### 4. Validação de Funcionalidades (UX/UI e Regras de Negócio)
+### 4. Validação de Funcionalidades
 
 **Objetivo:** Demonstrar o fluxo de usabilidade das novas mecânicas de interação (Feed Social e Gamificação) para captura de feedback (Iteração 3).
 
@@ -109,7 +113,7 @@ Abaixo estão os registros, players de gravação e atas das reuniões realizada
 
 ---
 
-### 6. Priorização Final e Definição do MVP (Miro)
+### 6. Priorização Final e Definição do MVP
 
 **Objetivo:** Aplicar a Matriz de Quadrantes (Impacto no Negócio vs. Dificuldade Técnica) para estabelecer a Baseline oficial do backlog e definir o escopo do MVP (Iteração 4).
 
@@ -128,3 +132,31 @@ Os itens foram mapeados em quatro quadrantes orientadores para a tomada de decis
 * **Baixo Impacto e Alta Dificuldade Técnica:** Definidos como menor prioridade devido ao alto esforço de engenharia sem retorno proporcional imediato para o produto.
 
 Essa abordagem serviu como uma organização inicial e ponto de partida para debates técnicos amadurecidos. Cruzando os dados da matriz com os alinhamentos de regras de negócio feitos com a cliente e as dependências estruturais do sistema, a equipe obteve uma visão holística que evitou escolhas arbitrárias ou individuais, blindando o planejamento e selecionando os requisitos mais críticos para consolidar a experiência principal do aplicativo de forma estável.
+
+### Matriz de Priorização
+
+![](../img/Matriz.png)
+![](../img/Quadrante1.png)
+![](../img/Quadrante2.png)
+![](../img/Quadrante3.png)
+![](../img/Quadrante4.png)
+
+---
+
+## Board do Miro
+
+![](../img/Problema-ObjGeral.png)
+![](../img/ObjGeral-ObjEsps.png)
+![](../img/ObjEsp1-CPs.png)
+![](../img/ObjEsp2-CPs.png)
+![](../img/ObjEsp3-CPs.png)
+![](../img/CP1-Requisitos.png)
+![](../img/CP2-Requisitos.png)
+![](../img/CP3-Requisitos.png)
+![](../img/CP4-Requisitos.png)
+![](../img/CP5-Requisitos.png)
+![](../img/CP6-Requisitos.png)
+![](../img/CP7-Requisitos.png)
+
+---
+

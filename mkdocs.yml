@@ -133,21 +133,20 @@ nav:
   - 10. Backlog:
       - Visão Geral: 10-backlog/index.md
       - 10.1 Backlog Geral: 10-backlog/backlog.md
-      - 10.2 Casos de Uso:
-          - Visão Geral (Menu): 10-backlog/cdu.md
-          - UC01 - Gerenciar Atividades: 10-backlog/uc01.md
-          - UC02 - Realizar Atividades: 10-backlog/uc02.md
-          - UC03 - Gerenciar Insígnias: 10-backlog/uc03.md
-          - UC04 - Gerenciar Feed Social: 10-backlog/uc04.md
-          - UC05 - Gerenciar Eventos: 10-backlog/uc05.md
-          - UC06 - Gerenciar Acessos: 10-backlog/uc06.md
-          - UC07 - Gerenciar Credenciais: 10-backlog/uc07.md
-          - UC08 - Moderação de Conteúdo: 10-backlog/uc08.md
-          - UC09 - Categorias de Denúncia: 10-backlog/uc09.md
-          - UC10 - Acervo de Vídeos: 10-backlog/uc10.md
-          - UC11 - Acervo de Áudios: 10-backlog/uc11.md
-          - UC12 - Perfil Pessoal: 10-backlog/uc12.md
-          - UC13 - Sincronização Offline: 10-backlog/uc13.md
+      - 10.2 Casos de Uso: 10-backlog/cdu.md
+      - UC01 - Gerenciar Atividades: 10-backlog/uc01.md
+      - UC02 - Realizar Atividades: 10-backlog/uc02.md
+      - UC03 - Gerenciar Insígnias: 10-backlog/uc03.md
+      - UC04 - Gerenciar Feed Social: 10-backlog/uc04.md
+      - UC05 - Gerenciar Eventos: 10-backlog/uc05.md
+      - UC06 - Gerenciar Acessos: 10-backlog/uc06.md
+      - UC07 - Gerenciar Credenciais: 10-backlog/uc07.md
+      - UC08 - Moderação de Conteúdo: 10-backlog/uc08.md
+      - UC09 - Categorias de Denúncia: 10-backlog/uc09.md
+      - UC10 - Acervo de Vídeos: 10-backlog/uc10.md
+      - UC11 - Acervo de Áudios: 10-backlog/uc11.md
+      - UC12 - Perfil Pessoal: 10-backlog/uc12.md
+      - UC13 - Sincronização Offline: 10-backlog/uc13.md
       - 10.3 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
 
   - 11. Lições:

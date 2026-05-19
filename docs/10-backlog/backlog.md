@@ -1,4 +1,4 @@
-# 9. BACKLOG GERAL
+# 10.1 Backlog Geral
 
 O backlog geral apresentado a seguir consolida os requisitos funcionais (RFs) previstos para a evolução do aplicativo Nativo. Para evitar redundâncias e facilitar a manutenção da documentação técnica (seguindo as práticas do framework OpenUP), os requisitos foram agrupados logica e estruturalmente em Casos de Uso (UCs) abrangentes.
 

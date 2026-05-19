@@ -1,4 +1,4 @@
-## 10.2 Metodologia de Priorização do Backlog (Impacto vs. Esforço)
+## 10.3 Metodologia de Priorização do Backlog (Impacto vs. Esforço)
 
 Para a definição do escopo do Produto Mínimo Viável (MVP), as Características do Produto (CPs) e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
@@ -7,7 +7,7 @@ A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento p
 1. **Impacto de Negócio (Eixo Y):** Mensurado em uma escala linear de 1 a 5, avaliando o quão crítica é a funcionalidade para atingir os Objetivos Estratégicos (OEs) do sistema, focando na mitigação do problema central 
 2. **Esforço Técnico (Eixo X):** Estimado por meio de uma dinâmica de avaliação por consenso, baseada na projeção de horas totais de desenvolvimento necessárias para a implementação completa de cada item de escopo.
 
-### 10.2.1 Critérios do Eixo Y: Analise de Impacto via Técnica MoSCoW
+### 10.3.1 Critérios do Eixo Y: Análise de Impacto via Técnica MoSCoW
 
 A nota de impacto no Eixo Y foi derivada de uma priorização prévia realizada pela cliente, utilizando a técnica MoSCoW. O mapeamento seguiu as seguintes diretrizes objetivas:
 
@@ -16,7 +16,7 @@ A nota de impacto no Eixo Y foi derivada de uma priorização prévia realizada 
 * **Notas 2 e 3 (Médio / Baixo Impacto):** Requisitos categorizados pela cliente como *Could Have*.
 * **Nota 1 (Sem Impacto Imediato):** Requisitos categorizados pela cliente como *Won't Have*.
 
-### 10.2.2 Critérios do Eixo X: Dinâmica de Estimativa por Consenso Baseada em Horas
+### 10.3.2 Critérios do Eixo X: Dinâmica de Estimativa por Consenso Baseada em Horas
 
 O dimensionamento do esforço no Eixo X foi estruturado para mitigar os riscos e as incertezas tecnológicas ligadas à transição da arquitetura do sistema. Para embasar as discussões e garantir estimativas realistas de esforço prático, a equipe utilizou como referencial a bagagem técnica e a experiência adquirida por seus membros em projetos e trabalhos anteriores. 
 
@@ -30,7 +30,7 @@ O tempo bruto em horas estimado em consenso foi convertido em uma escala linear 
 * **Nota 4 (Esforço Alto):** Tarefas com estimativa de **30 a 42 horas** totais de desenvolvimento. Exigem frequentemente a alocação de múltiplos desenvolvedores trabalhando em paralelo para garantir a entrega dentro do ciclo.
 * **Nota 5 (Esforço Muito Alto):** Tarefas com estimativa **acima de 42 horas** totais de desenvolvimento.
 
-### 10.2.3 Regras de Corte para Alocação de Iterações
+### 10.3.3 Regras de Corte para Alocação de Iterações
 
 A intersecção das métricas dos eixos Y e X posicionou os requisitos funcionais em quatro quadrantes distintos na matriz de priorização. Essa divisão estabeleceu o teto de escopo do MVP de forma puramente técnica e transparente, determinando quais itens entrariam nas iterações de Construção e quais seriam postergados ou descartados:
 
@@ -38,7 +38,7 @@ A intersecção das métricas dos eixos Y e X posicionou os requisitos funcionai
 * **Grandes Projetos (*Major Projects*):** Alto Impacto (Nota ≥ 4) e Alto Esforço (Nota ≥ 4). Itens de alto valor cultural e educacional, mas cujo risco e complexidade exigem maior janela de desenvolvimento e maturidade da arquitetura, definindo as entregas complexas que delimitam a linha de base do MVP.
 * **Tarefas Complementares (*Fill-ins*):** Baixo Impacto (Nota ≤ 3) e Baixo Esforço (Nota ≤ 2). Requisitos de menor criticidade absorvidos de forma oportunista no escopo atual por apresentarem custo em horas quase nulo para a equipe de desenvolvimento.
 * **Consumidores de Tempo (*Time Sinks*):** Baixo Impacto (Nota ≤ 2) e Alto Esforço (Nota ≥ 4). Funcionalidades de alto risco de escopo e alta carga horária que não trariam retorno imediato para os objetivos estratégicos da comunidade, sendo descartadas ou postergadas para ciclos futuros.
-### 10.2.1 Matriz de Priorização Detalhada por Requisito Funcional (RF)
+### 10.3.4 Matriz de Priorização Detalhada por Requisito Funcional (RF)
 
 A tabela abaixo apresenta a distribuição detalhada de cada um dos 49 requisitos funcionais da plataforma Nativo, mapeados conforme os critérios de impacto (MoSCoW) e a dinâmica de consenso do esforço (Horas-Homem) descritos anteriormente:
 

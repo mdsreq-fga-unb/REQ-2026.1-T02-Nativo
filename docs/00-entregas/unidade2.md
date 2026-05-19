@@ -4,7 +4,7 @@ Esta seção reúne os artefatos, apresentações e registros de validação ref
 
 ---
 
-## 🎥 Apresentação da Unidade
+## Apresentação da Unidade
 
 *(Os vídeos e slides oficiais serão adicionados aqui quando finalizados)*
 
@@ -43,74 +43,88 @@ Esta seção reúne os artefatos, apresentações e registros de validação ref
 
 ## Reuniões e Validações com a Cliente
 
-Abaixo estão os registros, players de gravação e atas das reuniões realizadas com a cliente para alinhamento técnico, validação de requisitos e priorização de funcionalidades.
+Abaixo estão os registros, players de gravação e atas das reuniões realizadas com a cliente, documentando a evolução desde a concepção do escopo até a priorização final do MVP.
 
 ---
 
 ### 1. Revisão e Validação Inicial do Documento de Visão
-**Objetivo:** Validar o problema central, os Objetivos Específicos e as Características do Produto, estabelecendo um cronograma base e alinhando a capacidade técnica da equipe.
+
+**Objetivo:** Validar o problema central, os objetivos e o escopo preliminar do projeto (Iteração 1).
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=0d3c1309-b560-4a68-9253-b4e1535d939f&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=0aa37717-9e2e-4a40-8b3f-247a698cdbbd&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião.mp4"></iframe>
 </div>
 
-**Resumo da Reunião:** Nesta primeira etapa de validação oficial, a equipe apresentou à cliente o mapeamento inicial do escopo do projeto. Houve um alinhamento crucial sobre a capacidade técnica dos desenvolvedores (focado entre `14:38` e `16:10`) para garantir que as tecnologias propostas fossem viáveis. Posteriormente (entre `17:45` e `19:38`), o grupo consolidou a visão do problema e validou as propostas de funcionalidades que atuarão como solução para a falta de engajamento no aplicativo.
+**Resumo da Reunião:** Nesta primeira validação, a equipe apresentou à cliente o mapeamento inicial do escopo do projeto. A discussão foi centrada no alinhamento das expectativas quanto às necessidades da comunidade Munduruku, validando a premissa de que a aplicação precisa de mecanismos sociais e interativos para reter usuários. Os primeiros tópicos do Documento de Visão foram consolidados.
 
 ---
 
-### 2. Análise e Validação das User Stories (MoSCoW)
-**Objetivo:** Apresentar as Histórias de Usuário (User Stories) detalhadas e realizar a priorização do escopo utilizando a técnica MoSCoW.
+### 2. Alinhamento sobre Capacidade Técnica e Tecnologias
+
+**Objetivo:** Mapear gargalos técnicos da arquitetura legada (Flask) e validar a capacidade da equipe de propor melhorias estruturais.
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=f02b0380-1222-4b4c-a462-382e65f3af52&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião com Pedro Henrique Martins Silva-20260428_194226-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=16039a7a-62cb-4b2f-a357-a143b8c003d1&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião (1).mp4"></iframe>
 </div>
 
-**Resumo da Reunião:**
-Com a base do Documento de Visão aprovada, a equipe refinou os requisitos em formato de Histórias de Usuário. Durante os cerca de 40 minutos de sessão, a cliente auxiliou na classificação de cada item como essencial (Must-have), importante (Should-have), desejável (Could-have) ou dispensável para o momento (Won't-have). 
-
-**Trechos de Destaque da Priorização:**
-
-* `23:03 - 25:53`
-* `30:05 - 32:40`
-* `34:25 - 34:50`
-* `39:12 - 42:01`
+**Resumo da Reunião:** Sessão dedicada ao alinhamento técnico do projeto. A equipe debateu com a cliente o estado atual da base de código, as integrações e as tecnologias empregadas no desenvolvimento original. O objetivo foi assegurar que as novas funcionalidades propostas fossem técnica e arquiteturalmente viáveis antes de avançar para a fase de elaboração dos requisitos detalhados.
 
 ---
 
-### 3. Alinhamento Técnico do Projeto Atual
-**Objetivo:** Compreender a arquitetura, a infraestrutura e o estado do código legado do aplicativo Nativo para planejar a integração das novas funcionalidades.
+### 3. Análise e Validação das User Stories (MoSCoW)
+
+**Objetivo:** Apresentar as Histórias de Usuário derivadas da visão inicial e iniciar a classificação de valor.
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=88816870-8359-44be-9f7c-6964b3ab32cc&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião técnica Anawê nativo-20260505_194205-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=76101124-27a4-432f-9c41-e0bf24392aa9&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião com Pedro Henrique Martins Silva-20260428_194226-Gravação de Reunião.mp4"></iframe>
 </div>
 
-**Resumo da Reunião:** Nesta sessão técnica, a cliente guiou a equipe de desenvolvimento por um *walkthrough* completo da base de código existente. Foram detalhados a estrutura do frontend (React Native), do backend (Python/Flask) e a persistência de dados. A equipe recebeu orientações claras sobre o gerenciamento de branches, execução local, tratamento de rotas de API, processos de deploy e autenticação, assegurando que o desenvolvimento futuro não quebre fluxos críticos já implementados.
+**Resumo da Reunião:** Avançando para a Fase de Elaboração (Iteração 2 e 3), a equipe traduziu as Características do Produto (CPs) em Histórias de Usuário. Durante a sessão, as "User Stories" foram avaliadas pela cliente utilizando a técnica MoSCoW, separando o que é essencial para o sucesso do projeto daquilo que pode ser tratado como diferencial (desejável) em entregas futuras.
 
 ---
 
-### 4. Validação de Funcionalidades e Requisitos
-**Objetivo:** Revisar minuciosamente as regras de negócio emergentes, refinando os papéis de usuário, restrições e requisitos não funcionais.
+### 4. Validação de Funcionalidades (UX/UI e Regras de Negócio)
+
+**Objetivo:** Demonstrar o fluxo de usabilidade das novas mecânicas de interação (Feed Social e Gamificação) para captura de feedback (Iteração 3).
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=221d0765-88f1-49cd-815a-11ecfafd293c&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=d31d7d72-e5f6-48d9-bf54-befa2452326c&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião.mp4"></iframe>
 </div>
 
-**Resumo da Reunião:**
-A equipe apresentou propostas detalhadas de como as novas mecânicas (gamificação, feed social, etc.) iriam interagir com os diferentes perfis do sistema. A cliente forneceu diretrizes cruciais para a usabilidade e segurança da aplicação, clarificando os limites de atuação de Moderadores, Administradores e Professores.
-
-**Decisões e Validações Importantes:**
-* **Gestão de Mídias (`18:15 - 38:21`):** Ficou estabelecido que apenas o **Professor** cadastra e associa mídias às traduções, visando simplificar o fluxo de ensino. Moderadores possuem apenas o direito global de remoção por questões de segurança.
-* **Rede Social e Gamificação (`01:55 - 06:15`):** As mecânicas de recompensas e insígnias serão gerenciadas exclusivamente por administradores e professores. O compartilhamento externo dessas conquistas ficará para uma análise posterior de viabilidade.
-* **Segurança e Papéis (`06:24 - 11:50`):** Foi validado que não haverá a "exclusão" de um papel, mas sim a alteração do usuário para outro nível de acesso. Estabeleceram-se também as estratégias para testar o desempenho (simulação de carga) e o fluxo oficial de requisição para se tornar professor no aplicativo.
+**Resumo da Reunião:** Foco na experiência do usuário e na validação das funcionalidades ligadas ao **OE1 (Aumentar engajamento)**. A equipe discutiu as regras de negócio por trás do Feed Social Comunitário (CP2) e dos Mecanismos Interativos (CP1). Foram debatidas as formas de interação (curtidas, comentários) e a estrutura de criação de eventos para garantir que se adequassem à realidade de uso da aldeia.
 
 ---
 
-### 5. Priorização de Requisitos (Miro)
-**Objetivo:** Consolidar e mapear visualmente a priorização de todos os requisitos debatidos para formar o plano de entregas.
+### 5. Validação dos Requisitos Funcionais
+
+**Objetivo:** Revisão da lista final de 49 Requisitos Funcionais, focando em permissões, segurança e multimídia (Iteração 4).
+
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=7871c305-d9c8-4e9c-9671-c9c8042f9618&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião (1).mp4"></iframe>
+</div>
+
+**Resumo da Reunião:** Passagem formal pela Especificação Suplementar consolidada. A cliente validou processos críticos do **OE2 (Segurança)** e **OE3 (Experiência)**. Destaques da validação:
+* **Controle de Usuários e Denúncias (CP3 e CP4):** Validação dos fluxos de banimento, alteração de cargos e gestão de denúncias para manter um ambiente seguro.
+* **Multimídia (CP5):** Definição estrita de que apenas os usuários com perfil de **Professor** devem ter o poder de associar vídeos e áudios diretamente às traduções no processo educacional.
+
+---
+
+### 6. Priorização Final e Definição do MVP (Miro)
+
+**Objetivo:** Aplicar a Matriz de Quadrantes (Impacto no Negócio vs. Dificuldade Técnica) para estabelecer a Baseline oficial do backlog e definir o escopo do MVP (Iteração 4).
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=e68df060-0ebd-472a-9a19-0ed08cf63293&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_201718-Gravação de Reunião.mp4"></iframe>
 </div>
 
 **Resumo da Reunião:**
-Com o escopo completamente validado e as dúvidas de regras de negócio sanadas nas sessões anteriores, a equipe utilizou um *board* interativo na plataforma Miro para organizar visualmente o Product Backlog. Esta etapa foi fundamental para alinhar a visão da cliente com o planejamento de engenharia, criando o mapa claro das entregas que formarão o Minimum Viable Product (MVP).
+Nesta sessão de encerramento da Fase de Elaboração, a equipe realizou a priorização estratégica do backlog por meio de uma **Matriz de Impacto no Negócio vs. Dificuldade Técnica**, estabelecendo o escopo do *Minimum Viable Product* (MVP). Cada um dos requisitos foi avaliado sob a ótica do valor entregue aos objetivos do projeto (como engajamento, preservação linguística, acessibilidade e segurança) em equilíbrio com a complexidade de engenharia envolvida (dependências do legado em Flask, persistência no Firebase e gerenciamento de mídias).
+
+Os itens foram mapeados em quatro quadrantes orientadores para a tomada de decisão:
+
+* **Alto Impacto e Baixa Dificuldade Técnica:** Considerados de prioridade máxima por entregarem valor imediato com riscos reduzidos.
+* **Alto Impacto e Alta Dificuldade Técnica:** Classificados como importantes, demandando planejamento detalhado, validações contínuas e fatiamento em entregas incrementais.
+* **Baixo Impacto e Baixa Dificuldade Técnica:** Identificados como requisitos complementares, a serem desenvolvidos segundo a disponibilidade da equipe.
+* **Baixo Impacto e Alta Dificuldade Técnica:** Definidos como menor prioridade devido ao alto esforço de engenharia sem retorno proporcional imediato para o produto.
+
+Essa abordagem serviu como uma organização inicial e ponto de partida para debates técnicos amadurecidos. Cruzando os dados da matriz com os alinhamentos de regras de negócio feitos com a cliente e as dependências estruturais do sistema, a equipe obteve uma visão holística que evitou escolhas arbitrárias ou individuais, blindando o planejamento e selecionando os requisitos mais críticos para consolidar a experiência principal do aplicativo de forma estável.

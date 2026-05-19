@@ -178,6 +178,7 @@ body, .md-typeset {
     opacity: 1 !important;
     transition: color 0.2s ease;
   }
+}
 
  /* scrollbar visível com cor da marca */
 .md-tabs__list::-webkit-scrollbar {

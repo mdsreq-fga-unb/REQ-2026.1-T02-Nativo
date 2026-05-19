@@ -1,6 +1,6 @@
 # Nativo - Revitalizador Linguístico da Língua Munduruku
 
-![Nativo Readme](/docs/assets/nativoReadme.png)
+![Nativo Readme](/docs/img/nativoReadme.png)
 
 **Nativo** é um aplicativo mobile inovador desenvolvido para apoiar a revitalização linguística da língua Munduruku na Aldeia Munduruku de Bragança. O projeto vai além de uma simples ferramenta de tradução, transformando-se em um ecossistema comunitário de aprendizagem e engajamento.
 

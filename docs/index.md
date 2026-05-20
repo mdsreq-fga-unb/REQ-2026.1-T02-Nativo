@@ -1,4 +1,4 @@
-# Visão de Produto e Projeto
+# Página Inicial
 
 <span class="version-badge">Versão 2.2</span>
 
@@ -7,15 +7,24 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
 ---
 
 ## Navegue pelo Documento
+<div class= "section-cards">
+  <div class="section-cards">
+    <a class="section-card" href="visao/cenario">
+      <h3>Visão de Produto</h3>
+      <p>Tópicos presentes no documento de Visão de Produto.</p>
+    </a>
+  </div>
 
-<div class="section-cards">
-  <a class="section-card" href="visao/cenario">
-    <h3>Visão de Produto</h3>
-    <p>Tópicos presentes no documento de Visão de Produto.</p>
-  </a>
+  <div class="section-cards">
+    <a class="section-card" href="entregas/unidade1.md">
+      <h3>Entregas</h3>
+      <p>Entregas definidas para cada unidade.</p>
+    </a>
+  </div>
 </div>
 
 ---
+
 
 ## Integrantes da Equipe
 

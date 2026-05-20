@@ -515,7 +515,7 @@ A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento p
 2. **Esforço Técnico:** Estimado por meio de uma dinâmica de avaliação por consenso, baseada na projeção de horas totais de desenvolvimento necessárias para a implementação completa.
 3. **Valor de Priorização (Métrica de Retorno):** Calculado por meio da razão matemática direta entre o Impacto e o Esforço através da fórmula **(Impacto / Esforço)**. Essa métrica atua como o indicador único e definitivo do projeto, determinando a densidade de retorno de cada requisito (quais itens trazem maior ganho estratégico em relação ao tempo investido).
 
-### 10.2.1 Critérios Analíticos Básicos (Ingredientes)
+### 10.3.1 Critérios Analíticos Básicos (Ingredientes)
 A nota de **Impacto** foi derivada de uma priorização prévia realizada pela cliente, utilizando a técnica MoSCoW:
 
 * **Nota 5:** Requisitos *Must Have*.
@@ -538,7 +538,7 @@ O dimensionamento do **Esforço** foi convertido em uma escala linear de 1 a 5, 
 
 * **Nota 5:** Acima de 42 horas totais.
 
-### 10.2.2 Regras de Corte, MVP e Escopo Adicional
+### 10.3.2 Regras de Corte, MVP e Escopo Adicional
 
 Uma vez calculado o **Valor de Priorização**, ele foi utilizado como a única métrica balizadora para alocar os requisitos funcionais em quatro quadrantes de desenvolvimento, definindo formalmente a composição do escopo:
 
@@ -556,7 +556,7 @@ Os módulos de **Gamificação (Insígnias)** e **Perfil do Usuário (Histórico
 **Requisitos Descartados:**
 Os módulos de **Denúncias** e **Eventos** (Valor = 0.67), embora estivessem em Q3, apresentaram nota inferior aos itens de gamificação, sendo formalmente descartados do cronograma atual por restrição de prazo, juntamente com a totalidade do **Feed Social** (Q4, Valor = 0.40).
 
-### 10.2.3 Matriz de Priorização Detalhada por Requisito Funcional (RF)
+### 10.3.3 Matriz de Priorização Detalhada por Requisito Funcional (RF)
 
 A tabela abaixo apresenta a distribuição detalhada dos 49 requisitos funcionais da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
 

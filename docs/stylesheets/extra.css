@@ -21,7 +21,7 @@
   --nativo-ivory:       #F6F3F4;
   --nativo-font-heading: 'Lora', Georgia, serif;
   --nativo-font-body:    'Inter', system-ui, sans-serif;
-  --md-header-height: 4rem;
+  --md-header-height: 3.6rem;
 }
 
 body, .md-typeset {
@@ -83,7 +83,7 @@ body, .md-typeset {
 }
 
 /* =====================================================
-   HEADER / NAVBAR
+   HEADER — sem tabs, mais compacto
    ===================================================== */
 .md-header {
   background-color: var(--nativo-evergreen) !important;
@@ -101,147 +101,7 @@ body, .md-typeset {
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   width: auto;
-  height: 2.8rem;
-}
-
-.md-tabs {
-  background-color: var(--nativo-evergreen) !important;
-  border-top: 1px solid rgba(246, 233, 217, 0.12);
-  min-height: 2.5rem;
-  overflow-y: visible;
-}
-
-.md-tabs__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (min-width: 76.25em) {
-  /* header sizing: keep near theme defaults to avoid layout shift */
-  :root {
-    --md-header-height: 4rem;
-  }
-
-  .md-header {
-    min-height: 6.2rem;
-  }
-
-  .md-tabs {
-    min-height: 4.6rem;
-    padding: 0.35rem 0 0.4rem;
-    overflow-y: hidden;
-  }
-
-  .md-tabs__inner {
-    width: 100%;
-  }
-
-  /* permitir duas linhas: itens podem quebrar e ocupar duas fileiras */
-  .md-tabs__list {
-    display: flex;
-    /* permitir rolamento horizontal em vez de cortar itens; mantém comportamento responsivo */
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.45rem 0.6rem; /* linha-gap vertical, column-gap horizontal */
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .md-tabs__item {
-    display: flex;
-    align-items: center;
-    flex: 0 0 auto;
-    min-height: 2.4rem;
-  }
-
-  .md-tabs__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    min-height: 2.2rem;
-    padding: 0.18rem 0.4rem;
-    font-family: var(--nativo-font-body);
-    font-weight: 500;
-    font-size: 0.70rem;
-    line-height: 1;
-    letter-spacing: 0.015em;
-    text-align: center;
-    white-space: nowrap;
-    color: rgba(246, 233, 217, 0.78) !important;
-    text-transform: uppercase;
-    opacity: 1 !important;
-    transition: color 0.2s ease;
-  }
-}
-
- /* scrollbar visível com cor da marca */
-.md-tabs__list::-webkit-scrollbar {
-  height: 5px;
-}
-.md-tabs__list::-webkit-scrollbar-thumb {
-  background: var(--nativo-cream) !important; /* ALTURA DA ALTERAÇÃO: Mudado para creme */
-  border-radius: 8px;
-}
-.md-tabs__list::-webkit-scrollbar-thumb:hover {
-  background: var(--nativo-cinnamon) !important; /* Invertido para marrom no hover para dar destaque ao passar o mouse */
-}
-.md-tabs__list::-webkit-scrollbar-track {
-  background: transparent !important; /* Mudado para transparente para o batedor creme contrastar com o cabeçalho */
-  border-radius: 8px;
-}
-@supports (scrollbar-width: thin) {
-  .md-tabs__list { 
-    scrollbar-width: thin; 
-    scrollbar-color: var(--nativo-cream) transparent !important; /* ALTERAÇÃO PARA FIREFOX: batedor creme, pista transparente */
-  }
-}
-
-@media screen and (max-width: 76.24em) {
-  .md-tabs__list {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .md-tabs__item {
-    display: flex;
-    align-items: center;
-    height: 2.5rem;
-  }
-
-  .md-tabs__link {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-family: var(--nativo-font-body);
-    font-weight: 500;
-    font-size: 0.70rem;
-    letter-spacing: 0.015em;
-    color: rgba(246, 233, 217, 0.7) !important;
-    text-transform: uppercase;
-    opacity: 1 !important;
-    transition: color 0.2s ease;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.md-tabs__link:hover,
-.md-tabs__link--active {
-  color: var(--nativo-cream) !important;
-}
-
-.md-tabs__link--active::after {
-  background-color: var(--nativo-cinnamon) !important;
-  height: 2px;
+  height: 2.4rem;
 }
 
 .md-header__button {
@@ -253,25 +113,53 @@ body, .md-typeset {
 }
 
 /* =====================================================
-   SIDEBAR / NAVEGAÇÃO LATERAL
+   OCULTAR TABS (garantia extra caso o tema as renderize)
    ===================================================== */
-.md-nav__title {
-  font-family: var(--nativo-font-heading) !important;
-  font-weight: 700;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--nativo-sage) !important;
-  padding: 0.6rem 0.8rem 0.3rem;
+.md-tabs {
+  display: none !important;
 }
 
+/* =====================================================
+   SIDEBAR LATERAL — navegação principal
+   Queremos que toda a nav fique aqui, com seções
+   colapsáveis e subtópicos com indentação.
+   ===================================================== */
+
+/* Largura da sidebar */
+.md-sidebar--primary {
+  width: 16rem;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 16rem;
+  }
+}
+
+/* Título da sidebar (label "NATIVO" no topo) */
+.md-nav__title {
+  font-family: var(--nativo-font-body) !important;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--nativo-sage) !important;
+  padding: 1rem 0.8rem 0.5rem;
+}
+
+/* ── Todos os links da sidebar ── */
 .md-nav__link {
   font-family: var(--nativo-font-body);
-  font-size: 0.82rem;
+  font-size: 0.9rem;           /* maior que antes (era 0.83rem) */
   font-weight: 400;
-  border-radius: 5px;
-  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  /* padding vertical generoso para "centralizar" na altura */
+  padding: 0.55rem 0.75rem;
+  min-height: 2.4rem;
+  display: flex;
+  align-items: center;
   transition: background 0.15s ease, color 0.15s ease;
+  color: inherit;
 }
 
 .md-nav__link:hover {
@@ -279,17 +167,106 @@ body, .md-typeset {
   background-color: rgba(182, 113, 80, 0.08);
 }
 
+/* Link ativo */
 .md-nav__item--active > .md-nav__link,
 .md-nav__link--active {
   font-weight: 600;
-  color: var(--nativo-evergreen) !important;
-  background-color: rgba(4, 50, 34, 0.07);
+  color: var(--nativo-cinnamon) !important;
+  background-color: rgba(182, 113, 80, 0.1);
 }
 
 [data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link,
 [data-md-color-scheme="slate"] .md-nav__link--active {
+  color: var(--nativo-cinnamon) !important;
+  background-color: rgba(182, 113, 80, 0.12);
+}
+
+/* ── Seções de nível 1 (ex: "1. Cenário") ── */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--nativo-black);
+  padding: 0.6rem 0.75rem;
+  min-height: 2.6rem;
+  border-radius: 7px;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: var(--nativo-cream);
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: var(--nativo-cinnamon) !important;
+  background-color: rgba(182, 113, 80, 0.08);
+}
+
+/* ── Subtópicos (nível 2) ── */
+.md-nav__item .md-nav .md-nav__link {
+  font-size: 0.84rem;
+  padding: 0.45rem 0.75rem 0.45rem 1.2rem;
+  min-height: 2.1rem;
+  color: rgba(23, 25, 24, 0.72);
+}
+
+[data-md-color-scheme="slate"] .md-nav__item .md-nav .md-nav__link {
+  color: rgba(246, 233, 217, 0.62);
+}
+
+.md-nav__item .md-nav .md-nav__link:hover {
+  color: var(--nativo-cinnamon) !important;
+  background-color: rgba(182, 113, 80, 0.07);
+}
+
+/* Ícone de seta (toggle) */
+.md-nav__icon {
+  color: var(--nativo-sage);
+  transition: transform 0.2s ease;
+}
+
+/* Separador visual entre seções de nível 1 */
+.md-nav--primary > .md-nav__list > .md-nav__item {
+  border-bottom: 1px solid rgba(145, 153, 107, 0.15);
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:last-child {
+  border-bottom: none;
+}
+
+/* Scrollbar da sidebar */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--nativo-sage) transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--nativo-sage);
+  border-radius: 8px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* =====================================================
+   BARRA DE PESQUISA
+   ===================================================== */
+.md-search__form {
+  background-color: rgba(246, 243, 244, 0.15) !important;
+  border-radius: 8px;
+}
+
+.md-search__input {
   color: var(--nativo-cream) !important;
-  background-color: rgba(246, 233, 217, 0.08);
+}
+
+.md-search__input::placeholder {
+  color: rgba(246, 243, 244, 0.6) !important;
 }
 
 /* =====================================================
@@ -564,22 +541,6 @@ body, .md-typeset {
 }
 
 /* =====================================================
-   BARRA DE PESQUISA
-   ===================================================== */
-.md-search__form {
-  background-color: rgba(246, 243, 244, 0.15) !important;
-  border-radius: 8px;
-}
-
-.md-search__input {
-  color: var(--nativo-cream) !important;
-}
-
-.md-search__input::placeholder {
-  color: rgba(246, 243, 244, 0.6) !important;
-}
-
-/* =====================================================
    BOTÃO "VOLTAR AO TOPO"
    ===================================================== */
 .md-top {
@@ -657,6 +618,19 @@ body, .md-typeset {
 .md-nav--secondary .md-nav__link--active {
   color: var(--nativo-cinnamon) !important;
   font-weight: 600;
+}
+
+/* Garantir cor adequada dos itens do índice quando não ativos */
+.md-nav--secondary .md-nav__link {
+  color: rgba(23,25,24,0.75); /* tom escuro suave para modo claro */
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
+  color: rgba(246,233,217,0.85) !important; /* evitar branco puro no modo escuro */
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover {
+  color: var(--nativo-cinnamon) !important;
 }
 
 /* =====================================================

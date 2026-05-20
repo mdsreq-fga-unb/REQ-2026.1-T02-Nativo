@@ -1,8 +1,6 @@
-# 10 · Backlog de Produto
-
 O Backlog de Produto organiza, em ordem de prioridade, todas as entregas previstas para a solução. Nesta seção registramos como os itens são estruturados, refinados e priorizados, além da forma como o MVP é definido para orientar o desenvolvimento inicial do produto.
 
-# 10.1 Backlog Geral
+## 10.1 Backlog Geral
 
 O backlog geral apresentado a seguir consolida os requisitos funcionais (RFs) previstos para a evolução do aplicativo Nativo. Para evitar redundâncias e facilitar a manutenção da documentação técnica (seguindo as práticas do framework OpenUP), os requisitos foram agrupados logica e estruturalmente em Casos de Uso (UCs) abrangentes.
 
@@ -60,9 +58,9 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 | **RF48 - Listar insígnias** | UC12 - Gerenciar Perfil Pessoal | RNF08 |
 | **RF49 - Baixar traduções** | UC13 - Sincronizar Acervo Offline | RNF06, RNF08 |
 
-# 10.2 Casos de Uso
+## 10.2 Casos de Uso
 
-# UC01 - Gerenciar Atividades Educacionais
+### UC01 - Gerenciar Atividades Educacionais
 
 **Atores:** Professor
 
@@ -95,7 +93,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE01 - Dados Incompletos:** No passo 6 do Fluxo Principal (ou no passo 4 do FA01), se o Sistema detectar que campos obrigatórios não foram preenchidos, a gravação é interrompida. O aplicativo destaca os campos com erro visualmente e instrui o ator a corrigi-los antes de prosseguir.
 
-# UC02 - Realizar Atividades Interativas
+### UC02 - Realizar Atividades Interativas
 
 **Atores:** Usuário (Aluno)
 
@@ -121,7 +119,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE01 - Perda de Conectividade:** No passo 5 do Fluxo Principal, se o dispositivo estiver sem conexão à internet no momento da submissão (e a atividade exigir processamento online), o Sistema exibe um alerta de "Falha na conexão", mantém a resposta selecionada em cache e orienta o ator a tentar novamente quando o sinal for restabelecido.
 
-# UC03 - Gerenciar Insígnias (Recompensas)
+### UC03 - Gerenciar Insígnias (Recompensas)
 
 **Atores:** Administrador, Professor
 
@@ -154,7 +152,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE01 - Dados Incompletos:** No passo 6 do Fluxo Principal, se o ator tentar salvar a insígnia sem definir um nome ou sem especificar o objetivo, o Sistema destaca os campos obrigatórios em vermelho e impede a criação até que sejam preenchidos.
 
-# UC04 - Gerenciar Feed Social
+### UC04 - Gerenciar Feed Social
 
 **Atores:** Usuário (Qualquer membro autenticado da plataforma)
 
@@ -194,7 +192,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Tamanho de Mídia Excedido:** No passo 5, se o ator anexar um arquivo que ultrapasse o limite máximo permitido pelo sistema (referente ao RNF09), o aplicativo recusa o arquivo imediatamente e exibe um erro informando o limite suportado.
 
-# UC05 - Gerenciar Eventos Comunitários
+### UC05 - Gerenciar Eventos Comunitários
 
 **Atores:** Usuário (Membro autenticado)
 
@@ -234,7 +232,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Campos Obrigatórios Ausentes:** Se o ator não preencher o título, data ou local, o Sistema destaca os campos pendentes e impede a gravação até a correção.
 
-# UC06 - Gerenciar Acessos e Permissões
+### UC06 - Gerenciar Acessos e Permissões
 
 **Atores:** Administrador
 
@@ -272,7 +270,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE01 - Proteção contra Auto-Bloqueio:** Se o ator tentar banir a si mesmo ou revogar seu próprio cargo de Administrador (sem que haja outro Administrador ativo cadastrado), o Sistema bloqueia a operação e exibe um alerta informando que a plataforma não pode ficar sem supervisão administrativa.
 
-# UC07 - Gerenciar Credenciais da Conta
+### UC07 - Gerenciar Credenciais da Conta
 
 **Atores:** Usuário (Visitante não autenticado ou Aluno autenticado)
 
@@ -303,7 +301,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Solicitação de Professor Duplicada:** No passo 4 do FA01, se o ator tentar enviar uma candidatura, mas o Sistema detectar que já existe um pedido "Pendente" associado àquela conta, a submissão é bloqueada e um aviso de "Solicitação já em análise" é exibido.
 
-# UC08 - Gerenciar Moderação de Conteúdo
+### UC08 - Gerenciar Moderação de Conteúdo
 
 **Atores:** Usuário Comum, Administrador (Moderador)
 
@@ -333,7 +331,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE01 - Conteúdo Previamente Removido:** No passo 4 do Fluxo Principal, se o ator tentar submeter a denúncia mas o conteúdo em questão já tiver sido deletado pelo próprio autor (ou por outro moderador segundos antes), o Sistema interrompe o envio e alerta que o conteúdo não se encontra mais disponível.
 
-# UC09 - Gerenciar Tipos de Denúncias (Categorias)
+### UC09 - Gerenciar Tipos de Denúncias (Categorias)
 
 **Atores:** Administrador
 
@@ -368,7 +366,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Campo Obrigatório Vazio:** Caso o ator tente salvar sem preencher o nome da categoria, o Sistema destaca o campo em vermelho e impede a submissão.
 
-# UC10 - Gerenciar Acervo de Vídeos
+### UC10 - Gerenciar Acervo de Vídeos
 
 **Atores:** Administrador, Professor (Gestão); Usuário (Visualização)
 
@@ -406,7 +404,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Formato de Arquivo Incompatível:** Caso o ator tente anexar um arquivo que não seja um formato de vídeo suportado (ex: enviar um PDF ou executável no lugar de um MP4), o Sistema recusa a entrada e orienta sobre os formatos válidos.
 
-# UC11 - Gerenciar Acervo de Áudios
+### UC11 - Gerenciar Acervo de Áudios
 
 **Atores:** Administrador, Professor (Gestão); Usuário (Reprodução)
 
@@ -444,7 +442,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Arquivo Incompatível:** Caso o ator tente anexar um arquivo com formato não suportado (ex: um documento de texto em vez de um arquivo MP3, WAV ou OGG), o Sistema rejeita a entrada e orienta sobre os formatos de áudio permitidos.
 
-# UC12 - Gerenciar Perfil Pessoal
+### UC12 - Gerenciar Perfil Pessoal
 
 **Atores:** Usuário (Qualquer membro autenticado)
 
@@ -478,7 +476,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE01 - Dados Inválidos na Edição:** No passo 6 do Fluxo Principal, se o ator tentar salvar o perfil com o campo "Nome" em branco ou inserir um formato de e-mail inválido, o Sistema interrompe o salvamento, destaca o campo com erro e solicita a correção imediata.
 
-# UC13 - Sincronizar Acervo Offline
+### UC13 - Sincronizar Acervo Offline
 
 **Atores:** Usuário (Qualquer membro autenticado)
 
@@ -507,7 +505,7 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Queda de Conexão no Download:** No passo 5 do Fluxo Principal, caso o ator perca o sinal de internet antes de atingir 100% da sincronização, o Sistema pausa a operação, emite um aviso de "Falha de Rede" e guarda o progresso para retomar o download assim que o sinal for restabelecido.
 
-# 10.3 Metodologia de Priorização do Backlog (Impacto vs. Esforço)
+## 10.3 Metodologia de Priorização do Backlog (Impacto vs. Esforço)
 
 Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, as Características do Produto (CPs) e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
@@ -539,6 +537,7 @@ O dimensionamento do **Esforço** foi convertido em uma escala linear de 1 a 5, 
 * **Nota 4:** 30 a 42 horas totais.
 
 * **Nota 5:** Acima de 42 horas totais.
+
 ### 10.2.2 Regras de Corte, MVP e Escopo Adicional
 
 Uma vez calculado o **Valor de Priorização**, ele foi utilizado como a única métrica balizadora para alocar os requisitos funcionais em quatro quadrantes de desenvolvimento, definindo formalmente a composição do escopo:

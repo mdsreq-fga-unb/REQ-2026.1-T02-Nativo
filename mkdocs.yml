@@ -33,16 +33,16 @@ nav:
   - Visão do Produto e Projeto:
       - 0. Entregas: visao/entregas.md
       - 1. Cenário Atual do Cliente e do Negócio: visao/cenario.md
-      - 2. Solução: visao/solucao.md
+      - 2. Solução Proposta: visao/solucao.md
       - 3. Intervenção: visao/intervencao.md
       - 4. Estratégias: visao/estrategias.md
       - 5. Engenharia de Requisitos: visao/engenhariaRequisitos.md
       - 6. Cronograma: visao/cronograma.md
       - 7. Interação entre Equipe e Cliente: visao/interacao.md
-      - 8. Requisitos: visao/requisitos.md
+      - 8. Requisitos de Software: visao/requisitos.md
       - 9. DoR e DoD: visao/dor&dod.md
-      - 10. Backlog: visao/backlog.md
-      - 11. Lições: visao/licoes.md
+      - 10. Backlog de Produto: visao/backlog.md
+      - 11. Lições Aprendidas: visao/licoes.md
       - 12. Referências: visao/referencias.md
 
 markdown_extensions:

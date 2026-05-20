@@ -1,6 +1,4 @@
-## 8 · Requisitos de Software
-
-### 8.1 Lista de Requisitos Funcionais (Especificação Suplementar)
+## 8.1 Lista de Requisitos Funcionais (Especificação Suplementar)
 
 Os requisitos funcionais estabelecem um consenso que fomenta a implementação dos objetivos planejados para o app Nativo. A seguir, é apresentado o escopo atualizado do sistema, totalizando 49 requisitos funcionais organizados de acordo com as Características do Produto (CPs) e os Objetivos Estratégicos (OEs) do projeto. 
 
@@ -98,7 +96,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | :--- | :--- | :--- |
 | RF49 | Baixar traduções | Permitir que os usuários façam o download das traduções textuais e auditivas para acesso offline. |
 
-# 8.2 Lista de Requisitos Não Funcionais (Especificação Suplementar)
+## 8.2 Lista de Requisitos Não Funcionais (Especificação Suplementar)
 
 Os requisitos não funcionais definem critérios de qualidade do sistema Nativo. A tabela a seguir apresenta os RNFs com sua categoria segundo a sigla URPS (Usabilidade, Confiabilidade, Desempenho, Segurança).
 
@@ -115,7 +113,7 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 | RNF09 | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |
 | RNF10 | Ajuste de fonte | O aplicativo deve permitir ao usuário selecionar pelo menos 5 níveis distintos de tamanho de fonte. | Usabilidade |
 
-# 8.3 Matriz-síntese de Rastreabilidade
+## 8.3 Matriz-síntese de Rastreabilidade
 
 A matriz a seguir representa a rastreabilidade entre os Objetivos Específicos (OE), Características de Produto (CP), Valores de Negócio (VN), Requisitos Funcionais (RFs) e Requisitos Não Funcionais (RNFs). Essa estrutura garante que todas as funcionalidades e critérios de qualidade desenvolvidos estejam diretamente alinhados às necessidades estratégicas da plataforma Nativo.
 

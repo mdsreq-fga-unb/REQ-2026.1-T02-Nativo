@@ -1,8 +1,4 @@
-## 0 · Entregas
-
-Esta seção apresenta as entregas das unidades do projeto Nativo.
-
-### 0.1 Unidade 1
+## Unidade 1
 
 Entregas referentes à primeira unidade do projeto, focadas no mapeamento do cenário, definição da solução e planejamento inicial.
 
@@ -12,7 +8,7 @@ Entregas referentes à primeira unidade do projeto, focadas no mapeamento do cen
 - Análise de viabilidade preliminar
 - Estratégia de processo definida (OpenUP)
 
-### 0.2 Unidade 2
+## Unidade 2
 
 Entregas referentes à segunda unidade, focadas na engenharia de requisitos, detalhamento de especificações e planejamento de desenvolvimento.
 

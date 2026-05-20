@@ -128,56 +128,54 @@ body, .md-typeset {
 }
 
 /* Botões para abrir/fechar as sidebars */
-.sidebar-mini-bar {
+.md-sidebar--primary {
+  width: 12rem;
+  transition: transform 0.2s ease, width 0.2s ease;
+}
+
+.md-sidebar--secondary {
+  transition: transform 0.2s ease, width 0.2s ease;
+}
+
+.sidebar-toggle-btn {
   position: fixed;
-  top: calc(var(--md-header-height, 3.6rem) + 0.75rem);
-  width: 2.2rem;
-  min-height: 3rem;
+  top: calc(var(--md-header-height, 3.6rem) + 0.5rem);
+  width: 1.5rem;
+  height: 1.5rem;  
+  background: transparent;
+  color: var(--nativo-evergreen);
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.15rem 0;
-  background: rgba(246, 233, 217, 0.18);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  z-index: 30;
-  transition: background 0.2s ease;
-  border-radius: 0.9rem;
-}
-
-.sidebar-mini-bar--secondary {
-  border-radius: 0.9rem;
-}
-
-.sidebar-mini-bar button {
-  border: none;
-  background: transparent;
-  color: var(--nativo-cream);
-  width: 100%;
-  height: 100%;
-  font-size: 1.25rem;
   cursor: pointer;
-  line-height: 1;
+  z-index: 30;
+  transition: left 0.2s ease, right 0.2s ease, transform 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
-[data-md-color-scheme="slate"] .sidebar-mini-bar {
-  background: rgba(246, 233, 217, 0.12);
+[data-md-color-scheme="slate"] .sidebar-toggle-btn {
+  color: var(--nativo-cream);
+  border-color: rgba(246, 233, 217, 0.35);
 }
 
-.sidebar-mini-bar button:hover {
-  color: var(--nativo-evergreen);
+.sidebar-toggle-btn:hover {
+  background: var(--nativo-cinnamon);
 }
 
-.sidebar-mini-bar--primary {
-  left: 0.75rem;
+.sidebar-toggle-btn--primary {
+  left: calc(14rem - 2.5rem);
 }
 
-.sidebar-mini-bar--secondary {
-  right: 0.75rem;
+.sidebar-toggle-btn--secondary {
+  right: calc(16rem - 4rem);
 }
 
-body.sidebar-collapsed-primary .sidebar-mini-bar--primary,
-body.sidebar-collapsed-secondary .sidebar-mini-bar--secondary {
-  transform: none;
+body.sidebar-collapsed-primary .sidebar-toggle-btn--primary {
+  left: 0;
+}
+
+body.sidebar-collapsed-secondary .sidebar-toggle-btn--secondary {
+  right: 0;
 }
 
 .md-sidebar__scrollwrap {
@@ -220,22 +218,6 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
   padding-right: 1rem !important;
 }
 
-@media (max-width: 900px) {
-  .sidebar-toggle-btn {
-    top: calc(var(--md-header-height, 3.6rem) + 0.5rem);
-    width: 2.6rem;
-    height: 2.6rem;
-  }
-
-  .sidebar-toggle-btn--primary {
-    left: 0.5rem;
-  }
-
-  .sidebar-toggle-btn--secondary {
-    right: 0.5rem;
-  }
-}
-
 /* Texto responsivo */
 .md-content {
   max-width: 100%;
@@ -276,7 +258,7 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 /* ── Todos os links da sidebar ── */
 .md-nav__link {
   font-family: var(--nativo-font-body);
-  font-size: 0.9rem;           /* maior que antes (era 0.83rem) */
+  font-size: 0.5rem;           /* maior que antes (era 0.83rem) */
   font-weight: 400;
   border-radius: 6px;
   /* padding vertical generoso para "centralizar" na altura */
@@ -310,7 +292,7 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 /* ── Seções de nível 1 (ex: "1. Cenário") ── */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--nativo-black);
   padding: 0.6rem 0.75rem;
   min-height: 2.6rem;
@@ -328,7 +310,7 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 /* ── Subtópicos (nível 2) ── */
 .md-nav__item .md-nav .md-nav__link {
-  font-size: 0.84rem;
+  font-size: 0.77rem;
   padding: 0.45rem 0.75rem 0.45rem 1.2rem;
   min-height: 2.1rem;
   color: rgba(23, 25, 24, 0.72);

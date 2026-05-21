@@ -1,8 +1,8 @@
-O Backlog de Produto organiza, em ordem de prioridade, todas as entregas previstas para a solução. Nesta seção registramos como os itens são estruturados, refinados e priorizados, além da forma como o MVP é definido para orientar o desenvolvimento inicial do produto.
+Os Itens de Trabalho organizam, em ordem de prioridade, todas as entregas previstas para a solução. Nesta seção registramos como os itens são estruturados, refinados e priorizados, além da forma como o MVP é definido para orientar o desenvolvimento inicial do produto.
 
-## 10.1 Backlog Geral
+## 10.1 Itens de Trabalho Gerais
 
-O backlog geral apresentado a seguir consolida os requisitos funcionais (RFs) previstos para a evolução do aplicativo Nativo. Para evitar redundâncias e facilitar a manutenção da documentação técnica (seguindo as práticas do framework OpenUP), os requisitos foram agrupados logica e estruturalmente em Casos de Uso (UCs) abrangentes.
+Os itens de trabalho apresentados a seguir consolidam os requisitos funcionais (RFs) previstos para a evolução do aplicativo Nativo. Para evitar redundâncias e facilitar a manutenção da documentação técnica, seguindo as práticas do framework OpenUP, os requisitos foram agrupados logica e estruturalmente em Casos de Uso (UCs) abrangentes.
 
 A tabela também estabelece a rastreabilidade entre as funcionalidades propostas e os Requisitos Não Funcionais (RNFs), assegurando que restrições de usabilidade, desempenho e confiabilidade incidam corretamente sobre as operações do sistema.
 
@@ -505,11 +505,11 @@ A tabela também estabelece a rastreabilidade entre as funcionalidades propostas
 
 * **FE02 - Queda de Conexão no Download:** No passo 5 do Fluxo Principal, caso o ator perca o sinal de internet antes de atingir 100% da sincronização, o Sistema pausa a operação, emite um aviso de "Falha de Rede" e guarda o progresso para retomar o download assim que o sinal for restabelecido.
 
-## 10.3 Metodologia de Priorização do Backlog (Impacto vs. Esforço)
+## 10.3 Metodologia de Priorização dos Itens de Trabalho (Impacto vs. Esforço)
 
-Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, as Características do Produto (CPs) e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
+Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, os **Casos de Uso (UCs)** e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
-A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento por meio da plataforma Miro. O processo consistiu na avaliação individual de cada um dos 49 Requisitos Funcionais (RFs) para a extração do **Valor de Priorização**, calculado em três etapas:
+A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento por meio da plataforma Miro. O processo consistiu na avaliação individual de cada um dos 13 Casos de Uso (UCs), com apoio dos RFs associados, para a extração do **Valor de Priorização**, calculado em três etapas:
 
 1. **Impacto de Negócio:** Mensurado em uma escala linear de 1 a 5, avaliando o quão crítica é a funcionalidade para atingir os Objetivos Estratégicos (OEs) do sistema, focando na mitigação do problema central.
 2. **Esforço Técnico:** Estimado por meio de uma dinâmica de avaliação por consenso, baseada na projeção de horas totais de desenvolvimento necessárias para a implementação completa.
@@ -556,58 +556,22 @@ Os módulos de **Gamificação (Insígnias)** e **Perfil do Usuário (Histórico
 **Requisitos Descartados:**
 Os módulos de **Denúncias** e **Eventos** (Valor = 0.67), embora estivessem em Q3, apresentaram nota inferior aos itens de gamificação, sendo formalmente descartados do cronograma atual por restrição de prazo, juntamente com a totalidade do **Feed Social** (Q4, Valor = 0.40).
 
-### 10.3.3 Matriz de Priorização Detalhada por Requisito Funcional (RF)
+### 10.3.3 Matriz de Priorização Detalhada por Caso de Uso (UC)
 
-A tabela abaixo apresenta a distribuição detalhada dos 49 requisitos funcionais da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
+A tabela abaixo apresenta a distribuição detalhada dos 13 casos de uso da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
 
-| ID | Requisito Funcional (RF) | Impacto | Esforço | Valor (Imp/Esf) | Quadrante Resultante | Compõe a Entrega? |
+| ID | Caso de Uso | Impacto | Esforço | Valor (Imp/Esf) | Quadrante Resultante | Compõe a Entrega? |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| **RF34** | Cadastrar vídeo | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF35** | Exibir vídeo | 5 | 1 | 5.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF36** | Excluir vídeo | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF37** | Associar vídeo | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
-| **RF38** | Desassociar vídeo | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
-| **RF39** | Cadastrar áudio | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF40** | Reproduzir áudio | 5 | 1 | 5.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF41** | Excluir áudio | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **RF42** | Associar áudio | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
-| **RF43** | Desassociar áudio | 4 | 1 | 4.00 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 7)** |
-| **RF25** | Candidatar-se a professor | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 9)** |
-| **RF49** | Baixar traduções (Acesso Offline) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **RF26** | Recuperar senha | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **RF01** | Criar atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
-| **RF02** | Listar atividades educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
-| **RF03** | Responder atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **RF04** | Visualizar resultado da atividade | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **RF05** | Editar atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **RF06** | Excluir atividade educacional | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **RF07** | Criar insígnia | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
-| **RF08** | Editar insígnia | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
-| **RF09** | Excluir insígnias | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
-| **RF20** | Banir usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
-| **RF27** | Criar denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF21** | Atribuir cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
-| **RF22** | Editar cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
-| **RF23** | Listar cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
-| **RF24** | Desatribuir cargos de usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 9)** |
-| **RF28** | Atualizar status de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF15** | Criar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
-| **RF16** | Editar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
-| **RF17** | Listar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
-| **RF18** | Excluir eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
-| **RF29** | Listar denúncias | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF19** | Compartilhar eventos | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração Adicional)** |
-| **RF45** | Listar histórico de traduções | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF46** | Favoritar tradução | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF47** | Listar traduções favoritadas | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF30** | Criar categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF44** | Editar usuário | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 11)** |
-| **RF48** | Listar insígnias | 3 | 2 | 1.50 | Q3 - Tarefas Comp. | **SIM (Iteração 10)** |
-| **RF31** | Editar categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF32** | Listar categorias de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF33** | Excluir categoria de denúncia | 2 | 3 | 0.67 | Q3 - Tarefas Comp. | **NÃO** |
-| **RF10** | Criar publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
-| **RF11** | Editar publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
-| **RF12** | Listar publicações | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
-| **RF13** | Excluir publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
-| **RF14** | Interagir com a publicação | 2 | 5 | 0.40 | Q4 - Consumidores Tempo | **NÃO** |
+| **UC10** | Gerenciar Acervo de Vídeos | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| **UC11** | Gerenciar Acervo de Áudios | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| **UC01** | Gerenciar Atividades Educacionais | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
+| **UC02** | Realizar Atividades Interativas | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
+| **UC06** | Gerenciar Acessos e Permissões | 3 | 2 | 1.50 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| **UC07** | Gerenciar Credenciais da Conta | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| **UC13** | Sincronizar Acervo Offline | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
+| **UC03** | Gerenciar Insígnias (Recompensas) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 10)** |
+| **UC12** | Gerenciar Perfil Pessoal | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 11)** |
+| **UC05** | Gerenciar Eventos Comunitários | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| **UC08** | Gerenciar Moderação de Conteúdo | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| **UC09** | Gerenciar Tipos de Denúncias (Categorias) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| **UC04** | Gerenciar Feed Social | 2 | 5 | 0.40 | Q4 - Consumidores de Tempo | **NÃO** |

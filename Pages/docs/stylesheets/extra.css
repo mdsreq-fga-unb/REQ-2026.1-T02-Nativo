@@ -139,9 +139,10 @@ body, .md-typeset {
 
 .sidebar-toggle-btn {
   position: fixed;
-  top: calc(var(--md-header-height, 3.6rem) + 0.5rem);
-  width: 1.5rem;
-  height: 1.5rem;  
+  /* afastar um pouco mais do header para não ficar colado */
+  top: calc(var(--md-header-height, 3.6rem) + 0.8rem);
+  width: 1.6rem;
+  height: 1.6rem;  
   background: transparent;
   color: var(--nativo-evergreen);
   border-radius: 0.5rem;
@@ -149,8 +150,9 @@ body, .md-typeset {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 30;
+  z-index: 60;
   transition: left 0.2s ease, right 0.2s ease, transform 0.2s ease, color 0.2s ease, background 0.2s ease;
+  padding: 0.15rem; /* garante área de clique confortável */
 }
 
 [data-md-color-scheme="slate"] .sidebar-toggle-btn {
@@ -163,19 +165,22 @@ body, .md-typeset {
 }
 
 .sidebar-toggle-btn--primary {
-  left: calc(14rem - 2.5rem);
+  /* posiciona próximo à borda da sidebar quando aberta */
+  left: calc(14rem - 2rem);
 }
 
 .sidebar-toggle-btn--secondary {
-  right: calc(16rem - 4rem);
+  /* posiciona próximo à borda da sidebar secundária quando aberta */
+  right: calc(16rem - 3.5rem);
 }
 
+/* Quando as sidebars estiverem recolhidas, manter um pequeno afastamento da borda da janela */
 body.sidebar-collapsed-primary .sidebar-toggle-btn--primary {
-  left: 0;
+  left: 0.75rem;
 }
 
 body.sidebar-collapsed-secondary .sidebar-toggle-btn--secondary {
-  right: 0;
+  right: 0.75rem;
 }
 
 .md-sidebar__scrollwrap {

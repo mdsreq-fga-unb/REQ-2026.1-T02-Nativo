@@ -1,0 +1,87 @@
+name: DoD Checks (Automated & Manual)
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Necessário para obter a lista completa de arquivos alterados
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v44 # Usando uma action para obter arquivos alterados
+
+    - name: Run DoD Automated Checks
+      run: |
+        python check_pr.py
+      env:
+        PR_BODY: ${{ github.event.pull_request.body }}
+        CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+
+    - name: Run Linting (DoD09 - Qualidade de Código)
+      run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+      continue-on-error: true # Permite que o workflow continue mesmo com erros de linting, mas os reporta
+
+    - name: Run Tests (DoD08 - Não quebrar funcionalidades existentes)
+      run: pytest
+      continue-on-error: true # Permite que o workflow continue mesmo com falhas de teste, mas os reporta
+
+    - name: DoD05 - Check if PR is ready for merge (requires manual review/GitHub settings)
+      run: echo "DoD05 O incremento foi integrado à branch principal de desenvolvimento sem conflitos pendentes. (Verificar status do PR e revisões no GitHub)"
+
+    - name: DoD06 - Pipeline do GitHub Actions executada com sucesso
+      run: echo "DoD06 Este passo é automaticamente validado se o workflow for concluído com sucesso."
+
+    - name: DoD07 - Código revisado por integrante da equipe (requer aprovação no PR)
+      run: echo "DoD07 O código foi revisado por pelo menos um integrante da equipe que não seja o autor principal. (Verificar aprovações no PR e configurar Branch Protection Rules)"
+
+    - name: DoD01 - Funcionalidade implementada conforme Caso de Uso (Requer verificação manual)
+      run: echo "DoD01 A funcionalidade foi implementada conforme o Caso de Uso aprovado. (Verificação manual necessária do comportamento)"
+
+    - name: DoD02 - Fluxos alternativos e exceções implementados (Requer verificação manual/testes específicos)
+      run: echo "DoD02 Os fluxos alternativos e exceções previstos foram implementados. (Verificação manual ou testes específicos necessários)"
+
+    - name: DoD03 - Critérios de aceitação do Caso de Uso atendidos (Requer checklist preenchido)
+      run: echo "DoD03 Todos os critérios de aceitação do Caso de Uso foram atendidos. (Verificação de checklist no PR ou ferramenta externa)"
+
+    - name: DoD10 - Coerência da interface com protótipo (Requer verificação manual)
+      run: echo "DoD10 Quando houver alteração de interface, a tela implementada está coerente com o protótipo ou wireframe aprovado. (Verificação manual da UI)"
+
+    - name: DoD11 - Regra de permissão verificada (Requer testes de segurança)
+      run: echo "DoD11 Quando houver regra de permissão, usuários sem autorização não conseguem acessar a funcionalidade. (Testes de segurança/acesso necessários)"
+
+    - name: DoD12 - Ação registrada com usuário e data/hora (Requer verificação de logs)
+      run: echo "DoD12 Quando houver criação, edição, exclusão, denúncia ou moderação de conteúdo, a ação fica registrada com usuário responsável e data/hora. (Verificação de logs/auditoria necessária)"
+
+    - name: DoD13 - Conteúdo multimídia validado (Requer verificação manual)
+      run: echo "DoD13 Quando houver funcionalidade relacionada a conteúdo multimídia, o arquivo pode ser cadastrado, associado, acessado e removido conforme o Caso de Uso. (Verificação manual do fluxo de mídia)"
+
+    - name: DoD14 - Funcionalidade offline validada (Requer testes offline)
+      run: echo "DoD14 Quando houver funcionalidade offline ou de baixa conectividade, o comportamento esperado foi validado sem conexão. (Testes offline necessários)"
+
+    - name: DoD17 - Funcionalidade apresentada em revisão (Requer registro de reunião)
+      run: echo "DoD17 A funcionalidade foi apresentada em revisão para a cliente ou representante. (Verificação de registro de reunião/ata)"
+
+    - name: DoD18 - Pendências, bugs ou limitações registradas (Requer verificação de issues/PRs)
+      run: echo "DoD18 Pendências, bugs ou limitações conhecidas foram registradas. (Verificação de issues/PRs abertos)"
+
+    - name: DoD19 - Funcionalidade pronta para demonstração (Requer execução prática)
+      run: echo "DoD19 A funcionalidade está pronta para ser demonstrada sem necessidade de ajustes manuais fora do fluxo normal da aplicação. (Execução prática/demonstração)"

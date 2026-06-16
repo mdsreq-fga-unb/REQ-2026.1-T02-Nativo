@@ -50,6 +50,7 @@ nav:
   - Entregas:
       - Unidade 1: entregas/unidade1.md
       - Unidade 2: entregas/unidade2.md
+      - Unidade 3: entregas/unidade3.md
 
 markdown_extensions:
   - attr_list

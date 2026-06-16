@@ -1,7 +1,7 @@
 ## Vídeo da Apresentação
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://youtu.be/OQvFDJK_7X0" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Apresentação unidade 2-20260518_234336-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://www.youtube.com/embed/OQvFDJK_7X0" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Apresentação unidade 2"></iframe>
 </div>
 
 ## Slidess
@@ -38,7 +38,7 @@ Abaixo estão os registros, players de gravação e atas das reuniões realizada
 **Objetivo:** Validar o problema central, os objetivos e o escopo preliminar do projeto (Iteração 1).
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/watch?v=pJo8kgEMtgE" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://www.youtube.com/embed/pJo8kgEMtgE" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião.mp4"></iframe>
 </div>
 
 **Resumo da Reunião:** Nesta primeira validação, a equipe apresentou à cliente o mapeamento inicial do escopo do projeto. A discussão foi centrada no alinhamento das expectativas quanto às necessidades da comunidade Munduruku, validando a premissa de que a aplicação precisa de mecanismos sociais e interativos para reter usuários. Os primeiros tópicos do Documento de Visão foram consolidados.
@@ -48,7 +48,7 @@ Abaixo estão os registros, players de gravação e atas das reuniões realizada
 **Objetivo:** Mapear gargalos técnicos da arquitetura legada (Flask) e validar a capacidade da equipe de propor melhorias estruturais.
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/watch?v=ijBSgWsxnVU" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião (1).mp4"></iframe>
+  <iframe src="https://www.youtube.com/embed/ijBSgWsxnVU" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião (1).mp4"></iframe>
 </div>
 
 **Resumo da Reunião:** Sessão dedicada ao alinhamento técnico do projeto. A equipe debateu com a cliente o estado atual da base de código, as integrações e as tecnologias empregadas no desenvolvimento original. O objetivo foi assegurar que as novas funcionalidades propostas fossem técnica e arquiteturalmente viáveis antes de avançar para a fase de elaboração dos requisitos detalhados.
@@ -64,7 +64,7 @@ Abaixo estão os registros, players de gravação e atas das reuniões realizada
 **Objetivo:** Demonstrar o fluxo de usabilidade das novas mecânicas de interação (Feed Social e Gamificação) para captura de feedback (Iteração 3).
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/watch?v=yPN8mm_Pz-I" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião.mp4"></iframe>
+  <iframe src="https://www.youtube.com/embed/yPN8mm_Pz-I" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião.mp4"></iframe>
 </div>
 
 **Resumo da Reunião:** Foco na experiência do usuário e na validação das funcionalidades ligadas ao **OE1 (Aumentar engajamento)**. A equipe discutiu as regras de negócio por trás do Feed Social Comunitário (CP2) e dos Mecanismos Interativos (CP1). Foram debatidas as formas de interação (curtidas, comentários) e a estrutura de criação de eventos para garantir que se adequassem à realidade de uso da aldeia.
@@ -74,7 +74,7 @@ Abaixo estão os registros, players de gravação e atas das reuniões realizada
 **Objetivo:** Revisão da lista final de 49 Requisitos Funcionais, focando em permissões, segurança e multimídia (Iteração 4).
 
 <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/watch?v=DaIq7b3ZPhY" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião (1).mp4"></iframe>
+  <iframe src="https://www.youtube.com/embed/DaIq7b3ZPhY" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião (1).mp4"></iframe>
 </div>
 
 **Resumo da Reunião:** Passagem formal pela Especificação Suplementar consolidada. A cliente validou processos críticos do **OE2 (Segurança)** e **OE3 (Experiência)**. Destaques da validação:

@@ -50,3 +50,11 @@ Um item será considerado concluído quando:
 
 * No caso de conteúdos ou fluxos ligados à língua e à cultura Munduruku, a solução passa pela validação dos representantes, preservando a adequação cultural, ortográfica e pedagógica esperada para o contexto da comunidade.
 
+
+## Evidências de Aplicação do DoR e DoD
+Aplicação do DoR 
+![Checklist DoR](../img/DoR.png)
+
+Aplicação do DoD 
+![Checklist DoD](../img/DoD.png)
+![Checklist DoD](../img/Validacao.png)

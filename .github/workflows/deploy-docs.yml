@@ -1,0 +1,63 @@
+name: Deploy Docs (Multi-version)
+
+on:
+  push:
+    branches: ['main', 'dev']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve deployment folder
+        id: meta
+        run: |
+          if [ "${{ github.ref_name }}" = "main" ]; then
+            echo "folder=unidade2" >> $GITHUB_OUTPUT
+          else
+            echo "folder=unidade3" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build docs
+        run: mkdocs build
+
+      - name: Deploy to /${{ steps.meta.outputs.folder }}
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          destination_dir: ${{ steps.meta.outputs.folder }}
+          keep_files: true
+
+  deploy-root-index:
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'main'
+    needs: deploy-docs
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Create root index
+        run: |
+          mkdir -p ./root-site
+          cp .github/gh-pages-root/index.html ./root-site/index.html
+
+      - name: Deploy root index
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./root-site
+          keep_files: true

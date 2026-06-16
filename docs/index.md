@@ -4,6 +4,8 @@
 
 Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo tradutor de línguas indígenas com foco na língua Munduruku, desenvolvido para apoiar a revitalização linguística na Aldeia Munduruku de Bragança.
 
+Link do repositório de desenvolvimento: https://github.com/Requisitos-Anawe/Nativo
+
 ---
 
 ## Navegue pelo Documento

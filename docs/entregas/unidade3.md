@@ -27,7 +27,8 @@ Abaixo estão os registros e players de gravação de reuniões realizadas com a
 </div>
 
 **Resumo da Reunião:** A reunião concentrou-se na apresentação do novo protótipo do aplicativo. Exibimos telas lado a lado com a versão antiga para evidenciar as mudanças de design e organização. A equipe e Alexia debateram detalhes do cadastro e login, definindo que o e-mail será a única forma de login, mas mantendo o campo de CPF no cadastro sem ser obrigatório. Outros pontos discutidos incluíram a adição opcional de foto de perfil no momento do cadastro e a implementação do login via Google. Johnnatan também apresentou telas de perfil do usuário (com histórico e favoritos),a tela de informações, a tela central de tradução e o feed social que destaca eventos no topo. Alexia aprovou as telas e o direcionamento visual do projeto. 
-**Link do figma:** https://www.figma.com/design/uTKEQkRbmnBttLtu5jbt1w/Nativo?node-id=18-477&p=f
+
+**Link do figma:** [Protótipo Nativo no Figma](https://www.figma.com/design/uTKEQkRbmnBttLtu5jbt1w/Nativo?node-id=18-477&p=f){:target="_blank"}
 
 ### Apresentação de Funcionalidades e Validação com a Cliente
 

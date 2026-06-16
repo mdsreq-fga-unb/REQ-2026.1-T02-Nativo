@@ -52,9 +52,14 @@ Um item será considerado concluído quando:
 
 
 ## Evidências de Aplicação do DoR e DoD
-Aplicação do DoR 
-![Checklist DoR](../img/DoR.png)
+### Aplicação do DoR 
+* Template de chacklists utilizados no Dor (Verificação dos Casos de Uso)
+![Checklist DoR](../img/dor1.png)
+![Checklist DoR](../img/Dor2.png)![Checklist DoR](../img/dor3.png)![Checklist DoR](../img/dor8.png)
+![Checklist DoR](../img/dor4.png)![Checklist DoR](../img/dor5.png)
+![Checklist DoR](../img/dor6.png)![Checklist DoR](../img/dor7.png)
 
-Aplicação do DoD 
+### Aplicação do DoD 
+* Template de chacklists utilizados no DoD (Validação do incremento)
 ![Checklist DoD](../img/DoD.png)
 ![Checklist DoD](../img/Validacao.png)

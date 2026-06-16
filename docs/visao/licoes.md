@@ -34,3 +34,11 @@ Ao longo do processo da descoberta dos requisitos e da análise para o consenso 
 3. *Alinhamento com o Backlog e a Rastreabilidade:* Manter a consistência com o que foi definido e o que será de fato construído tendo em vista o critério da aldeia e escopo da solução.
 
 	- **Como foi superado:** A definição de US derivadas dos requisitos funcionais garantiu um backlog transparente e de fácil visualização. Além disso, o projeto garante a preservação da rastreabilidade dos objetivos específicos, das características e dos requisitos através da Matriz de Rastreabilidade.
+
+## Unidade 3
+
+A inspeção do projeto de outra equipe, aliada aos feedbacks recebidos sobre o nosso próprio documento de Verificação e Validação (V&V), e do professor, evidenciou a necessidade de um refinamento em nossos artefatos. Como principal ação corretiva, buscou-se eliminar a utilização de termos subjetivos na declaração de requisitos, substituindo-os por descrições exatas que garantem um entendimento compartilhado e livre de ambiguidades. Em conjunto com essa melhoria na escrita, foi realizada uma reestruturação nas funções preestabelecidas do sistema, o que permitiu delimitar de forma clara e objetiva as funções atreladas a cada nível de acesso da aplicação.
+
+Além do aprimoramento textual e estrutural, o processo iterativo reforçou o rigor metodológico exigido no desenvolvimento. Tornou-se evidente a obrigatoriedade de manter um rastro documentado e contínuo de todas as evidências que sustentam as decisões e validações do projeto. Esse cuidado com a rastreabilidade resultou na definição de critérios de aceitação explícitos para conectar diretamente os Casos de Uso aos Requisitos Funcionais, assegurando que o comportamento esperado do software esteja perfeitamente alinhado com as necessidades documentadas.
+
+Por fim, o ciclo de avaliação consolidou uma reflexão fundamental sobre a participação ativa e autoral da equipe na produção documental. Conforme as críticas rigorosas levantadas em sala de aula, ficou estabelecido que o uso de ferramentas de Inteligência Artificial atua apenas como um apoio, exigindo uma postura crítica da  equipe.

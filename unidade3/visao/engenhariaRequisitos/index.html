@@ -1,0 +1,1339 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Repositório de projeto da disciplina de REQ-T1, 2026.1">
+      
+      
+        <meta name="author" content="Equipe Anawê">
+      
+      
+      
+        <link rel="prev" href="../estrategias/">
+      
+      
+        <link rel="next" href="../cronograma/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/IconNativo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>5. Engenharia de Requisitos - Nativo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#51-atividades-e-tecnicas-de-er" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Nativo" class="md-header__button md-logo" aria-label="Nativo" data-md-component="logo">
+      
+  <img src="../../img/IconNativo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nativo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5. Engenharia de Requisitos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo"  aria-label="Mudar para tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="black"  aria-label="Mudar para tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nativo" class="md-nav__button md-logo" aria-label="Nativo" data-md-component="logo">
+      
+  <img src="../../img/IconNativo.png" alt="logo">
+
+    </a>
+    Nativo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Visão do Produto e Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Cenário Atual do Cliente e do Negócio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solucao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Solução Proposta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intervencao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Intervenção
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estrategias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estratégias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-atividades-e-tecnicas-de-er" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Atividades e Técnicas de ER
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Atividades e Técnicas de ER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-concepcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Concepção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-elaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Elaboração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Transição
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-engenharia-de-requisitos-e-o-openup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Engenharia de Requisitos e o OpenUP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Cronograma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Interação entre Equipe e Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Requisitos de Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dor%26dod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. DoR e DoD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Itens de Trabalho
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Lições Aprendidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entregas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entregas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/unidade1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/unidade2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-atividades-e-tecnicas-de-er" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Atividades e Técnicas de ER
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Atividades e Técnicas de ER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-concepcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Concepção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-elaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Elaboração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fase-de-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase de Transição
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-engenharia-de-requisitos-e-o-openup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Engenharia de Requisitos e o OpenUP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>5. Engenharia de Requisitos</h1>
+
+<h2 id="51-atividades-e-tecnicas-de-er">5.1 Atividades e Técnicas de ER</h2>
+<h3 id="fase-de-concepcao"><strong>Fase de Concepção</strong></h3>
+<p><strong>Elicitação e Descoberta:</strong></p>
+<ul>
+<li><strong>Entrevistas:</strong> Realizadas com a cliente para capturar as necessidades da comunidade Munduruku e entender os gargalos da aplicação atual em Flask.</li>
+<li><strong>Brainstorming:</strong> Sessões com a equipe para idealizar mecanismos de gamificação e o feed social que incentivem o uso recorrente do app.</li>
+<li><strong>Análise Documental:</strong> Revisão preliminar do TCC original, do código legado e da documentação existente para entender o problema raiz, o contexto e o escopo do projeto desde o início.</li>
+</ul>
+<p><strong>Declaração de Requisitos:</strong></p>
+<ul>
+<li><strong>Documento de Visão:</strong> Documentação inicial e macro dos Objetivos Específicos (OEs),  Características do Produto (CPs) e Requisitos Iniciais.</li>
+</ul>
+<p><strong>Análise e Consenso:</strong></p>
+<ul>
+<li><strong>Avaliação de Valor de Negócio:</strong> Classificação dos requisitos preliminares em essenciais e desejáveis, validada junto à cliente, com o objetivo de mensurar o valor agregado de cada requisito.</li>
+</ul>
+<p><strong>Verificação e Validação:</strong></p>
+<ul>
+<li><strong>Validação de Escopo:</strong> Validação preliminar do escopo, dos OEs e das CPs diretamente com a cliente para garantir o alinhamento com a necessidade real da aldeia.</li>
+</ul>
+<p><strong>Organização e Atualização:</strong></p>
+<ul>
+<li><strong>Baseline Preliminar de Escopo:</strong> Estruturação inicial dos objetivos e características para a formação da base documental que guiará o projeto.</li>
+</ul>
+<h3 id="fase-de-elaboracao"><strong>Fase de Elaboração</strong></h3>
+<p><strong>Elicitação e Descoberta:</strong></p>
+<ul>
+<li><strong>Análise Documental:</strong> Revisão contínua do código-fonte e da documentação do TCC original para identificar funcionalidades legadas que precisam de refatoração, detalhando primeiro os itens de alto risco (como as limitações de arquitetura).</li>
+</ul>
+<p><strong>Declaração de Requisitos:</strong></p>
+<ul>
+<li><strong>Lista de Requisitos (Funcionais e Técnicos):</strong> Compilação, estruturação e formalização de todos os requisitos extraídos da análise do legado e das interações iniciais. Essa listagem unificada serve como o inventário oficial de escopo do sistema que será submetido à filtragem.</li>
+<li><strong>Casos de Uso (Use cases):</strong> Utilizados como a especificação formal dos requisitos funcionais. Descrição detalhada do comportamento do sistema através de atores (como crianças, professores e administradores), contendo fluxos principais, alternativos e condições de exceção.</li>
+<li><strong>Especificação Suplementar:</strong> Agrupa os requisitos não funcionais (qualidades do sistema, como suporte a cenários de baixa conectividade).</li>
+</ul>
+<p><strong>Análise e Consenso:</strong></p>
+<ul>
+<li><strong>Matriz de Quadrantes (Valor de negócio vs. Dificuldade Técnica):</strong> Técnica aplicada para cruzar o valor de negócio com a complexidade técnica (validada por tempo de desenvolvimento esperado). Essa análise é a ferramenta central para mitigar os requisitos de alto risco e definir objetivamente quais funcionalidades comporão o Produto Mínimo Viável (MVP).</li>
+</ul>
+<p><strong>Representação de Requisitos:</strong></p>
+<ul>
+<li><strong>Protótipos e Wireframes:</strong> Os prototipos nevegáveis funcionam como representação visual dos fluxos descritos nos Casos de Uso, com o objetivo de simular visualmente a jornada do ator através dos fluxos principais e alternativos do sistema, facilitando o entendimento da equipe técnica e garantindo o alinhamento de expectativas e usabilidade com a cliente.</li>
+</ul>
+<p><strong>Verificação e Validação:</strong></p>
+<ul>
+<li><strong>Demonstração e Revisão:</strong> Validação dos protótipos, das histórias iniciais elaboradas e das provas de conceito (PoC) arquiteturais junto à representante.</li>
+</ul>
+<p><strong>Organização e Atualização:</strong></p>
+<ul>
+<li><strong>Matriz de Rastreabilidade:</strong> Estabelecimento da baseline inicial de requisitos e início da ligação formal entre: OE → CP → RF/RNF→UC.</li>
+</ul>
+<h3 id="fase-de-construcao"><strong>Fase de Construção</strong></h3>
+<p><strong>Elicitação e Descoberta:</strong></p>
+<ul>
+<li><strong>Entrevistas e Consultas Iterativas:</strong> Levantamento contínuo de detalhes emergentes e refinamento de regras de negócio à medida que os micro-incrementos são desenvolvidos.</li>
+</ul>
+<p><strong>Declaração de Requisitos:</strong></p>
+<ul>
+<li><strong>Detalhamento de Casos de uso e Cenários:</strong> Escrita e detalhamento de novos cenários de Casos de Uso, delimitando suas pré-condições, pós-condições e cenários de teste para guiar os próximos ciclos de desenvolvimento.</li>
+</ul>
+<p><strong>Análise e Consenso:</strong></p>
+<ul>
+<li><strong>Negociação de Requisitos:</strong> Negociação contínua de mudanças de escopo, adaptações técnicas e repriorização de acordo com a capacidade da equipe e o feedback recebido ao final de cada ciclo.</li>
+</ul>
+<p><strong>Verificação e Validação de Requisitos:</strong></p>
+<ul>
+<li><strong>Checklists de Qualidade:</strong> Verificação contínua pela aplicação do DOR e DOD se cada incremento contribui diretamente para as Características do Produto (CP) e se cobre com sucesso os fluxos descritos no Caso de Uso correspondente e se atende aos critérios técnicos de qualidade estabelecidos.</li>
+<li><strong>Demonstração e Prototipação:</strong> Apresentação de telas e incrementos à cliente para validar a refatoração técnica, executando os passos validados no Caso de Uso para atestar a usabilidade da aldeia. O feedback é incorporado nas iterações subsequentes.</li>
+</ul>
+<p><strong>Organização e Atualização de Requisitos:</strong></p>
+<ul>
+<li><strong>Matriz de Rastreabilidade:</strong> Manutenção viva da Matriz de Rastreabilidade, garantindo que nenhum conhecimento se perca durante a rotação de papéis da equipe técnica no desenvolvimento.</li>
+</ul>
+<h3 id="fase-de-transicao"><strong>Fase de Transição</strong></h3>
+<p><strong>Verificação e Validação de Requisitos:</strong></p>
+<ul>
+<li><strong>Testes de Aceitação e Demonstração Final:</strong> Apresentação da versão finalizada para a cliente e para a comunidade para homologação do sistema, garantindo que a aplicação está pronta para o uso no dia a dia da aldeia.</li>
+</ul>
+<p><strong>Organização e Atualização:</strong></p>
+<ul>
+<li><strong>Manutenção da Rastreabilidade:</strong> Fechamento da documentação técnica e atualização final da Matriz de Rastreabilidade, refletindo com exatidão o produto que está sendo entregue a comunidade</li>
+</ul>
+<hr />
+<p><strong>Fases do Processo — Tabela Resumo</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fases do Processo</th>
+<th>Atividades da Engenharia de Requisitos (ER)</th>
+<th>Prática</th>
+<th>Técnica</th>
+<th>Resultados Esperados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concepção</td>
+<td>Elicitação e Descoberta</td>
+<td>Levantamento de Requisitos e Análise de Domínio</td>
+<td>Entrevistas, Brainstorming, Análise Documental</td>
+<td>Necessidades da comunidade Munduruku capturadas, mecanismos de gamificação/feed idealizados e gargalos da aplicação atual (Flask/legado) compreendidos desde a raiz.</td>
+</tr>
+<tr>
+<td>Concepção</td>
+<td>Análise e Consenso</td>
+<td>Priorização de Requisitos</td>
+<td>Avaliação de Valor de Negócio</td>
+<td>Requisitos preliminares classificados em essenciais e desejáveis junto à cliente, com seu valor de negócio mapeado em essencial e desejável</td>
+</tr>
+<tr>
+<td>Concepção</td>
+<td>Declaração</td>
+<td>Registro de Requisitos Iniciais</td>
+<td>Documento de Visão</td>
+<td>Objetivos Específicos (OEs) e Características do Produto (CPs) documentados de forma inicial e macro.</td>
+</tr>
+<tr>
+<td>Concepção</td>
+<td>Verificação e Validação</td>
+<td>Validação com Stakeholders</td>
+<td>Validação de Escopo</td>
+<td>Escopo preliminar, OEs e CPs validados diretamente com a cliente, garantindo o alinhamento com a necessidade real da aldeia.</td>
+</tr>
+<tr>
+<td>Concepção</td>
+<td>Organização e Atualização</td>
+<td>Definição de Baseline Inicial</td>
+<td>Baseline Preliminar de Escopo</td>
+<td>Objetivos e características estruturados inicialmente, formando a base documental que guiará o projeto.</td>
+</tr>
+<tr>
+<td>Elaboração</td>
+<td>Elicitação e Descoberta</td>
+<td>Refinamento Técnico e Análise de Risco</td>
+<td>Análise Documental</td>
+<td>Código-fonte legado e TCC original revisados, com as funcionalidades para refatoração e os itens de alto risco identificados.</td>
+</tr>
+<tr>
+<td>Elaboração</td>
+<td>Análise e Consenso</td>
+<td>Análise de Viabilidade Técnica e Negócio</td>
+<td>Matriz de Quadrantes (Valor de negócio vs. Dificuldade Técnica)</td>
+<td>Valor de negócio cruzado com a complexidade técnica, resultando na mitigação de riscos e na definição objetiva das funcionalidades do Produto Mínimo Viável (MVP).</td>
+</tr>
+<tr>
+<td>Elaboração</td>
+<td>Declaração</td>
+<td>Especificação Funcional e Técnica</td>
+<td>Casos de Uso (Use Cases), Especificação Suplementar</td>
+<td>Funcionalidades declaradas formalmente por meio de Casos de Uso (contendo fluxos principais, alternativos e de exceção); requisitos não funcionais e restrições técnicas agrupados e documentados.</td>
+</tr>
+<tr>
+<td>Elaboração</td>
+<td>Representação</td>
+<td>Modelagem Visual</td>
+<td>Protótipos e Wireframes Navegáveis</td>
+<td>Representação visual das jornadas dos atores descritas nos fluxos dos Casos de Uso, facilitando o entendimento da equipe e o alinhamento.</td>
+</tr>
+<tr>
+<td>Elaboração</td>
+<td>Verificação e Validação</td>
+<td>Validação de Artefatos e Arquitetura</td>
+<td>Demonstração e Revisão</td>
+<td>Protótipos, especificações textuais dos Casos de Uso elaborados e provas de conceito (PoC) arquiteturais revisados e validados junto à representante.</td>
+</tr>
+<tr>
+<td>Elaboração</td>
+<td>Organização e Atualização</td>
+<td>Estabelecimento de Rastreabilidade</td>
+<td>Matriz de Rastreabilidade</td>
+<td>Baseline inicial de requisitos estabelecida e ligação formal iniciada (OE → CP → RF/RNF → Casos de Uso).</td>
+</tr>
+<tr>
+<td>Construção</td>
+<td>Elicitação e Descoberta</td>
+<td>Descoberta Contínua</td>
+<td>Entrevistas e Consultas Iterativas</td>
+<td>Detalhes emergentes levantados continuamente e regras de negócio refinadas à medida que os incrementos são desenvolvidos.</td>
+</tr>
+<tr>
+<td>Construção</td>
+<td>Análise e Consenso</td>
+<td>Gestão de Mudanças e Dependências</td>
+<td>Negociação de Requisitos</td>
+<td>Mudanças de escopo negociadas continuamente, com adaptações técnicas e repriorizações realizadas de acordo com a capacidade da equipe e o feedback recebido.</td>
+</tr>
+<tr>
+<td>Construção</td>
+<td>Declaração</td>
+<td>Detalhamento Iterativo</td>
+<td>Detalhamento de Casos de Uso e Cenários</td>
+<td>Novos cenários de Casos de Uso detalhados (pré-condições, pós-condições e cenários de teste) escritos para guiar com rigor os ciclos incrementais de desenvolvimento.</td>
+</tr>
+<tr>
+<td>Construção</td>
+<td>Verificação e Validação</td>
+<td>Verificação de Incrementos</td>
+<td>Checklists de Qualidade, Demonstração e Prototipação</td>
+<td>Aderência aos OEs/critérios técnicos verificada; telas e incrementos validados com a cliente.</td>
+</tr>
+<tr>
+<td>Construção</td>
+<td>Organização e Atualização</td>
+<td>Manutenção de Conhecimento</td>
+<td>Matriz de Rastreabilidade</td>
+<td>Matriz de Rastreabilidade mantida viva, garantindo que nenhum conhecimento se perca durante a rotação de papéis da equipe técnica no desenvolvimento.</td>
+</tr>
+<tr>
+<td>Transição</td>
+<td>Verificação e Validação</td>
+<td>Homologação de Release</td>
+<td>Testes de Aceitação e Demonstração Final</td>
+<td>Versão finalizada apresentada para a cliente e comunidade, com o sistema homologado e atestado como pronto para o uso no dia a dia da aldeia.</td>
+</tr>
+<tr>
+<td>Transição</td>
+<td>Organização e Atualização</td>
+<td>Fechamento da Documentação As-Built</td>
+<td>Manutenção da Rastreabilidade</td>
+<td>Documentação técnica fechada e Matriz de Rastreabilidade atualizada em sua versão final, refletindo com exatidão o produto que está sendo entregue à comunidade.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="52-engenharia-de-requisitos-e-o-openup">5.2 Engenharia de Requisitos e o OpenUP</h2>
+<p>A tabela abaixo mapeia cada atividade de ER às fases do processo OpenUP, detalhando a prática adotada, a técnica utilizada e o resultado esperado em cada etapa.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Fases do Processo</th>
+      <th>Atividades ER</th>
+      <th>Prática</th>
+      <th>Técnica</th>
+      <th>Resultado Esperado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgb(255, 255, 255);">Concepção</td>
+      <td>Elicitação e Descoberta</td>
+      <td>Colaboração direta com stakeholders para entendimento do domínio.</td>
+      <td>Entrevistas, Brainstorming e Análise Documental</td>
+      <td>Escopo preliminar definido, identificação das necessidades da comunidade Munduruku e mapeamento dos gargalos do Flask.</td>
+    </tr>
+    <tr>
+      <td>Análise e Consenso</td>
+      <td>Sequenciamento da implementação baseado em valor.</td>
+      <td>Priorização MoSCoW</td>
+      <td>MVP definido com clareza, priorizando requisitos essenciais.</td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Elaboração</td>
+      <td>Declaração</td>
+      <td>Documentação essencial com foco no valor cultural e restrições técnicas.</td>
+      <td>Casos de Uso e Especificação Suplementar</td>
+      <td>Requisitos funcionais e requisitos técnicos/não-funcionais devidamente documentados.</td>
+    </tr>
+    <tr>
+      <td>Representação</td>
+      <td>Modelagem visual inicial para alinhamento de expectativas.</td>
+      <td>Protótipos e Wireframes</td>
+      <td>Interfaces desenhadas e validadas visualmente com a representante.</td>
+    </tr>
+    <tr>
+      <td>Organização e Atualização</td>
+      <td>Detalhamento progressivo (Refinamento) focado em mitigar riscos.</td>
+      <td>Análise Documental</td>
+      <td>Requisitos de refatoração do código legado detalhados para garantir uma arquitetura base segura.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Construção</td>
+      <td>Verificação e Validação</td>
+      <td>Validação contínua e iterativa dos incrementos gerados.</td>
+      <td>Demonstração (Review) e Checklists de Qualidade</td>
+      <td>Incrementos funcionais validados e aderentes aos Objetivos Específicos (OE) do projeto.</td>
+    </tr>
+    <tr>
+      <td>Organização e Atualização</td>
+      <td>Gerenciamento de mudanças e controle de dependências de forma leve.</td>
+      <td>Matriz de Rastreabilidade</td>
+      <td>Continuidade do conhecimento do projeto garantida, sem perda de rastreabilidade durante a rotação técnica da equipe.</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; vertical-align: middle; background-color: rgba(255, 255, 255);">Transição</td>
+      <td>Verificação e Validação</td>
+      <td>Homologação final do sistema com o cliente e usuários finais.</td>
+      <td>Demonstração (Review) e Testes de Aceitação</td>
+      <td>Sistema Nativo integralmente validado pela aldeia, atestando a fidelidade linguística e o suporte em baixa conectividade.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

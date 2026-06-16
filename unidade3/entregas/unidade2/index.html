@@ -1,0 +1,1287 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Repositório de projeto da disciplina de REQ-T1, 2026.1">
+      
+      
+        <meta name="author" content="Equipe Anawê">
+      
+      
+      
+        <link rel="prev" href="../unidade1/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/IconNativo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Unidade 2 - Nativo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#video-da-apresentacao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Nativo" class="md-header__button md-logo" aria-label="Nativo" data-md-component="logo">
+      
+  <img src="../../img/IconNativo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nativo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidade 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo"  aria-label="Mudar para tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="black"  aria-label="Mudar para tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nativo" class="md-nav__button md-logo" aria-label="Nativo" data-md-component="logo">
+      
+  <img src="../../img/IconNativo.png" alt="logo">
+
+    </a>
+    Nativo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Visão do Produto e Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Cenário Atual do Cliente e do Negócio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/solucao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Solução Proposta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/intervencao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Intervenção
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/estrategias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estratégias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/engenhariaRequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Cronograma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/interacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Interação entre Equipe e Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Requisitos de Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/dor%26dod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. DoR e DoD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Itens de Trabalho
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/licoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Lições Aprendidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao/referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entregas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entregas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unidade1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#video-da-apresentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeo da Apresentação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slidess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slidess
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reunioes-e-validacoes-com-a-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reuniões e Validações com a Cliente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reuniões e Validações com a Cliente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revisao-e-validacao-inicial-do-documento-de-visao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisão e Validação Inicial do Documento de Visão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alinhamento-sobre-capacidade-tecnica-e-tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alinhamento sobre Capacidade Técnica e Tecnologias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priorização MoSCoW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-de-funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validação de Funcionalidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-dos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validação dos Requisitos Funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-final-e-definicao-do-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priorização Final e Definição do MVP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#board-do-miro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Board do Miro
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Board do Miro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de Priorização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arvore-de-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Árvore de Rastreabilidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#video-da-apresentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeo da Apresentação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slidess" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slidess
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reunioes-e-validacoes-com-a-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reuniões e Validações com a Cliente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reuniões e Validações com a Cliente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revisao-e-validacao-inicial-do-documento-de-visao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisão e Validação Inicial do Documento de Visão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alinhamento-sobre-capacidade-tecnica-e-tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alinhamento sobre Capacidade Técnica e Tecnologias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priorização MoSCoW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-de-funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validação de Funcionalidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-dos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validação dos Requisitos Funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-final-e-definicao-do-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priorização Final e Definição do MVP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#board-do-miro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Board do Miro
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Board do Miro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de Priorização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arvore-de-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Árvore de Rastreabilidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Unidade 2</h1>
+
+<h2 id="video-da-apresentacao">Vídeo da Apresentação</h2>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/OQvFDJK_7X0" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Apresentação unidade 2"></iframe>
+</div>
+
+<h2 id="slidess">Slidess</h2>
+<div style="margin: 20px 0; overflow: hidden; background-color: #111;">
+  <iframe src="../../img/unidade2/Unidade2.pdf" title="Visualização dos slides da Unidade 1" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>
+</div>
+
+<div style="display: flex; gap: 15px; justify-content: center; margin: 20px 0; flex-wrap: wrap;">
+  <a href="../../img/unidade2/Unidade2.pdf" download="Unidade2.pdf" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background-color: #F6E9D9; color: #111; text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+    Baixar em PDF
+  </a>
+  <a href="../../img/unidade2/Unidade2.pptx" download="Unidade2.pptx" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background-color: #F6E9D9; color: #111; text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+    Baixar em PPTX
+  </a>
+</div>
+
+<h2 id="reunioes-e-validacoes-com-a-cliente">Reuniões e Validações com a Cliente</h2>
+<p>Abaixo estão os registros, players de gravação e atas das reuniões realizadas com a cliente, documentando a evolução desde a concepção do escopo até a priorização final do MVP.</p>
+<h3 id="revisao-e-validacao-inicial-do-documento-de-visao">Revisão e Validação Inicial do Documento de Visão</h3>
+<p><strong>Objetivo:</strong> Validar o problema central, os objetivos e o escopo preliminar do projeto (Iteração 1).</p>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/pJo8kgEMtgE" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião.mp4"></iframe>
+</div>
+
+<p><strong>Resumo da Reunião:</strong> Nesta primeira validação, a equipe apresentou à cliente o mapeamento inicial do escopo do projeto. A discussão foi centrada no alinhamento das expectativas quanto às necessidades da comunidade Munduruku, validando a premissa de que a aplicação precisa de mecanismos sociais e interativos para reter usuários. Os primeiros tópicos do Documento de Visão foram consolidados.</p>
+<h3 id="alinhamento-sobre-capacidade-tecnica-e-tecnologias">Alinhamento sobre Capacidade Técnica e Tecnologias</h3>
+<p><strong>Objetivo:</strong> Mapear gargalos técnicos da arquitetura legada (Flask) e validar a capacidade da equipe de propor melhorias estruturais.</p>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/ijBSgWsxnVU" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião (1).mp4"></iframe>
+</div>
+
+<p><strong>Resumo da Reunião:</strong> Sessão dedicada ao alinhamento técnico do projeto. A equipe debateu com a cliente o estado atual da base de código, as integrações e as tecnologias empregadas no desenvolvimento original. O objetivo foi assegurar que as novas funcionalidades propostas fossem técnica e arquiteturalmente viáveis antes de avançar para a fase de elaboração dos requisitos detalhados.</p>
+<h3 id="priorizacao-moscow">Priorização MoSCoW</h3>
+<div style="margin: 20px 0; overflow: hidden; background-color: #111;">
+  <iframe src="../../img/unidade2/Histórias de Usuário.pdf" title="Visualização dos slides da Unidade 1" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>
+</div>
+
+<h3 id="validacao-de-funcionalidades">Validação de Funcionalidades</h3>
+<p><strong>Objetivo:</strong> Demonstrar o fluxo de usabilidade das novas mecânicas de interação (Feed Social e Gamificação) para captura de feedback (Iteração 3).</p>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/yPN8mm_Pz-I" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião.mp4"></iframe>
+</div>
+
+<p><strong>Resumo da Reunião:</strong> Foco na experiência do usuário e na validação das funcionalidades ligadas ao <strong>OE1 (Aumentar engajamento)</strong>. A equipe discutiu as regras de negócio por trás do Feed Social Comunitário (CP2) e dos Mecanismos Interativos (CP1). Foram debatidas as formas de interação (curtidas, comentários) e a estrutura de criação de eventos para garantir que se adequassem à realidade de uso da aldeia.</p>
+<h3 id="validacao-dos-requisitos-funcionais">Validação dos Requisitos Funcionais</h3>
+<p><strong>Objetivo:</strong> Revisão da lista final de 49 Requisitos Funcionais, focando em permissões, segurança e multimídia (Iteração 4).</p>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/DaIq7b3ZPhY" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_193458-Gravação de Reunião (1).mp4"></iframe>
+</div>
+
+<p><strong>Resumo da Reunião:</strong> Passagem formal pela Especificação Suplementar consolidada. A cliente validou processos críticos do <strong>OE2 (Segurança)</strong> e <strong>OE3 (Experiência)</strong>. Destaques da validação:
+* <strong>Controle de Usuários e Denúncias (CP3 e CP4):</strong> Validação dos fluxos de banimento, alteração de cargos e gestão de denúncias para manter um ambiente seguro.
+* <strong>Multimídia (CP5):</strong> Definição estrita de que apenas os usuários com perfil de <strong>Professor</strong> devem ter o poder de associar vídeos e áudios diretamente às traduções no processo educacional.</p>
+<h3 id="priorizacao-final-e-definicao-do-mvp">Priorização Final e Definição do MVP</h3>
+<p><strong>Objetivo:</strong> Aplicar a Matriz de Quadrantes (Impacto no Negócio vs. Dificuldade Técnica) para estabelecer a Baseline oficial do backlog e definir o escopo do MVP (Iteração 4).</p>
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=e68df060-0ebd-472a-9a19-0ed08cf63293&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisios-20260512_201718-Gravação de Reunião.mp4"></iframe>
+</div>
+
+<p><strong>Resumo da Reunião:</strong>
+Nesta sessão de encerramento da Fase de Elaboração, a equipe realizou a priorização do backlog por meio de uma <strong>Matriz de Impacto no Negócio vs. Dificuldade Técnica</strong>, estabelecendo o escopo do <em>Minimum Viable Product</em> (MVP). </p>
+<h2 id="board-do-miro">Board do Miro</h2>
+<iframe width="100%" height="500" src="https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657" title="Matriz de impacto e esforçp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><a href="https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657">Board do Miro</a></p>
+<h3 id="matriz-de-priorizacao">Matriz de Priorização</h3>
+<p><img alt="" src="../../img/Matriz.png" />
+<img alt="" src="../../img/Quadrante1.png" />
+<img alt="" src="../../img/Quadrante2.png" />
+<img alt="" src="../../img/Quadrante3.png" />
+<img alt="" src="../../img/Quadrante4.png" /></p>
+<h3 id="arvore-de-rastreabilidade">Árvore de Rastreabilidade</h3>
+<p><img alt="" src="../../img/Problema-ObjGeral.png" />
+<img alt="" src="../../img/ObjGeral-ObjEsps.png" />
+<img alt="" src="../../img/ObjEsp1-CPs.png" />
+<img alt="" src="../../img/ObjEsp2-CPs.png" />
+<img alt="" src="../../img/ObjEsp3-CPs.png" />
+<img alt="" src="../../img/CP1-Requisitos.png" />
+<img alt="" src="../../img/CP2-Requisitos.png" />
+<img alt="" src="../../img/CP3-Requisitos.png" />
+<img alt="" src="../../img/CP4-Requisitos.png" />
+<img alt="" src="../../img/CP5-Requisitos.png" />
+<img alt="" src="../../img/CP6-Requisitos.png" />
+<img alt="" src="../../img/CP7-Requisitos.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

@@ -8,12 +8,12 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| RF01 | Criar atividade educacional | Permitir que professores criem atividades para os usuários resolverem. |
-| RF02 | Listar atividades educacionais | Permitir que os usuários visualizem a lista de atividades disponíveis para resolução. |
+| <span id="req-rf01" class="rf-anchor">RF01</span> | Criar atividade educacional | Permitir que professores criem atividades para os usuários resolverem. |
+| <span id="req-rf02" class="rf-anchor">RF02</span> | Listar atividades educacionais | Permitir que os usuários visualizem a lista de atividades disponíveis para resolução. |
 | RF03 | Responder atividade educacional | Permitir que os usuários submetam respostas às atividades publicadas. |
 | RF04 | Visualizar resultado da atividade | Permitir que os usuários visualizem a correção e a pontuação obtida após responderem a uma atividade. |
-| RF05 | Editar atividade educacional | Permitir que professores, administradores e moderadores editem o conteúdo de uma atividade. |
-| RF06 | Excluir atividade educacional | Permitir que professores, administradores e moderadores excluam uma atividade. |
+| <span id="req-rf05" class="rf-anchor">RF05</span> | Editar atividade educacional | Permitir que professores, administradores e moderadores editem o conteúdo de uma atividade. |
+| <span id="req-rf06" class="rf-anchor">RF06</span> | Excluir atividade educacional | Permitir que professores, administradores e moderadores excluam uma atividade. |
 | RF07 | Criar insígnia | Permitir que administradores, professores e moderadores criem insígnias de engajamento. |
 | RF08 | Editar insígnia | Permitir que administradores e moderadores alterem o nome, arte ou regras de uma insígnia. |
 | RF09 | Excluir insígnias | Permitir que administradores e moderadores removam insígnias do sistema. |

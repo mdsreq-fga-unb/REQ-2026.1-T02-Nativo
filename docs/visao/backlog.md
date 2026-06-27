@@ -1,66 +1,4 @@
-Os Itens de Trabalho organizam, em ordem de prioridade, todas as entregas previstas para a solução. Nesta seção registramos como os itens são estruturados, refinados e priorizados, além da forma como o MVP é definido para orientar o desenvolvimento inicial do produto.
-
-## 10.1 Itens de Trabalho Gerais
-
-Os itens de trabalho apresentados a seguir consolidam os requisitos funcionais (RFs) previstos para a evolução do aplicativo Nativo. Para evitar redundâncias e facilitar a manutenção da documentação técnica, seguindo as práticas do framework OpenUP, os requisitos foram agrupados logica e estruturalmente em Casos de Uso (UCs) abrangentes.
-
-A tabela também estabelece a rastreabilidade entre as funcionalidades propostas e os Requisitos Não Funcionais (RNFs), assegurando que restrições de usabilidade, desempenho e confiabilidade incidam corretamente sobre as operações do sistema.
-
-| RF | Caso de uso derivado | RNFs relacionados |
-| :--- | :--- | :--- |
-| **RF01 - Criar atividade educacional** | UC01 - Gerenciar Atividades Educacionais | RNF04, RNF08 |
-| **RF02 - Listar atividades educacional** | UC01 - Gerenciar Atividades Educacionais | RNF04, RNF08 |
-| **RF05 - Editar atividade educacional** | UC01 - Gerenciar Atividades Educacionais | RNF08 |
-| **RF06 - Excluir atividade educacional** | UC01 - Gerenciar Atividades Educacionais | RNF08 |
-| **RF03 - Responder atividade educacional** | UC02 - Realizar Atividades Interativas | RNF04, RNF08 |
-| **RF04 - Visualizar resultado da atividade** | UC02 - Realizar Atividades Interativas | RNF04, RNF08 |
-| **RF07 - Criar insígnia** | UC03 - Gerenciar Sistema de Recompensas | RNF08 |
-| **RF08 - Editar insígnia** | UC03 - Gerenciar Sistema de Recompensas | RNF08 |
-| **RF09 - Excluir insígnias** | UC03 - Gerenciar Sistema de Recompensas | RNF08 |
-| **RF10 - Criar publicação** | UC04 - Gerenciar Feed Social | RNF03, RNF04, RNF08, RNF09 |
-| **RF11 - Editar publicação** | UC04 - Gerenciar Feed Social | RNF03, RNF08, RNF09 |
-| **RF12 - Listar publicações** | UC04 - Gerenciar Feed Social | RNF03, RNF04, RNF08 |
-| **RF13 - Excluir publicação** | UC04 - Gerenciar Feed Social | RNF08 |
-| **RF14 - Interagir com a publicação** | UC04 - Gerenciar Feed Social | RNF03, RNF04, RNF08 |
-| **RF15 - Criar eventos** | UC05 - Gerenciar Eventos Comunitários | RNF03, RNF08, RNF09 |
-| **RF16 - Editar eventos** | UC05 - Gerenciar Eventos Comunitários | RNF03, RNF08 |
-| **RF17 - Listar eventos** | UC05 - Gerenciar Eventos Comunitários | RNF03, RNF04, RNF08 |
-| **RF18 - Excluir eventos** | UC05 - Gerenciar Eventos Comunitários | RNF08 |
-| **RF19 - Compartilhar eventos** | UC05 - Gerenciar Eventos Comunitários | RNF03, RNF08 |
-| **RF20 - Banir usuário** | UC06 - Gerenciar Acessos e Permissões | RNF08 |
-| **RF21 - Atribuir cargos de usuário** | UC06 - Gerenciar Acessos e Permissões | RNF08 |
-| **RF22 - Editar cargos de usuário** | UC06 - Gerenciar Acessos e Permissões | RNF08 |
-| **RF23 - Listar cargos de usuário** | UC06 - Gerenciar Acessos e Permissões | RNF08 |
-| **RF24 - Excluir cargos de usuário** | UC06 - Gerenciar Acessos e Permissões | RNF08 |
-| **RF25 - Candidatar-se a professor** | UC07 - Gerenciar Credenciais da Conta | RNF08 |
-| **RF26 - Recuperar senha** | UC07 - Gerenciar Credenciais da Conta | RNF08 |
-| **RF27 - Criar denúncia** | UC08 - Gerenciar Moderação de Conteúdo | RNF03, RNF08 |
-| **RF28 - Atualizar status de denúncia** | UC08 - Gerenciar Moderação de Conteúdo | RNF08 |
-| **RF29 - Listar denúncias** | UC08 - Gerenciar Moderação de Conteúdo | RNF08 |
-| **RF30 - Criar categoria de denúncia** | UC09 - Gerenciar Tipos de Denúncias | RNF08 |
-| **RF31 - Editar categoria de denúncia** | UC09 - Gerenciar Tipos de Denúncias | RNF08 |
-| **RF32 - Listar categorias de denúncia** | UC09 - Gerenciar Tipos de Denúncias | RNF08 |
-| **RF33 - Excluir categoria de denúncia** | UC09 - Gerenciar Tipos de Denúncias | RNF08 |
-| **RF34 - Cadastrar vídeo** | UC10 - Gerenciar Acervo de Vídeos | RNF08, RNF09 |
-| **RF35 - Exibir vídeo** | UC10 - Gerenciar Acervo de Vídeos | RNF01, RNF02, RNF08 |
-| **RF36 - Excluir vídeo** | UC10 - Gerenciar Acervo de Vídeos | RNF08 |
-| **RF37 - Associar vídeo** | UC10 - Gerenciar Acervo de Vídeos | RNF08 |
-| **RF38 - Desassociar vídeo** | UC10 - Gerenciar Acervo de Vídeos | RNF08 |
-| **RF39 - Cadastrar áudio** | UC11 - Gerenciar Acervo de Áudios | RNF08, RNF09 |
-| **RF40 - Reproduzir áudio** | UC11 - Gerenciar Acervo de Áudios | RNF01, RNF02, RNF08 |
-| **RF41 - Excluir áudio** | UC11 - Gerenciar Acervo de Áudios | RNF08 |
-| **RF42 - Associar áudio** | UC11 - Gerenciar Acervo de Áudios | RNF08 |
-| **RF43 - Desassociar áudio** | UC11 - Gerenciar Acervo de Áudios | RNF08 |
-| **RF44 - Editar usuário** | UC12 - Gerenciar Perfil Pessoal | RNF08 |
-| **RF45 - Listar histórico de traduções** | UC12 - Gerenciar Perfil Pessoal | RNF08 |
-| **RF46 - Favoritar tradução** | UC12 - Gerenciar Perfil Pessoal | RNF08 |
-| **RF47 - Listar traduções favoritadas** | UC12 - Gerenciar Perfil Pessoal | RNF08 |
-| **RF48 - Listar insígnias** | UC12 - Gerenciar Perfil Pessoal | RNF08 |
-| **RF49 - Baixar traduções** | UC13 - Sincronizar Acervo Offline | RNF06, RNF08 |
-
-## 10.2 Casos de Uso
-
-Os casos de uso foram separados em páginas próprias para facilitar a leitura e reduzir o tamanho desta página.
+## 10.1 Casos de Uso
 
 <div class="uc-link-grid" markdown="1">
 
@@ -92,7 +30,7 @@ Os casos de uso foram separados em páginas próprias para facilitar a leitura e
 
 </div>
 
-## 10.3 Metodologia de Priorização dos Itens de Trabalho (Impacto vs. Esforço)
+## 10.2 Metodologia de Priorização dos Itens de Trabalho (Impacto vs. Esforço)
 
 Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, os **Casos de Uso (UCs)** e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
@@ -102,7 +40,7 @@ A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento p
 2. **Esforço Técnico:** Estimado por meio de uma dinâmica de avaliação por consenso, baseada na projeção de horas totais de desenvolvimento necessárias para a implementação completa.
 3. **Valor de Priorização (Métrica de Retorno):** Calculado por meio da razão matemática direta entre o Impacto e o Esforço através da fórmula **(Impacto / Esforço)**. Essa métrica atua como o indicador único e definitivo do projeto, determinando a densidade de retorno de cada requisito (quais itens trazem maior ganho estratégico em relação ao tempo investido).
 
-### 10.3.1 Critérios Analíticos Básicos (Ingredientes)
+### 10.2.1 Critérios Analíticos Básicos (Ingredientes)
 A nota de **Impacto** foi derivada de uma priorização prévia realizada pela cliente, utilizando a técnica MoSCoW:
 
 * **Nota 5:** Requisitos *Must Have*.
@@ -125,7 +63,7 @@ O dimensionamento do **Esforço** foi convertido em uma escala linear de 1 a 5, 
 
 * **Nota 5:** Acima de 42 horas totais.
 
-### 10.3.2 Regras de Corte, MVP e Escopo Adicional
+### 10.2.2 Regras de Corte, MVP e Escopo Adicional
 
 Uma vez calculado o **Valor de Priorização**, ele foi utilizado como a única métrica balizadora para alocar os requisitos funcionais em quatro quadrantes de desenvolvimento, definindo formalmente a composição do escopo:
 
@@ -143,7 +81,7 @@ Os módulos de **Gamificação (Insígnias)** e **Perfil do Usuário (Histórico
 **Requisitos Descartados:**
 Os módulos de **Denúncias** e **Eventos** (Valor = 0.67), embora estivessem em Q3, apresentaram nota inferior aos itens de gamificação, sendo formalmente descartados do cronograma atual por restrição de prazo, juntamente com a totalidade do **Feed Social** (Q4, Valor = 0.40).
 
-### 10.3.3 Matriz de Priorização Detalhada por Caso de Uso (UC)
+### 10.2.3 Matriz de Priorização Detalhada por Caso de Uso (UC)
 
 A tabela abaixo apresenta a distribuição detalhada dos 13 casos de uso da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
 

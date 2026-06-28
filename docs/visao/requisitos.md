@@ -1,6 +1,6 @@
 ## 8.1 Lista de Requisitos Funcionais (Especificação Suplementar)
 
-Os requisitos funcionais estabelecem um consenso que fomenta a implementação dos objetivos planejados para o app Nativo. A seguir, é apresentado o escopo atualizado do sistema, totalizando 49 requisitos funcionais organizados de acordo com as Características do Produto (CPs) e os Objetivos Estratégicos (OEs) do projeto. 
+Os requisitos funcionais estabelecem um consenso que fomenta a implementação dos objetivos planejados para o app Nativo. A seguir, é apresentado o escopo atualizado do sistema, totalizando 50 requisitos funcionais organizados de acordo com as Características do Produto (CPs) e os Objetivos Estratégicos (OEs) do projeto. 
 
 ### (OE1) Aumentar a retenção e o engajamento na plataforma
 
@@ -9,7 +9,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
 | <span id="req-rf01" class="rf-anchor">RF01</span> | Criar atividade educacional | Permitir que professores criem atividades para os usuários resolverem. |
-| <span id="req-rf02" class="rf-anchor">RF02</span> | Listar atividades educacionais | Permitir que os usuários visualizem a lista de atividades disponíveis para resolução. |
+| <span id="req-rf02" class="rf-anchor">RF02</span> | Listar atividades educacionais para gerenciamento | Permitir que usuários autorizados visualizem as atividades educacionais cadastradas. |
 | RF03 | Responder atividade educacional | Permitir que os usuários submetam respostas às atividades publicadas. |
 | RF04 | Visualizar resultado da atividade | Permitir que os usuários visualizem a correção e a pontuação obtida após responderem a uma atividade. |
 | <span id="req-rf05" class="rf-anchor">RF05</span> | Editar atividade educacional | Permitir que professores, administradores e moderadores editem o conteúdo de uma atividade. |
@@ -17,6 +17,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | RF07 | Criar insígnia | Permitir que administradores, professores e moderadores criem insígnias de engajamento. |
 | RF08 | Editar insígnia | Permitir que administradores e moderadores alterem o nome, arte ou regras de uma insígnia. |
 | RF09 | Excluir insígnias | Permitir que administradores e moderadores removam insígnias do sistema. |
+| <span id="req-rf50" class="rf-anchor">RF50</span> | Listar atividades disponíveis para resolução | Permitir que usuários comuns visualizem as atividades educacionais disponíveis para resolução. |
 
 **CP2 - Criação de Feed Social Comunitário**
 
@@ -119,7 +120,7 @@ A matriz a seguir representa a rastreabilidade entre os Objetivos Específicos (
 
 | Contribuição principal | Contribuição secundária | CP | VN | RFs relacionados | RNFs relacionados |
 | :---: | :---: | :--- | :---: | :--- | :--- |
-| **OE1** | **OE3** | **CP1** - Mecanismos interativos de aprendizagem e engajamento | **VN1** | RF01 ao RF09 |
+| **OE1** | **OE3** | **CP1** - Mecanismos interativos de aprendizagem e engajamento | **VN1** | RF01 ao RF09, RF50 |
 | **OE1** | **OE3** | **CP2** - Feed Social Comunitário | **VN2** | RF10 ao RF19 | RNF03, RNF09 |
 | **OE2** | **OE3** | **CP3** - Controle de usuário | **VN3** | RF20 ao RF26 |
 | **OE2** | **OE3** | **CP4** - Sistema de denúncias | **VN4** | RF27 ao RF33 |

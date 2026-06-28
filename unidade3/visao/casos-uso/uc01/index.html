@@ -1,0 +1,1176 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Repositório de projeto da disciplina de REQ-T1, 2026.1">
+      
+      
+        <meta name="author" content="Equipe Anawê">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../img/IconNativo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>UC01 - Gerenciar Atividades Educacionais - Nativo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#uc01-gerenciar-atividades-educacionais" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Nativo" class="md-header__button md-logo" aria-label="Nativo" data-md-component="logo">
+      
+  <img src="../../../img/IconNativo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nativo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UC01 - Gerenciar Atividades Educacionais
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo"  aria-label="Mudar para tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="black"  aria-label="Mudar para tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Nativo" class="md-nav__button md-logo" aria-label="Nativo" data-md-component="logo">
+      
+  <img src="../../../img/IconNativo.png" alt="logo">
+
+    </a>
+    Nativo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Visão do Produto e Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Cenário Atual do Cliente e do Negócio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solucao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Solução Proposta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intervencao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Intervenção
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estrategias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estratégias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engenhariaRequisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Cronograma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Interação entre Equipe e Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Requisitos de Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dor%26dod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. DoR e DoD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Itens de Trabalho
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Lições Aprendidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entregas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entregas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/unidade1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/unidade2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/unidade3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidade 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-definition-of-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Definition of Ready
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="uc01-gerenciar-atividades-educacionais">UC01 - Gerenciar Atividades Educacionais</h1>
+<p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Professor, Administrador, Moderador</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que professores criem atividades educacionais e que professores, administradores e moderadores visualizem, editem e excluam atividades educacionais em suas respectivas páginas no aplicativo.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
+<ol>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>Para criar atividades, o ator deve possuir perfil de professor.</li>
+<li>Para listar atividades, o ator deve possuir perfil de professor, administrador ou moderador.</li>
+<li>Para editar ou excluir atividades, o ator deve possuir perfil de professor, administrador ou moderador.</li>
+<li>O ator deve acessar a página de atividades correspondente ao seu perfil.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
+</ol>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Criar Atividade Educacional</strong></p>
+<ol>
+<li>O professor acessa a seção de criação de atividade educacional. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O sistema valida se o ator possui perfil de professor. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O sistema apresenta o formulário de criação de atividade educacional. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O professor informa o título da atividade. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O professor informa, opcionalmente, a descrição da atividade. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O professor adiciona uma ou mais questões à atividade. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>Para cada questão, o professor informa o enunciado, as alternativas disponíveis e a alternativa correta. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O professor confirma a criação da atividade. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O sistema valida os dados obrigatórios da atividade. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O sistema registra a atividade no banco de dados. (<a href="#uc01-rf01">RF01</a>)</li>
+<li>O sistema disponibiliza a atividade criada para acesso conforme as permissões dos perfis autorizados. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a atividade foi criada. (<a href="#uc01-rf01">RF01</a>)</li>
+</ol>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Atividades Educacionais</strong></p>
+<ol>
+<li>O professor, administrador ou moderador acessa sua página de atividades educacionais. (<a href="#uc01-rf02">RF02</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc01-rf02">RF02</a>)</li>
+<li>O sistema busca as atividades educacionais disponíveis para o perfil do ator. (<a href="#uc01-rf02">RF02</a>)</li>
+<li>O sistema exibe a lista de atividades educacionais na página correspondente ao perfil do ator. (<a href="#uc01-rf02">RF02</a>)</li>
+<li>O ator visualiza as atividades cadastradas. (<a href="#uc01-rf02">RF02</a>)</li>
+</ol>
+<p><strong>FA02 - Editar Atividade Educacional</strong></p>
+<ol>
+<li>O professor, administrador ou moderador acessa a lista de atividades cadastradas em sua respectiva página. (<a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O ator seleciona uma atividade existente. (<a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema carrega os dados atuais da atividade. (<a href="#uc01-rf05">RF05</a>)</li>
+<li>O ator altera um ou mais campos da atividade, como título, descrição, questões, alternativas ou alternativa correta. (<a href="#uc01-rf05">RF05</a>)</li>
+<li>O ator confirma a edição da atividade. (<a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema valida os dados alterados. (<a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema atualiza o registro da atividade no banco de dados. (<a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a atividade foi atualizada. (<a href="#uc01-rf05">RF05</a>)</li>
+</ol>
+<p><strong>FA03 - Excluir Atividade Educacional</strong></p>
+<ol>
+<li>O professor, administrador ou moderador acessa a lista de atividades cadastradas em sua respectiva página. (<a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O ator seleciona uma atividade existente. (<a href="#uc01-rf06">RF06</a>)</li>
+<li>O ator aciona a opção de exclusão. (<a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema solicita confirmação da exclusão. (<a href="#uc01-rf06">RF06</a>)</li>
+<li>O ator confirma a exclusão. (<a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema remove a atividade do banco de dados ou altera seu status para indisponível. (<a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a atividade foi excluída. (<a href="#uc01-rf06">RF06</a>)</li>
+</ol>
+<p><strong>FA04 - Cancelar Criação ou Edição</strong></p>
+<ol>
+<li>Durante a criação ou edição da atividade, o ator aciona a opção de cancelar ou voltar. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema descarta alterações não salvas. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema retorna o ator para a tela anterior. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>Nenhum dado é registrado ou alterado no banco de dados. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Interface Indisponível para o Perfil do Ator</strong></p>
+<ol>
+<li>O professor, administrador ou moderador acessa o aplicativo autenticado. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema exibe apenas as interfaces e ações permitidas para aquele perfil. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>Caso o perfil do ator não possua permissão para determinada ação, a opção correspondente não é exibida na interface. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+</ol>
+<p><strong>FE02 - Dados Obrigatórios Ausentes</strong></p>
+<ol>
+<li>O professor tenta criar uma atividade ou o professor, administrador ou moderador tenta editar uma atividade sem preencher campos obrigatórios. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema identifica a ausência de dados obrigatórios. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema impede o salvamento da atividade. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema destaca os campos inválidos. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema orienta o ator a preencher as informações necessárias. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+</ol>
+<p>Campos obrigatórios mínimos:</p>
+<ul>
+<li>título;</li>
+<li>pelo menos uma questão;</li>
+<li>enunciado da questão;</li>
+<li>pelo menos duas alternativas;</li>
+<li>uma alternativa correta válida.</li>
+</ul>
+<p><strong>FE03 - Alternativa Correta Inválida</strong></p>
+<ol>
+<li>O ator informa uma alternativa correta inexistente ou incompatível com a lista de alternativas durante a criação ou edição da atividade. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema identifica a inconsistência. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema impede o salvamento da atividade. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+<li>O sistema exibe mensagem informando que a alternativa correta deve corresponder a uma das alternativas cadastradas. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>)</li>
+</ol>
+<p><strong>FE04 - Atividade Indisponível por Estado Desatualizado</strong></p>
+<ol>
+<li>O professor, administrador ou moderador visualiza uma atividade na lista antes da atualização completa do estado no banco ou na interface. (<a href="#uc01-rf02">RF02</a>)</li>
+<li>O ator tenta acessar a atividade para edição ou exclusão. (<a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema revalida a disponibilidade da atividade no backend antes de permitir a operação. (<a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema identifica que a atividade foi removida, desativada ou tornou-se indisponível. (<a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema impede a edição ou exclusão da atividade. (<a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema atualiza a lista de atividades disponíveis. (<a href="#uc01-rf02">RF02</a>)</li>
+<li>O sistema informa que a atividade não está mais disponível para a operação solicitada. (<a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+</ol>
+<p><strong>FE05 - Falha de Conectividade</strong></p>
+<ol>
+<li>O ator tenta criar, listar, editar ou excluir uma atividade sem conexão com o backend. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+</ol>
+<p><strong>FE06 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O ator confirma uma operação válida envolvendo uma atividade educacional. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema tenta registrar, atualizar, excluir ou consultar dados no Firestore. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc01-rf01">RF01</a>, <a href="#uc01-rf02">RF02</a>, <a href="#uc01-rf05">RF05</a>, <a href="#uc01-rf06">RF06</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC01.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc01-rf01" class="rf-anchor"></span><a href="../../requisitos/#req-rf01"><strong>RF01 - Criar atividade educacional</strong></a></td>
+<td style="text-align: left;">Permite que professores criem atividades educacionais.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc01-rf02" class="rf-anchor"></span><a href="../../requisitos/#req-rf02"><strong>RF02 - Listar atividades educacionais para gerenciamento</strong></a></td>
+<td style="text-align: left;">Permite que usuários autorizados visualizem as atividades educacionais cadastradas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc01-rf05" class="rf-anchor"></span><a href="../../requisitos/#req-rf05"><strong>RF05 - Editar atividade educacional</strong></a></td>
+<td style="text-align: left;">Permite que professores, administradores e moderadores editem o conteúdo de uma atividade educacional.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc01-rf06" class="rf-anchor"></span><a href="../../requisitos/#req-rf06"><strong>RF06 - Excluir atividade educacional</strong></a></td>
+<td style="text-align: left;">Permite que professores, administradores e moderadores excluam uma atividade educacional.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-definition-of-ready">10. Definition of Ready</h2>
+<p>Esta seção registra o print do checklist de Definition of Ready utilizado para validar a UC01.</p>
+<p><strong>Issue do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/22">Checklist DoR da UC01</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="Checklist DoR da UC01" src="../doruc01.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

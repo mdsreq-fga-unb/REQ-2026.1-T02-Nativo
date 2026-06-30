@@ -10,8 +10,8 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | :--- | :--- | :--- |
 | <span id="req-rf01" class="rf-anchor">RF01</span> | Criar atividade educacional | Permitir que professores criem atividades para os usuários resolverem. |
 | <span id="req-rf02" class="rf-anchor">RF02</span> | Listar atividades educacionais para gerenciamento | Permitir que usuários autorizados visualizem as atividades educacionais cadastradas. |
-| RF03 | Responder atividade educacional | Permitir que os usuários submetam respostas às atividades publicadas. |
-| RF04 | Visualizar resultado da atividade | Permitir que os usuários visualizem a correção e a pontuação obtida após responderem a uma atividade. |
+| <span id="req-rf03" class="rf-anchor">RF03</span> | Responder atividade educacional | Permitir que os usuários submetam respostas às atividades publicadas. |
+| <span id="req-rf04" class="rf-anchor">RF04</span> | Visualizar resultado da atividade | Permitir que os usuários visualizem a correção e a pontuação obtida após responderem a uma atividade. |
 | <span id="req-rf05" class="rf-anchor">RF05</span> | Editar atividade educacional | Permitir que professores, administradores e moderadores editem o conteúdo de uma atividade. |
 | <span id="req-rf06" class="rf-anchor">RF06</span> | Excluir atividade educacional | Permitir que professores, administradores e moderadores excluam uma atividade. |
 | RF07 | Criar insígnia | Permitir que administradores, professores e moderadores criem insígnias de engajamento. |

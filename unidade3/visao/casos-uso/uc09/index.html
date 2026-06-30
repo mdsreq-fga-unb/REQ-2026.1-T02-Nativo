@@ -23,7 +23,7 @@
     
     
       
-        <title>UC09 - Gerenciar Tipos de Denúncias (Categorias) - Nativo</title>
+        <title>UC09 - Gerenciar Tipos de Denúncias - Nativo</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uc09-gerenciar-tipos-de-denuncias-categorias" class="md-skip">
+        <a href="#uc09-gerenciar-tipos-de-denuncias" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UC09 - Gerenciar Tipos de Denúncias (Categorias)
+              UC09 - Gerenciar Tipos de Denúncias
             
           </span>
         </div>
@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -815,48 +944,160 @@
 
 
 
-<h1 id="uc09-gerenciar-tipos-de-denuncias-categorias">UC09 - Gerenciar Tipos de Denúncias (Categorias)</h1>
+<h1 id="uc09-gerenciar-tipos-de-denuncias">UC09 - Gerenciar Tipos de Denúncias</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Administrador</p>
-<p><strong>Objetivo:</strong> Permitir a manutenção (criação, listagem, edição e exclusão) dos tipos e categorias de infrações que são exibidos como opções para os usuários no momento de realizar uma denúncia.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar autenticado na plataforma com o nível de acesso de "Administrador".</p>
-<p><strong>Fluxo Principal (Listar e Criar Categoria - RF32, RF30):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Administrador</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que administradores criem, visualizem, editem e excluam categorias de denúncias utilizadas pelos usuários durante o registro de denúncias.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator acessa a área de Configurações da plataforma e navega até as opções de Moderação/Denúncias.</li>
-<li>O Sistema exibe a lista das categorias de denúncia ativas no momento (RF32).</li>
-<li>O ator aciona a opção para adicionar uma nova categoria.</li>
-<li>O Sistema apresenta um formulário simples (campo de texto para o nome do motivo e, opcionalmente, uma breve descrição).</li>
-<li>O ator preenche o nome da nova infração (ex: "Discurso de Ódio") e confirma a criação (RF30).</li>
-<li>O Sistema valida as informações, cadastra a nova categoria no banco de dados e recarrega a listagem, tornando essa nova opção imediatamente disponível para os usuários comuns.</li>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>O ator deve possuir perfil de administrador.</li>
+<li>O ator deve acessar a página de gerenciamento de categorias de denúncias.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li>
-<p><strong>FA01 - Editar Categoria (RF31):</strong> 1. No passo 2 do Fluxo Principal, o ator localiza uma categoria existente e escolhe a opção "Editar".</p>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Criar Categoria de Denúncia</strong></p>
 <ol>
-<li>O Sistema carrega o formulário com o título e descrição atuais.</li>
-<li>O ator realiza os ajustes textuais necessários e confirma a alteração.</li>
-<li>O Sistema atualiza o registro no banco de dados.</li>
+<li>O administrador acessa a página de gerenciamento de categorias de denúncias. (<a href="#uc09-rf32">RF32</a>)</li>
+<li>O sistema identifica o administrador autenticado. (<a href="#uc09-rf32">RF32</a>)</li>
+<li>O sistema apresenta a lista de categorias cadastradas e a opção de criar uma nova categoria. (<a href="#uc09-rf32">RF32</a>)</li>
+<li>O administrador seleciona a opção de criar categoria. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema apresenta o formulário de cadastro da categoria. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O administrador informa o nome da categoria e, opcionalmente, uma descrição. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O administrador confirma o cadastro. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema valida as informações fornecidas. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema registra a categoria no banco de dados. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema atualiza a lista de categorias. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf32">RF32</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a categoria foi criada. (<a href="#uc09-rf30">RF30</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA02 - Excluir/Inativar Categoria (RF33):</strong> 1. No passo 2 do Fluxo Principal, o ator seleciona a opção "Excluir" em uma categoria específica.</p>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Categorias</strong></p>
 <ol>
-<li>O Sistema exibe um alerta solicitando confirmação.</li>
-<li>O ator confirma.</li>
-<li>O Sistema remove a categoria (ou a inativa logicamente, caso existam denúncias antigas atreladas a ela) e atualiza a listagem.</li>
+<li>O administrador acessa a página de gerenciamento de categorias. (<a href="#uc09-rf32">RF32</a>)</li>
+<li>O sistema busca as categorias cadastradas. (<a href="#uc09-rf32">RF32</a>)</li>
+<li>O sistema exibe a lista de categorias disponíveis. (<a href="#uc09-rf32">RF32</a>)</li>
+<li>O administrador visualiza as categorias cadastradas. (<a href="#uc09-rf32">RF32</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li>
-<p><strong>FE01 - Categoria Duplicada:</strong> No passo 6 do Fluxo Principal, se o ator tentar cadastrar um motivo com um nome exatamente igual a uma categoria já existente, o Sistema bloqueia a gravação e exibe um alerta informando que a categoria já consta no catálogo.</p>
-</li>
-<li>
-<p><strong>FE02 - Campo Obrigatório Vazio:</strong> Caso o ator tente salvar sem preencher o nome da categoria, o Sistema destaca o campo em vermelho e impede a submissão.</p>
-</li>
-</ul>
+<p><strong>FA02 - Editar Categoria</strong></p>
+<ol>
+<li>O administrador seleciona uma categoria existente. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O administrador aciona a opção de edição. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema carrega as informações atuais da categoria. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O administrador altera os dados desejados. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O administrador confirma a alteração. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema valida as informações fornecidas. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema atualiza a categoria no banco de dados. (<a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a categoria foi atualizada. (<a href="#uc09-rf31">RF31</a>)</li>
+</ol>
+<p><strong>FA03 - Excluir Categoria</strong></p>
+<ol>
+<li>O administrador seleciona uma categoria existente. (<a href="#uc09-rf33">RF33</a>)</li>
+<li>O administrador aciona a opção de exclusão. (<a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema solicita confirmação da operação. (<a href="#uc09-rf33">RF33</a>)</li>
+<li>O administrador confirma a exclusão. (<a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema remove ou inativa a categoria, conforme a existência de denúncias vinculadas. (<a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema atualiza a lista de categorias. (<a href="#uc09-rf33">RF33</a>, <a href="#uc09-rf32">RF32</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a categoria foi removida. (<a href="#uc09-rf33">RF33</a>)</li>
+</ol>
+<p><strong>FA04 - Cancelar Operação</strong></p>
+<ol>
+<li>Durante a criação ou edição de uma categoria, o administrador seleciona a opção de cancelar ou voltar. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema descarta as alterações não salvas. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema retorna para a tela anterior. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+<li>Nenhuma alteração é realizada no banco de dados. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Categoria Duplicada</strong></p>
+<ol>
+<li>O administrador informa o nome de uma categoria já existente. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema verifica as categorias cadastradas. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema identifica a duplicidade. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema impede o cadastro da categoria. (<a href="#uc09-rf30">RF30</a>)</li>
+<li>O sistema informa que já existe uma categoria com esse nome. (<a href="#uc09-rf30">RF30</a>)</li>
+</ol>
+<p><strong>FE02 - Campo Obrigatório Não Preenchido</strong></p>
+<ol>
+<li>O administrador tenta criar ou editar uma categoria sem informar o nome. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema identifica a ausência do campo obrigatório. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema impede o salvamento. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+<li>O sistema destaca o campo obrigatório. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>)</li>
+</ol>
+<p><strong>FE03 - Categoria Indisponível</strong></p>
+<ol>
+<li>O administrador tenta editar ou excluir uma categoria. (<a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema verifica a existência da categoria. (<a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema identifica que a categoria foi removida ou tornou-se indisponível. (<a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema impede a operação. (<a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema atualiza a listagem de categorias. (<a href="#uc09-rf32">RF32</a>)</li>
+</ol>
+<p><strong>FE04 - Usuário Sem Permissão</strong></p>
+<ol>
+<li>Um usuário sem perfil de administrador tenta acessar o gerenciamento de categorias. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema identifica a ausência de permissões administrativas. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema bloqueia o acesso à funcionalidade. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema informa que o acesso é restrito a administradores. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+</ol>
+<p><strong>FE05 - Falha de Conectividade</strong></p>
+<ol>
+<li>O administrador tenta executar uma operação sem conexão com o backend. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema orienta o administrador a tentar novamente quando a conexão for restabelecida. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+</ol>
+<p><strong>FE06 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O administrador confirma uma operação válida envolvendo categorias de denúncias. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema tenta registrar, atualizar, excluir ou consultar dados no Firestore. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc09-rf30">RF30</a>, <a href="#uc09-rf31">RF31</a>, <a href="#uc09-rf32">RF32</a>, <a href="#uc09-rf33">RF33</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC09.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc09-rf30" class="rf-anchor"></span><a href="../../requisitos/#req-rf30"><strong>RF30 - Criar categoria de denúncia</strong></a></td>
+<td style="text-align: left;">Permite que administradores criem novas classificações para organizar os tipos de denúncia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc09-rf31" class="rf-anchor"></span><a href="../../requisitos/#req-rf31"><strong>RF31 - Editar categoria de denúncia</strong></a></td>
+<td style="text-align: left;">Permite que administradores alterem o título ou descrição de uma categoria existente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc09-rf32" class="rf-anchor"></span><a href="../../requisitos/#req-rf32"><strong>RF32 - Listar categorias de denúncia</strong></a></td>
+<td style="text-align: left;">Permite que o sistema exiba as categorias disponíveis no momento do preenchimento de uma denúncia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc09-rf33" class="rf-anchor"></span><a href="../../requisitos/#req-rf33"><strong>RF33 - Excluir categoria de denúncia</strong></a></td>
+<td style="text-align: left;">Permite que administradores removam categorias de denúncias obsoletas.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/30">Uc09</a></p>
+<p>Checklist não aplicado, pois a UC09 não foi desenvolvida no escopo implementado.</p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

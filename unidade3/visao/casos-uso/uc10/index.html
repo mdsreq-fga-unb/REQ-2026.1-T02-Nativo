@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -817,52 +946,162 @@
 
 <h1 id="uc10-gerenciar-acervo-de-videos">UC10 - Gerenciar Acervo de Vídeos</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Administrador, Professor (Gestão); Usuário (Visualização)</p>
-<p><strong>Objetivo:</strong> Permitir o enrichment da plataforma por meio do cadastro e associação de vídeos às traduções do idioma Munduruku, garantindo também a reprodução fluida desse conteúdo pelos usuários.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar autenticado. Para operações de cadastro e exclusão, exige-se perfil de "Administrador" ou "Professor". Para exibir o vídeo, qualquer nível de acesso é permitido.</p>
-<p><strong>Fluxo Principal (Cadastrar e Associar Vídeo - RF34, RF37):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Administrador, Professor, Usuário autenticado</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que administradores e professores cadastrem, associem, desassociem e excluam vídeos do acervo, bem como permitir que usuários reproduzam vídeos associados às traduções.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator (Administrador/Professor) acessa a tela de detalhes de uma tradução específica no dicionário da plataforma.</li>
-<li>O Sistema exibe as informações textuais e a seção de mídias associadas.</li>
-<li>O ator aciona o opção para cadastrar um novo vídeo.</li>
-<li>O Sistema abre um modal solicitando o arquivo de vídeo (ou link, caso utilizem hospedagem externa).</li>
-<li>O ator insere/faz o upload do vídeo e confirma.</li>
-<li>O Sistema processa o arquivo, salva no banco de dados (RF34), associa o vídeo diretamente àquela tradução (RF37) e atualiza a interface exibindo o conteúdo anexado.</li>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>O administrador ou professor deve possuir permissão para gerenciar vídeos.</li>
+<li>A tradução à qual o vídeo será associado deve existir.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore e ao serviço de armazenamento de arquivos.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li>
-<p><strong>FA01 - Reproduzir/Exibir Vídeo Associado (RF35):</strong> 1. O actor (Usuário comum) navega pela plataforma e acessa uma tradução que possui vídeo.</p>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Cadastrar e Associar Vídeo</strong></p>
 <ol>
-<li>O Sistema carrega a interface de tradução juntamente com um player de vídeo embutido.</li>
-<li>O ator aciona o botão de "Play".</li>
-<li>O Sistema reproduz o conteúdo audiovisual na própria tela, auxiliando o usuário na visualização e escuta da palavra/expressão Munduruku.</li>
+<li>O administrador ou professor acessa os detalhes de uma tradução. (<a href="#uc10-rf37">RF37</a>)</li>
+<li>O sistema apresenta as informações da tradução e os vídeos associados. (<a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf37">RF37</a>)</li>
+<li>O ator seleciona a opção de adicionar vídeo. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema apresenta a interface para upload ou inserção do link do vídeo. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O ator seleciona o arquivo ou informa o link do vídeo. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O ator confirma o cadastro. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema valida as informações fornecidas. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema registra o vídeo no acervo. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema associa o vídeo à tradução selecionada. (<a href="#uc10-rf37">RF37</a>)</li>
+<li>O sistema atualiza a tela exibindo o vídeo associado. (<a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf37">RF37</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o vídeo foi cadastrado e associado. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf37">RF37</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA02 - Desassociar Vídeo (RF38):</strong> 1. No passo 2 do Fluxo Principal, o ator (Administrador) seleciona um vídeo já vinculado e escolhe a opção "Desvincular".</p>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Reproduzir Vídeo</strong></p>
 <ol>
-<li>O Sistema rompe a ligação entre aquele vídeo e a tradução específica, mantendo o arquivo no acervo geral, e atualiza a tela.</li>
+<li>O usuário acessa uma tradução que possui vídeo associado. (<a href="#uc10-rf35">RF35</a>)</li>
+<li>O sistema apresenta o player de vídeo. (<a href="#uc10-rf35">RF35</a>)</li>
+<li>O usuário seleciona a opção de reprodução. (<a href="#uc10-rf35">RF35</a>)</li>
+<li>O sistema reproduz o vídeo na própria interface. (<a href="#uc10-rf35">RF35</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA03 - Excluir Vídeo do Acervo (RF36):</strong> 1. No passo 2 do Fluxo Principal (ou no painel geral de mídias), o ator seleciona a opção "Excluir Definitivamente" em um vídeo.</p>
+<p><strong>FA02 - Desassociar Vídeo</strong></p>
 <ol>
-<li>O Sistema emite um alerta de remoção permanente.</li>
-<li>O ator confirma.</li>
-<li>O Sistema apaga o arquivo do servidor/banco de dados, liberando espaço.</li>
+<li>O administrador ou professor seleciona um vídeo associado a uma tradução. (<a href="#uc10-rf38">RF38</a>)</li>
+<li>O ator seleciona a opção de desassociar. (<a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema solicita confirmação da operação. (<a href="#uc10-rf38">RF38</a>)</li>
+<li>O ator confirma a desassociação. (<a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema remove apenas o vínculo entre o vídeo e a tradução. (<a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema atualiza a interface da tradução. (<a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o vídeo foi desassociado. (<a href="#uc10-rf38">RF38</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li>
-<p><strong>FE01 - Limite de Tamanho Excedido (RNF09):</strong> No passo 5 do Fluxo Principal, se o arquivo de vídeo enviado ultrapassar o limite máximo estipulado para a aplicação, o Sistema interrompe o upload imediatamente e alerta o ator sobre a restrição de tamanho.</p>
-</li>
-<li>
-<p><strong>FE02 - Formato de Arquivo Incompatível:</strong> Caso o ator tente anexar um arquivo que não seja um formato de vídeo suportado (ex: enviar um PDF ou executável no lugar de um MP4), o Sistema recusa a entrada e orienta sobre os formatos válidos.</p>
-</li>
-</ul>
+<p><strong>FA03 - Excluir Vídeo do Acervo</strong></p>
+<ol>
+<li>O administrador ou professor seleciona um vídeo do acervo. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O ator seleciona a opção de exclusão definitiva. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O sistema solicita confirmação da operação. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O ator confirma a exclusão. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O sistema remove o vídeo do armazenamento e do banco de dados. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O sistema remove automaticamente as associações existentes. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O sistema atualiza a listagem do acervo. (<a href="#uc10-rf36">RF36</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o vídeo foi removido. (<a href="#uc10-rf36">RF36</a>)</li>
+</ol>
+<p><strong>FA04 - Cancelar Operação</strong></p>
+<ol>
+<li>Durante o cadastro ou associação de um vídeo, o ator seleciona a opção de cancelar ou voltar. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf37">RF37</a>)</li>
+<li>O sistema descarta as alterações não salvas. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf37">RF37</a>)</li>
+<li>O sistema retorna para a tela anterior. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf37">RF37</a>)</li>
+<li>Nenhum vídeo é cadastrado ou associado. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf37">RF37</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Arquivo Acima do Limite Permitido</strong></p>
+<ol>
+<li>O ator seleciona um arquivo de vídeo para upload. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema verifica o tamanho do arquivo. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema identifica que o arquivo ultrapassa o limite permitido. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema interrompe o upload. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema informa o limite máximo permitido. (<a href="#uc10-rf34">RF34</a>)</li>
+</ol>
+<p><strong>FE02 - Formato de Vídeo Não Suportado</strong></p>
+<ol>
+<li>O ator seleciona um arquivo incompatível. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema identifica que o formato não é suportado. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema rejeita o arquivo. (<a href="#uc10-rf34">RF34</a>)</li>
+<li>O sistema informa os formatos aceitos pelo sistema. (<a href="#uc10-rf34">RF34</a>)</li>
+</ol>
+<p><strong>FE03 - Tradução Indisponível</strong></p>
+<ol>
+<li>O ator tenta associar ou visualizar um vídeo vinculado a uma tradução. (<a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema verifica a existência da tradução. (<a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema identifica que a tradução foi removida ou encontra-se indisponível. (<a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema impede a operação. (<a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+</ol>
+<p><strong>FE04 - Usuário Sem Permissão</strong></p>
+<ol>
+<li>Um usuário sem perfil de administrador ou professor tenta gerenciar vídeos. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema identifica a ausência das permissões necessárias. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema bloqueia o acesso às funcionalidades administrativas. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema informa que o acesso é restrito. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+</ol>
+<p><strong>FE05 - Falha de Conectividade</strong></p>
+<ol>
+<li>O ator tenta executar uma operação envolvendo vídeos sem conexão com o backend. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+</ol>
+<p><strong>FE06 - Erro Interno no Armazenamento</strong></p>
+<ol>
+<li>O ator confirma uma operação válida envolvendo vídeos. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema tenta armazenar, remover ou recuperar o vídeo. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O serviço de armazenamento retorna erro ou indisponibilidade. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc10-rf34">RF34</a>, <a href="#uc10-rf35">RF35</a>, <a href="#uc10-rf36">RF36</a>, <a href="#uc10-rf37">RF37</a>, <a href="#uc10-rf38">RF38</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC10.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc10-rf34" class="rf-anchor"></span><a href="../../requisitos/#req-rf34"><strong>RF34 - Cadastrar vídeo</strong></a></td>
+<td style="text-align: left;">Permite que administradores e professores cadastrem vídeos no acervo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc10-rf35" class="rf-anchor"></span><a href="../../requisitos/#req-rf35"><strong>RF35 - Exibir vídeo</strong></a></td>
+<td style="text-align: left;">Permite que usuários reproduzam vídeos associados às traduções.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc10-rf36" class="rf-anchor"></span><a href="../../requisitos/#req-rf36"><strong>RF36 - Excluir vídeo</strong></a></td>
+<td style="text-align: left;">Permite que administradores e professores removam vídeos do acervo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc10-rf37" class="rf-anchor"></span><a href="../../requisitos/#req-rf37"><strong>RF37 - Associar vídeo</strong></a></td>
+<td style="text-align: left;">Permite que vídeos sejam vinculados às traduções cadastradas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc10-rf38" class="rf-anchor"></span><a href="../../requisitos/#req-rf38"><strong>RF38 - Desassociar vídeo</strong></a></td>
+<td style="text-align: left;">Permite que administradores e professores removam a associação entre um vídeo e uma tradução.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/20">Issue Uc10</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="Checklist DoR da UC10" src="../dor.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

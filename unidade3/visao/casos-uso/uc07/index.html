@@ -23,7 +23,7 @@
     
     
       
-        <title>UC07 - Gerenciar Credenciais da Conta - Nativo</title>
+        <title>UC07 - Redefinir Senha de Acesso - Nativo</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uc07-gerenciar-credenciais-da-conta" class="md-skip">
+        <a href="#uc07-redefinir-senha-de-acesso" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UC07 - Gerenciar Credenciais da Conta
+              UC07 - Redefinir Senha de Acesso
             
           </span>
         </div>
@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -815,39 +944,131 @@
 
 
 
-<h1 id="uc07-gerenciar-credenciais-da-conta">UC07 - Gerenciar Credenciais da Conta</h1>
+<h1 id="uc07-redefinir-senha-de-acesso">UC07 - Redefinir Senha de Acesso</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Usuário (Visitante não autenticado ou Aluno autenticado)</p>
-<p><strong>Objetivo:</strong> Permitir a gestão autônoma do acesso do usuário, englobando o fluxo de recuperação de senhas perdidas e o processo de candidatura para obter permissões de ensino.</p>
-<p><strong>Pré-condições:</strong> Para recuperação de senha, o ator não precisa estar autenticado. Para a candidatura, o ator deve estar logado como usuário comum.</p>
-<p><strong>Fluxo Principal (Recuperar Senha de Acesso - RF26):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Usuário não autenticado</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que usuários recuperem o acesso à conta por meio da redefinição da senha utilizando um código de verificação enviado para o e-mail cadastrado.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>Na tela inicial de login do aplicativo, o ator aciona a opção "Esqueci minha senha".</li>
-<li>O Sistema apresenta um formulário solicitando o e-mail vinculado à conta.</li>
-<li>O ator informa o e-mail e confirma a solicitud.</li>
-<li>O Sistema verifica a existência do usuário no banco de dados, gera um código/link temporário e envia para a caixa de entrada do ator.</li>
-<li>O ator acessa o link/código recebido, insere sua nova senha de preferência e confirma.</li>
-<li>O Sistema criptografa a nova senha, atualiza o registro no banco de dados e notifica o sucesso, redirecionando o ator de volta para a tela de login.</li>
+<li>O ator deve possuir uma conta cadastrada na plataforma.</li>
+<li>O ator deve acessar a tela de login.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O serviço de envio de e-mails deve estar disponível.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li><strong>FA01 - Candidatar-se a Professor (RF25):</strong> 1. O ator (já autenticado na plataforma) acessa a tela de configurações do seu perfil.<ol>
-<li>O ator aciona a opção "Solicitar Perfil de Professor".</li>
-<li>O Sistema apresenta um formulário para preenchimento da justificativa ou inserção de credenciais que comprovem sua aptidão (ex: vínculo com a escola da aldeia).</li>
-<li>O ator preenche as informações solicitadas e submete a candidatura.</li>
-<li>O Sistema registra o pedido com o status "Pendente" no banco de dados e envia um alerta para o painel dos Administradores (que utilizarão o UC06 para aprovar ou rejeitar futuramente).</li>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Recuperar Senha</strong></p>
+<ol>
+<li>O usuário acessa a tela de login. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O usuário seleciona a opção "Esqueci minha senha". (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema apresenta o formulário de recuperação de senha. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O usuário informa o e-mail vinculado à conta. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O usuário confirma a solicitação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema verifica a solicitação e gera um código de recuperação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema envia o código para o e-mail informado. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema apresenta a tela para validação do código e definição da nova senha. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O usuário informa o código recebido, a nova senha e sua confirmação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema valida o código e as informações fornecidas. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema criptografa a nova senha e atualiza o registro do usuário no banco de dados. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a senha foi redefinida. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema redireciona o usuário para a tela de login. (<a href="#uc07-rf26">RF26</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li>
-<p><strong>FE01 - E-mail Inexistente:</strong> No passo 4 do Fluxo Principal, se o e-mail informado não for encontrado na base de dados, o Sistema exibe uma mensagem genérica de segurança (ex: "Se o e-mail constar em nossa base, um link de recuperação foi enviado") para evitar o vazamento e descoberta de e-mails cadastrados.</p>
-</li>
-<li>
-<p><strong>FE02 - Solicitação de Professor Duplicada:</strong> No passo 4 do FA01, se o ator tentar enviar uma candidatura, mas o Sistema detectar que já existe um pedido "Pendente" associado àquela conta, a submissão é bloqueada e um aviso de "Solicitação já em análise" é exibido.</p>
-</li>
-</ul>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Reenviar Código de Recuperação</strong></p>
+<ol>
+<li>O usuário solicita o reenvio do código de recuperação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema verifica se o tempo mínimo para reenvio foi atingido. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema invalida o código anterior. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema gera um novo código de recuperação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema envia o novo código para o e-mail informado. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O fluxo retorna ao passo 9 do Fluxo Principal. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<p><strong>FA02 - Cancelar Recuperação</strong></p>
+<ol>
+<li>Durante o processo de recuperação, o usuário seleciona a opção de cancelar ou voltar. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema encerra o processo de recuperação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema retorna o usuário para a tela de login. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - E-mail Não Encontrado</strong></p>
+<ol>
+<li>O usuário informa um e-mail para recuperação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema verifica a solicitação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema exibe uma mensagem genérica informando que, caso o e-mail esteja cadastrado, um código de recuperação será enviado. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema não informa se o e-mail existe ou não na base de usuários. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<p><strong>FE02 - Código Inválido ou Expirado</strong></p>
+<ol>
+<li>O usuário informa um código inválido ou expirado. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema identifica a inconsistência. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema impede a redefinição da senha. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema informa que o código é inválido ou expirou. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema orienta o usuário a solicitar um novo código. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<p><strong>FE03 - Senhas Não Coincidem</strong></p>
+<ol>
+<li>O usuário informa senhas diferentes nos campos de nova senha e confirmação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema identifica a inconsistência. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema impede a atualização da senha. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema destaca os campos incorretos. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema solicita que as senhas sejam informadas novamente. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<p><strong>FE04 - Falha no Envio do E-mail</strong></p>
+<ol>
+<li>O sistema tenta enviar o código de recuperação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O serviço de e-mail retorna erro ou indisponibilidade. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema interrompe o envio do código. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema informa que não foi possível enviar o e-mail no momento. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema orienta o usuário a tentar novamente mais tarde. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<p><strong>FE05 - Falha de Conectividade</strong></p>
+<ol>
+<li>O usuário tenta recuperar a senha sem conexão com o backend. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema orienta o usuário a tentar novamente quando a conexão for restabelecida. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<p><strong>FE06 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O sistema tenta validar ou atualizar os dados da recuperação de senha. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc07-rf26">RF26</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc07-rf26">RF26</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC07.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc07-rf26" class="rf-anchor"></span><a href="../../requisitos/#req-rf26"><strong>RF26 - Recuperar senha</strong></a></td>
+<td style="text-align: left;">Permite que o usuário recupere o acesso à sua conta via redefinição de senha por e-mail.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/28">Issue Uc07</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="Checklist DoR da UC07" src="../dor.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

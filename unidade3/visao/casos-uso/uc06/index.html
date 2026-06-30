@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -817,49 +946,168 @@
 
 <h1 id="uc06-gerenciar-acessos-e-permissoes">UC06 - Gerenciar Acessos e Permissões</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Administrador</p>
-<p><strong>Objetivo:</strong> Permitir o controle administrativo dos níveis de acesso da plataforma, incluindo a listagem, atribuição, edição e revogação de cargos, bem como o banimento de usuários infratores.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar autenticado no sistema com o nível de acesso máximo ("Administrador").</p>
-<p><strong>Fluxo Principal (Listar Usuários e Atribuir Cargos):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Administrador</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que administradores gerenciem os níveis de acesso dos usuários, atribuindo, alterando, revogando cargos e banindo usuários da plataforma.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator acessa o painel de Administração e navega até a aba de Gestão de Acessos.</li>
-<li>O Sistema exibe a lista completa de usuários cadastrados na plataforma e seus respectivos cargos/níveis de acesso atuais (RF23).</li>
-<li>O ator localiza um usuário comum e aciona a opção para promover/atribuir um novo cargo (ex: definir como Professor).</li>
-<li>O Sistema exibe as opções de níveis de acesso disponíveis na arquitetura.</li>
-<li>O ator seleciona o cargo desejado e confirma a atribuição (RF21).</li>
-<li>O Sistema valida a operação, atualiza as credenciais de permissão do usuário no banco de dados e recarrega a listagem refletindo a mudança.</li>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>O ator deve possuir perfil de administrador.</li>
+<li>O ator deve acessar a página de Gestão de Acessos.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li>
-<p><strong>FA01 - Editar Cargo de Usuário (RF22):</strong> 1. No passo 2 do Fluxo Principal, o ator localiza um usuário que já possui um cargo específico e escolhe a opção "Alterar Permissão".</p>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Atribuir Cargo ao Usuário</strong></p>
 <ol>
-<li>O Sistema exibe o status atual e as outras opções disponíveis.</li>
-<li>O ator seleciona o novo cargo e confirma.</li>
-<li>O Sistema aplica a modificação nas regras de acesso do usuário imediatamente.</li>
+<li>O administrador acessa a página de Gestão de Acessos. (<a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema identifica o administrador autenticado. (<a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema apresenta a lista de usuários cadastrados e seus respectivos cargos. (<a href="#uc06-rf23">RF23</a>)</li>
+<li>O administrador seleciona um usuário comum. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O administrador aciona a opção de atribuir cargo. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O sistema apresenta os cargos disponíveis. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O administrador seleciona o cargo desejado. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O administrador confirma a operação. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O sistema valida a solicitação. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O sistema atualiza as permissões do usuário no banco de dados. (<a href="#uc06-rf21">RF21</a>)</li>
+<li>O sistema atualiza a listagem de usuários. (<a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o cargo foi atribuído. (<a href="#uc06-rf21">RF21</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA02 - Revogar Cargo Especial (RF24):</strong> 1. No passo 2 do Fluxo Principal, o ator seleciona um usuário (ex: Professor) e escolhe a ação de revogar/excluir privilégios.</p>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Usuários</strong></p>
 <ol>
-<li>O Sistema solicita a confirmação da ação.</li>
-<li>O ator confirma.</li>
-<li>O Sistema rebaixa a conta para o nível de usuário comum.</li>
+<li>O administrador acessa a página de Gestão de Acessos. (<a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema busca os usuários cadastrados. (<a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema exibe os usuários e seus respectivos níveis de acesso. (<a href="#uc06-rf23">RF23</a>)</li>
+<li>O administrador visualiza as informações. (<a href="#uc06-rf23">RF23</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA03 - Banir Usuário Infrator (RF20):</strong> 1. No passo 2 do Fluxo Principal, o ator localiza um usuário que violou os termos de uso e aciona a opção "Banir".</p>
+<p><strong>FA02 - Alterar Cargo de Usuário</strong></p>
 <ol>
-<li>O Sistema exibe um aviso de impacto crítico e solicita a confirmação definitiva (opcionalmente solicitando o motivo).</li>
-<li>O ator confirma o banimento.</li>
-<li>O Sistema inativa permanentemente a conta, impedindo futuros acessos com aquelas credenciais.</li>
+<li>O administrador seleciona um usuário que já possui um cargo. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O administrador aciona a opção de alterar permissões. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O sistema apresenta os cargos disponíveis. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O administrador seleciona o novo cargo. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O administrador confirma a alteração. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O sistema valida a solicitação. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O sistema atualiza as permissões do usuário. (<a href="#uc06-rf22">RF22</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o cargo foi alterado. (<a href="#uc06-rf22">RF22</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li><strong>FE01 - Proteção contra Auto-Bloqueio:</strong> Se o ator tentar banir a si mesmo ou revogar seu próprio cargo de Administrador (sem que haja outro Administrador ativo cadastrado), o Sistema bloqueia a operação e exibe um alerta informando que a plataforma não pode ficar sem supervisão administrativa.</li>
-</ul>
+<p><strong>FA03 - Revogar Cargo Especial</strong></p>
+<ol>
+<li>O administrador seleciona um usuário que possui um cargo especial. (<a href="#uc06-rf24">RF24</a>)</li>
+<li>O administrador aciona a opção de revogar privilégios. (<a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema solicita confirmação da operação. (<a href="#uc06-rf24">RF24</a>)</li>
+<li>O administrador confirma a revogação. (<a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema altera o usuário para o nível de usuário comum. (<a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema atualiza a listagem de usuários. (<a href="#uc06-rf24">RF24</a>, <a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o cargo foi revogado. (<a href="#uc06-rf24">RF24</a>)</li>
+</ol>
+<p><strong>FA04 - Banir Usuário</strong></p>
+<ol>
+<li>O administrador seleciona um usuário. (<a href="#uc06-rf20">RF20</a>)</li>
+<li>O administrador aciona a opção de banimento. (<a href="#uc06-rf20">RF20</a>)</li>
+<li>O sistema solicita confirmação da operação. (<a href="#uc06-rf20">RF20</a>)</li>
+<li>O administrador confirma o banimento. (<a href="#uc06-rf20">RF20</a>)</li>
+<li>O sistema inativa a conta do usuário. (<a href="#uc06-rf20">RF20</a>)</li>
+<li>O sistema impede novos acessos utilizando aquela conta. (<a href="#uc06-rf20">RF20</a>)</li>
+<li>O sistema atualiza a listagem de usuários. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf23">RF23</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o usuário foi banido. (<a href="#uc06-rf20">RF20</a>)</li>
+</ol>
+<p><strong>FA05 - Cancelar Operação</strong></p>
+<ol>
+<li>Durante qualquer operação de gerenciamento de permissões, o administrador aciona a opção de cancelar ou voltar. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema descarta as alterações não salvas. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema retorna para a tela anterior. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>Nenhuma alteração é realizada no banco de dados. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Usuário Não Possui Permissão Administrativa</strong></p>
+<ol>
+<li>Um usuário sem perfil de administrador tenta acessar a Gestão de Acessos. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema identifica a ausência de permissões administrativas. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema bloqueia o acesso à funcionalidade. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema informa que o acesso é restrito a administradores. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+</ol>
+<p><strong>FE02 - Auto-Bloqueio Administrativo</strong></p>
+<ol>
+<li>O administrador tenta banir sua própria conta ou remover seu próprio cargo administrativo. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema identifica a tentativa de auto-bloqueio. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema verifica se existe outro administrador ativo. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>Caso não exista outro administrador, o sistema impede a operação. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema informa que a plataforma deve possuir pelo menos um administrador ativo. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf24">RF24</a>)</li>
+</ol>
+<p><strong>FE03 - Usuário Indisponível</strong></p>
+<ol>
+<li>O administrador tenta alterar, revogar ou banir um usuário. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema verifica a existência do usuário. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema identifica que o usuário foi removido ou encontra-se indisponível. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema impede a operação. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema atualiza a listagem de usuários. (<a href="#uc06-rf23">RF23</a>)</li>
+</ol>
+<p><strong>FE04 - Falha de Conectividade</strong></p>
+<ol>
+<li>O administrador tenta executar uma operação sem conexão com o backend. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema orienta o administrador a tentar novamente quando a conexão for restabelecida. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+</ol>
+<p><strong>FE05 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O administrador confirma uma operação válida de gerenciamento de acessos. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema tenta registrar, atualizar ou consultar dados no Firestore. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc06-rf20">RF20</a>, <a href="#uc06-rf21">RF21</a>, <a href="#uc06-rf22">RF22</a>, <a href="#uc06-rf23">RF23</a>, <a href="#uc06-rf24">RF24</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC06.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc06-rf20" class="rf-anchor"></span><a href="../../requisitos/#req-rf20"><strong>RF20 - Banir usuário</strong></a></td>
+<td style="text-align: left;">Permite que moderadores e administradores banam usuários infratores da aplicação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc06-rf21" class="rf-anchor"></span><a href="../../requisitos/#req-rf21"><strong>RF21 - Atribuir cargos de usuário</strong></a></td>
+<td style="text-align: left;">Permite que administradores atribuam permissões específicas aos usuários.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc06-rf22" class="rf-anchor"></span><a href="../../requisitos/#req-rf22"><strong>RF22 - Editar cargos de usuário</strong></a></td>
+<td style="text-align: left;">Permite que administradores modifiquem os níveis de acesso de um usuário existente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc06-rf23" class="rf-anchor"></span><a href="../../requisitos/#req-rf23"><strong>RF23 - Listar cargos de usuário</strong></a></td>
+<td style="text-align: left;">Permite que administradores visualizem os cargos disponíveis e quem os ocupa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc06-rf24" class="rf-anchor"></span><a href="../../requisitos/#req-rf24"><strong>RF24 - Desatribuir cargos de usuário</strong></a></td>
+<td style="text-align: left;">Permite que administradores removam um cargo atribuído a um usuário.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/27">Issue Uc06</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="Checklist DoR da UC06" src="../dor.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

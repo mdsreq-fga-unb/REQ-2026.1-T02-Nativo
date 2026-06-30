@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -817,38 +946,139 @@
 
 <h1 id="uc08-gerenciar-moderacao-de-conteudo">UC08 - Gerenciar Moderação de Conteúdo</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Usuário Comum, Administrador (Moderador)</p>
-<p><strong>Objetivo:</strong> Assegurar a integridade e segurança do ambiente virtual por meio do reporte de conteúdos inadequados pelos usuários e a posterior análise e resolução dessas infrações pelos administradores.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar logado no aplicativo móvel. Para analisar e atualizar status, o ator necessita de privilégios de "Administrador" ou "Moderador".</p>
-<p><strong>Fluxo Principal (Criar Denúncia - RF27):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Usuário autenticado, Administrador</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que usuários denunciem conteúdos que violem as diretrizes da comunidade e que administradores analisem e atualizem o status das denúncias.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator (Usuário Comum) visualiza um conteúdo que fere as diretrizes da comunidade (ex: uma publicação no Feed ou comentário).</li>
-<li>O ator aciona a opção "Denunciar" vinculada àquele conteúdo específico.</li>
-<li>O Sistema apresenta um formulário listando as categorias de denúncia e um campo opcional para descrever o problema.</li>
-<li>O ator seleciona o motivo da infração aplicável e submete o formulário.</li>
-<li>O Sistema registra o reporte no banco de dados com o status "Aberta", vincula a denúncia ao conteúdo/autor infrator e exibe uma mensagem de agradecimento ao ator, encerrando a visão do usuário.</li>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>O conteúdo denunciado deve existir na plataforma.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li>
-<p><strong>FA01 - Listar e Analisar Denúncias (RF29):</strong> 1. O ator (nível Administrador) acessa o painel de controle e entra na seção de Moderação.</p>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Criar Denúncia</strong></p>
 <ol>
-<li>O Sistema exibe a fila completa de denúncias pendentes, ordenadas cronologicamente ou por volume de reportes no mesmo conteúdo.</li>
-<li>O ator seleciona uma denúncia para expandir os detalhes (visualizando qual foi o post e quem denunciou).</li>
+<li>O usuário visualiza um conteúdo da comunidade. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O usuário seleciona a opção "Denunciar". (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema apresenta o formulário de denúncia. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O usuário seleciona o motivo da denúncia e, opcionalmente, informa uma descrição. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O usuário confirma o envio da denúncia. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema valida as informações fornecidas. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema registra a denúncia com status "Aberta", vinculando-a ao conteúdo denunciado e ao usuário responsável pela denúncia. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a denúncia foi registrada. (<a href="#uc08-rf27">RF27</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA02 - Atualizar Status da Denúncia (RF28):</strong> 1. A partir do passo 3 do FA01, o ator (Administrador) toma uma decisão após investigar o caso (ex: excluir a publicação ou ignorar caso seja falso alarme).</p>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Denúncias</strong></p>
 <ol>
-<li>O ator altera o status da denúncia na plataforma (mudando de "Aberta" para "Resolvida" ou "Improcedente").</li>
-<li>O Sistema atualiza o registro no banco de dados e limpa a ocorrência da fila principal de pendências.</li>
+<li>O administrador acessa a página de Moderação. (<a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema busca as denúncias pendentes. (<a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema apresenta a lista de denúncias ordenadas cronologicamente ou por prioridade. (<a href="#uc08-rf29">RF29</a>)</li>
+<li>O administrador seleciona uma denúncia para visualizar seus detalhes. (<a href="#uc08-rf29">RF29</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li><strong>FE01 - Conteúdo Previamente Removido:</strong> No passo 4 do Fluxo Principal, se o ator tentar submeter a denúncia mas o conteúdo em questão já tiver sido deletado pelo próprio autor (ou por outro moderador segundos antes), o Sistema interrompe o envio e alerta que o conteúdo não se encontra mais disponível.</li>
-</ul>
+<p><strong>FA02 - Atualizar Status da Denúncia</strong></p>
+<ol>
+<li>O administrador acessa uma denúncia existente. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O administrador analisa o conteúdo denunciado. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O administrador seleciona o novo status da denúncia. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O administrador confirma a atualização. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema registra o novo status da denúncia. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema remove a denúncia da fila de pendências, quando aplicável. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a denúncia foi atualizada. (<a href="#uc08-rf28">RF28</a>)</li>
+</ol>
+<p><strong>FA03 - Cancelar Denúncia</strong></p>
+<ol>
+<li>Durante o preenchimento da denúncia, o usuário seleciona a opção de cancelar ou voltar. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema descarta as informações preenchidas. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema retorna para a tela anterior. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>Nenhuma denúncia é registrada. (<a href="#uc08-rf27">RF27</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Conteúdo Indisponível</strong></p>
+<ol>
+<li>O usuário confirma o envio da denúncia. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema verifica a existência do conteúdo denunciado. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema identifica que o conteúdo foi removido ou tornou-se indisponível. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema interrompe o registro da denúncia. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema informa que o conteúdo não está mais disponível. (<a href="#uc08-rf27">RF27</a>)</li>
+</ol>
+<p><strong>FE02 - Motivo da Denúncia Não Informado</strong></p>
+<ol>
+<li>O usuário tenta enviar a denúncia sem selecionar um motivo. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema identifica a ausência da informação obrigatória. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema impede o envio da denúncia. (<a href="#uc08-rf27">RF27</a>)</li>
+<li>O sistema destaca o campo obrigatório. (<a href="#uc08-rf27">RF27</a>)</li>
+</ol>
+<p><strong>FE03 - Denúncia Indisponível para Atualização</strong></p>
+<ol>
+<li>O administrador tenta atualizar uma denúncia inexistente ou já removida. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema verifica a disponibilidade da denúncia. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema identifica que a denúncia não está mais disponível. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema impede a atualização. (<a href="#uc08-rf28">RF28</a>)</li>
+<li>O sistema atualiza a lista de denúncias. (<a href="#uc08-rf29">RF29</a>)</li>
+</ol>
+<p><strong>FE04 - Usuário Sem Permissão</strong></p>
+<ol>
+<li>Um usuário sem permissões administrativas tenta acessar a área de moderação. (<a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema identifica a ausência de permissões necessárias. (<a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema bloqueia o acesso à funcionalidade. (<a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema informa que o acesso é restrito a administradores. (<a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+</ol>
+<p><strong>FE05 - Falha de Conectividade</strong></p>
+<ol>
+<li>O ator tenta criar ou gerenciar denúncias sem conexão com o backend. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+</ol>
+<p><strong>FE06 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O ator confirma uma operação válida envolvendo denúncias. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema tenta registrar, atualizar ou consultar dados no Firestore. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc08-rf27">RF27</a>, <a href="#uc08-rf28">RF28</a>, <a href="#uc08-rf29">RF29</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC08.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc08-rf27" class="rf-anchor"></span><a href="../../requisitos/#req-rf27"><strong>RF27 - Criar denúncia</strong></a></td>
+<td style="text-align: left;">Permite que usuários denunciem conteúdos que violem as diretrizes da comunidade.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc08-rf28" class="rf-anchor"></span><a href="../../requisitos/#req-rf28"><strong>RF28 - Atualizar status de denúncia</strong></a></td>
+<td style="text-align: left;">Permite que administradores alterem o status das denúncias durante o processo de moderação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc08-rf29" class="rf-anchor"></span><a href="../../requisitos/#req-rf29"><strong>RF29 - Listar denúncias</strong></a></td>
+<td style="text-align: left;">Permite que administradores visualizem as denúncias registradas na plataforma.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p>Checklist não aplicado, pois a UC08 não foi desenvolvida no escopo implementado.
+<strong>Link da Issue:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/29">Uc08</a></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

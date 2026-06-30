@@ -23,11 +23,11 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| RF10 | Criar publicação | Permitir que todos os usuários publiquem conteúdos na área de feed. |
-| RF11 | Editar publicação | Permitir que os usuários editem suas próprias publicações no feed. |
-| RF12 | Listar publicações | Permitir que os usuários visualizem o histórico de postagens no feed comunitário. |
-| RF13 | Excluir publicação | Permitir que o autor da publicação e moderadores excluam uma postagem. |
-| RF14 | Interagir com a publicação | Permitir que todos os usuários interajam (ex: curtir/comentar) com as publicações postadas. |
+| <span id="req-rf10" class="rf-anchor">RF10</span> | Criar publicação | Permitir que todos os usuários publiquem conteúdos na área de feed. |
+| <span id="req-rf11" class="rf-anchor">RF11</span> | Editar publicação | Permitir que os usuários editem suas próprias publicações no feed. |
+| <span id="req-rf12" class="rf-anchor">RF12</span> | Listar publicações | Permitir que os usuários visualizem o histórico de postagens no feed comunitário. |
+| <span id="req-rf13" class="rf-anchor">RF13</span> | Excluir publicação | Permitir que o autor da publicação e moderadores excluam uma postagem. |
+| <span id="req-rf14" class="rf-anchor">RF14</span> | Interagir com a publicação | Permitir que todos os usuários interajam (ex: curtir/comentar) com as publicações postadas. |
 | RF15 | Criar eventos | Permitir que usuários criem eventos da comunidade na plataforma. |
 | RF16 | Editar eventos | Permitir que os criadores de um evento alterem suas informações e datas. |
 | RF17 | Listar eventos | Permitir que os usuários visualizem a agenda de eventos da comunidade. |

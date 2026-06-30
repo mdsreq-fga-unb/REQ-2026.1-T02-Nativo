@@ -28,11 +28,11 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | <span id="req-rf12" class="rf-anchor">RF12</span> | Listar publicações | Permitir que os usuários visualizem o histórico de postagens no feed comunitário. |
 | <span id="req-rf13" class="rf-anchor">RF13</span> | Excluir publicação | Permitir que o autor da publicação e moderadores excluam uma postagem. |
 | <span id="req-rf14" class="rf-anchor">RF14</span> | Interagir com a publicação | Permitir que todos os usuários interajam (ex: curtir/comentar) com as publicações postadas. |
-| RF15 | Criar eventos | Permitir que usuários criem eventos da comunidade na plataforma. |
-| RF16 | Editar eventos | Permitir que os criadores de um evento alterem suas informações e datas. |
-| RF17 | Listar eventos | Permitir que os usuários visualizem a agenda de eventos da comunidade. |
-| RF18 | Excluir eventos | Permitir que o criador do evento e moderadores excluam o evento do sistema. |
-| RF19 | Compartilhar eventos | Permitir que o usuário compartilhe eventos da comunidade para outras redes ou usuários. |
+| <span id="req-rf15" class="rf-anchor">RF15</span> | Criar eventos | Permitir que usuários criem eventos da comunidade na plataforma. |
+| <span id="req-rf16" class="rf-anchor">RF16</span> | Editar eventos | Permitir que os criadores de um evento alterem suas informações e datas. |
+| <span id="req-rf17" class="rf-anchor">RF17</span> | Listar eventos | Permitir que os usuários visualizem a agenda de eventos da comunidade. |
+| <span id="req-rf18" class="rf-anchor">RF18</span> | Excluir eventos | Permitir que o criador do evento e moderadores excluam o evento do sistema. |
+| <span id="req-rf19" class="rf-anchor">RF19</span> | Compartilhar eventos | Permitir que o usuário compartilhe eventos da comunidade para outras redes ou usuários. |
 
 ---
 
@@ -112,7 +112,6 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 | RNF07 | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
 | RNF08 | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
 | RNF09 | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |
-| RNF10 | Ajuste de fonte | O aplicativo deve permitir ao usuário selecionar pelo menos 5 níveis distintos de tamanho de fonte. | Usabilidade |
 
 ## 8.3 Matriz-síntese de Rastreabilidade
 
@@ -128,6 +127,6 @@ A matriz a seguir representa a rastreabilidade entre os Objetivos Específicos (
 | **OE3** | **OE1** | **CP6** - Perfil de Usuário | **VN6** | RF44 ao RF48 |
 | **OE3** | **OE1** | **CP7** - Sincronização e Acesso Offline de Traduções | **VN7** | RF49 | RNF06 |
 
-**Observação:** Apesar de não estarem mencionados em cada uma das características de produto, os requisitos **RNF04**, **RNF05**, **RNF07**, **RNF08** e **RNF10** (referentes a desempenho, confiabilidade, compatibilidade e usabilidade global) aplicam-se transversalmente a todas as Características de Produto, Requisitos Funcionais e Casos de Uso, por definirem a base da solução. Assim, embora não estejam repetidos em cada linha da matriz de rastreabilidade, eles devem ser considerados válidos, aplicáveis e rastreáveis para todo o produto.
+**Observação:** Apesar de não estarem mencionados em cada uma das características de produto, os requisitos **RNF04**, **RNF05**, **RNF07** e **RNF08** (referentes a desempenho, confiabilidade e compatibilidade global) aplicam-se transversalmente a todas as Características de Produto, Requisitos Funcionais e Casos de Uso, por definirem a base da solução. Assim, embora não estejam repetidos em cada linha da matriz de rastreabilidade, eles devem ser considerados válidos, aplicáveis e rastreáveis para todo o produto.
 
 De maneira análoga, o requisito **RNF09** (Escalabilidade de mídia) possui aplicação transversal às características **CP2** e **CP5** , regendo o limite de upload para todas as operações de arquivos vinculadas a esses módulos sem a necessidade de repetição individualizada.

@@ -54,9 +54,9 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| RF27 | Criar denúncia | Permitir que os usuários relatem publicações, comportamentos indevidos ou traduções incorretas. |
-| RF28 | Atualizar status de denúncia | Permitir que moderadores e administradores alterem o status (ex: em análise, resolvida) de uma denúncia. |
-| RF29 | Listar denúncias | Permitir que moderadores e administradores visualizem todas as denúncias realizadas na aplicação. |
+| <span id="req-rf27" class="rf-anchor">RF27</span> | Criar denúncia | Permitir que os usuários relatem publicações, comportamentos indevidos ou traduções incorretas. |
+| <span id="req-rf28" class="rf-anchor">RF28</span> | Atualizar status de denúncia | Permitir que moderadores e administradores alterem o status (ex: em análise, resolvida) de uma denúncia. |
+| <span id="req-rf29" class="rf-anchor">RF29</span> | Listar denúncias | Permitir que moderadores e administradores visualizem todas as denúncias realizadas na aplicação. |
 | RF30 | Criar categoria de denúncia | Permitir que administradores criem novas classificações para organizar os tipos de denúncia. |
 | RF31 | Editar categoria de denúncia | Permitir que administradores alterem o título ou descrição de uma categoria existente. |
 | RF32 | Listar categorias de denúncia | Permitir que o sistema exiba as categorias disponíveis no momento do preenchimento de uma denúncia. |

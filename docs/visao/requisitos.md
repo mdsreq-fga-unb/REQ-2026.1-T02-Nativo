@@ -42,11 +42,11 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| RF20 | Banir usuário | Permitir que moderadores e administradores banam usuários infratores da aplicação. |
-| RF21 | Atribuir cargos de usuário | Permitir que administradores atribuam permissões específicas (ex: professor, moderador) aos usuários. |
-| RF22 | Editar cargos de usuário | Permitir que administradores modifiquem os níveis de acesso de um usuário existente. |
-| RF23 | Listar cargos de usuário | Permitir que administradores visualizem os cargos disponíveis e quem os ocupa. |
-| RF24 | Desatribuir cargos de usuário | Permitir que administradores removam um cargo atribuído a um usuário. |
+| <span id="req-rf20" class="rf-anchor">RF20</span> | Banir usuário | Permitir que moderadores e administradores banam usuários infratores da aplicação. |
+| <span id="req-rf21" class="rf-anchor">RF21</span> | Atribuir cargos de usuário | Permitir que administradores atribuam permissões específicas (ex: professor, moderador) aos usuários. |
+| <span id="req-rf22" class="rf-anchor">RF22</span> | Editar cargos de usuário | Permitir que administradores modifiquem os níveis de acesso de um usuário existente. |
+| <span id="req-rf23" class="rf-anchor">RF23</span> | Listar cargos de usuário | Permitir que administradores visualizem os cargos disponíveis e quem os ocupa. |
+| <span id="req-rf24" class="rf-anchor">RF24</span> | Desatribuir cargos de usuário | Permitir que administradores removam um cargo atribuído a um usuário. |
 | RF25 | Candidatar-se a professor | Permitir que usuários solicitem oficialmente o papel de professor no sistema. |
 | RF26 | Recuperar senha | Permitir que o usuário recupere o acesso à sua conta via redefinição de senha por e-mail. |
 

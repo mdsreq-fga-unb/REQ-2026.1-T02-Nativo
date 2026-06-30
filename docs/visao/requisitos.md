@@ -70,11 +70,11 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| RF34 | Cadastrar vídeo | Permitir o cadastro de vídeos, pelos administradores e moderadores, ao sistema. |
-| RF35 | Exibir vídeo | Permitir que os usuários visualizem os vídeos vinculados a uma tradução. |
-| RF36 | Excluir vídeo | Permitir que os moderadores apaguem definitivamente um vídeo da base de dados. |
-| RF37 | Associar vídeo | Permitir que administradores e moderadores vinculem vídeos cadastrados a uma tradução específica. |
-| RF38 | Desassociar vídeo | Permitir que administradores e moderadores removam a vinculação entre um vídeo e uma tradução. |
+| <span id="req-rf34" class="rf-anchor">RF34</span> | Cadastrar vídeo | Permitir o cadastro de vídeos, pelos administradores e moderadores, ao sistema. |
+| <span id="req-rf35" class="rf-anchor">RF35</span> | Exibir vídeo | Permitir que os usuários visualizem os vídeos vinculados a uma tradução. |
+| <span id="req-rf36" class="rf-anchor">RF36</span> | Excluir vídeo | Permitir que os moderadores apaguem definitivamente um vídeo da base de dados. |
+| <span id="req-rf37" class="rf-anchor">RF37</span> | Associar vídeo | Permitir que administradores e moderadores vinculem vídeos cadastrados a uma tradução específica. |
+| <span id="req-rf38" class="rf-anchor">RF38</span> | Desassociar vídeo | Permitir que administradores e moderadores removam a vinculação entre um vídeo e uma tradução. |
 | RF39 | Cadastrar áudio | Permitir o cadastro de arquivos de áudio, pelos administradores e moderadores, no sistema. |
 | RF40 | Reproduzir áudio | Permitir que os usuários reproduzam os áudios vinculados às traduções. |
 | RF41 | Excluir áudio | Permitir que os moderadores apaguem definitivamente um arquivo de áudio da base de dados. |

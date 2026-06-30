@@ -1,65 +1,32 @@
-# Visão de Produto e Projeto
+# Página Inicial
 
 <span class="version-badge">Versão 2.2</span>
 
 Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo tradutor de línguas indígenas com foco na língua Munduruku, desenvolvido para apoiar a revitalização linguística na Aldeia Munduruku de Bragança.
 
+**Link do repositório de desenvolvimento:** [Repositório Nativo](https://github.com/Requisitos-Anawe/Nativo){:target="_blank"}
+
 ---
 
 ## Navegue pelo Documento
+<div class= "section-cards">
+  <div class="section-cards">
+    <a class="section-card" href="visao/cenario">
+      <h3>Visão de Produto</h3>
+      <p>Tópicos presentes no documento de Visão de Produto.</p>
+    </a>
+  </div>
 
-<div class="section-cards">
-  <a class="section-card" href="01-cenario/">
-    <h3>1 · Cenário</h3>
-    <p>Contexto do cliente, negócio, rich picture, problema identificado e stakeholders.</p>
-  </a>
-  <a class="section-card" href="02-solucao/">
-    <h3>2 · Solução</h3>
-    <p>Objetivos, características do produto, tecnologias e análise competitiva.</p>
-  </a>
-  <a class="section-card" href="03-intervencao/">
-    <h3>3 · Intervenção</h3>
-    <p>Impactos sociais pretendidos da solução e efeitos emergentes.</p>
-  </a>
-  <a class="section-card" href="04-estrategias/">
-    <h3>4 · Estratégias</h3>
-    <p>Processo adotado (OpenUP), quadro comparativo e justificativa da escolha.</p>
-  </a>
-  <a class="section-card" href="05-engenhariaRequisitos/">
-    <h3>5 · Engenharia de Requisitos</h3>
-    <p>Atividades e técnicas de engenharia de requisitos por fase do OpenUP.</p>
-  </a>
-  <a class="section-card" href="06-cronograma/">
-    <h3>6 · Cronograma</h3>
-    <p>Fases, iterações e marcos de entrega ao longo do semestre.</p>
-  </a>
-  <a class="section-card" href="07-interacao/">
-    <h3>7 · Interação</h3>
-    <p>Composição da equipe, comunicação e processo de validação com o cliente.</p>
-  </a>
-  <a class="section-card" href="08-requisitos/">
-    <h3>8 · Requisitos</h3>
-    <p>Requisitos funcionais e não funcionais que orientam o desenvolvimento da solução.</p>
-  </a>
-  <a class="section-card" href="09-dor&dod/">
-    <h3>9 · DoR e DoD</h3>
-    <p>Critérios de entrada e saída usados para planejar, validar e concluir as entregas.</p>
-  </a>
-  <a class="section-card" href="10-backlog/">
-    <h3>10 · Backlog de Produto</h3>
-    <p>Organização, refinamento e priorização dos itens que compõem o produto e o MVP.</p>
-  </a>
-  <a class="section-card" href="11-licoes/">
-    <h3>11 · Lições</h3>
-    <p>Lições aprendidas por unidade, desafios enfrentados e ações de melhoria.</p>
-  </a>
-  <a class="section-card" href="12-referencias/">
-    <h3>12 · Referências</h3>
-    <p>Referências bibliográficas utilizadas no documento.</p>
-  </a>
+  <div class="section-cards">
+    <a class="section-card" href="entregas/unidade1">
+      <h3>Entregas</h3>
+      <p>Entregas definidas para cada unidade.</p>
+    </a>
+  </div>
 </div>
 
 ---
+
 
 ## Integrantes da Equipe
 

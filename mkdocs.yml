@@ -1,158 +1,66 @@
 site_name: Nativo
-site_description: Documentação de Visão de Produto e Projeto
-site_author: Equipe Nativo
+site_description: 'Repositório de projeto da disciplina de REQ-T1, 2026.1'
+site_author: 'Equipe Anawê'
 
-theme:
+theme: 
   name: material
-  language: pt-BR
   logo: img/IconNativo.png
-  font:
-    text: Inter
-    code: JetBrains Mono
   favicon: img/IconNativo.png
-  icon:
-    repo: material/github
-
+  language: pt-BR
   palette:
+    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom
-      accent: custom
+      primary: cyan
+      accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Mudar para modo escuro
+        name: Mudar para tema escuro
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
-      accent: custom
+      primary: teal
+      accent: black
       toggle:
         icon: material/brightness-4
-        name: Mudar para modo claro
-
-  features:
-    - navigation.top
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - toc.follow
-    - navigation.logo
+        name: Mudar para tema claro
 
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
 
-markdown_extensions:
-  - tables
-  - md_in_html
-  - attr_list
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - toc:
-      permalink: true
-
-# ==========================================
-# ESTRUTURA DO MENU (NAVBAR) E DAS PÁGINAS
-# ==========================================
 nav:
   - Início: index.md
 
-  - 0. Entregas:
-    - Visão Geral: 00-entregas/index.md
-    - 0.1 Unidade 1: 00-entregas/unidade1.md
-    - 0.2 Unidade 2: 00-entregas/unidade2.md
+  - Visão do Produto e Projeto:
+      - 1. Cenário Atual do Cliente e do Negócio: visao/cenario.md
+      - 2. Solução Proposta: visao/solucao.md
+      - 3. Intervenção: visao/intervencao.md
+      - 4. Estratégias: visao/estrategias.md
+      - 5. Engenharia de Requisitos: visao/engenhariaRequisitos.md
+      - 6. Cronograma: visao/cronograma.md
+      - 7. Interação entre Equipe e Cliente: visao/interacao.md
+      - 8. Requisitos de Software: visao/requisitos.md
+      - 9. DoR e DoD: visao/dor&dod.md
+      - 10. Itens de Trabalho: visao/backlog.md
+      - 11. Lições Aprendidas: visao/licoes.md
+      - 12. Referências: visao/referencias.md
 
-  - 1. Cenário:
-    - Visão Geral: 01-cenario/index.md
-    - 1.1 Identificação do Cliente: 01-cenario/cliente.md
-    - 1.2 Introdução ao Negócio: 01-cenario/negocio.md
-    - 1.3 Rich Picture: 01-cenario/rich-picture.md
-    - 1.4 Oportunidade / Problema: 01-cenario/oportunidade.md
-    - 1.5 Desafios do Projeto: 01-cenario/desafios.md
-    - 1.6 Mapa de Stakeholders: 01-cenario/stakeholders.md
-    - 1.7 Segmentação de Usuários: 01-cenario/segmentacao.md
+  - Entregas:
+      - Unidade 1: entregas/unidade1.md
+      - Unidade 2: entregas/unidade2.md
+      - Unidade 3: entregas/unidade3.md
 
-  - 2. Solução:
-    - Visão Geral: 02-solucao/index.md
-    - 2.1 Objetivo Geral: 02-solucao/objetivo-geral.md
-    - 2.2 Objetivos Específicos: 02-solucao/objetivos-especificos.md
-    - 2.3 Características do Produto: 02-solucao/caracteristicas.md
-    - 2.4 Tecnologias: 02-solucao/tecnologias.md
-    - 2.5 Análise Competitiva: 02-solucao/mercado.md
-    - 2.6 Viabilidade: 02-solucao/viabilidade.md
-    - 2.7 Benefícios Esperados: 02-solucao/beneficios.md
-
-  - 3. Intervenção:
-    - Visão Geral: 03-intervencao/index.md
-
-  - 4. Estratégias:
-    - Visão Geral: 04-estrategias/index.md
-    - 4.1 Estratégia Priorizada: 04-estrategias/estrategia.md
-    - 4.2 Quadro Comparativo: 04-estrategias/comparativo.md
-    - 4.3 Justificativa: 04-estrategias/justificativa.md
-
-  - 5. Engenharia de Requisitos:
-    - Visão Geral: 05-engenhariaRequisitos/index.md
-    - 5.1 Atividades e Técnicas de ER: 05-engenhariaRequisitos/atividades.md
-    - 5.2 ER e o OpenUP: 05-engenhariaRequisitos/mapeamento.md
-
-  - 6. Cronograma:
-    - Visão Geral: 06-cronograma/index.md
-    - Fase de Concepção: 06-cronograma/concepcao.md
-    - Fase de Elaboração: 06-cronograma/elaboracao.md
-    - Fase de Construção: 06-cronograma/construcao.md
-    - Fase de Transição: 06-cronograma/transicao.md
-
-  - 7. Interação:
-    - Visão Geral: 07-interacao/index.md
-    - 7.1 Composição da Equipe: 07-interacao/equipe.md
-    - 7.2 Comunicação: 07-interacao/comunicacao.md
-    - 7.3 Processo de Validação: 07-interacao/validacao.md
-
-  - 8. Requisitos:
-    - Visão Geral: 08-requisitos/index.md
-    - 8.1 Requisitos Funcionais: 08-requisitos/rf.md
-    - 8.2 Requisitos Não Funcionais: 08-requisitos/rnf.md
-    - 8.3 Matriz-síntese de Rastreabilidade: 08-requisitos/matriz.md
-
-  - 9. DoR e DoD:
-    - Visão Geral: 09-dor&dod/index.md
-    - 9.1 Definition of Ready (DoR): 09-dor&dod/dor.md
-    - 9.2 Definition of Done (DoD): 09-dor&dod/dod.md
-
-  - 10. Backlog:
-      - Visão Geral: 10-backlog/index.md
-      - 10.1 Backlog Geral: 10-backlog/backlog.md
-      - 10.2 Casos de Uso: 10-backlog/cdu.md
-      - UC01 - Gerenciar Atividades: 10-backlog/uc01.md
-      - UC02 - Realizar Atividades: 10-backlog/uc02.md
-      - UC03 - Gerenciar Insígnias: 10-backlog/uc03.md
-      - UC04 - Gerenciar Feed Social: 10-backlog/uc04.md
-      - UC05 - Gerenciar Eventos: 10-backlog/uc05.md
-      - UC06 - Gerenciar Acessos: 10-backlog/uc06.md
-      - UC07 - Gerenciar Credenciais: 10-backlog/uc07.md
-      - UC08 - Moderação de Conteúdo: 10-backlog/uc08.md
-      - UC09 - Categorias de Denúncia: 10-backlog/uc09.md
-      - UC10 - Acervo de Vídeos: 10-backlog/uc10.md
-      - UC11 - Acervo de Áudios: 10-backlog/uc11.md
-      - UC12 - Perfil Pessoal: 10-backlog/uc12.md
-      - UC13 - Sincronização Offline: 10-backlog/uc13.md
-      - 10.3 Priorização do Backlog Geral e MVP: 10-backlog/mvp.md
-
-  - 11. Lições:
-    - Visão Geral: 11-licoes/index.md
-    - Unidade 1: 11-licoes/unidade1.md
-    - Unidade 2: 11-licoes/unidade2.md
-
-  - 12. Referências:
-    - Visão Geral: 12-referencias/index.md
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

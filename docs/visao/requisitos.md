@@ -48,7 +48,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | <span id="req-rf23" class="rf-anchor">RF23</span> | Listar cargos de usuário | Permitir que administradores visualizem os cargos disponíveis e quem os ocupa. |
 | <span id="req-rf24" class="rf-anchor">RF24</span> | Desatribuir cargos de usuário | Permitir que administradores removam um cargo atribuído a um usuário. |
 | RF25 | Candidatar-se a professor | Permitir que usuários solicitem oficialmente o papel de professor no sistema. |
-| RF26 | Recuperar senha | Permitir que o usuário recupere o acesso à sua conta via redefinição de senha por e-mail. |
+| <span id="req-rf26" class="rf-anchor">RF26</span> | Recuperar senha | Permitir que o usuário recupere o acesso à sua conta via redefinição de senha por e-mail. |
 
 **CP4 - Sistema de denúncias**
 

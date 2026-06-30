@@ -14,7 +14,7 @@
 
 [**UC06 - Gerenciar Acessos e Permissões**](casos-uso/uc06.md){ .uc-link-card }
 
-[**UC07 - Gerenciar Credenciais da Conta**](casos-uso/uc07.md){ .uc-link-card }
+[**UC07 - Redefinir Senha de Acesso**](casos-uso/uc07.md){ .uc-link-card }
 
 [**UC08 - Gerenciar Moderação de Conteúdo**](casos-uso/uc08.md){ .uc-link-card }
 
@@ -92,7 +92,7 @@ A tabela abaixo apresenta a distribuição detalhada dos 13 casos de uso da plat
 | **UC01** | Gerenciar Atividades Educacionais | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
 | **UC02** | Realizar Atividades Interativas | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
 | **UC06** | Gerenciar Acessos e Permissões | 3 | 2 | 1.50 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **UC07** | Gerenciar Credenciais da Conta | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| **UC07** | Redefinir Senha de Acesso | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
 | **UC13** | Sincronizar Acervo Offline | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
 | **UC03** | Gerenciar Insígnias (Recompensas) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 10)** |
 | **UC12** | Gerenciar Perfil Pessoal | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 11)** |

@@ -23,7 +23,7 @@
     
     
       
-        <title>UC02 - Realizar Atividades Interativas - Nativo</title>
+        <title>UC02 - Responder Atividades Educacionais - Nativo</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uc02-realizar-atividades-interativas" class="md-skip">
+        <a href="#uc02-responder-atividades-educacionais" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UC02 - Realizar Atividades Interativas
+              UC02 - Responder Atividades Educacionais
             
           </span>
         </div>
@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-definition-of-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Definition of Ready
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -815,31 +944,163 @@
 
 
 
-<h1 id="uc02-realizar-atividades-interativas">UC02 - Realizar Atividades Interativas</h1>
+<h1 id="uc02-responder-atividades-educacionais">UC02 - Responder Atividades Educacionais</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Usuário (Aluno)</p>
-<p><strong>Objetivo:</strong> Permitir que o usuário visualize os exercícios disponíveis, responda às questões propostas e acompanhe o seu desempenho para a prática do idioma.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar autenticado na plataforma.</p>
-<p><strong>Fluxo Principal (Responder e Avaliar):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Usuário comum</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que usuários comuns visualizem atividades educacionais disponíveis, respondam atividades publicadas e visualizem o resultado obtido após a submissão das respostas.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator acessa a seção de Prática/Atividades do aplicativo.</li>
-<li>O Sistema exibe a lista de atividades educacionais disponíveis e liberadas para o ator (RF02).</li>
-<li>O ator seleciona uma atividade que ainda não foi concluída.</li>
-<li>O Sistema carrega a interface do exercício, apresentando o enunciado e as opções de resposta.</li>
-<li>O ator seleciona a resposta desejada e aciona o botão de submeter (RF03).</li>
-<li>O Sistema processa a resposta submetida, registra a tentativa no banco de dados e exibe imediatamente o feedback com o resultado (acertos e erros) da atividade (RF04).</li>
+<li>O usuário deve estar autenticado no aplicativo.</li>
+<li>O usuário deve possuir perfil autorizado a acessar a área de atividades educacionais.</li>
+<li>O sistema deve possuir atividades educacionais previamente cadastradas.</li>
+<li>As atividades disponíveis para resolução devem estar liberadas.</li>
+<li>Cada atividade disponível deve possuir pelo menos uma questão válida.</li>
+<li>O aplicativo deve possuir conexão com o backend para carregar atividades e submeter respostas.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li><strong>FA01 - Visualizar Histórico de Resultados:</strong> 1. No passo 2 do Fluxo Principal, o ator seleciona uma atividade que já consta como "Concluída".<ol>
-<li>O Sistema ignora a tela de resolução e exibe diretamente a tela de resultados consolidados daquela atividade específica (RF04).</li>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Responder Atividade Educacional</strong></p>
+<ol>
+<li>O usuário acessa a seção de atividades educacionais disponíveis. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema valida se o usuário está autenticado. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema consulta as atividades educacionais disponíveis para resolução. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema exibe a lista de atividades disponíveis para o usuário. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O usuário seleciona uma atividade disponível para resolução. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema carrega os dados da atividade selecionada. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema exibe o título da atividade, o enunciado das questões e as alternativas disponíveis. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O usuário seleciona as respostas das questões apresentadas. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O usuário finaliza a resolução da atividade. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O usuário submete suas respostas. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema valida se as questões obrigatórias foram respondidas. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema envia as respostas submetidas ao backend. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O backend processa as respostas enviadas. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O backend compara as respostas do usuário com as alternativas corretas cadastradas. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O backend calcula a pontuação obtida pelo usuário. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O backend registra o resultado da atividade no banco de dados. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe o resultado da atividade para o usuário. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O usuário visualiza a correção e a pontuação obtida. (<a href="#uc02-rf04">RF04</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li><strong>FE01 - Perda de Conectividade:</strong> No passo 5 do Fluxo Principal, se o dispositivo estiver sem conexão à internet no momento da submissão (e a atividade exigir processamento online), o Sistema exibe um alerta de "Falha na conexão", mantém a resposta selecionada em cache e orienta o ator a tentar novamente quando o sinal for restabelecido.</li>
-</ul>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Atividades Educacionais Disponíveis</strong></p>
+<ol>
+<li>O usuário acessa a seção de atividades educacionais. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema consulta as atividades disponíveis para resolução. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema exibe a lista de atividades disponíveis. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O usuário visualiza as atividades disponíveis para resolução. (<a href="#uc02-rf50">RF50</a>)</li>
+</ol>
+<p><strong>FA02 - Visualizar Resultado de Atividade Já Respondida</strong></p>
+<ol>
+<li>O usuário acessa a lista de atividades educacionais. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema identifica que uma atividade já possui resultado registrado para o usuário. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O usuário seleciona a atividade já respondida. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema carrega o resultado registrado da atividade. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe a correção e a pontuação obtida. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O usuário visualiza o resultado da atividade. (<a href="#uc02-rf04">RF04</a>)</li>
+</ol>
+<p><strong>FA03 - Voltar para a Lista de Atividades</strong></p>
+<ol>
+<li>Durante a resolução ou após visualizar o resultado, o usuário aciona a opção de voltar. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema retorna o usuário para a lista de atividades educacionais. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema atualiza a lista de atividades disponíveis. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O usuário visualiza novamente a lista de atividades. (<a href="#uc02-rf50">RF50</a>)</li>
+</ol>
+<p><strong>FA04 - Tentar Atividade Novamente Após Erro</strong></p>
+<ol>
+<li>Após visualizar o resultado da atividade, o sistema identifica que o usuário errou uma ou mais questões. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe a opção de tentar a atividade novamente. (<a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+<li>O usuário aciona a opção de tentar novamente. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema carrega novamente a atividade em modo de resolução. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O usuário responde novamente às questões da atividade. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O usuário submete as novas respostas. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema processa a nova submissão. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe o novo resultado da atividade. (<a href="#uc02-rf04">RF04</a>)</li>
+</ol>
+<p><strong>FA05 - Visualizar Resultado com Todas as Questões Corretas</strong></p>
+<ol>
+<li>Após a submissão da atividade, o sistema identifica que o usuário acertou todas as questões. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema calcula a pontuação máxima da atividade. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema registra o resultado da atividade. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe o resultado final ao usuário. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe a opção de tentar novamente. (<a href="#uc02-rf04">RF04</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Falha de Conectividade</strong></p>
+<ol>
+<li>O usuário tenta listar atividades, carregar uma atividade, submeter respostas ou visualizar resultado sem conexão com o backend. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema orienta o usuário a tentar novamente quando a conexão for restabelecida. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+</ol>
+<p><strong>FE02 - Atividade Indisponível ou Inválida por Estado Desatualizado</strong></p>
+<ol>
+<li>O usuário visualiza uma atividade na lista antes da atualização completa do estado no banco ou na interface. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O usuário tenta acessar a atividade para resolução. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema revalida a disponibilidade e a validade da atividade no backend. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema identifica que a atividade foi removida, desativada, tornou-se indisponível ou não possui mais questões válidas. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema impede a resolução da atividade. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema atualiza a lista de atividades disponíveis. (<a href="#uc02-rf50">RF50</a>)</li>
+<li>O sistema informa que a atividade não está mais disponível para resolução. (<a href="#uc02-rf50">RF50</a>, <a href="#uc02-rf03">RF03</a>)</li>
+</ol>
+<p><strong>FE03 - Submissão Incompleta</strong></p>
+<ol>
+<li>O usuário tenta submeter a atividade sem responder todas as questões obrigatórias. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema identifica que há questões sem resposta. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema impede a submissão da atividade. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O sistema informa que todas as questões obrigatórias devem ser respondidas. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O usuário permanece na tela de resolução para completar as respostas. (<a href="#uc02-rf03">RF03</a>)</li>
+</ol>
+<p><strong>FE04 - Erro Interno no Processamento</strong></p>
+<ol>
+<li>O usuário submete respostas válidas. (<a href="#uc02-rf03">RF03</a>)</li>
+<li>O backend tenta processar as respostas e registrar o resultado. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>Ocorre erro interno no processamento ou no banco de dados. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema não registra a atividade como concluída. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema exibe mensagem de erro. (<a href="#uc02-rf04">RF04</a>)</li>
+<li>O sistema orienta o usuário a tentar novamente. (<a href="#uc02-rf03">RF03</a>, <a href="#uc02-rf04">RF04</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC02.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc02-rf50" class="rf-anchor"></span><a href="../../requisitos/#req-rf50"><strong>RF50 - Listar atividades disponíveis para resolução</strong></a></td>
+<td style="text-align: left;">Permite que usuários comuns visualizem as atividades educacionais disponíveis para resolução.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc02-rf03" class="rf-anchor"></span><a href="../../requisitos/#req-rf03"><strong>RF03 - Responder atividade educacional</strong></a></td>
+<td style="text-align: left;">Permite que usuários submetam respostas às atividades publicadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc02-rf04" class="rf-anchor"></span><a href="../../requisitos/#req-rf04"><strong>RF04 - Visualizar resultado da atividade</strong></a></td>
+<td style="text-align: left;">Permite que usuários visualizem a correção e a pontuação obtida após responderem a uma atividade.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-definition-of-ready">10. Definition of Ready</h2>
+<p>Esta seção registra o print do checklist de Definition of Ready utilizado para validar a UC02.</p>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/23">Issue Uc02</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="alt text" src="../doruc02.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

@@ -23,7 +23,7 @@
     
     
       
-        <title>UC03 - Gerenciar Insígnias (Recompensas) - Nativo</title>
+        <title>UC03 - Gerenciar Insígnias - Nativo</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uc03-gerenciar-insignias-recompensas" class="md-skip">
+        <a href="#uc03-gerenciar-insignias" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UC03 - Gerenciar Insígnias (Recompensas)
+              UC03 - Gerenciar Insígnias
             
           </span>
         </div>
@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-definition-of-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Definition of Ready
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -815,43 +944,170 @@
 
 
 
-<h1 id="uc03-gerenciar-insignias-recompensas">UC03 - Gerenciar Insígnias (Recompensas)</h1>
+<h1 id="uc03-gerenciar-insignias">UC03 - Gerenciar Insígnias</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Administrador, Professor</p>
-<p><strong>Objetivo:</strong> Permitir o cadastro, edição e exclusão de insígnias (representadas por ícones de escudinhos na interface) que serão desbloqueadas pelos usuários ao atingirem objetivos específicos.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar autenticado e possuir nível de acesso "Administrador" ou "Professor".</p>
-<p><strong>Fluxo Principal (Criar e Listar Insígnias):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Professor, Administrador</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que professores e administradores criem, visualizem, editem e excluam insígnias personalizadas utilizadas na plataforma.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator acessa a seção de Gestão de Insígnias no painel.</li>
-<li>O Sistema exibe a lista das insígnias ativas e seus respectivos objetivos.</li>
-<li>O ator aciona a opção para adicionar uma nova insígnia.</li>
-<li>O Sistema apresenta um formulário simples.</li>
-<li>O ator preenche o nome da insígnia (ex: "Iniciante Munduruku") e o objetivo necessário para o desbloqueio (ex: "Acertar 5 atividades"), e confirma (RF07).</li>
-<li>O Sistema valida as informações, salva a nova insígnia no banco de dados e retorna para a listagem (Passo 2), exibindo uma mensagem de sucesso.</li>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>O ator deve possuir perfil de professor ou administrador.</li>
+<li>O ator deve acessar a página de gerenciamento de insígnias.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Criar Insígnia</strong></p>
+<ol>
+<li>O professor ou administrador acessa a seção de criação de insígnias. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema valida se o ator possui permissão para criar insígnias. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema apresenta o formulário de criação de insígnias. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O ator informa o título da insígnia. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O ator informa a descrição da insígnia. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O ator adiciona a imagem da insígnia. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O ator informa a porcentagem mínima de acerto para obtenção da insígnia. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O ator confirma a criação da insígnia. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema valida os dados obrigatórios. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema registra a insígnia no banco de dados. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema disponibiliza a insígnia para uso na plataforma. (<a href="#uc03-rf07">RF07</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a insígnia foi criada. (<a href="#uc03-rf07">RF07</a>)</li>
+</ol>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Insígnias</strong></p>
+<ol>
+<li>O professor ou administrador acessa a página de insígnias. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema busca as insígnias cadastradas. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema exibe a lista de insígnias disponíveis. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O ator visualiza as insígnias cadastradas. (<a href="#uc03-rf08">RF08</a>)</li>
+</ol>
+<p><strong>FA02 - Editar Insígnia</strong></p>
+<ol>
+<li>O professor ou administrador acessa a lista de insígnias. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O ator seleciona uma insígnia existente. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema carrega os dados atuais da insígnia. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O ator altera o título, a descrição, a imagem e/ou a porcentagem mínima. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O ator confirma a edição da insígnia. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema valida os dados alterados. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema atualiza a insígnia no banco de dados. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a insígnia foi atualizada. (<a href="#uc03-rf08">RF08</a>)</li>
+</ol>
+<p><strong>FA03 - Excluir Insígnia</strong></p>
+<ol>
+<li>O professor ou administrador acessa a lista de insígnias. (<a href="#uc03-rf09">RF09</a>)</li>
+<li>O ator seleciona uma insígnia existente. (<a href="#uc03-rf09">RF09</a>)</li>
+<li>O ator aciona a opção de exclusão. (<a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema solicita confirmação da exclusão. (<a href="#uc03-rf09">RF09</a>)</li>
+<li>O ator confirma a exclusão. (<a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema remove a insígnia do banco de dados ou altera seu status para indisponível. (<a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que a insígnia foi excluída. (<a href="#uc03-rf09">RF09</a>)</li>
+</ol>
+<p><strong>FA04 - Cancelar Criação ou Edição</strong></p>
+<ol>
+<li>Durante a criação ou edição da insígnia, o ator aciona a opção de cancelar ou voltar. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema descarta as alterações não salvas. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema retorna o ator para a tela anterior. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>Nenhum dado é registrado ou alterado no banco de dados. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Interface Indisponível para o Perfil do Ator</strong></p>
+<ol>
+<li>O professor ou administrador acessa o aplicativo autenticado. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema exibe apenas as interfaces e ações permitidas para aquele perfil. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>Caso o perfil não possua permissão para determinada ação, a opção correspondente não é exibida na interface. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+</ol>
+<p><strong>FE02 - Dados Obrigatórios Ausentes</strong></p>
+<ol>
+<li>O ator tenta criar ou editar uma insígnia sem preencher os campos obrigatórios. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema identifica a ausência de dados obrigatórios. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema impede o salvamento da insígnia. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema destaca os campos inválidos. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema orienta o ator a preencher as informações necessárias. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+</ol>
+<p>Campos obrigatórios mínimos:</p>
 <ul>
-<li>
-<p><strong>FA01 - Editar Insígnia (RF08):</strong> 1. No passo 2 do Fluxo Principal, o ator seleciona uma insígnia e escolhe a opção "Editar".</p>
-<ol>
-<li>O Sistema carrega o formulário com o nome e o objetivo atuais.</li>
-<li>O ator ajusta as informações necessárias e confirma.</li>
-<li>O Sistema processa a alteração, updated os dados e exibe notificação de sucesso.</li>
-</ol>
-</li>
-<li>
-<p><strong>FA02 - Excluir Insígnia (RF09):</strong> 1. No passo 2 do Fluxo Principal, o ator seleciona a opção "Excluir" em uma insígnia.</p>
-<ol>
-<li>O Sistema exibe um modal de confirmação.</li>
-<li>O ator confirma a exclusão.</li>
-<li>O Sistema inativa ou remove a insígnia permanentemente e atualiza a listagem visual.</li>
-</ol>
-</li>
+<li>título;</li>
+<li>descrição;</li>
+<li>imagem;</li>
+<li>porcentagem mínima de acerto.</li>
 </ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li><strong>FE01 - Dados Incompletos:</strong> No passo 6 do Fluxo Principal, se o ator tentar salvar a insígnia sem definir um nome ou sem especificar o objetivo, o Sistema destaca os campos obrigatórios em vermelho e impede a criação até que sejam preenchidos.</li>
-</ul>
+<p><strong>FE03 - Porcentagem Mínima Inválida</strong></p>
+<ol>
+<li>O ator informa uma porcentagem mínima inválida durante a criação ou edição da insígnia. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema identifica a inconsistência. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema impede o salvamento da insígnia. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema exibe mensagem informando que a porcentagem mínima deve estar entre 0 e 100. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>)</li>
+</ol>
+<p><strong>FE04 - Insígnia Indisponível por Estado Desatualizado</strong></p>
+<ol>
+<li>O professor ou administrador visualiza uma insígnia antes da atualização completa do estado no banco de dados. (<a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O ator tenta editar ou excluir a insígnia. (<a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema revalida a disponibilidade da insígnia no backend. (<a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema identifica que a insígnia foi removida ou tornou-se indisponível. (<a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema impede a operação solicitada. (<a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema atualiza a lista de insígnias disponíveis. (<a href="#uc03-rf08">RF08</a>)</li>
+<li>O sistema informa que a insígnia não está mais disponível para a operação solicitada. (<a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+</ol>
+<p><strong>FE05 - Falha de Conectividade</strong></p>
+<ol>
+<li>O ator tenta criar, listar, editar ou excluir uma insígnia sem conexão com o backend. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+</ol>
+<p><strong>FE06 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O ator confirma uma operação válida envolvendo uma insígnia. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema tenta registrar, atualizar, excluir ou consultar dados no Firestore. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc03-rf07">RF07</a>, <a href="#uc03-rf08">RF08</a>, <a href="#uc03-rf09">RF09</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC03.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc03-rf07" class="rf-anchor"></span><a href="../../requisitos/#req-rf07"><strong>RF07 - Criar insígnia</strong></a></td>
+<td style="text-align: left;">Permite que professores e administradores criem insígnias personalizadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc03-rf08" class="rf-anchor"></span><a href="../../requisitos/#req-rf08"><strong>RF08 - Editar insígnia</strong></a></td>
+<td style="text-align: left;">Permite que professores e administradores visualizem e editem insígnias.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc03-rf09" class="rf-anchor"></span><a href="../../requisitos/#req-rf09"><strong>RF09 - Excluir insígnias</strong></a></td>
+<td style="text-align: left;">Permite que professores e administradores excluam insígnias.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-definition-of-ready">10. Definition of Ready</h2>
+<p>Esta seção registra o print do checklist de Definition of Ready utilizado para validar a UC03.</p>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/24">Issue Uc03</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="alt text" src="../doruc03.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

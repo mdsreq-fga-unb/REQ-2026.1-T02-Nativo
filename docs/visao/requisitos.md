@@ -57,10 +57,10 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | <span id="req-rf27" class="rf-anchor">RF27</span> | Criar denúncia | Permitir que os usuários relatem publicações, comportamentos indevidos ou traduções incorretas. |
 | <span id="req-rf28" class="rf-anchor">RF28</span> | Atualizar status de denúncia | Permitir que moderadores e administradores alterem o status (ex: em análise, resolvida) de uma denúncia. |
 | <span id="req-rf29" class="rf-anchor">RF29</span> | Listar denúncias | Permitir que moderadores e administradores visualizem todas as denúncias realizadas na aplicação. |
-| RF30 | Criar categoria de denúncia | Permitir que administradores criem novas classificações para organizar os tipos de denúncia. |
-| RF31 | Editar categoria de denúncia | Permitir que administradores alterem o título ou descrição de uma categoria existente. |
-| RF32 | Listar categorias de denúncia | Permitir que o sistema exiba as categorias disponíveis no momento do preenchimento de uma denúncia. |
-| RF33 | Excluir categoria de denúncia | Permitir que administradores removam categorias de denúncias obsoletas. |
+| <span id="req-rf30" class="rf-anchor">RF30</span> | Criar categoria de denúncia | Permitir que administradores criem novas classificações para organizar os tipos de denúncia. |
+| <span id="req-rf31" class="rf-anchor">RF31</span> | Editar categoria de denúncia | Permitir que administradores alterem o título ou descrição de uma categoria existente. |
+| <span id="req-rf32" class="rf-anchor">RF32</span> | Listar categorias de denúncia | Permitir que o sistema exiba as categorias disponíveis no momento do preenchimento de uma denúncia. |
+| <span id="req-rf33" class="rf-anchor">RF33</span> | Excluir categoria de denúncia | Permitir que administradores removam categorias de denúncias obsoletas. |
 
 ---
 

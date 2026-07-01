@@ -1,5 +1,3 @@
-## 13 · Referências Bibliográficas
-
 Esta seção lista todas as referências utilizadas na elaboração do Documento de Visão de Produto e Projeto do Nativo.
 
 **[1]** GOOGLE ARTS & CULTURE. **Woolaroo**. Disponível em: <https://artsandculture.google.com/project/woolaroo>. Acesso em: 12 abr. 2026.

@@ -1,5 +1,3 @@
-## 12. Lições Aprendidas
-
 ### Unidade 1
 
 Durante a escrita do documento de visão de produto e projeto, algumas lições foram aprendidas que ajudaram muito no nosso crescimento e aprendizado. Abaixo estão as lições aprendidas, focando nas ações de melhoria, desafios enfrentados e como foram (ou não) superados.

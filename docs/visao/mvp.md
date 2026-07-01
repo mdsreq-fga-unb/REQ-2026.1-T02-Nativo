@@ -1,5 +1,3 @@
-## 10. MVP
-
 Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, os **Casos de Uso (UCs)** e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
 A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento por meio da plataforma Miro. O processo consistiu na avaliação individual dos Casos de Uso (UCs), com apoio dos RFs associados, para a extração do **Valor de Priorização**, calculado em três etapas:

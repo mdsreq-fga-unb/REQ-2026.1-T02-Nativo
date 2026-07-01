@@ -478,13 +478,25 @@ document.addEventListener('DOMContentLoaded', function() {
       zoomAt(event.deltaY < 0 ? 0.86 : 1.16, event.clientX, event.clientY);
     }, { passive: false });
 
+    function traceUrlFromTarget(target) {
+      var element = target;
+      while (element && element !== svg) {
+        if (element.getAttribute && element.getAttribute('data-trace-url')) {
+          return element.getAttribute('data-trace-url');
+        }
+        element = element.parentNode;
+      }
+      return null;
+    }
+
     container.addEventListener('pointerdown', function(event) {
       pointer = {
         id: event.pointerId,
         x: event.clientX,
         y: event.clientY,
         viewX: viewport.x,
-        viewY: viewport.y
+        viewY: viewport.y,
+        url: traceUrlFromTarget(event.target)
       };
       didDrag = false;
       container.setPointerCapture(event.pointerId);
@@ -505,6 +517,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     container.addEventListener('pointerup', function(event) {
       if (pointer && pointer.id === event.pointerId) {
+        if (!didDrag && pointer.url) {
+          window.location.assign(pointer.url);
+        }
         pointer = null;
       }
     });
@@ -520,10 +535,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
 
-      var link = event.target.closest('[data-trace-url]');
-      if (link) {
+      var url = traceUrlFromTarget(event.target);
+      if (url) {
         event.preventDefault();
-        window.location.href = link.getAttribute('data-trace-url');
+        window.location.assign(url);
       }
     }, true);
 

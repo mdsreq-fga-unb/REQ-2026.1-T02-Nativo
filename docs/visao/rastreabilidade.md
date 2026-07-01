@@ -1,1 +1,1 @@
-> Espaço reservado para a matriz e os registros de rastreabilidade do projeto.
+Esta seção apresenta o mapeamento de rastreabilidade entre o problema identificado, os Objetivos Específicos (OEs), as Características do Produto (CPs), os Requisitos Funcionais (RFs) e os Casos de Uso (UCs).

@@ -682,6 +682,154 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 }
 
 /* =====================================================
+   ATALHOS DA PÁGINA INICIAL
+   ===================================================== */
+.shortcut-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.1rem 0 1.35rem;
+}
+
+.shortcut-card {
+  min-height: 7.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.55rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(145, 153, 107, 0.34);
+  border-radius: 8px;
+  background: rgba(246, 233, 217, 0.32);
+  box-shadow: 0 2px 10px rgba(4, 50, 34, 0.06);
+  color: var(--nativo-evergreen) !important;
+  text-decoration: none !important;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+}
+
+.shortcut-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--nativo-cinnamon);
+  background: rgba(182, 113, 80, 0.08);
+  box-shadow: 0 8px 20px rgba(4, 50, 34, 0.12);
+}
+
+.shortcut-card__tag {
+  width: fit-content;
+  min-width: 1.6rem;
+  padding: 0.08rem 0.42rem;
+  border-radius: 999px;
+  background: var(--nativo-evergreen);
+  color: var(--nativo-cream);
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.shortcut-card h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: var(--nativo-evergreen) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.2;
+}
+
+.shortcut-card p {
+  margin: 0;
+  color: rgba(23, 25, 24, 0.68);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.shortcut-card--mvp {
+  border-top: 3px solid var(--nativo-sage);
+}
+
+.shortcut-card--timeline {
+  border-top: 3px solid var(--nativo-cinnamon);
+}
+
+.shortcut-card--trace {
+  border-top: 3px solid var(--nativo-evergreen);
+}
+
+[data-md-color-scheme="slate"] .shortcut-card {
+  background: rgba(4, 50, 34, 0.25);
+  border-color: rgba(145, 153, 107, 0.28);
+  color: var(--nativo-cream) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+}
+
+[data-md-color-scheme="slate"] .shortcut-card:hover {
+  background: rgba(4, 50, 34, 0.36);
+  border-color: var(--nativo-cinnamon);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.34);
+}
+
+[data-md-color-scheme="slate"] .shortcut-card h3 {
+  color: var(--nativo-cream) !important;
+}
+
+[data-md-color-scheme="slate"] .shortcut-card p {
+  color: rgba(246, 233, 217, 0.68);
+}
+
+/* =====================================================
+   BOTÃO DO REPOSITÓRIO
+   ===================================================== */
+.md-typeset .repo-button {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0.2rem 0 0.55rem;
+  padding: 0.32rem 0.7rem;
+  border: 1px solid rgba(145, 153, 107, 0.38);
+  border-radius: 8px;
+  background: rgba(246, 233, 217, 0.34);
+  color: var(--nativo-evergreen) !important;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none !important;
+  transition: background-color 0.16s ease, border-color 0.16s ease, color 0.16s ease, transform 0.16s ease;
+}
+
+.md-typeset .repo-button:hover {
+  transform: translateY(-1px);
+  border-color: var(--nativo-cinnamon);
+  background: rgba(182, 113, 80, 0.09);
+  color: var(--nativo-cinnamon) !important;
+}
+
+.md-typeset .repo-button::after {
+  content: ">";
+  margin-left: 0.45rem;
+  color: currentColor;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .repo-button {
+  border-color: rgba(145, 153, 107, 0.28);
+  background: rgba(4, 50, 34, 0.28);
+  color: var(--nativo-cream) !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .repo-button:hover {
+  border-color: var(--nativo-cinnamon);
+  color: var(--nativo-cinnamon) !important;
+}
+
+@media screen and (max-width: 760px) {
+  .shortcut-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .shortcut-card {
+    min-height: 6.2rem;
+  }
+}
+
+/* =====================================================
    BADGE DE VERSÃO
    ===================================================== */
 .version-badge {

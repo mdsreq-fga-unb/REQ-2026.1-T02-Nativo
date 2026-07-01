@@ -1,12 +1,12 @@
 Esta seção lista todas as referências utilizadas na elaboração do Documento de Visão de Produto e Projeto do Nativo.
 
-**[1]** GOOGLE ARTS & CULTURE. **Woolaroo**. Disponível em: <https://artsandculture.google.com/project/woolaroo>. Acesso em: 12 abr. 2026.
+<span id="ref1"></span>**[1]** GOOGLE ARTS & CULTURE. **Woolaroo**. Disponível em: <https://artsandculture.google.com/project/woolaroo>. Acesso em: 12 abr. 2026.
 
 > Plataforma do Google voltada à exploração de línguas indígenas e ameaçadas. Citada na [Análise Competitiva (2.5)](../02-solucao/mercado.md) como referência de solução similar ao Nativo.
 
 ---
 
-**[2]** GOOGLE PLAY. **MANGUARÉ Lenguas Indígenas**. Disponível em: <https://play.google.com/store/apps/details?id=com.traductor.app>. Acesso em: 12 abr. 2026.
+<span id="ref2"></span>**[2]** GOOGLE PLAY. **MANGUARÉ Lenguas Indígenas**. Disponível em: <https://play.google.com/store/apps/details?id=com.traductor.app>. Acesso em: 12 abr. 2026.
 
 > Aplicativo tradutor de línguas indígenas da Amazônia colombiana. Citado na [Análise Competitiva (2.5)](../02-solucao/mercado.md) como concorrente indireto do Nativo.
 
@@ -18,7 +18,7 @@ Esta seção lista todas as referências utilizadas na elaboração do Documento
 
 ---
 
-**[4]** MARSICANO, George. **Requisitos de Software: a comunicação é tudo**. v. 1.1, Draft. 18 mar. 2026.
+<span id="ref4"></span>**[4]** MARSICANO, George. **Requisitos de Software: a comunicação é tudo**. v. 1.1, Draft. 18 mar. 2026.
 
 > Material base da disciplina de Requisitos de Software. Fundamenta as escolhas metodológicas de ER descritas na [Seção 5](../05-requisitos/index.md) e orienta a estrutura do processo de validação da [Seção 6.3](../07-interacao/validacao.md).
 

@@ -1343,30 +1343,34 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 .trace-dot {
   display: inline-block;
-  width: 0.65rem;
-  height: 0.65rem;
-  border-radius: 999px;
+  width: 0.82rem;
+  height: 0.62rem;
+  border: 1.5px solid;
+  border-radius: 4px;
 }
 
 .trace-dot--done {
-  background: #4a8054;
+  background: rgba(74, 128, 84, 0.28);
+  border-color: #2f7d3c;
 }
 
 .trace-dot--partial {
-  background: #d9a950;
+  background: rgba(217, 169, 80, 0.38);
+  border-color: #b7791f;
 }
 
 .trace-dot--pending {
-  background: rgba(145, 153, 107, 0.55);
+  background: rgba(255, 255, 255, 0.74);
+  border-color: rgba(74, 90, 63, 0.45);
 }
 
 .traceability-map {
   height: min(72vh, 720px);
   min-height: 480px;
   background:
-    linear-gradient(rgba(145, 153, 107, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(145, 153, 107, 0.08) 1px, transparent 1px),
-    rgba(255, 255, 255, 0.34);
+    linear-gradient(rgba(145, 153, 107, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(145, 153, 107, 0.14) 1px, transparent 1px),
+    #f6f0e6;
   background-size: 32px 32px;
   cursor: grab;
   touch-action: none;
@@ -1381,7 +1385,7 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
   height: 100vh;
   margin: 0;
   border-radius: 0;
-  background-color: var(--nativo-cream);
+  background-color: #f6f0e6;
 }
 
 .traceability-shell:fullscreen .traceability-map {
@@ -1397,7 +1401,7 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 .trace-link {
   fill: none;
-  stroke: rgba(145, 153, 107, 0.55);
+  stroke: rgba(74, 90, 63, 0.46);
   stroke-width: 1.7;
 }
 
@@ -1452,20 +1456,20 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 .trace-node--done rect,
 [data-md-color-scheme="slate"] .trace-node--done rect {
-  fill: rgba(74, 128, 84, 0.22);
-  stroke: #4a8054;
+  fill: rgba(74, 128, 84, 0.28);
+  stroke: #2f7d3c;
 }
 
 .trace-node--partial rect,
 [data-md-color-scheme="slate"] .trace-node--partial rect {
-  fill: rgba(217, 169, 80, 0.24);
-  stroke: #d9a950;
+  fill: rgba(217, 169, 80, 0.38);
+  stroke: #b7791f;
 }
 
 .trace-node--not-started rect,
 [data-md-color-scheme="slate"] .trace-node--not-started rect {
-  fill: rgba(246, 233, 217, 0.65);
-  stroke: rgba(145, 153, 107, 0.55);
+  fill: rgba(255, 255, 255, 0.74);
+  stroke: rgba(74, 90, 63, 0.45);
 }
 
 .trace-node:hover rect {
@@ -1573,9 +1577,18 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
   scroll-margin-top: 42vh;
 }
 
+.md-typeset .trace-target-anchor {
+  display: inline-block;
+  scroll-margin-top: 42vh;
+}
+
 .md-typeset .rf-anchor:target + a,
 .md-typeset .rf-anchor:target {
   border-radius: 6px;
+  animation: rf-target-flash 2s ease-out forwards;
+}
+
+.md-typeset tr:has(.trace-target-anchor:target) td {
   animation: rf-target-flash 2s ease-out forwards;
 }
 

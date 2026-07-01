@@ -18,6 +18,16 @@
 
 **Resumo da Reunião:** Passagem formal pela Especificação Suplementar consolidada. A cliente validou processos críticos do **OE2 (Segurança)** e **OE3 (Experiência)**, com destaque para controle de usuários, denúncias e multimídia.
 
+### Revisão de Casos de Uso e Regras de Moderação
+
+**Objetivo:** Refinar os casos de uso e consolidar regras que impactavam permissões, moderação, denúncias, insígnias e perfil do usuário.
+
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/-R0w7m4u6xA" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Revisão de Casos de Uso e Regras de Moderação"></iframe>
+</div>
+
+**Resumo da Reunião:** A reunião teve como foco a revisão dos casos de uso e a validação das regras com a cliente. Durante a apresentação, foi discutido que o gerenciamento de insígnias deveria considerar categorias pré-definidas, permitindo que o sistema acompanhasse o progresso do usuário de forma rastreável. Também foram definidas regras de acesso e moderação: moderadores poderiam avaliar denúncias de publicações e traduções, mas a ação de banir usuários permaneceria ao administrador. A equipe também validou que o formulário de denúncias teria opções pré-definidas, uma categoria "outros" e um campo opcional para detalhamento. Por fim, ficou definido que as traduções favoritas seriam organizadas dentro do perfil do usuário.
+
 ### Priorização Final e Definição do MVP
 
 **Objetivo:** Aplicar a Matriz de Quadrantes (Impacto no Negócio vs. Dificuldade Técnica) para estabelecer a baseline oficial do backlog e definir o escopo do MVP.

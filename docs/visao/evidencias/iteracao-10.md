@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Homologação de release:** geração do APK, demonstração do produto, testes de aceitação e registro de homologação.
+**Fechamento da documentação as-built:** versão final, estabilização da entrega e atualização das evidências finais.
 
 ## Evidências
 

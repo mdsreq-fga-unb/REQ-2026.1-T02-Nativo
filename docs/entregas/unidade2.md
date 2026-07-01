@@ -28,20 +28,3 @@
     Baixar em PPTX
   </a>
 </div>
-
-## Reuniões e Validações com a Cliente
-
-Abaixo estão os registros, players de gravação e atas das reuniões realizadas com a cliente, documentando a evolução desde a concepção do escopo até a priorização final do MVP.
-
-
-
-
-### Alinhamento sobre Capacidade Técnica e Tecnologias
-
-**Objetivo:** Mapear gargalos técnicos da arquitetura legada (Flask) e validar a capacidade da equipe de propor melhorias estruturais.
-
-<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/embed/ijBSgWsxnVU" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Reunião Requisitos Nativo-20260414_190754-Gravação de Reunião (1).mp4"></iframe>
-</div>
-
-**Resumo da Reunião:** Sessão dedicada ao alinhamento técnico do projeto. A equipe debateu com a cliente o estado atual da base de código, as integrações e as tecnologias empregadas no desenvolvimento original. O objetivo foi assegurar que as novas funcionalidades propostas fossem técnica e arquiteturalmente viáveis antes de avançar para a fase de elaboração dos requisitos detalhados.

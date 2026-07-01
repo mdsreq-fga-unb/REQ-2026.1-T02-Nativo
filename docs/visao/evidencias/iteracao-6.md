@@ -4,21 +4,21 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Detalhamento e prototipação das UCs de multimídia:** evidências de cadastro, reprodução, associação e desassociação de vídeos e áudios.
+**Detalhamento de cenários e prototipação do módulo pedagógico:** evidências de criação, listagem, resposta e resultado de atividades.
 
 ## UCs Relacionadas
 
-- [UC10 - Gerenciar Acervo de Vídeos](../casos-uso/uc10.md)
-- [UC11 - Gerenciar Acervo de Áudios](../casos-uso/uc11.md)
+- [UC01 - Gerenciar Atividades Educacionais](../casos-uso/uc01.md)
+- [UC02 - Responder Atividades Educacionais](../casos-uso/uc02.md)
 
 ## Evidências
 
-### Apresentação de Funcionalidades e Validação com a Cliente
+### Validação com a Cliente da Área de Atividades
 
-**Objetivo:** Alinhar as próximas metas de desenvolvimento da equipe, demonstrar a funcionalidade de upload de mídias e validar o escopo de arquivos anexados nas traduções.
+![Print da validação por WhatsApp](../../entregas/wpp.png)
 
-<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/embed/PGT2uSKav5I" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Apresentação de Funcionalidades e Validação com a Cliente"></iframe>
-</div>
+**Comunicação por WhatsApp:** A cliente precisou cancelar a reunião semanal, então a validação ocorreu por meio do WhatsApp. Abaixo estão as imagens da aplicação enviadas para validação.
 
-**Resumo da Reunião:** A reunião alinhou as próximas metas de desenvolvimento e validou tecnicamente a funcionalidade de upload de mídias. A equipe explicou que as mídias são salvas no Firebase Storage e que as URLs geradas são armazenadas no banco de dados. A cliente validou que cada tradução cadastrada deve suportar inclusão simultânea de foto, vídeo e áudio.
+![Tela de atividade 1](../../entregas/ativ1.png)
+![Tela de atividade 2](../../entregas/ativ2.jpeg)
+![Tela de atividade 3](../../entregas/ativ3.jpeg)

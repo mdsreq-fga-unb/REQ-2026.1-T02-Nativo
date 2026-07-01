@@ -1,3 +1,13 @@
+| Caso de Uso do MVP | Status |
+| :--- | :--- |
+| [**UC01 - Gerenciar Atividades Educacionais**](casos-uso/uc01.md) | **Feito** |
+| [**UC02 - Realizar Atividades Interativas**](casos-uso/uc02.md) | **Feito** |
+| [**UC06 - Gerenciar Acessos e Permissões**](casos-uso/uc06.md) | **Feito** |
+| [**UC07 - Redefinir Senha de Acesso**](casos-uso/uc07.md) | **Feito** |
+| [**UC10 - Gerenciar Acervo de Vídeos**](casos-uso/uc10.md) | **Feito** |
+| [**UC11 - Gerenciar Acervo de Áudios**](casos-uso/uc11.md) | **Feito** |
+| [**UC13 - Baixar Traduções para Acesso Offline**](casos-uso/uc13.md) | **Feito** |
+
 Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, os **Casos de Uso (UCs)** e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
 A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento por meio da plataforma Miro. O processo consistiu na avaliação individual dos Casos de Uso (UCs), com apoio dos RFs associados, para a extração do **Valor de Priorização**, calculado em três etapas:
@@ -50,21 +60,21 @@ Os módulos de **Denúncias** e **Eventos** (Valor = 0.67), embora estivessem em
 
 ### 10.3 Matriz de Priorização Detalhada por Caso de Uso (UC)
 
-A tabela abaixo apresenta a distribuição detalhada dos casos de uso da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
+A tabela abaixo apresenta a distribuição detalhada dos casos de uso da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no [cronograma](cronograma.md):
 
 | ID | Caso de Uso | Impacto | Esforço | Valor (Imp/Esf) | Quadrante Resultante | Compõe a Entrega? |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| **UC10** | Gerenciar Acervo de Vídeos | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **UC11** | Gerenciar Acervo de Áudios | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| **UC01** | Gerenciar Atividades Educacionais | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
-| **UC02** | Realizar Atividades Interativas | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **UC06** | Gerenciar Acessos e Permissões | 3 | 2 | 1.50 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **UC07** | Redefinir Senha de Acesso | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **UC13** | Baixar Traduções para Acesso Offline | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| **UC03** | Gerenciar Insígnias (Recompensas) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 10)** |
-| **UC12** | Gerenciar Perfil Pessoal | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 11)** |
-| **UC05** | Gerenciar Eventos Comunitários | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
-| **UC08** | Gerenciar Moderação de Conteúdo | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
-| **UC09** | Gerenciar Tipos de Denúncias (Categorias) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
-| **UC14** | Candidatar-se a Professor | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
-| **UC04** | Gerenciar Feed Social | 2 | 5 | 0.40 | Q4 - Consumidores de Tempo | **NÃO** |
+| [**UC10**](casos-uso/uc10.md) | [Gerenciar Acervo de Vídeos](casos-uso/uc10.md) | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| [**UC11**](casos-uso/uc11.md) | [Gerenciar Acervo de Áudios](casos-uso/uc11.md) | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
+| [**UC01**](casos-uso/uc01.md) | [Gerenciar Atividades Educacionais](casos-uso/uc01.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
+| [**UC02**](casos-uso/uc02.md) | [Realizar Atividades Interativas](casos-uso/uc02.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
+| [**UC06**](casos-uso/uc06.md) | [Gerenciar Acessos e Permissões](casos-uso/uc06.md) | 3 | 2 | 1.50 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| [**UC07**](casos-uso/uc07.md) | [Redefinir Senha de Acesso](casos-uso/uc07.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| [**UC13**](casos-uso/uc13.md) | [Baixar Traduções para Acesso Offline](casos-uso/uc13.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
+| [**UC03**](casos-uso/uc03.md) | [Gerenciar Insígnias (Recompensas)](casos-uso/uc03.md) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 10)** |
+| [**UC12**](casos-uso/uc12.md) | [Gerenciar Perfil Pessoal](casos-uso/uc12.md) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 11)** |
+| [**UC05**](casos-uso/uc05.md) | [Gerenciar Eventos Comunitários](casos-uso/uc05.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| [**UC08**](casos-uso/uc08.md) | [Gerenciar Moderação de Conteúdo](casos-uso/uc08.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| [**UC09**](casos-uso/uc09.md) | [Gerenciar Tipos de Denúncias (Categorias)](casos-uso/uc09.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| [**UC14**](casos-uso/uc14.md) | [Candidatar-se a Professor](casos-uso/uc14.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| [**UC04**](casos-uso/uc04.md) | [Gerenciar Feed Social](casos-uso/uc04.md) | 2 | 5 | 0.40 | Q4 - Consumidores de Tempo | **NÃO** |

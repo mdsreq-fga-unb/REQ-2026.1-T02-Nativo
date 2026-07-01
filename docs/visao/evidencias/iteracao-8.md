@@ -35,7 +35,3 @@
   <img src="../../../entregas/traducao.png" alt="Tradução" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <img src="../../../entregas/infos.png" alt="Informações" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 </div>
-
-### Apresentação da Unidade 3
-
-No momento desta iteração, a equipe apresentou um vídeo com a atualização do andamento do projeto naquele período: [ver apresentação da Unidade 3](../../entregas/unidade3.md#video-da-apresentacao).

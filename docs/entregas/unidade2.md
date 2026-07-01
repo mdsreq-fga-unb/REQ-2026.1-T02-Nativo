@@ -4,7 +4,7 @@
   <iframe src="https://www.youtube.com/embed/OQvFDJK_7X0" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Apresentação unidade 2"></iframe>
 </div>
 
-## Slidess
+## Slides
 
 <div style="margin: 20px 0; overflow: hidden; background-color: #111;">
   <iframe src="../../img/unidade2/Unidade2.pdf" title="Visualização dos slides da Unidade 1" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>

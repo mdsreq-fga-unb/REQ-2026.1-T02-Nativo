@@ -39,14 +39,14 @@ Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** pa
       <td><a href="../backlog/#9-casos-de-uso">Conjunto de UCs</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-4/">Declaração, análise e organização: RF/RNF, casos de uso, matriz de priorização, MVP e rastreabilidade inicial.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>02/05 a 10/05</td>
+      <td>02/05 a 14/05</td>
     </tr>
     <tr class="schedule-row schedule-row--construcao">
       <td><strong>Iteração 5</strong><br><span class="schedule-phase">Construção</span></td>
       <td><a href="../casos-uso/uc10/">UC10</a>, <a href="../casos-uso/uc11/">UC11</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-5/">Detalhamento e prototipação das UCs de multimídia; evidências de cadastro, reprodução, associação e desassociação de vídeos e áudios.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>11/05 a 01/06</td>
+      <td>14/05 a 01/06</td>
     </tr>
     <tr class="schedule-row schedule-row--construcao">
       <td><strong>Iteração 6</strong><br><span class="schedule-phase">Construção</span></td>

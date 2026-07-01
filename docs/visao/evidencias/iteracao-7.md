@@ -14,3 +14,7 @@
 ## Evidências
 
 > Espaço reservado para inserir links, vídeos, atas, prints e documentos produzidos nesta iteração.
+
+### Apresentação da Unidade 3
+
+No momento desta iteração, a equipe apresentou um vídeo com a atualização do andamento do projeto naquele período: [ver apresentação da Unidade 3](../../entregas/unidade3.md#video-da-apresentacao).

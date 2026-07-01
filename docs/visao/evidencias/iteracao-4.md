@@ -66,3 +66,10 @@
 ![](../../img/CP5-Requisitos.png)
 ![](../../img/CP6-Requisitos.png)
 ![](../../img/CP7-Requisitos.png)
+
+### Apresentação da Unidade 2
+
+Ao final desta iteração, a equipe registrou o status do projeto na apresentação da Unidade 2, consolidando os artefatos e decisões produzidos até aquele momento, incluindo requisitos, priorização, MVP e rastreabilidade inicial.
+
+- [Vídeo da apresentação da Unidade 2](../../entregas/unidade2.md#video-da-apresentacao)
+- [Slides da Unidade 2](../../entregas/unidade2.md#slides)

@@ -75,11 +75,11 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | <span id="req-rf36" class="rf-anchor">RF36</span> | Excluir vídeo | Permitir que os moderadores apaguem definitivamente um vídeo da base de dados. |
 | <span id="req-rf37" class="rf-anchor">RF37</span> | Associar vídeo | Permitir que administradores e moderadores vinculem vídeos cadastrados a uma tradução específica. |
 | <span id="req-rf38" class="rf-anchor">RF38</span> | Desassociar vídeo | Permitir que administradores e moderadores removam a vinculação entre um vídeo e uma tradução. |
-| RF39 | Cadastrar áudio | Permitir o cadastro de arquivos de áudio, pelos administradores e moderadores, no sistema. |
-| RF40 | Reproduzir áudio | Permitir que os usuários reproduzam os áudios vinculados às traduções. |
-| RF41 | Excluir áudio | Permitir que os moderadores apaguem definitivamente um arquivo de áudio da base de dados. |
-| RF42 | Associar áudio | Permitir que administradores e moderadores vinculem áudios cadastrados a uma tradução específica. |
-| RF43 | Desassociar áudio | Permitir que administradores e moderadores removam a vinculação entre um áudio e uma tradução. |
+| <span id="req-rf39" class="rf-anchor">RF39</span> | Cadastrar áudio | Permitir o cadastro de arquivos de áudio, pelos administradores e moderadores, no sistema. |
+| <span id="req-rf40" class="rf-anchor">RF40</span> | Reproduzir áudio | Permitir que os usuários reproduzam os áudios vinculados às traduções. |
+| <span id="req-rf41" class="rf-anchor">RF41</span> | Excluir áudio | Permitir que os moderadores apaguem definitivamente um arquivo de áudio da base de dados. |
+| <span id="req-rf42" class="rf-anchor">RF42</span> | Associar áudio | Permitir que administradores e moderadores vinculem áudios cadastrados a uma tradução específica. |
+| <span id="req-rf43" class="rf-anchor">RF43</span> | Desassociar áudio | Permitir que administradores e moderadores removam a vinculação entre um áudio e uma tradução. |
 
 **CP6 - Perfil de Usuário**
 

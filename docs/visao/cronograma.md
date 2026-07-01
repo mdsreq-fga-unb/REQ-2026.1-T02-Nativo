@@ -9,7 +9,7 @@ Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** pa
       <th>UCs relacionadas</th>
       <th>Atividade de requisitos / evidência esperada</th>
       <th>Status</th>
-      <th>Data final</th>
+      <th>Data início/final</th>
     </tr>
   </thead>
   <tbody>
@@ -18,77 +18,77 @@ Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** pa
       <td>Não aplicável</td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-1/">Elicitação e descoberta: entrevistas, brainstorming, análise documental e registro da visão inicial do produto.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>11/04</td>
+      <td>02/04 a 11/04</td>
     </tr>
     <tr class="schedule-row schedule-row--concepcao">
       <td><strong>Iteração 2</strong><br><span class="schedule-phase">Concepção</span></td>
       <td>Não aplicável</td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-2/">Análise e consenso: avaliação de valor de negócio, priorização inicial e registro dos requisitos preliminares.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>22/04</td>
+      <td>12/04 a 22/04</td>
     </tr>
     <tr class="schedule-row schedule-row--elaboracao">
       <td><strong>Iteração 3</strong><br><span class="schedule-phase">Elaboração</span></td>
       <td>UCs em descoberta visual</td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-3/">Representação de requisitos: prototipação, wireframes navegáveis e descoberta visual de fluxos e regras de negócio.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>01/05</td>
+      <td>23/04 a 01/05</td>
     </tr>
     <tr class="schedule-row schedule-row--elaboracao">
       <td><strong>Iteração 4</strong><br><span class="schedule-phase">Elaboração</span></td>
       <td><a href="../backlog/#9-casos-de-uso">Conjunto de UCs</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-4/">Declaração, análise e organização: RF/RNF, casos de uso, matriz de priorização, MVP e rastreabilidade inicial.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>10/05</td>
+      <td>02/05 a 10/05</td>
     </tr>
     <tr class="schedule-row schedule-row--elaboracao">
       <td><strong>Iteração 5</strong><br><span class="schedule-phase">Elaboração</span></td>
       <td>Não aplicável</td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-5/">Refinamento técnico e análise de risco: análise documental do legado, PoC arquitetural e baseline técnica.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>22/05</td>
+      <td>11/05 a 22/05</td>
     </tr>
     <tr class="schedule-row schedule-row--construcao">
       <td><strong>Iteração 6</strong><br><span class="schedule-phase">Construção</span></td>
       <td><a href="../casos-uso/uc10/">UC10</a>, <a href="../casos-uso/uc11/">UC11</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-6/">Detalhamento e prototipação das UCs de multimídia; evidências de cadastro, reprodução, associação e desassociação de vídeos e áudios.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>01/06</td>
+      <td>23/05 a 01/06</td>
     </tr>
     <tr class="schedule-row schedule-row--construcao">
       <td><strong>Iteração 7</strong><br><span class="schedule-phase">Construção</span></td>
       <td><a href="../casos-uso/uc01/">UC01</a>, <a href="../casos-uso/uc02/">UC02</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-7/">Detalhamento de cenários e prototipação do módulo pedagógico; evidências de criação, listagem, resposta e resultado de atividades.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>12/06</td>
+      <td>01/06 a 12/06</td>
     </tr>
     <tr class="schedule-row schedule-row--construcao">
       <td><strong>Iteração 8</strong><br><span class="schedule-phase">Construção</span></td>
       <td><a href="../casos-uso/uc13/">UC13</a>, <a href="../casos-uso/uc03/">UC03</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-8/">Detalhamento de cenários e manutenção da rastreabilidade; evidências de acesso offline, pontuação e insígnias.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>21/06</td>
+      <td>12/06 a 21/06</td>
     </tr>
     <tr class="schedule-row schedule-row--construcao">
       <td><strong>Iteração 9</strong><br><span class="schedule-phase">Construção</span></td>
       <td><a href="../casos-uso/uc12/">UC12</a>, <a href="../casos-uso/uc06/">UC06</a>, <a href="../casos-uso/uc07/">UC07</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-9/">Gestão de mudanças, detalhamento final e rastreabilidade; evidências de perfil, favoritos, histórico, acesso e recuperação de senha.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>27/06</td>
+      <td>21/06 a 27/06</td>
+    </tr>
+    <tr class="schedule-row schedule-row--transicao">
+      <td><strong>Iteração 10</strong><br><span class="schedule-phase">Transição</span></td>
+      <td>Produto integrado para homologação</td>
+      <td><a class="schedule-activity" href="../evidencias/iteracao-10/">Homologação de release: geração do APK, demonstração do produto, testes de aceitação e registro de homologação.</a></td>
+      <td><span class="schedule-status">Finalizado</span></td>
+      <td>27/06 a 30/06</td>
     </tr>
     <tr class="schedule-row schedule-row--transicao">
       <td><strong>Iteração 11</strong><br><span class="schedule-phase">Transição</span></td>
-      <td>Produto integrado para homologação</td>
-      <td><a class="schedule-activity" href="../evidencias/iteracao-11/">Homologação de release: geração do APK, demonstração do produto, testes de aceitação e registro de homologação.</a></td>
-      <td><span class="schedule-status">Finalizado</span></td>
-      <td>30/06</td>
-    </tr>
-    <tr class="schedule-row schedule-row--transicao">
-      <td><strong>Iteração 12</strong><br><span class="schedule-phase">Transição</span></td>
       <td>Versão final do aplicativo</td>
-      <td><a class="schedule-activity" href="../evidencias/iteracao-12/">Fechamento da documentação as-built: versão final, estabilização da entrega e atualização das evidências finais.</a></td>
+      <td><a class="schedule-activity" href="../evidencias/iteracao-11/">Fechamento da documentação as-built: versão final, estabilização da entrega e atualização das evidências finais.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
-      <td>02/07</td>
+      <td>30/06 a 02/07</td>
     </tr>
   </tbody>
 </table>
@@ -133,12 +133,12 @@ Foco: Detalhamento funcional, modelagem de interface, refatoração técnica, mi
 
 Foco: Desenvolvimento iterativo e validação contínua.
 
-### **Iteração 6 (23/05 a 1/06)**  
+### **Iteração 6 (23/05 a 01/06)**  
   * **Objetivos:** Implementar suporte e vinculação das mídias às traduções(UC10 e UC11) 
   * **Atividades:** Desenvolvimento do cadastro, reprodução, associação e desassociação de áudios e vídeos nas traduções, com verificação  via DoR; testes unitários e validação do incremento conforme a DoD.  
   * **Entregáveis:** Incremento funcional de Multimídia validado e documentação atualizada. [Ver validação de mídias](../entregas/unidade3.md#apresentacao-de-funcionalidades-e-validacao-com-a-cliente).
   
-### **Iteração 7 (1/05 a 12/06)**  
+### **Iteração 7 (01/06 a 12/06)**  
   * **Objetivos:** Implementar modulo de atividades educacionais (UC01 e UC02)
   * **Atividades:** Levantamento contínuo de regras do módulo pedagógico; detalhamento de cenários de Casos de Uso guiado pela DoR; testes de desenvolvedor e aplicação de checklists de qualidade baseados na DoD para validar o incremento; vinculação de artefatos na Matriz de Rastreabilidade.  
   * **Entregáveis:** Módulo de questionários integrado e validado e **Primeira Release entregue!** [Ver telas implementadas](../entregas/unidade3.md#implementacoes-aguardando-validacao).[Ver validação das atividades](../entregas/unidade3.md#validacao-com-a-cliente-da-area-de-atividades).
@@ -156,11 +156,11 @@ Foco: Desenvolvimento iterativo e validação contínua.
 
 ## **Fase de Transição (27/06 – 03/07)** Deploy e Validação final.
 
-### **Iteração 11 (27/06 a 30/06)**  
+### **Iteração 10 (27/06 a 30/06)**  
   * **Objetivos:** Testar o sistema o mais próximo possível da realidade de uso.  
   * **Atividades:** Geração do APK e demonstração do produto. Envio do aplicativo para testes de aceitação com a representante. Correção de erros apontados na revisão.  
   * **Entregáveis:** Relatório de homologação e código estabilizado.  
-### **Iteração 12 (30/06 a 02/07)**  
+### **Iteração 11 (30/06 a 02/07)**  
   * **Objetivos:** Realizar a entrega oficial do aplicativo.  
   * **Atividades:**   Atualização da versão final do aplicativo.
   * **Entregáveis:** Aplicativo entregue e pronto para uso.

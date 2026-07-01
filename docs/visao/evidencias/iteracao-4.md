@@ -8,4 +8,51 @@
 
 ## Evidências
 
-> Espaço reservado para inserir links, vídeos, atas, prints e documentos produzidos nesta iteração.
+### Validação dos Requisitos Funcionais
+
+**Objetivo:** Revisar a lista final de Requisitos Funcionais, com foco em permissões, segurança e multimídia.
+
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/DaIq7b3ZPhY" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de requisitos funcionais"></iframe>
+</div>
+
+**Resumo da Reunião:** Passagem formal pela Especificação Suplementar consolidada. A cliente validou processos críticos do **OE2 (Segurança)** e **OE3 (Experiência)**, com destaque para controle de usuários, denúncias e multimídia.
+
+### Priorização Final e Definição do MVP
+
+**Objetivo:** Aplicar a Matriz de Quadrantes (Impacto no Negócio vs. Dificuldade Técnica) para estabelecer a baseline oficial do backlog e definir o escopo do MVP.
+
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://unbbr-my.sharepoint.com/personal/231029270_aluno_unb_br/_layouts/15/embed.aspx?UniqueId=e68df060-0ebd-472a-9a19-0ed08cf63293&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Priorização Final e Definição do MVP"></iframe>
+</div>
+
+**Resumo da Reunião:** Nesta sessão de encerramento da Fase de Elaboração, a equipe realizou a priorização do backlog por meio de uma **Matriz de Impacto no Negócio vs. Dificuldade Técnica**, estabelecendo o escopo do MVP.
+
+### Board do Miro
+
+<iframe width="100%" height="500" src="https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657" title="Matriz de impacto e esforço" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[Board do Miro](https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657)
+
+### Matriz de Priorização
+
+![](../../img/Matriz.png)
+![](../../img/Quadrante1.png)
+![](../../img/Quadrante2.png)
+![](../../img/Quadrante3.png)
+![](../../img/Quadrante4.png)
+
+### Árvore de Rastreabilidade
+
+![](../../img/Problema-ObjGeral.png)
+![](../../img/ObjGeral-ObjEsps.png)
+![](../../img/ObjEsp1-CPs.png)
+![](../../img/ObjEsp2-CPs.png)
+![](../../img/ObjEsp3-CPs.png)
+![](../../img/CP1-Requisitos.png)
+![](../../img/CP2-Requisitos.png)
+![](../../img/CP3-Requisitos.png)
+![](../../img/CP4-Requisitos.png)
+![](../../img/CP5-Requisitos.png)
+![](../../img/CP6-Requisitos.png)
+![](../../img/CP7-Requisitos.png)

@@ -95,7 +95,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| RF49 | Baixar traduções | Permitir que os usuários façam o download das traduções textuais e auditivas para acesso offline. |
+| <span id="req-rf49" class="rf-anchor">RF49</span> | Baixar traduções | Permitir que os usuários façam o download das traduções textuais e auditivas para acesso offline. |
 
 ## 8.2 Lista de Requisitos Não Funcionais (Especificação Suplementar)
 

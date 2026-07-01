@@ -26,7 +26,7 @@
 
 [**UC12 - Gerenciar Perfil Pessoal**](casos-uso/uc12.md){ .uc-link-card }
 
-[**UC13 - Sincronizar Acervo Offline**](casos-uso/uc13.md){ .uc-link-card }
+[**UC13 - Baixar Traduções para Acesso Offline**](casos-uso/uc13.md){ .uc-link-card }
 
 </div>
 
@@ -93,7 +93,7 @@ A tabela abaixo apresenta a distribuição detalhada dos 13 casos de uso da plat
 | **UC02** | Realizar Atividades Interativas | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
 | **UC06** | Gerenciar Acessos e Permissões | 3 | 2 | 1.50 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
 | **UC07** | Redefinir Senha de Acesso | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
-| **UC13** | Sincronizar Acervo Offline | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
+| **UC13** | Baixar Traduções para Acesso Offline | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
 | **UC03** | Gerenciar Insígnias (Recompensas) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 10)** |
 | **UC12** | Gerenciar Perfil Pessoal | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 11)** |
 | **UC05** | Gerenciar Eventos Comunitários | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |

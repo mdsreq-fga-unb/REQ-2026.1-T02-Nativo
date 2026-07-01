@@ -888,6 +888,198 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 /* =====================================================
    LINKS DOS CASOS DE USO
    ===================================================== */
+.schedule-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.6rem 0 0.8rem;
+  font-size: 0.74rem;
+}
+
+.schedule-chip,
+.schedule-phase,
+.schedule-status {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.schedule-chip {
+  padding: 0.18rem 0.55rem;
+  border: 1px solid transparent;
+}
+
+.schedule-chip--concepcao,
+.schedule-row--concepcao .schedule-phase {
+  background: rgba(145, 153, 107, 0.18);
+  border-color: rgba(145, 153, 107, 0.42);
+  color: var(--nativo-sage);
+}
+
+.schedule-chip--elaboracao,
+.schedule-row--elaboracao .schedule-phase {
+  background: rgba(246, 233, 217, 0.18);
+  border-color: rgba(246, 233, 217, 0.38);
+  color: var(--nativo-cream);
+}
+
+.schedule-chip--construcao,
+.schedule-row--construcao .schedule-phase {
+  background: rgba(84, 133, 166, 0.18);
+  border-color: rgba(84, 133, 166, 0.42);
+  color: #9fc8e0;
+}
+
+.schedule-chip--transicao,
+.schedule-row--transicao .schedule-phase {
+  background: rgba(182, 113, 80, 0.16);
+  border-color: rgba(182, 113, 80, 0.42);
+  color: var(--nativo-cinnamon);
+}
+
+[data-md-color-scheme="default"] .schedule-chip--elaboracao,
+[data-md-color-scheme="default"] .schedule-row--elaboracao .schedule-phase {
+  background: rgba(182, 113, 80, 0.1);
+  border-color: rgba(182, 113, 80, 0.28);
+  color: #7a3b1a;
+}
+
+.md-typeset .schedule-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid rgba(145, 153, 107, 0.28);
+  border-radius: 8px;
+  background: rgba(4, 50, 34, 0.14);
+  box-shadow: 0 2px 12px rgba(4, 50, 34, 0.08);
+  font-size: 0.72rem;
+}
+
+.md-typeset .schedule-table th {
+  padding: 0.55rem 0.65rem;
+  background: var(--nativo-evergreen);
+  color: var(--nativo-cream);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.md-typeset .schedule-table td {
+  padding: 0.62rem 0.65rem;
+  border-top: 1px solid rgba(145, 153, 107, 0.18);
+  color: var(--md-typeset-color);
+  vertical-align: top;
+}
+
+.md-typeset .schedule-table tr {
+  background: rgba(246, 233, 217, 0.025);
+}
+
+.md-typeset .schedule-table tr:hover td {
+  background: rgba(182, 113, 80, 0.07);
+}
+
+.md-typeset .schedule-table td:first-child {
+  border-left: 4px solid var(--nativo-sage);
+  min-width: 5.8rem;
+}
+
+.md-typeset .schedule-row--concepcao td:first-child {
+  border-left-color: var(--nativo-sage);
+}
+
+.md-typeset .schedule-row--elaboracao td:first-child {
+  border-left-color: var(--nativo-cream);
+}
+
+.md-typeset .schedule-row--construcao td:first-child {
+  border-left-color: #6ba3c8;
+}
+
+.md-typeset .schedule-row--transicao td:first-child {
+  border-left-color: var(--nativo-cinnamon);
+}
+
+.schedule-phase {
+  margin-top: 0.22rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid currentColor;
+  font-size: 0.62rem;
+}
+
+.schedule-status {
+  padding: 0.14rem 0.5rem;
+  background: rgba(145, 153, 107, 0.16);
+  color: var(--nativo-sage);
+  border: 1px solid rgba(145, 153, 107, 0.36);
+  font-size: 0.64rem;
+}
+
+.md-typeset .schedule-activity {
+  display: block;
+  padding: 0.42rem 0.55rem;
+  border: 1px solid rgba(145, 153, 107, 0.22);
+  border-radius: 6px;
+  background: rgba(246, 233, 217, 0.035);
+  color: var(--md-typeset-color) !important;
+  line-height: 1.45;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.md-typeset .schedule-activity:hover {
+  border-color: rgba(182, 113, 80, 0.55);
+  background: rgba(182, 113, 80, 0.1);
+  color: var(--nativo-cinnamon) !important;
+}
+
+[data-md-color-scheme="default"] .md-typeset .schedule-activity {
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--nativo-black) !important;
+}
+
+[data-md-color-scheme="default"] .md-typeset .schedule-table {
+  background: #ffffff;
+}
+
+[data-md-color-scheme="default"] .md-typeset .schedule-table tr {
+  background: rgba(246, 233, 217, 0.28);
+}
+
+[data-md-color-scheme="default"] .md-typeset .schedule-table td {
+  color: var(--nativo-black);
+}
+
+[data-md-color-scheme="default"] .schedule-chip--construcao,
+[data-md-color-scheme="default"] .schedule-row--construcao .schedule-phase {
+  color: #24516e;
+}
+
+@media screen and (max-width: 760px) {
+  .md-typeset .schedule-table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+
+  .md-typeset .schedule-table th,
+  .md-typeset .schedule-table td {
+    min-width: 7rem;
+  }
+
+  .md-typeset .schedule-table th:nth-child(3),
+  .md-typeset .schedule-table td:nth-child(3) {
+    min-width: 14rem;
+  }
+}
+
 .uc-link-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

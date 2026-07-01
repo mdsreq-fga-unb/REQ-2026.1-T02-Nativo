@@ -8,9 +8,9 @@ Os objetivos específicos orientam o desenvolvimento das funcionalidades e serve
 
 | ID | Objetivo Específico |
 | :---: | :--- |
-| **OE1** | Aumentar a retenção e o engajamento na plataforma |
-| **OE2** | Assegurar a integridade e segurança do acervo cultural |
-| **OE3** | Enriquecer a experiência do usuário na aplicação |
+| <span id="oe1"></span>**OE1** | Aumentar a retenção e o engajamento na plataforma |
+| <span id="oe2"></span>**OE2** | Assegurar a integridade e segurança do acervo cultural |
+| <span id="oe3"></span>**OE3** | Enriquecer a experiência do usuário na aplicação |
 
 ## 2.3 Características do Produto
 
@@ -18,13 +18,13 @@ As características do produto (CPs) foram mapeadas diretamente aos Objetivos Es
 
 | ID (CP) | Característica (CP) | Descrição resumida | ID (VN) | Valor de Negócio (VN) principal| Contribuição Principal | Contribuição Secundária |
 | :---: | :--- | :--- | :---: | :--- | :---: | :---: |
-| **CP1** | Criação de Mecanismos interativos de aprendizagem e engajamento | A solução deverá oferecer uma ferramenta onde os Professores podem elaborar atividades personalizadas para os alunos. | **VN1** | Aceleração do aprendizado e aumento da retenção, utilizando a prática ativa e o reconhecimento de desempenho para motivar o uso contínuo. | OE1 | OE3 |
-| **CP2** | Feed Social Comunitário | A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia. | **VN2** | Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes. | OE1 | OE3 |
-| **CP3** | Controle de usuário | A solução deverá prover ferramentas para gestão de perfis de usuários e controle de níveis de permissão. | **VN3** | Garantir a segurança do acervo cultural e o acesso adequado às funcionalidades restritas ou administrativas da plataforma. | OE2 | OE3 |
-| **CP4** | Sistema de denúncias | A solução deverá viabilizar o reporte e a moderação de conteúdos e postagens inadequadas na plataforma. | **VN4** | Assegurar um ambiente virtual seguro e de qualidade para toda a comunidade. | OE2 | OE3 |
-| **CP5** | Suporte a Multimídia nas Traduções | A solução deverá suportar a adição e a reprodução de conteúdos em áudio e vídeo associados às traduções. | **VN5** | Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva. | OE3 | OE1 |
-| **CP6** | Perfil de Usuário | A solução permite a visualização do histórico de tradução e o progresso do usuário no aplicativo. | **VN6** | Impulsiona o engajamento e a personalização da experiência através do acompanhamento do progresso individual. | OE3 | OE1 |
-| **CP7** | Sincronização e Acesso Offline de Traduções | A consulta de traduções deverá funcionar mesmo sem acesso à internet. | **VN7** | Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade. | OE3 | OE1 |
+| <span id="cp1"></span>**CP1** | Criação de Mecanismos interativos de aprendizagem e engajamento | A solução deverá oferecer uma ferramenta onde os Professores podem elaborar atividades personalizadas para os alunos. | **VN1** | Aceleração do aprendizado e aumento da retenção, utilizando a prática ativa e o reconhecimento de desempenho para motivar o uso contínuo. | OE1 | OE3 |
+| <span id="cp2"></span>**CP2** | Feed Social Comunitário | A solução deverá ter um mural de publicações para que a comunidade e os especialistas possam compartilhar novidades, eventos e saberes da aldeia. | **VN2** | Fortalecimento do engajamento comunitário, criando um espaço ativo de resistência cultural e troca de saberes. | OE1 | OE3 |
+| <span id="cp3"></span>**CP3** | Controle de usuário | A solução deverá prover ferramentas para gestão de perfis de usuários e controle de níveis de permissão. | **VN3** | Garantir a segurança do acervo cultural e o acesso adequado às funcionalidades restritas ou administrativas da plataforma. | OE2 | OE3 |
+| <span id="cp4"></span>**CP4** | Sistema de denúncias | A solução deverá viabilizar o reporte e a moderação de conteúdos e postagens inadequadas na plataforma. | **VN4** | Assegurar um ambiente virtual seguro e de qualidade para toda a comunidade. | OE2 | OE3 |
+| <span id="cp5"></span>**CP5** | Suporte a Multimídia nas Traduções | A solução deverá suportar a adição e a reprodução de conteúdos em áudio e vídeo associados às traduções. | **VN5** | Melhoria na qualidade do aprendizado, superando a barreira da tradução puramente textual e auxiliando na memorização visual e auditiva. | OE3 | OE1 |
+| <span id="cp6"></span>**CP6** | Perfil de Usuário | A solução permite a visualização do histórico de tradução e o progresso do usuário no aplicativo. | **VN6** | Impulsiona o engajamento e a personalização da experiência através do acompanhamento do progresso individual. | OE3 | OE1 |
+| <span id="cp7"></span>**CP7** | Sincronização e Acesso Offline de Traduções | A consulta de traduções deverá funcionar mesmo sem acesso à internet. | **VN7** | Garantir a disponibilidade e usabilidade contínua do aplicativo mesmo nas áreas da aldeia com baixa ou nenhuma conectividade. | OE3 | OE1 |
 
 ## **2.4 Tecnologias a serem utilizadas**
 

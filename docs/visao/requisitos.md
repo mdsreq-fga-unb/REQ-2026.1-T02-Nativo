@@ -89,7 +89,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 | <span id="req-rf45" class="rf-anchor">RF45</span> | Listar histórico de traduções | Permitir que os usuários visualizem o histórico de traduções realizadas, com data e resultado. |
 | <span id="req-rf46" class="rf-anchor">RF46</span> | Favoritar tradução | Permitir que o usuário marque traduções específicas como favoritas. |
 | <span id="req-rf47" class="rf-anchor">RF47</span> | Listar traduções favoritadas | Permitir que o usuário visualize rapidamente a lista de suas traduções marcadas como favoritas. |
-| RF48 | Listar insígnias | Permitir que os usuários visualizem as insígnias conquistadas em seus perfis. |
+| <span id="req-rf48" class="rf-anchor">RF48</span> | Listar insígnias | Permitir que os usuários visualizem as insígnias conquistadas em seus perfis. |
 
 **CP7 - Sincronização e Acesso Offline de Traduções**
 

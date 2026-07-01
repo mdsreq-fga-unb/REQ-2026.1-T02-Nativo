@@ -1,12 +1,14 @@
 | Caso de Uso do MVP | Status |
 | :--- | :--- |
-| [**UC01 - Gerenciar Atividades Educacionais**](casos-uso/uc01.md) | **Feito** |
-| [**UC02 - Realizar Atividades Interativas**](casos-uso/uc02.md) | **Feito** |
-| [**UC06 - Gerenciar Acessos e Permissões**](casos-uso/uc06.md) | **Feito** |
-| [**UC07 - Redefinir Senha de Acesso**](casos-uso/uc07.md) | **Feito** |
 | [**UC10 - Gerenciar Acervo de Vídeos**](casos-uso/uc10.md) | **Feito** |
 | [**UC11 - Gerenciar Acervo de Áudios**](casos-uso/uc11.md) | **Feito** |
+| [**UC01 - Gerenciar Atividades Educacionais**](casos-uso/uc01.md) | **Feito** |
+| [**UC02 - Realizar Atividades Interativas**](casos-uso/uc02.md) | **Feito** |
 | [**UC13 - Baixar Traduções para Acesso Offline**](casos-uso/uc13.md) | **Feito** |
+| [**UC03 - Gerenciar Insígnias (Recompensas)**](casos-uso/uc03.md) | **Feito** |
+| [**UC12 - Gerenciar Perfil Pessoal**](casos-uso/uc12.md) | **Feito** |
+| [**UC06 - Gerenciar Acessos e Permissões**](casos-uso/uc06.md) | **Feito** |
+| [**UC07 - Redefinir Senha de Acesso**](casos-uso/uc07.md) | **Feito** |
 
 Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, os **Casos de Uso (UCs)** e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
@@ -50,10 +52,10 @@ Uma vez calculado o **Valor de Priorização**, ele foi utilizado como a única 
 * **Q4 - Consumidores de Tempo (*Time Sinks*):** Valor de Priorização ≤ 0.50. Itens de alto esforço e baixíssimo retorno.
 
 **Linha de Corte do MVP (Iterações 6 a 9):**
-O **Produto Mínimo Viável (MVP)** foi delimitado de forma estrita pela linha de corte do retorno sobre investimento: **compõem o MVP apenas os requisitos com Valor de Priorização ≥ 1.0.** Todos os requisitos alocados em Q1 e Q2 foram priorizados para as **Iterações 6 a 9** da Fase de Construção.
+O **Produto Mínimo Viável (MVP)** foi delimitado pela linha de corte do retorno sobre investimento: **compõem o MVP apenas os requisitos com Valor de Priorização ≥ 1.0.** Todos os requisitos alocados em Q1 e Q2 foram priorizados para as **Iterações 6 a 9** da Fase de Construção.
 
-**Escopo Adicional Implementado (Iterações 10 e 11):**
-Os módulos de **Gamificação (Insígnias)** e **Perfil do Usuário (Histórico e Favoritos)**, pertencentes ao Q3, não atingiram a nota matemática para integrar o núcleo duro do MVP. Contudo, por possuírem a **maior nota residual fora do MVP (Valor = 0.75)**, foram selecionados tecnicamente para ocupar a capacidade produtiva final da equipe nas **Iterações 10 e 11**.
+**Escopo Adicional Implementado nas Iterações do MVP:**
+Os módulos de **Gamificação (Insígnias)** e **Perfil do Usuário (Histórico e Favoritos)**, pertencentes ao Q3, não atingiram a nota matemática para integrar o núcleo inicial do MVP. Contudo, por possuírem a **maior nota residual fora do núcleo do MVP (Valor = 0.75)**, foram incorporados à entrega durante as **Iterações 8 e 9**, conforme registrado no cronograma.
 
 **Requisitos Descartados:**
 Os módulos de **Denúncias** e **Eventos** (Valor = 0.67), embora estivessem em Q3, apresentaram nota inferior aos itens de gamificação, sendo formalmente descartados do cronograma atual por restrição de prazo, juntamente com a totalidade do **Feed Social** (Q4, Valor = 0.40).
@@ -66,13 +68,13 @@ A tabela abaixo apresenta a distribuição detalhada dos casos de uso da platafo
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
 | [**UC10**](casos-uso/uc10.md) | [Gerenciar Acervo de Vídeos](casos-uso/uc10.md) | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
 | [**UC11**](casos-uso/uc11.md) | [Gerenciar Acervo de Áudios](casos-uso/uc11.md) | 5 | 2 | 2.50 | Q1 - Ganhos Rápidos | **SIM (MVP - Iteração 6)** |
-| [**UC01**](casos-uso/uc01.md) | [Gerenciar Atividades Educacionais](casos-uso/uc01.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
-| [**UC02**](casos-uso/uc02.md) | [Realizar Atividades Interativas](casos-uso/uc02.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
 | [**UC06**](casos-uso/uc06.md) | [Gerenciar Acessos e Permissões](casos-uso/uc06.md) | 3 | 2 | 1.50 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
+| [**UC01**](casos-uso/uc01.md) | [Gerenciar Atividades Educacionais](casos-uso/uc01.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
+| [**UC02**](casos-uso/uc02.md) | [Realizar Atividades Interativas](casos-uso/uc02.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 7)** |
 | [**UC07**](casos-uso/uc07.md) | [Redefinir Senha de Acesso](casos-uso/uc07.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 9)** |
 | [**UC13**](casos-uso/uc13.md) | [Baixar Traduções para Acesso Offline](casos-uso/uc13.md) | 5 | 4 | 1.25 | Q2 - Grandes Projetos | **SIM (MVP - Iteração 8)** |
-| [**UC03**](casos-uso/uc03.md) | [Gerenciar Insígnias (Recompensas)](casos-uso/uc03.md) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 10)** |
-| [**UC12**](casos-uso/uc12.md) | [Gerenciar Perfil Pessoal](casos-uso/uc12.md) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (Iteração 11)** |
+| [**UC03**](casos-uso/uc03.md) | [Gerenciar Insígnias (Recompensas)](casos-uso/uc03.md) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (MVP - Iteração 8)** |
+| [**UC12**](casos-uso/uc12.md) | [Gerenciar Perfil Pessoal](casos-uso/uc12.md) | 3 | 4 | 0.75 | Q3 - Tarefas Complementares | **SIM (MVP - Iteração 9)** |
 | [**UC05**](casos-uso/uc05.md) | [Gerenciar Eventos Comunitários](casos-uso/uc05.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
 | [**UC08**](casos-uso/uc08.md) | [Gerenciar Moderação de Conteúdo](casos-uso/uc08.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
 | [**UC09**](casos-uso/uc09.md) | [Gerenciar Tipos de Denúncias (Categorias)](casos-uso/uc09.md) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |

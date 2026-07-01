@@ -50,16 +50,3 @@ Um item será considerado concluído quando:
 
 * No caso de conteúdos ou fluxos ligados à língua e à cultura Munduruku, a solução passa pela validação dos representantes, preservando a adequação cultural, ortográfica e pedagógica esperada para o contexto da comunidade.
 
-
-## Evidências de Aplicação do DoR e DoD
-### Aplicação do DoR 
-* Template de chacklists utilizados no Dor (Verificação dos Casos de Uso)
-![Checklist DoR](../img/dor1.png)
-![Checklist DoR](../img/Dor2.png)![Checklist DoR](../img/dor3.png)![Checklist DoR](../img/dor8.png)
-![Checklist DoR](../img/dor4.png)![Checklist DoR](../img/dor5.png)
-![Checklist DoR](../img/dor6.png)![Checklist DoR](../img/dor7.png)
-
-### Aplicação do DoD 
-* Template de chacklists utilizados no DoD (Validação do incremento)
-![Checklist DoD](../img/DoD.png)
-![Checklist DoD](../img/Validacao.png)

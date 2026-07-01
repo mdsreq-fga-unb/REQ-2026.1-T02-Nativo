@@ -1,10 +1,10 @@
-# Evidências da Iteração 12
+# Evidências da Iteração 10
 
 [Voltar para o Cronograma](../cronograma.md#visao-geral-do-cronograma)
 
 ## Atividade de Engenharia de Requisitos
 
-**Fechamento da documentação as-built:** versão final, estabilização da entrega e atualização das evidências finais.
+**Homologação de release:** geração do APK, demonstração do produto, testes de aceitação e registro de homologação.
 
 ## Evidências
 

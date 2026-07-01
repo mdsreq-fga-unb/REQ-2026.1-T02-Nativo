@@ -28,13 +28,15 @@
 
 [**UC13 - Baixar Traduções para Acesso Offline**](casos-uso/uc13.md){ .uc-link-card }
 
+[**UC14 - Candidatar-se a Professor**](casos-uso/uc14.md){ .uc-link-card }
+
 </div>
 
 ## 10.2 Metodologia de Priorização dos Itens de Trabalho (Impacto vs. Esforço)
 
 Para a definição do escopo do Produto Mínimo Viável (MVP) e do roteiro de entregas finais, os **Casos de Uso (UCs)** e seus respectivos Requisitos Funcionais foram priorizados utilizando uma **Matriz de Impacto vs. Esforço Técnico**. Essa abordagem analítica apoia os princípios fundamentais do **OpenUP**, permitindo que a equipe minimize os riscos técnicos logo no início do ciclo de vida do projeto, focando no que entrega maior valor documentado para a cliente.
 
-A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento por meio da plataforma Miro. O processo consistiu na avaliação individual de cada um dos 13 Casos de Uso (UCs), com apoio dos RFs associados, para a extração do **Valor de Priorização**, calculado em três etapas:
+A dinâmica foi realizada de forma colaborativa pela equipe de desenvolvimento por meio da plataforma Miro. O processo consistiu na avaliação individual dos Casos de Uso (UCs), com apoio dos RFs associados, para a extração do **Valor de Priorização**, calculado em três etapas:
 
 1. **Impacto de Negócio:** Mensurado em uma escala linear de 1 a 5, avaliando o quão crítica é a funcionalidade para atingir os Objetivos Estratégicos (OEs) do sistema, focando na mitigação do problema central.
 2. **Esforço Técnico:** Estimado por meio de uma dinâmica de avaliação por consenso, baseada na projeção de horas totais de desenvolvimento necessárias para a implementação completa.
@@ -83,7 +85,7 @@ Os módulos de **Denúncias** e **Eventos** (Valor = 0.67), embora estivessem em
 
 ### 10.2.3 Matriz de Priorização Detalhada por Caso de Uso (UC)
 
-A tabela abaixo apresenta a distribuição detalhada dos 13 casos de uso da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
+A tabela abaixo apresenta a distribuição detalhada dos casos de uso da plataforma Nativo, ordenados de forma decrescente pelo **Valor de Priorização** para evidenciar a linha de corte (1.0) e as alocações no cronograma:
 
 | ID | Caso de Uso | Impacto | Esforço | Valor (Imp/Esf) | Quadrante Resultante | Compõe a Entrega? |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
@@ -99,5 +101,6 @@ A tabela abaixo apresenta a distribuição detalhada dos 13 casos de uso da plat
 | **UC05** | Gerenciar Eventos Comunitários | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
 | **UC08** | Gerenciar Moderação de Conteúdo | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
 | **UC09** | Gerenciar Tipos de Denúncias (Categorias) | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
+| **UC14** | Candidatar-se a Professor | 2 | 3 | 0.67 | Q3 - Tarefas Complementares | **NÃO** |
 | **UC04** | Gerenciar Feed Social | 2 | 5 | 0.40 | Q4 - Consumidores de Tempo | **NÃO** |
 

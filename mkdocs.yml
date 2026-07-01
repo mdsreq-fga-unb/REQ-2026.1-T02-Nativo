@@ -45,8 +45,9 @@ nav:
       - 9. Casos de Uso: visao/backlog.md
       - 10. MVP: visao/mvp.md
       - 11. Cronograma: visao/cronograma.md
-      - 12. Lições Aprendidas: visao/licoes.md
-      - 13. Referências: visao/referencias.md
+      - 12. Rastreabilidade: visao/rastreabilidade.md
+      - 13. Lições Aprendidas: visao/licoes.md
+      - 14. Referências: visao/referencias.md
 
   - Entregas:
       - Unidade 1: entregas/unidade1.md

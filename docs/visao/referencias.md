@@ -24,6 +24,6 @@ Esta seção lista todas as referências utilizadas na elaboração do Documento
 
 ---
 
-**[5]** CARDOSO, Alexia Naara da Silva. **Aplicativo tradutor de línguas indígenas: Munduruku**. 2025. 75 f. Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Software) – Universidade de Brasília, Brasília, 2025.
+<span id="ref5"></span>**[5]** CARDOSO, Alexia Naara da Silva. **Aplicativo tradutor de línguas indígenas: Munduruku**. 2025. 75 f. Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Software) – Universidade de Brasília, Brasília, 2025.
 
 > TCC original que originou o aplicativo Nativo. Referência central para o entendimento do contexto do projeto, do domínio da língua Munduruku e dos desafios técnicos identificados na [Seção 1.5](../01-cenario/desafios.md).

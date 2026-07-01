@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -817,45 +946,169 @@
 
 <h1 id="uc12-gerenciar-perfil-pessoal">UC12 - Gerenciar Perfil Pessoal</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Usuário (Qualquer membro autenticado)</p>
-<p><strong>Objetivo:</strong> Permitir que o usuário personalize as informações de sua conta, gerencie suas traduções preferidas (favoritos), visualize o histórico de buscas e acompanhe seu progresso de aprendizado por meio de insígnias.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar logado no aplicativo móvel.</p>
-<p><strong>Fluxo Principal (Editar Dados do Perfil - RF44):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Usuário</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que o usuário autenticado edite as informações pessoais de seu perfil, visualize seu histórico de traduções, marque traduções como favoritas e acesse rapidamente a lista de traduções favoritadas.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator acessa a aba de Perfil Pessoal no menu do aplicativo.</li>
-<li>O Sistema exibe as informações atuais da conta (nome, e-mail, foto/avatar e bio).</li>
-<li>O ator aciona a opção "Editar Perfil".</li>
-<li>O Sistema apresenta o formulário com os dados carregados e habilitados para edição.</li>
-<li>O ator modifica as informações desejadas e aciona o botão de salvar.</li>
-<li>O Sistema valida as alterações, atualiza os dados no banco de dados e recarrega a tela de Perfil com as novas informações.</li>
+<li>O ator deve estar autenticado no aplicativo móvel.</li>
+<li>O ator deve possuir perfil cadastrado no sistema.</li>
+<li>O sistema deve possuir conexão com o backend para consultar, atualizar e persistir dados.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
+<li>Para listar histórico, o ator deve possuir traduções previamente realizadas.</li>
+<li>Para listar favoritos, o ator deve possuir traduções previamente marcadas como favoritas.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li>
-<p><strong>FA01 - Favoritar e Listar Traduções (RF46, RF47):</strong> 1. O ator acessa a tela de uma tradução específica no dicionário e aciona o ícone de "Favoritar" (estrela).</p>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Editar Dados do Perfil</strong></p>
 <ol>
-<li>O Sistema registra aquela tradução na lista de favoritos do ator (RF46).</li>
-<li>Posteriormente, dentro da sua tela de Perfil, o ator acessa a aba "Meus Favoritos".</li>
-<li>O Sistema exibe a listagem completa e atualizada de todas as traduções que o ator marcou (RF47), permitindo acesso rápido a elas.</li>
+<li>O ator acessa a aba de perfil pessoal no menu do aplicativo. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema busca os dados atuais do perfil do ator autenticado. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema exibe as informações atuais da conta, como foto, nome e e-mail. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O ator aciona a opção de editar perfil. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema apresenta o formulário de edição com os dados atuais carregados. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O ator modifica as informações desejadas. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O ator aciona a opção de salvar alterações. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema valida os dados informados. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema atualiza os dados do perfil no banco de dados. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema recarrega a tela de perfil com as informações atualizadas. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema exibe mensagem de sucesso informando que o perfil foi atualizado. (<a href="#uc12-rf44">RF44</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA02 - Visualizar Histórico de Consultas (RF45):</strong> 1. Na tela de Perfil, o ator acessa a aba "Histórico de Traduções".</p>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Listar Histórico de Traduções</strong></p>
 <ol>
-<li>O Sistema busca no banco de dados e exibe uma lista cronológica das últimas palavras ou expressões que o ator pesquisou e acessou na plataforma.</li>
+<li>O ator acessa a aba de perfil pessoal no aplicativo. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O ator acessa a seção de histórico de traduções. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O sistema busca as traduções realizadas pelo ator autenticado. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O sistema organiza o histórico de traduções em ordem cronológica. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O sistema exibe as traduções realizadas, contendo data e resultado da tradução. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O ator visualiza seu histórico de traduções. (<a href="#uc12-rf45">RF45</a>)</li>
 </ol>
-</li>
-<li>
-<p><strong>FA03 - Visualizar Conquistas e Insígnias (RF48):</strong> 1. Na tela principal do Perfil, o ator navega até a seção de "Minhas Conquistas".</p>
+<p><strong>FA02 - Favoritar Tradução</strong></p>
 <ol>
-<li>O Sistema exibe a galeria com todos os "escudinhos" (insígnias) que aquele ator já desbloqueou ao completar atividades educacionais.</li>
+<li>O ator acessa uma tradução específica no aplicativo. (<a href="#uc12-rf46">RF46</a>)</li>
+<li>O sistema exibe o resultado da tradução selecionada. (<a href="#uc12-rf46">RF46</a>)</li>
+<li>O ator aciona a opção de favoritar tradução. (<a href="#uc12-rf46">RF46</a>)</li>
+<li>O sistema verifica se a tradução ainda não está marcada como favorita para o ator. (<a href="#uc12-rf46">RF46</a>)</li>
+<li>O sistema registra a tradução na lista de favoritos do ator. (<a href="#uc12-rf46">RF46</a>)</li>
+<li>O sistema atualiza o estado visual da tradução como favorita. (<a href="#uc12-rf46">RF46</a>)</li>
+<li>O sistema exibe confirmação de que a tradução foi adicionada aos favoritos. (<a href="#uc12-rf46">RF46</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li><strong>FE01 - Dados Inválidos na Edição:</strong> No passo 6 do Fluxo Principal, se o ator tentar salvar o perfil com o campo "Nome" em branco ou inserir um formato de e-mail inválido, o Sistema interrompe o salvamento, destaca o campo com erro e solicita a correção imediata.</li>
-</ul>
+<p><strong>FA03 - Listar Traduções Favoritadas</strong></p>
+<ol>
+<li>O ator acessa a aba de perfil pessoal no aplicativo. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O ator acessa a seção de traduções favoritas. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema busca as traduções marcadas como favoritas pelo ator autenticado. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema exibe a lista atualizada de traduções favoritadas. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O ator visualiza rapidamente suas traduções marcadas como favoritas. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O ator pode selecionar uma tradução favorita para acessar seu conteúdo. (<a href="#uc12-rf47">RF47</a>)</li>
+</ol>
+<p><strong>FA04 - Histórico de Traduções Vazio</strong></p>
+<ol>
+<li>O ator acessa a seção de histórico de traduções. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O sistema consulta o histórico do ator autenticado. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O sistema identifica que o ator ainda não possui traduções registradas. (<a href="#uc12-rf45">RF45</a>)</li>
+<li>O sistema exibe mensagem informando que não há traduções no histórico. (<a href="#uc12-rf45">RF45</a>)</li>
+</ol>
+<p><strong>FA05 - Lista de Favoritos Vazia</strong></p>
+<ol>
+<li>O ator acessa a seção de traduções favoritas. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema consulta as traduções favoritadas pelo ator autenticado. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema identifica que o ator ainda não possui traduções favoritas. (<a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema exibe mensagem informando que não há traduções favoritadas. (<a href="#uc12-rf47">RF47</a>)</li>
+</ol>
+<p><strong>FA06 - Cancelar Edição do Perfil</strong></p>
+<ol>
+<li>Durante a edição do perfil, o ator aciona a opção de cancelar ou voltar. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema descarta as alterações não salvas. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema retorna o ator para a tela de perfil pessoal. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>Nenhuma informação do perfil é alterada no banco de dados. (<a href="#uc12-rf44">RF44</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Dados Inválidos na Edição do Perfil</strong></p>
+<ol>
+<li>O ator tenta salvar o perfil com dados inválidos. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema identifica inconsistências, como nome em branco, e-mail em formato inválido, senha em formato inválido ou data de nascimento inválida. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema impede o salvamento das alterações. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema destaca os campos inválidos. (<a href="#uc12-rf44">RF44</a>)</li>
+<li>O sistema informa ao ator que os dados devem ser corrigidos. (<a href="#uc12-rf44">RF44</a>)</li>
+</ol>
+<p><strong>FE02 - Falha de Conectividade</strong></p>
+<ol>
+<li>O ator tenta editar perfil, listar histórico, favoritar tradução ou listar favoritos sem conexão com o backend. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+</ol>
+<p><strong>FE03 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O ator realiza uma operação válida envolvendo perfil, histórico ou favoritos. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema tenta consultar, registrar ou atualizar os dados no Firebase/Firestore. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+</ol>
+<p><strong>FE04 - Tradução Indisponível por Estado Desatualizado</strong></p>
+<ol>
+<li>O ator visualiza uma tradução antes da atualização completa do estado no banco ou na interface. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O ator tenta favoritar ou acessar a tradução pela lista de favoritos. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema revalida a disponibilidade da tradução no backend. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema identifica que a tradução foi removida, alterada ou tornou-se indisponível. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema impede a operação solicitada. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema atualiza os dados exibidos ao ator. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema informa que a tradução não está mais disponível. (<a href="#uc12-rf46">RF46</a>, <a href="#uc12-rf47">RF47</a>)</li>
+</ol>
+<p><strong>FE05 - Tentativa de Acesso sem Autenticação</strong></p>
+<ol>
+<li>O ator tenta acessar o perfil pessoal, histórico ou favoritos sem estar autenticado. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema identifica a ausência de sessão válida. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema bloqueia o acesso às informações pessoais. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf47">RF47</a>)</li>
+<li>O sistema direciona o ator para a autenticação. (<a href="#uc12-rf44">RF44</a>, <a href="#uc12-rf45">RF45</a>, <a href="#uc12-rf47">RF47</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC12.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc12-rf44" class="rf-anchor"></span><a href="../../requisitos/#req-rf44"><strong>RF44 - Editar usuário</strong></a></td>
+<td style="text-align: left;">Permite que os usuários editem as informações pessoais de seus perfis.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc12-rf45" class="rf-anchor"></span><a href="../../requisitos/#req-rf45"><strong>RF45 - Listar histórico de traduções</strong></a></td>
+<td style="text-align: left;">Permite que os usuários visualizem o histórico de traduções realizadas, com data e resultado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc12-rf46" class="rf-anchor"></span><a href="../../requisitos/#req-rf46"><strong>RF46 - Favoritar tradução</strong></a></td>
+<td style="text-align: left;">Permite que o usuário marque traduções específicas como favoritas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span id="uc12-rf47" class="rf-anchor"></span><a href="../../requisitos/#req-rf47"><strong>RF47 - Listar traduções favoritadas</strong></a></td>
+<td style="text-align: left;">Permite que o usuário visualize rapidamente a lista de suas traduções marcadas como favoritas.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/31">Issue Uc12</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="Checklist DoR da UC12" src="../dor.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

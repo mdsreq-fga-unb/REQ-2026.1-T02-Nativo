@@ -23,7 +23,7 @@
     
     
       
-        <title>UC13 - Sincronizar Acervo Offline - Nativo</title>
+        <title>UC13 - Baixar Traduções para Acesso Offline - Nativo</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uc13-sincronizar-acervo-offline" class="md-skip">
+        <a href="#uc13-baixar-traducoes-para-acesso-offline" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UC13 - Sincronizar Acervo Offline
+              UC13 - Baixar Traduções para Acesso Offline
             
           </span>
         </div>
@@ -800,6 +800,135 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Atores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fluxo Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Fluxos Alternativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Regras de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-requisitos-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Requisitos Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Protótipo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-aplicacao-do-dor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Aplicação do DoR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-fluxo-de-acesso-a-uc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Fluxo de Acesso à UC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -815,37 +944,130 @@
 
 
 
-<h1 id="uc13-sincronizar-acervo-offline">UC13 - Sincronizar Acervo Offline</h1>
+<h1 id="uc13-baixar-traducoes-para-acesso-offline">UC13 - Baixar Traduções para Acesso Offline</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
-<p><strong>Atores:</strong> Usuário (Qualquer membro autenticado)</p>
-<p><strong>Objetivo:</strong> Permitir que o usuário realize o download prévio do acervo básico do dicionário (textos de traduções) para viabilizar consultas e a prática do idioma mesmo quando o dispositivo estiver sem acesso à internet.</p>
-<p><strong>Pré-condições:</strong> O ator deve estar logado no aplicativo. A conexão com a internet é obrigatória apenas durante a etapa de sincronização. O dispositivo móvel deve possuir espaço de armazenamento livre.</p>
-<p><strong>Fluxo Principal (Fazer Download do Acervo - RF49):</strong></p>
+<h2 id="1-atores">1. Atores</h2>
+<p><strong>Atores principais:</strong> Usuário autenticado</p>
+<h2 id="2-objetivo">2. Objetivo</h2>
+<p>Permitir que usuários realizem o download das traduções textuais e auditivas para acesso ao dicionário mesmo quando o dispositivo estiver sem conexão com a internet.</p>
+<h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
-<li>O ator acessa as configurações do aplicativo e seleciona a opção "Sincronização / Modo Offline".</li>
-<li>O Sistema calcula o volume de dados das traduções atuais, exibe o tamanho estimado do pacote (em Megabytes) e solicita a confirmação do download.</li>
-<li>O ator aciona o botão para iniciar a sincronização.</li>
-<li>O Sistema conecta-se ao servidor, faz o download do pacote de dados textuais e salva as informações no armazenamento local seguro do dispositivo móvel.</li>
-<li>Durante o processo, o Sistema exibe uma barra de progresso visual.</li>
-<li>Ao finalizar, o Sistema registra no banco de dados local a data da última atualização do pacote e exibe uma notificação de sucesso para o ator.</li>
+<li>O ator deve estar autenticado no aplicativo.</li>
+<li>O dispositivo deve possuir conexão com a internet para realizar a sincronização.</li>
+<li>O dispositivo deve possuir espaço de armazenamento disponível.</li>
+<li>O sistema deve possuir conexão ativa com o backend.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
-<p><strong>Fluxos Alternativos:</strong></p>
-<ul>
-<li><strong>FA01 - Realizar Consulta Offline (Ativação Automática):</strong> 1. O ator (com o aplicativo já instalado e o acervo sincronizado) abre o sistema sem possuir conexão ativa (Wi-Fi ou Dados Móveis).<ol>
-<li>O Sistema detecta a falta de rede e ativa automaticamente o "Modo Offline", bloqueando o acesso a funcionalidades estritamente online (como o Feed Social e Eventos), mas mantendo livre a aba de Dicionário.</li>
-<li>O ator pesquisa uma palavra, e o Sistema retorna a tradução lendo exclusivamente a base de dados interna do celular.</li>
+<h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
+<p><strong>FP01 - Baixar Traduções para Uso Offline</strong></p>
+<ol>
+<li>O usuário acessa a página de sincronização ou modo offline. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema calcula o tamanho estimado do pacote de traduções. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema apresenta as informações do download e solicita confirmação. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O usuário confirma o início da sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema realiza o download das traduções textuais e dos arquivos de áudio. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema armazena os dados no armazenamento local do dispositivo. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema apresenta o progresso da sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema registra a data da última sincronização realizada. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema informa que o download foi concluído com sucesso. (<a href="#uc13-rf49">RF49</a>)</li>
 </ol>
-</li>
-</ul>
-<p><strong>Fluxos de Exceção:</strong></p>
-<ul>
-<li>
-<p><strong>FE01 - Armazenamento Insuficiente:</strong> No passo 3 do Fluxo Principal, se o Sistema detectar que a memória do celular do ator não tem espaço suficiente para comportar o pacote de traduções, a ação é bloqueada e um alerta solicita que o usuário libere espaço no dispositivo antes de tentar novamente.</p>
-</li>
-<li>
-<p><strong>FE02 - Queda de Conexão no Download:</strong> No passo 5 do Fluxo Principal, caso o ator perca o sinal de internet antes de atingir 100% da sincronização, o Sistema pausa a operação, emite um aviso de "Falha de Rede" e guarda o progresso para retomar o download assim que o sinal for restabelecido.</p>
-</li>
-</ul>
+<h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
+<p><strong>FA01 - Consultar Traduções em Modo Offline</strong></p>
+<ol>
+<li>O usuário abre o aplicativo sem conexão com a internet. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema identifica a ausência de conexão. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema ativa automaticamente o modo offline. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema mantém disponíveis apenas as funcionalidades compatíveis com o modo offline. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O usuário pesquisa uma tradução. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema consulta os dados armazenados localmente e apresenta o resultado. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<p><strong>FA02 - Atualizar Pacote Offline</strong></p>
+<ol>
+<li>O usuário acessa novamente a tela de sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema verifica a existência de atualizações disponíveis. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O usuário confirma a atualização do pacote. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema realiza a sincronização apenas dos conteúdos necessários. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema atualiza a data da última sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<p><strong>FA03 - Cancelar Download</strong></p>
+<ol>
+<li>Durante o download das traduções, o usuário seleciona a opção de cancelar. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema interrompe a sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema mantém apenas os dados já sincronizados anteriormente. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema retorna para a tela de sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
+<p><strong>FE01 - Espaço de Armazenamento Insuficiente</strong></p>
+<ol>
+<li>O usuário confirma o download das traduções. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema verifica o espaço disponível no dispositivo. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema identifica que não há espaço suficiente. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema cancela a sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema informa que é necessário liberar espaço antes de tentar novamente. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<p><strong>FE02 - Falha de Conexão Durante o Download</strong></p>
+<ol>
+<li>O sistema realiza a sincronização das traduções. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>A conexão com a internet é interrompida. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema pausa o download automaticamente. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema salva o progresso realizado. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema informa que a sincronização será retomada quando a conexão for restabelecida. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<p><strong>FE03 - Falha na Gravação Local</strong></p>
+<ol>
+<li>O sistema conclui o download das traduções. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema tenta salvar os dados no armazenamento do dispositivo. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O armazenamento retorna erro durante a gravação. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema cancela a sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema informa que ocorreu um erro ao salvar os arquivos localmente. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<p><strong>FE04 - Pacote de Traduções Indisponível</strong></p>
+<ol>
+<li>O usuário solicita o download das traduções. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema tenta acessar o pacote de sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O pacote encontra-se indisponível no servidor. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema interrompe a sincronização. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema informa que o serviço está temporariamente indisponível. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<p><strong>FE05 - Erro Interno no Banco de Dados</strong></p>
+<ol>
+<li>O sistema tenta registrar a sincronização realizada. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc13-rf49">RF49</a>)</li>
+<li>O sistema exibe mensagem de erro interno. (<a href="#uc13-rf49">RF49</a>)</li>
+</ol>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
+<blockquote>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC13.</p>
+</blockquote>
+<h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RF</th>
+<th style="text-align: left;">Relação com a UC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span id="uc13-rf49" class="rf-anchor"></span><a href="../../requisitos/#req-rf49"><strong>RF49 - Baixar traduções</strong></a></td>
+<td style="text-align: left;">Permite que os usuários façam o download das traduções textuais e auditivas para acesso offline.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-prototipo">9. Protótipo</h2>
+<blockquote>
+<p>Espaço reservado para adicionar prints das telas, imagens do protótipo e link do Figma.</p>
+</blockquote>
+<p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
+<h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
+<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/32">Issue Uc13</a></p>
+<p><strong>Print do checklist DoR:</strong></p>
+<p><img alt="Checklist DoR da UC13" src="../dor.png" /></p>
+<h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
+<blockquote>
+<p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>
+</blockquote>
 
 
 

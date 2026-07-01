@@ -23,7 +23,7 @@
     
     
       
-        <title>UC11 - Gerenciar Acervo de Áudios - Nativo</title>
+        <title>UC14 - Candidatar-se a Professor - Nativo</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uc11-gerenciar-acervo-de-audios" class="md-skip">
+        <a href="#uc14-candidatar-se-a-professor" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UC11 - Gerenciar Acervo de Áudios
+              UC14 - Candidatar-se a Professor
             
           </span>
         </div>
@@ -944,119 +944,88 @@
 
 
 
-<h1 id="uc11-gerenciar-acervo-de-audios">UC11 - Gerenciar Acervo de Áudios</h1>
+<h1 id="uc14-candidatar-se-a-professor">UC14 - Candidatar-se a Professor</h1>
 <p><a href="../../backlog/#101-casos-de-uso">Voltar para Itens de Trabalho</a></p>
 <h2 id="1-atores">1. Atores</h2>
-<p><strong>Atores principais:</strong> Administrador, Professor, Usuário autenticado</p>
+<p><strong>Atores principais:</strong> Usuário autenticado</p>
 <h2 id="2-objetivo">2. Objetivo</h2>
-<p>Permitir que administradores e professores cadastrem, associem, desassociem e excluam arquivos de áudio do acervo, bem como permitir que usuários reproduzam os áudios associados às traduções para ouvir a pronúncia correta do idioma Munduruku.</p>
+<p>Permitir que um usuário autenticado solicite a obtenção do perfil de professor para atuar na plataforma, enviando uma solicitação que será analisada pelos administradores.</p>
 <h2 id="3-pre-condicoes">3. Pré-condições</h2>
 <ol>
 <li>O ator deve estar autenticado no aplicativo.</li>
-<li>O administrador ou professor deve possuir permissão para gerenciar áudios.</li>
-<li>A tradução à qual o áudio será associado deve existir.</li>
+<li>O ator deve possuir uma conta de usuário ativa.</li>
+<li>O ator não pode possuir perfil de professor.</li>
+<li>O ator não pode possuir uma solicitação de professor com status Pendente.</li>
 <li>O sistema deve possuir conexão ativa com o backend.</li>
-<li>O backend deve estar integrado ao banco de dados Firebase/Firestore e ao serviço de armazenamento de arquivos.</li>
+<li>O backend deve estar integrado ao banco de dados Firebase/Firestore.</li>
 </ol>
 <h2 id="4-fluxo-principal">4. Fluxo Principal</h2>
-<p><strong>FP01 - Cadastrar e Associar Áudio</strong></p>
+<p><strong>FP01 - Solicitar Perfil de Professor</strong></p>
 <ol>
-<li>O administrador ou professor acessa os detalhes de uma tradução. (<a href="#uc11-rf42">RF42</a>)</li>
-<li>O sistema apresenta as informações da tradução e os áudios associados. (<a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf42">RF42</a>)</li>
-<li>O ator seleciona a opção de adicionar áudio. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema apresenta a interface para upload de um arquivo de áudio ou gravação utilizando o microfone do dispositivo. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O ator seleciona um arquivo ou grava um novo áudio. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O ator confirma o cadastro. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema valida as informações fornecidas. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema registra o áudio no acervo. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema associa o áudio à tradução selecionada. (<a href="#uc11-rf42">RF42</a>)</li>
-<li>O sistema atualiza a tela exibindo o botão de reprodução do áudio. (<a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf42">RF42</a>)</li>
-<li>O sistema exibe mensagem de sucesso informando que o áudio foi cadastrado e associado. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf42">RF42</a>)</li>
+<li>O usuário autenticado acessa a tela de configurações do perfil. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema identifica o perfil do ator autenticado. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema verifica que o ator ainda não possui perfil de professor. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema apresenta a opção "Solicitar Perfil de Professor". (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O ator seleciona a opção de solicitação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema apresenta o formulário de candidatura. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O ator informa os dados solicitados, incluindo justificativa e, opcionalmente, documentos comprobatórios. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O ator confirma o envio da solicitação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema valida os dados obrigatórios informados. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema registra a solicitação no banco de dados com status Pendente. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema notifica os administradores sobre a nova solicitação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema exibe mensagem informando que a solicitação foi enviada com sucesso e aguarda análise. (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
 <h2 id="5-fluxos-alternativos">5. Fluxos Alternativos</h2>
-<p><strong>FA01 - Reproduzir Áudio</strong></p>
+<p><strong>FA01 - Cancelar Solicitação</strong></p>
 <ol>
-<li>O usuário acessa uma tradução que possui áudio associado. (<a href="#uc11-rf40">RF40</a>)</li>
-<li>O sistema apresenta o botão de reprodução do áudio. (<a href="#uc11-rf40">RF40</a>)</li>
-<li>O usuário seleciona a opção de reprodução. (<a href="#uc11-rf40">RF40</a>)</li>
-<li>O sistema executa o áudio na própria interface. (<a href="#uc11-rf40">RF40</a>)</li>
-</ol>
-<p><strong>FA02 - Desassociar Áudio</strong></p>
-<ol>
-<li>O administrador ou professor seleciona um áudio associado a uma tradução. (<a href="#uc11-rf43">RF43</a>)</li>
-<li>O ator seleciona a opção de desassociar. (<a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema solicita confirmação da operação. (<a href="#uc11-rf43">RF43</a>)</li>
-<li>O ator confirma a desassociação. (<a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema remove apenas o vínculo entre o áudio e a tradução. (<a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema atualiza a interface da tradução. (<a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema exibe mensagem de sucesso informando que o áudio foi desassociado. (<a href="#uc11-rf43">RF43</a>)</li>
-</ol>
-<p><strong>FA03 - Excluir Áudio do Acervo</strong></p>
-<ol>
-<li>O administrador ou professor seleciona um áudio do acervo. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O ator seleciona a opção de exclusão definitiva. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O sistema solicita confirmação da operação. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O ator confirma a exclusão. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O sistema remove o áudio do armazenamento e do banco de dados. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O sistema remove automaticamente as associações existentes. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O sistema atualiza a listagem do acervo. (<a href="#uc11-rf41">RF41</a>)</li>
-<li>O sistema exibe mensagem de sucesso informando que o áudio foi removido. (<a href="#uc11-rf41">RF41</a>)</li>
-</ol>
-<p><strong>FA04 - Cancelar Operação</strong></p>
-<ol>
-<li>Durante o cadastro ou associação de um áudio, o ator seleciona a opção de cancelar ou voltar. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf42">RF42</a>)</li>
-<li>O sistema descarta as alterações não salvas. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf42">RF42</a>)</li>
-<li>O sistema retorna para a tela anterior. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf42">RF42</a>)</li>
-<li>Nenhum áudio é cadastrado ou associado. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf42">RF42</a>)</li>
+<li>Durante o preenchimento do formulário, o ator seleciona a opção Cancelar. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema descarta os dados informados que ainda não foram enviados. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema retorna o ator para a tela de configurações do perfil. (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
 <h2 id="6-fluxos-de-excecao">6. Fluxos de Exceção</h2>
-<p><strong>FE01 - Permissão de Microfone Negada</strong></p>
+<p><strong>FE01 - Solicitação Já Pendente</strong></p>
 <ol>
-<li>O ator seleciona a opção de gravar um novo áudio. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema solicita acesso ao microfone do dispositivo. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema identifica que a permissão foi negada. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema bloqueia a gravação. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema orienta o ator a habilitar a permissão nas configurações do dispositivo. (<a href="#uc11-rf39">RF39</a>)</li>
+<li>O ator confirma o envio da solicitação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema verifica que já existe uma solicitação com status Pendente para o ator. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema impede o registro de uma nova solicitação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema informa que a solicitação já está em análise. (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
-<p><strong>FE02 - Formato de Áudio Não Suportado</strong></p>
+<p><strong>FE02 - Campos Obrigatórios Não Preenchidos</strong></p>
 <ol>
-<li>O ator seleciona um arquivo incompatível. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema identifica que o formato não é suportado. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema rejeita o arquivo. (<a href="#uc11-rf39">RF39</a>)</li>
-<li>O sistema informa os formatos aceitos pelo sistema. (<a href="#uc11-rf39">RF39</a>)</li>
+<li>O ator tenta enviar a solicitação com campos obrigatórios ausentes ou inválidos. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema identifica as inconsistências. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema impede o envio da solicitação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema destaca os campos inválidos. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema orienta o ator a corrigir as informações antes de realizar um novo envio. (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
-<p><strong>FE03 - Tradução Indisponível</strong></p>
+<p>Campos obrigatórios mínimos:</p>
+<ul>
+<li>justificativa da solicitação.</li>
+</ul>
+<p><strong>FE03 - Erro no Registro da Solicitação</strong></p>
 <ol>
-<li>O ator tenta associar ou visualizar um áudio vinculado a uma tradução. (<a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema verifica a existência da tradução. (<a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema identifica que a tradução foi removida ou encontra-se indisponível. (<a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema impede a operação. (<a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
+<li>O ator confirma uma solicitação válida. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema tenta registrar a solicitação no banco de dados. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O banco de dados retorna erro ou indisponibilidade. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema cancela a operação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema informa que não foi possível concluir a solicitação e orienta o ator a tentar novamente mais tarde. (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
-<p><strong>FE04 - Usuário Sem Permissão</strong></p>
+<p><strong>FE04 - Usuário Já Possui Perfil de Professor</strong></p>
 <ol>
-<li>Um usuário sem perfil de administrador ou professor tenta gerenciar áudios. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema identifica a ausência das permissões necessárias. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema bloqueia o acesso às funcionalidades administrativas. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema informa que o acesso é restrito. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
+<li>O ator acessa a tela de configurações do perfil. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema identifica que o ator já possui perfil de professor. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema não exibe a opção "Solicitar Perfil de Professor". (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
 <p><strong>FE05 - Falha de Conectividade</strong></p>
 <ol>
-<li>O ator tenta executar uma operação envolvendo áudios sem conexão com o backend. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema não consegue concluir a operação. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema exibe mensagem de falha de conexão. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-</ol>
-<p><strong>FE06 - Erro Interno no Armazenamento</strong></p>
-<ol>
-<li>O ator confirma uma operação válida envolvendo áudios. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema tenta armazenar, remover ou recuperar o áudio. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O serviço de armazenamento retorna erro ou indisponibilidade. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema cancela a operação. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
-<li>O sistema exibe mensagem de erro interno. (<a href="#uc11-rf39">RF39</a>, <a href="#uc11-rf40">RF40</a>, <a href="#uc11-rf41">RF41</a>, <a href="#uc11-rf42">RF42</a>, <a href="#uc11-rf43">RF43</a>)</li>
+<li>O ator tenta enviar a solicitação sem conexão com o backend. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema não consegue concluir a operação. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema informa a falha de conexão. (<a href="#uc14-rf25">RF25</a>)</li>
+<li>O sistema orienta o ator a tentar novamente quando a conexão for restabelecida. (<a href="#uc14-rf25">RF25</a>)</li>
 </ol>
 <h2 id="7-regras-de-negocio">7. Regras de Negócio</h2>
 <blockquote>
-<p>Espaço reservado para inserir as regras de negócio definitivas da UC11.</p>
+<p>Espaço reservado para inserir as regras de negócio definitivas da UC14.</p>
 </blockquote>
 <h2 id="8-requisitos-relacionados">8. Requisitos Relacionados</h2>
 <table>
@@ -1068,24 +1037,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><span id="uc11-rf39" class="rf-anchor"></span><a href="../../requisitos/#req-rf39"><strong>RF39 - Cadastrar áudio</strong></a></td>
-<td style="text-align: left;">Permite que administradores e professores cadastrem arquivos de áudio no acervo.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span id="uc11-rf40" class="rf-anchor"></span><a href="../../requisitos/#req-rf40"><strong>RF40 - Reproduzir áudio</strong></a></td>
-<td style="text-align: left;">Permite que usuários reproduzam os áudios associados às traduções.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span id="uc11-rf41" class="rf-anchor"></span><a href="../../requisitos/#req-rf41"><strong>RF41 - Excluir áudio</strong></a></td>
-<td style="text-align: left;">Permite que administradores e professores removam arquivos de áudio do acervo.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span id="uc11-rf42" class="rf-anchor"></span><a href="../../requisitos/#req-rf42"><strong>RF42 - Associar áudio</strong></a></td>
-<td style="text-align: left;">Permite que arquivos de áudio sejam vinculados às traduções cadastradas.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span id="uc11-rf43" class="rf-anchor"></span><a href="../../requisitos/#req-rf43"><strong>RF43 - Desassociar áudio</strong></a></td>
-<td style="text-align: left;">Permite que administradores e professores removam a associação entre um áudio e uma tradução.</td>
+<td style="text-align: left;"><span id="uc14-rf25" class="rf-anchor"></span><a href="../../requisitos/#req-rf25"><strong>RF25 - Candidatar-se a professor</strong></a></td>
+<td style="text-align: left;">Permite que usuários autenticados solicitem o perfil de professor para atuar na plataforma.</td>
 </tr>
 </tbody>
 </table>
@@ -1095,9 +1048,8 @@
 </blockquote>
 <p><strong>Link do Figma:</strong> <em>adicionar aqui</em></p>
 <h2 id="10-aplicacao-do-dor">10. Aplicação do DoR</h2>
-<p><strong>Aplicação do DoR:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/21">Issue Uc11</a></p>
-<p><strong>Print do checklist DoR:</strong></p>
-<p><img alt="Checklist DoR da UC11" src="../dor.png" /></p>
+<p><strong>Link da Issue:</strong> <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T02-Nativo/issues/51">Issue Uc14</a></p>
+<p>Checklist não aplicado, pois a UC14 não foi desenvolvida no escopo implementado.</p>
 <h2 id="11-fluxo-de-acesso-a-uc">11. Fluxo de Acesso à UC</h2>
 <blockquote>
 <p>Espaço reservado para adicionar o fluxo de como chegar nesta UC dentro do sistema, com prints reais das telas.</p>

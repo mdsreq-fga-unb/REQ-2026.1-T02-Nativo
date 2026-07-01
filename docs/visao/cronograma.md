@@ -1,5 +1,7 @@
 ## Visão Geral do Cronograma
 
+Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** para acessar a página de evidências da respectiva iteração.
+
 <table class="schedule-table">
   <thead>
     <tr>

@@ -1,4 +1,6 @@
-## Visão Geral do Cronograma
+## 11. Cronograma
+
+### Visão Geral do Cronograma
 
 Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** para acessar a página de evidências da respectiva iteração.
 
@@ -36,7 +38,7 @@ Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** pa
     </tr>
     <tr class="schedule-row schedule-row--elaboracao">
       <td><strong>Iteração 4</strong><br><span class="schedule-phase">Elaboração</span></td>
-      <td><a href="../backlog/#101-casos-de-uso">Conjunto de UCs</a></td>
+      <td><a href="../backlog/#9-casos-de-uso">Conjunto de UCs</a></td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-4/">Declaração, análise e organização: RF/RNF, casos de uso, matriz de priorização, MVP e rastreabilidade inicial.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
       <td>10/05</td>

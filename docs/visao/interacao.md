@@ -1,4 +1,4 @@
-## 7.1 Composição da Equipe
+## 6.1 Composição da Equipe
 
 A equipe de desenvolvimento será composta por:
 
@@ -13,7 +13,7 @@ A equipe de desenvolvimento será composta por:
 !!! info "Rodízio de Papéis"
     Os responsáveis pelo backend, frontend e qualidade serão rotacionados ao longo das iterações, com objetivo de melhorar o conhecimento dos integrantes em áreas de menor domínio e apoiar o entendimento do andamento do projeto no geral.
 
-## 7.2 Comunicação
+## 6.2 Comunicação
 
 **Ferramentas de comunicação**
 
@@ -33,7 +33,7 @@ A equipe de desenvolvimento será composta por:
 
 * **Interações informais:** A cliente tem acesso ao grupo de Whatsapp da equipe, facilitando interações rápidas e dúvidas pontuais caso precise.
 
-## 7.3 Processo de Validação
+## 6.3 Processo de Validação
 
 O processo de validação do produto seguirá os princípios iterativos e incrementais do OpenUP. Para garantir que a solução atenda às expectativas e mantenha a integridade técnica e cultural, a validação ocorrerá em três frentes principais:
 

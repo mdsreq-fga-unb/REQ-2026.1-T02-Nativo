@@ -1,10 +1,10 @@
-# 9 · DoR e DoD
+# 8 · DoR e DoD
 
 Para apoiar a condução iterativa e incremental do projeto Nativo, foram definidos critérios de Definition of Ready (DoR) e Definition of Done (DoD). Esses acordos têm como finalidade tornar explícito quando um item está suficientemente preparado para ser desenvolvido e quando uma entrega pode ser considerada efetivamente concluída.
 
 A adoção desses critérios se relaciona diretamente ao processo de validação definido para o projeto, no qual as especificações e cenários dos Casos de Uso devem estar claros antes de entrarem em desenvolvimento, e os incrementos produzidos precisam passar por testes de cobertura de fluxos, integração e validação funcional antes de compor a versão final da aplicação. Além disso, esses acordos contribuem para manter a rastreabilidade entre os objetivos específicos, as características do produto, os requisitos, os Casos de Uso e as entregas realizadas ao longo das iterações.
 
-## 9.1 Definition of Ready (DoR)
+## 8.1 Definition of Ready (DoR)
 
 O Definition of Ready estabelece as condições mínimas para que um Caso de Uso ou cenário da lista de trabalho esteja apto a ser selecionado para uma iteração de desenvolvimento. No contexto do Nativo, um item será considerado pronto quando apresentar informações suficientes para que a equipe consiga implementá-lo com segurança, sem depender de decisões essenciais ainda em aberto.
 
@@ -26,7 +26,7 @@ Para isso, devem ser verificados os seguintes critérios:
 
 * A representante do projeto já validou o entendimento do caso de uso, atestando o pré-requisito de valor cultural e sua adequação ao contexto de uso da comunidade.
 
-## 9.2 Definition of Done (DoD)
+## 8.2 Definition of Done (DoD)
 
 O Definition of Done define os critérios que devem ser atendidos para que uma funcionalidade seja considerada concluída pela equipe. No projeto Nativo, um item não será tratado como finalizado apenas por estar implementado no código; ele deverá demonstrar que entrega valor ao produto, mantém a qualidade técnica esperada e está validado em relação às necessidades do projeto.
 

@@ -39,13 +39,14 @@ nav:
       - 3. Intervenção: visao/intervencao.md
       - 4. Estratégias: visao/estrategias.md
       - 5. Engenharia de Requisitos: visao/engenhariaRequisitos.md
-      - 6. Cronograma: visao/cronograma.md
-      - 7. Interação entre Equipe e Cliente: visao/interacao.md
-      - 8. Requisitos de Software: visao/requisitos.md
-      - 9. DoR e DoD: visao/dor&dod.md
-      - 10. Itens de Trabalho: visao/backlog.md
-      - 11. Lições Aprendidas: visao/licoes.md
-      - 12. Referências: visao/referencias.md
+      - 6. Interação entre Equipe e Cliente: visao/interacao.md
+      - 7. Requisitos de Software: visao/requisitos.md
+      - 8. DoR e DoD: visao/dor&dod.md
+      - 9. Casos de Uso: visao/backlog.md
+      - 10. MVP: visao/mvp.md
+      - 11. Cronograma: visao/cronograma.md
+      - 12. Lições Aprendidas: visao/licoes.md
+      - 13. Referências: visao/referencias.md
 
   - Entregas:
       - Unidade 1: entregas/unidade1.md

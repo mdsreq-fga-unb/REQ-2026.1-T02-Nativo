@@ -1,4 +1,4 @@
-## 12 · Referências Bibliográficas
+## 13 · Referências Bibliográficas
 
 Esta seção lista todas as referências utilizadas na elaboração do Documento de Visão de Produto e Projeto do Nativo.
 
@@ -22,7 +22,7 @@ Esta seção lista todas as referências utilizadas na elaboração do Documento
 
 **[4]** MARSICANO, George. **Requisitos de Software: a comunicação é tudo**. v. 1.1, Draft. 18 mar. 2026.
 
-> Material base da disciplina de Requisitos de Software. Fundamenta as escolhas metodológicas de ER descritas na [Seção 5](../05-requisitos/index.md) e orienta a estrutura do processo de validação da [Seção 7.3](../07-interacao/validacao.md).
+> Material base da disciplina de Requisitos de Software. Fundamenta as escolhas metodológicas de ER descritas na [Seção 5](../05-requisitos/index.md) e orienta a estrutura do processo de validação da [Seção 6.3](../07-interacao/validacao.md).
 
 ---
 

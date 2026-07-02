@@ -25,10 +25,17 @@ Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi
 - **UC13 - Baixar Traduções para Acesso Offline:** _adicionar link do PR_
 - **UC03 - Gerenciar Insígnias:** _adicionar link do PR_
 
-### Validação Release 1 (Reuniao de validação do que foi feito até o momento)
+### Validação da Release 1
 
+**Objetivo:** Apresentar à cliente o conjunto de funcionalidades já implementadas até o momento e validar decisões relacionadas à release, com foco nas funcionalidades de acesso offline e insígnias desta iteração.
 
-...........................................
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/QWa7elDEQK4" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação da Release 1"></iframe>
+</div>
+
+**Resumo da Reunião:** A reunião foi utilizada como validação geral da Release 1, reunindo funcionalidades já implementadas e decisões de continuidade do MVP. Foram apresentados pontos relacionados a mídias, login/cadastro, atividades, controle de acesso, gamificação, perfil, histórico e favoritos.
+
+**Trecho pertinente à UC03 - Gerenciar Insígnias:** entre **17:09 e 29:01**, a equipe discutiu com a cliente as regras de gamificação e insígnias. O debate tratou dos critérios para desbloqueio, da relação entre insígnias e desempenho em atividades, da possibilidade de insígnias pré-definidas e da necessidade de manter o foco no escopo do MVP predefinido.
 
 ### Apresentação da Unidade 3
 

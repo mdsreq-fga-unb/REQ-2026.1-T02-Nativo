@@ -34,3 +34,13 @@ Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi
 </div>
 
 **Resumo da Reunião:** A reunião alinhou as próximas metas de desenvolvimento e validou tecnicamente a funcionalidade de upload de mídias. A equipe explicou que as mídias são salvas no Firebase Storage e que as URLs geradas são armazenadas no banco de dados. A cliente validou que cada tradução cadastrada deve suportar inclusão simultânea de foto, vídeo e áudio.
+
+### Validação de Upload e Associação de Mídias
+
+**Objetivo:** Validar os fluxos de associação, desvinculação e exclusão de mídias vinculadas às traduções, contemplando as UCs 10 e 11.
+
+<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <iframe src="https://www.youtube.com/embed/cjg4QGUJ9zg" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Validação de Upload e Associação de Mídias"></iframe>
+</div>
+
+**Resumo da Validação:** A equipe apresentou à cliente o fluxo de mídias relacionadas à tradução, incluindo exibição de arquivos vinculados, adição de novas mídias, seleção de áudio ou vídeo e confirmação da associação. Também foram esclarecidas as diferenças entre desvincular uma mídia de uma tradução e excluí-la permanentemente do acervo, além da restrição dessas ações aos perfis autorizados.

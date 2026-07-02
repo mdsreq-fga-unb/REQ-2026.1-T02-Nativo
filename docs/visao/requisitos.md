@@ -42,7 +42,7 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 | ID | Nome do requisito | Descrição |
 | :--- | :--- | :--- |
-| <span id="req-rf20" class="rf-anchor">RF20</span> | Banir usuário | Permitir que moderadores e administradores banam usuários infratores da aplicação. |
+| <span id="req-rf20" class="rf-anchor">RF20</span> | Banir usuário | Permitir que administradores banam usuários infratores da aplicação. |
 | <span id="req-rf21" class="rf-anchor">RF21</span> | Atribuir cargos de usuário | Permitir que administradores atribuam permissões específicas (ex: professor, moderador) aos usuários. |
 | <span id="req-rf22" class="rf-anchor">RF22</span> | Editar cargos de usuário | Permitir que administradores modifiquem os níveis de acesso de um usuário existente. |
 | <span id="req-rf23" class="rf-anchor">RF23</span> | Listar cargos de usuário | Permitir que administradores visualizem os cargos disponíveis e quem os ocupa. |

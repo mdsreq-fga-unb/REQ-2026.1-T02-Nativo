@@ -1652,4 +1652,10 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 /* Ajusta o texto para ele não ficar espremido no canto esquerdo onde o ícone estava */
 .md-typeset details.caixa-evidencia summary {
   padding-left: 16px !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+}
+.md-typeset blockquote {
+    font-family: var(--nativo-font-body) !important;
+    font-style: italic;
 }

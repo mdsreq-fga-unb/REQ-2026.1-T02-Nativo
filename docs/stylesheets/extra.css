@@ -1639,3 +1639,17 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 [data-md-color-scheme="slate"] .md-typeset strong {
   color: var(--nativo-cream);
 }
+.md-typeset details.caixa-evidencia {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Esconde o ícone (lápis/nota) */
+.md-typeset details.caixa-evidencia summary::before {
+  display: none !important;
+}
+
+/* Ajusta o texto para ele não ficar espremido no canto esquerdo onde o ícone estava */
+.md-typeset details.caixa-evidencia summary {
+  padding-left: 16px !important;
+}

@@ -4,6 +4,9 @@
 
 **Nativo** é um aplicativo mobile inovador desenvolvido para apoiar a revitalização linguística da língua Munduruku na Aldeia Munduruku de Bragança. O projeto vai além de uma simples ferramenta de tradução, transformando-se em um ecossistema comunitário de aprendizagem e engajamento.
 
+## Download do APK
+Link: https://drive.google.com/drive/folders/1ndoelCve5FTUpFyQ-h2FHWqzB6jFEmUI
+
 ## Acessar Documentação
 Link: https://mdsreq-fga-unb.github.io/REQ-2026.1-T02-Nativo/
 

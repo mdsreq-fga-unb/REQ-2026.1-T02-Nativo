@@ -32,3 +32,7 @@ Após a validação final, a equipe registrou os ajustes pontuais realizados ant
     <figcaption>Correção na listagem dos professores adicionais.</figcaption>
   </figure>
 </div>
+
+## Download do APK
+
+[Baixar APK](https://drive.google.com/drive/folders/1ndoelCve5FTUpFyQ-h2FHWqzB6jFEmUI)

@@ -101,17 +101,151 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 Os requisitos não funcionais definem critérios de qualidade do sistema Nativo. A tabela a seguir apresenta os RNFs com sua categoria segundo a sigla URPS (Usabilidade, Confiabilidade, Desempenho, Segurança).
 
-| ID | Nome | Descrição | Categoria (URPS) |
-|---|---|---|---|
-| <span id="req-rnf01" class="rf-anchor">RNF01</span> | Tempo de busca de tradução | O sistema deve apresentar o resultado de uma tradução em até 2 segundos para 95% das requisições realizadas com conexão mínima de 5 Mbps. | Desempenho |
-| <span id="req-rnf02" class="rf-anchor">RNF02</span> | Navegação da tradução | O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial. | Usabilidade |
-| <span id="req-rnf03" class="rf-anchor">RNF03</span> | Navegação da rede social | O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial. | Usabilidade |
-| <span id="req-rnf04" class="rf-anchor">RNF04</span> | Suporte simultâneo geral | O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta inferior a 3 segundos. | Desempenho |
-| <span id="req-rnf05" class="rf-anchor">RNF05</span> | Tempo de carregamento | Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android intermediários sob conexão de internet com largura de banda mínima de 100 kbps e latência máxima de 300 ms. | Desempenho |
-| <span id="req-rnf06" class="rf-anchor">RNF06</span> | Funcionamento offline | O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet. | Confiabilidade |
-| <span id="req-rnf07" class="rf-anchor">RNF07</span> | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
-| <span id="req-rnf08" class="rf-anchor">RNF08</span> | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
-| <span id="req-rnf09" class="rf-anchor">RNF09</span> | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |
+### <span id="req-rnf01" class="rf-anchor">RNF01</span>
+  * **Nome:** Tempo de busca de tradução
+  * **Descrição:** O sistema deve apresentar o resultado de uma tradução em até 2 segundos para 95% das requisições realizadas com conexão mínima de 5 Mbps.
+  * **Categoria URPS:** Desempenho
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  ![Evidência de tempo de resposta da API](../img/rnf1.jpeg)
+
+  > **Resultado do Teste:** A imagem acima demonstra um teste de requisição realizado pelo Postman na rota de busca de traduções (`/api/discurso/buscar`). Como é possível observar nos dados da resposta da requisição, o servidor processou e retornou a tradução em apenas **596 ms** (milissegundos), o que atende com folga ao requisito estipulado de tempo máximo de 2 segundos.
+
+</details>
+
+
+### <span id="req-rnf02" class="rf-anchor">RNF02</span>
+  * **Nome:** Navegação da tradução
+  * **Descrição:** O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial.
+  * **Categoria URPS:** Usabilidade
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+  
+
+  
+  <div style="display: flex; justify-content: center; gap: 15px; text-align: center; margin-top: 15px;" markdown="1">
+    
+  <div markdown="1">
+    
+  ![Tela Inicial](../img/rnf21.jpeg){ width="180" }
+  <br><b>Tela Inicial</b>
+    
+  </div>
+    
+  <div markdown="1">
+    
+  ![Interação 1](../img/rnf22.jpeg){ width="180" }
+  <br><b>Interação 1: Inserção</b>
+    
+  </div>
+    
+  <div markdown="1">
+    
+  ![Interação 2](../img/rnf23.jpeg){ width="180" }
+  <br><b>Interação 2: Botão</b>
+    
+  </div>
+
+  </div>
+
+  <br>
+
+  > **Resultado do Teste:** As capturas de tela demonstram o fluxo principal de uso a partir da tela inicial do aplicativo, que por padrão já carrega a aba de traduções. Para obter o resultado, o fluxo exige exatamente duas interações: (1) Um toque no campo de entrada de texto "Discurso" para acionar o teclado e inserir a palavra; (2) Um toque no botão "Traduzir". A terceira imagem comprova que a tradução e a mídia correspondente são exibidas logo após esse segundo clique, atendendo perfeitamente à métrica de usabilidade exigida.
+
+</details>
+
+
+### <span id="req-rnf03" class="rf-anchor">RNF03</span>
+  * **Nome:** Navegação da rede social
+  * **Descrição:** O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial.
+  * **Categoria URPS:** Usabilidade
+* Fora do escopo
+
+### <span id="req-rnf04" class="rf-anchor">RNF04</span> 
+  * **Nome:** Suporte simultâneo geral
+  * **Descrição:** O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta de até 5 segundos.
+  * **Categoria URPS:** Desempenho
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  ![Evidência de tempo de resposta da API](../img/rnf4.png)
+
+  > **Resultado do Teste:** A captura de tela acima apresenta um teste de estresse (load test) realizado utilizando a ferramenta Locust. O painel superior e os logs do terminal confirmam a simulação exata de **100 usuários simultâneos** (`Users: 100`) realizando requisições na rota de busca (`/api/discurso/buscar`). Conforme indicado na coluna "Average (ms)", o tempo médio de resposta do servidor para sustentar essa carga foi de **2180.81 ms** (aproximadamente 2,18 segundos), cumprindo com sucesso a exigência de manter a média inferior a 5 segundos.
+
+</details>
+
+### <span id="req-rnf05" class="rf-anchor">RNF05</span>
+  * **Nome:** Tempo de carregamento
+  * **Descrição:** Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android a partir da versão 10 .
+  * **Categoria URPS:** Desempenho
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  **Tela de Tradução** ![Tela de Tradução](../img/rn51.jpeg)
+    
+  **Tela de Atividades** ![Tela de Atividades](../img/rnf52.jpeg)
+    
+  **Tela de Perfil** ![Tela de Perfil](../img/rnf53.jpeg)
+  > **Resultado do Teste:** As imagens acima apresentam o profiling de desempenho e renderização das telas principais do aplicativo (Tradução, Atividade e Perfil, respectivamente). Conforme destacado na aba "Commit information" (métrica *Committed at* no painel direito), os tempos totais de carregamento e montagem das telas foram de **2.7s**, **3.3s** e **1.8s**. Todos os resultados demonstram o cumprimento do requisito, mantendo o carregamento inferior ao teto exigido de 4 segundos.
+
+</details>
+
+
+### <span id="req-rnf06" class="rf-anchor">RNF06</span>
+  * **Nome:** Funcionamento offline
+  * **Descrição:** O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet.
+  * **Categoria URPS:** Confiabilidade
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  <a class="schedule-activity" href="../visao/casos-uso/uc13.md">UC13</a>
+
+  > **Evidências:** as evidências estão comprovadas na entrega da <a href="../visao/evidencias/iteracao-8/">Iteração 8</a> 
+
+</details>
+
+### <span id="req-rnf07" class="rf-anchor">RNF07</span>
+  * **Nome:** Backup de dados
+  * **Descrição:** O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 7 dias.
+  * **Categoria URPS:** Confiabilidade
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  ![Evidência de tempo de resposta da API](../img/rnf71.jpeg)
+  ![Evidência de tempo de resposta da API](../img/rnf72.jpeg)
+  
+
+  > **Resultado do Teste:** As imagens exibem as configurações de BACKUP do banco de dados (Cloud Firestore) acessadas tanto pelo painel do Google Cloud quanto pelo console do Firebase. A seção "Backups programados" comprova que a rotina de backups semanais está ativada, configurada para ser executada automaticamente toda **segunda-feira** (com retenção de 14 dias).
+
+</details>
+
+### <span id="req-rnf08" class="rf-anchor">RNF08</span>
+  * **Nome:** Compatibilidade Android
+  * **Descrição:** O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0.
+  * **Categoria URPS:** Confiabilidade
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  ![Evidência de tempo de resposta da API](../img/rnf81.jpeg)
+  ![Evidência de tempo de resposta da API](../img/rnf8.jpeg)
+
+  > **Resultado do Teste:** As capturas de tela acima evidenciam testes de execução realizados no Android Studio. A primeira imagem demonstra as configurações do emulador rodando sob a API 29, que corresponde à versão exata do **Android 10**. A segunda imagem comprova o aplicativo compilado, instalado e executando suas interfaces (tela de "Atividades") perfeitamente dentro desse mesmo ambiente, atestando a compatibilidade mínima exigida pelo requisito.
+
+</details>
+
+### <span id="req-rnf09" class="rf-anchor">RNF09</span>
+  * **Nome:** Escalabilidade de mídia
+  * **Descrição:** O sistema deve suportar upload de arquivos de mídia de até 30 MB.
+  * **Categoria URPS:** Desempenho
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
+  <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
+
+  ![Evidência de tempo de resposta da API](../img/rnf9.png)
+
+  > **Resultado do Teste:** A imagem acima exibe o painel de regras de segurança do Firebase Storage configurado para o ambiente do aplicativo. A condição inserida na linha 6 do código (`allow read, write: if request.resource.size < 30 * 1024 * 1024;`) parametriza o servidor para aceitar operações de gravação (upload) estritamente se o tamanho do arquivo for inferior a 30 MB (calculado em bytes).
+</details>
+
 
 ## 7.3 Lista de Regras de Negócio
 

@@ -18,7 +18,7 @@ Arraste o mapa para navegar, use a roda do mouse para aproximar ou afastar e aci
   <div class="traceability-map" data-trace-tree role="application" aria-label="Árvore de rastreabilidade do projeto Nativo"></div>
 </div>
 
-## Complemento: Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
 Os RNFs diretamente associados a funcionalidades específicas foram incluídos na árvore como derivados das respectivas UCs. Já os RNFs abaixo permanecem como transversais porque afetam o produto como um todo, sem derivar de uma UC específica:
 

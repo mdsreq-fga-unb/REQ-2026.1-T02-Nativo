@@ -22,8 +22,7 @@
 
 Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi aplicado e verificado para cada UC.
 
-- **UC10 - Gerenciar Acervo de Vídeos:** _adicionar link do PR_
-- **UC11 - Gerenciar Acervo de Áudios:** _adicionar link do PR_
+- **UC10 - Gerenciar Acervo de Vídeos e UC11 - Gerenciar Acervo de Áudios:** [Link do PR](https://github.com/Requisitos-Anawe/Nativo/pull/1)
 
 ### Apresentação de Funcionalidades e Validação com a Cliente
 

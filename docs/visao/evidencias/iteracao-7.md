@@ -22,8 +22,8 @@
 
 Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi aplicado e verificado para cada UC.
 
-- **UC13 - Baixar Traduções para Acesso Offline:** _adicionar link do PR_
-- **UC03 - Gerenciar Insígnias:** _adicionar link do PR_
+- **UC13 - Baixar Traduções para Acesso Offline:** [_Link do PR_](https://github.com/Requisitos-Anawe/Nativo/pull/6)
+- **UC03 - Gerenciar Insígnias:** [_Link do PR_](https://github.com/Requisitos-Anawe/Nativo/pull/4)
 
 ### Validação da Release 1
 

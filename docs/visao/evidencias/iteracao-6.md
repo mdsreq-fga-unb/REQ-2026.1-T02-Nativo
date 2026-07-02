@@ -22,8 +22,7 @@
 
 Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi aplicado e verificado para cada UC.
 
-- **UC01 - Gerenciar Atividades Educacionais:** _adicionar link do PR_
-- **UC02 - Responder Atividades Educacionais:** _adicionar link do PR_
+- **UC01 - Gerenciar Atividades Educacionais e UC02 - Responder Atividades Educacionais:** [_Link do PR_](https://github.com/Requisitos-Anawe/Nativo/pull/2)
 
 ### Validação com a Cliente da Área de Atividades
 

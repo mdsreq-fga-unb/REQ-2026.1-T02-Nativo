@@ -24,9 +24,9 @@
 
 Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi aplicado e verificado para cada UC.
 
-- **UC12 - Gerenciar Perfil Pessoal:** _adicionar link do PR_
-- **UC06 - Gerenciar Acessos e Permissões:** _adicionar link do PR_
-- **UC07 - Redefinir Senha de Acesso:** _adicionar link do PR_
+- **UC12 - Gerenciar Perfil Pessoal:** [_Link do PR_](https://github.com/Requisitos-Anawe/Nativo/pull/7)
+- **UC06 - Gerenciar Acessos e Permissões:** [_Link do PR_](https://github.com/Requisitos-Anawe/Nativo/pull/14)
+- **UC07 - Redefinir Senha de Acesso:** [_Link do PR_](https://github.com/Requisitos-Anawe/Nativo/pull/5)
 
 ### Decisões sobre a UC12 - Gerenciar Perfil Pessoal
 

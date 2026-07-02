@@ -25,7 +25,10 @@ Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi
 - **UC13 - Baixar Traduções para Acesso Offline:** _adicionar link do PR_
 - **UC03 - Gerenciar Insígnias:** _adicionar link do PR_
 
-> Espaço reservado para inserir links, vídeos, atas, prints e documentos produzidos nesta iteração.
+### Validação Release 1 (Reuniao de validação do que foi feito até o momento)
+
+
+...........................................
 
 ### Apresentação da Unidade 3
 

@@ -27,10 +27,4 @@ Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi
 
 ### Validação com a Cliente da Área de Atividades
 
-![Print da validação por WhatsApp](../../entregas/wpp.png)
-
-**Comunicação por WhatsApp:** A cliente precisou cancelar a reunião semanal, então a validação ocorreu por meio do WhatsApp. Abaixo estão as imagens da aplicação enviadas para validação.
-
-![Tela de atividade 1](../../entregas/ativ1.png)
-![Tela de atividade 2](../../entregas/ativ2.jpeg)
-![Tela de atividade 3](../../entregas/ativ3.jpeg)
+...............................................

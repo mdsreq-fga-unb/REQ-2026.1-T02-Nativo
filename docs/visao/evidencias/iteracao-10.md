@@ -17,3 +17,18 @@
 </div>
 
 **Resumo da Reunião:** A equipe apresentou o apk do aplicativo para validação da cliente. A cliente elogiou o resultado geral e apontou apenas ajustes pontuais antes do fechamento da entrega. Durante a validação, a equipe também identificou um erro no fluxo de associar professor à atividade, que ficou registrado como correção necessária. A cliente indicou que essas últimas alterações poderiam ser validadas por WhatsApp ainda no mesmo dia, permitindo que ela revisasse os ajustes finais e comentasse diretamente no grupo.
+
+### Ajustes Finais Após a Validação
+
+Após a validação final, a equipe registrou os ajustes pontuais realizados antes do fechamento da entrega.
+
+<div class="evidence-image-grid">
+  <figure>
+    <img src="../image-7.png" alt="Ajuste final no visual do acesso offline">
+    <figcaption>Ajuste final no visual do acesso offline.</figcaption>
+  </figure>
+  <figure>
+    <img src="../WhatsApp%20Image%202026-07-02%20at%2003.11.18.jpeg" alt="Correção na listagem dos professores adicionais">
+    <figcaption>Correção na listagem dos professores adicionais.</figcaption>
+  </figure>
+</div>

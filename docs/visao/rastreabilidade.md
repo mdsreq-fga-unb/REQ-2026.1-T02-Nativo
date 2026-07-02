@@ -1,6 +1,6 @@
 Esta seção apresenta o mapeamento de rastreabilidade entre o problema identificado, os Objetivos Específicos (OEs), as Características do Produto (CPs), os Casos de Uso (UCs) e os Requisitos Funcionais (RFs).
 
-Arraste o mapa para navegar, use a roda do mouse para aproximar ou afastar e acione o botão de tela cheia para ampliar a visualização.
+Arraste o mapa para navegar, use a roda do mouse para aproximar ou afastar e acione o botão de tela cheia para ampliar a visualização. Clique nos nós da árvore para acessar os artefatos relacionados.
 
 <div class="traceability-legend">
   <span><strong class="trace-dot trace-dot--done"></strong> Implementado</span>

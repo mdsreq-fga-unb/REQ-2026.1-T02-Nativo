@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Representação de requisitos:** prototipação, wireframes navegáveis e descoberta visual de fluxos e regras de negócio.
+**Representação:** prototipação, wireframes navegáveis e descoberta visual de fluxos e regras de negócio.
 
 ## Evidências
 

@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Declaração, análise e organização:** RF/RNF, casos de uso, matriz de priorização, definição do MVP e rastreabilidade inicial.
+**Declaração, análise e consenso, organização e atualização:** RF/RNF, casos de uso, matriz de priorização, definição do MVP e rastreabilidade inicial.
 
 ## Evidências
 

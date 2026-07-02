@@ -112,3 +112,34 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 | <span id="req-rnf07" class="rf-anchor">RNF07</span> | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
 | <span id="req-rnf08" class="rf-anchor">RNF08</span> | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
 | <span id="req-rnf09" class="rf-anchor">RNF09</span> | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |
+
+## 7.3 Lista de Regras de Negócio
+
+As regras de negócio consolidam restrições, condições e políticas do domínio que orientam a execução dos requisitos e dos casos de uso.
+
+| ID | Regra de negócio |
+| :--- | :--- |
+| <span id="req-rn01" class="rf-anchor">RN01</span> | Apenas usuários com perfil de Professor criam atividades educacionais, as visualizam, editam e excluem. |
+| <span id="req-rn02" class="rf-anchor">RN02</span> | A criação de atividade exige título e no mínimo uma questão estruturada com enunciado, no mínimo duas alternativas e exatamente uma alternativa correta vinculada às opções. |
+| <span id="req-rn03" class="rf-anchor">RN03</span> | Atividades sem questões válidas são inativadas para listagem e resolução. |
+| <span id="req-rn04" class="rf-anchor">RN04</span> | A alternativa correta é ocultada da interface. |
+| <span id="req-rn05" class="rf-anchor">RN05</span> | O processamento da pontuação das atividades é realizado após a submissão de todas as questões obrigatórias. |
+| <span id="req-rn06" class="rf-anchor">RN06</span> | O registro de entidades exige preenchimento de campos obrigatórios: nome, objetivo e imagem para insígnias; título, data futura, horário, local e descrição para eventos; e texto ou mídia para publicações. |
+| <span id="req-rn07" class="rf-anchor">RN07</span> | As insígnias referentes à taxa de acertos de uma atividade possuem dependência direta, devendo ser excluídas caso a respectiva atividade seja removida do sistema. |
+| <span id="req-rn08" class="rf-anchor">RN08</span> | A edição e exclusão de publicações no feed e de eventos são permitidas ao usuário autor do registro e ao moderador. |
+| <span id="req-rn09" class="rf-anchor">RN09</span> | O sistema aplica o marcador textual Editado em publicações que sofreram alteração após o envio original. |
+| <span id="req-rn10" class="rf-anchor">RN10</span> | A ordenação exibe publicações e históricos de tradução em ordem cronológica decrescente, e eventos comunitários em ordem cronológica crescente. |
+| <span id="req-rn11" class="rf-anchor">RN11</span> | A alteração de nível de acesso entra em vigor imediatamente nas regras de sessão, e o banimento inativa as credenciais do usuário, o que é reversível. |
+| <span id="req-rn12" class="rf-anchor">RN12</span> | O sistema bloqueia a autoexclusão ou o autobanimento de um Administrador caso não exista outro perfil de mesma permissão ativo na plataforma. |
+| <span id="req-rn13" class="rf-anchor">RN13</span> | A recuperação de senha exibe mensagens genéricas para evitar enumeração de contas, exige intervalo de 3 minutos para reenvio e invalida códigos anteriores associados ao usuário. |
+| <span id="req-rn14" class="rf-anchor">RN14</span> | A alteração de perfil restringe-se aos dados da própria conta e exige correspondência exata nos caracteres dos campos de nova senha e confirmação. |
+| <span id="req-rn15" class="rf-anchor">RN15</span> | A denúncia exige a seleção de categoria existente, inicia com status Aberta, e sua alteração para Resolvida ou Improcedente é exclusiva de Administradores. |
+| <span id="req-rn16" class="rf-anchor">RN16</span> | O sistema aborta o registro da denúncia se o conteúdo alvo for excluído da plataforma antes da confirmação da submissão. |
+| <span id="req-rn17" class="rf-anchor">RN17</span> | Apenas Administradores gerenciam categorias de denúncia. |
+| <span id="req-rn18" class="rf-anchor">RN18</span> | Apenas Administradores e Professores gerenciam mídias de vídeo e áudio. |
+| <span id="req-rn19" class="rf-anchor">RN19</span> | O upload restringe vídeos a formatos MP4, MOV, AVI até 30MB, e áudios a formatos MP3, WAV, OGG até 10MB. |
+| <span id="req-rn20" class="rf-anchor">RN20</span> | O cadastro de mídias exige vinculação a uma tradução existente; a desassociação remove apenas esse vínculo, mantendo o arquivo preservado no acervo. |
+| <span id="req-rn21" class="rf-anchor">RN21</span> | O sistema bloqueia a inclusão duplicada na lista de favoritos e oculta traduções inativadas ou removidas da base de dados. |
+| <span id="req-rn22" class="rf-anchor">RN22</span> | O pacote de sincronização offline omite as mídias audiovisuais e exige armazenamento livre no dispositivo. |
+| <span id="req-rn23" class="rf-anchor">RN23</span> | A candidatura a Professor exige justificativa, é restrita a usuários sem este perfil e registrada com status Pendente, bloqueando novos envios do mesmo usuário simultaneamente. |
+| <span id="req-rn24" class="rf-anchor">RN24</span> | A alteração de status da solicitação de candidatura para aprovação ou rejeição é de execução exclusiva dos Administradores. |

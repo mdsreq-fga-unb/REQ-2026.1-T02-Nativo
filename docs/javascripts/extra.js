@@ -181,6 +181,12 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     var implementedRfs = {};
+    var implementedRnfs = {
+      RNF01: true,
+      RNF02: true,
+      RNF06: true,
+      RNF09: true
+    };
 
     function markImplementedRfs(node) {
       if (node.type === 'uc' && implementedUcs[node.id]) {
@@ -318,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (node.type === 'rnf') {
-        node.status = node.implemented ? 'done' : 'not-started';
+        node.status = implementedRnfs[node.id] ? 'done' : 'not-started';
         return node.status;
       }
 
@@ -327,7 +333,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return node.status;
       }
 
-      var childStatuses = node.children.map(computeStatus);
+      node.children.forEach(computeStatus);
+      var statusChildren = node.type === 'uc'
+        ? node.children.filter(function(child) {
+          return child.type !== 'rnf';
+        })
+        : node.children;
+      var childStatuses = statusChildren.map(function(child) {
+        return child.status;
+      });
       var allDone = childStatuses.every(function(status) {
         return status === 'done';
       });

@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#complemento-requisitos-nao-funcionais" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -622,6 +627,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Rastreabilidade
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -638,6 +661,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#complemento-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complemento: Requisitos Não Funcionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complemento-valores-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complemento: Valores de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -891,6 +953,36 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#complemento-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complemento: Requisitos Não Funcionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complemento-valores-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complemento: Valores de Negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -908,8 +1000,8 @@
 
   <h1>12. Rastreabilidade</h1>
 
-<p>Esta seção apresenta o mapeamento de rastreabilidade entre o problema identificado, os Objetivos Específicos (OEs), as Características do Produto (CPs), os Casos de Uso (UCs) e os Requisitos Funcionais (RFs).</p>
-<p>Arraste o mapa para navegar, use a roda do mouse para aproximar ou afastar e acione o botão de tela cheia para ampliar a visualização.</p>
+<p>Esta seção apresenta o mapeamento de rastreabilidade entre o problema identificado, os Objetivos Específicos (OEs), as Características do Produto (CPs), os Casos de Uso (UCs), os Requisitos Funcionais (RFs) e os Requisitos Não Funcionais (RNFs).</p>
+<p>Arraste o mapa para navegar, use a roda do mouse para aproximar ou afastar e acione o botão de tela cheia para ampliar a visualização. Clique nos nós da árvore para acessar os artefatos relacionados.</p>
 <div class="traceability-legend">
   <span><strong class="trace-dot trace-dot--done"></strong> Implementado</span>
   <span><strong class="trace-dot trace-dot--partial"></strong> Parcialmente implementado</span>
@@ -925,6 +1017,83 @@
   </div>
   <div class="traceability-map" data-trace-tree role="application" aria-label="Árvore de rastreabilidade do projeto Nativo"></div>
 </div>
+
+<h2 id="complemento-requisitos-nao-funcionais">Complemento: Requisitos Não Funcionais</h2>
+<p>Os RNFs diretamente associados a funcionalidades específicas foram incluídos na árvore como derivados das respectivas UCs. Já os RNFs abaixo permanecem como transversais porque afetam o produto como um todo, sem derivar de uma UC específica:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">RNF transversal</th>
+<th style="text-align: left;">Aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../requisitos/#req-rnf04">RNF04</a></td>
+<td style="text-align: left;">Suporte simultâneo geral do sistema.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../requisitos/#req-rnf05">RNF05</a></td>
+<td style="text-align: left;">Recuperação de falhas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../requisitos/#req-rnf07">RNF07</a></td>
+<td style="text-align: left;">Rotina geral de backup.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../requisitos/#req-rnf08">RNF08</a></td>
+<td style="text-align: left;">Compatibilidade com dispositivos Android.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="complemento-valores-de-negocio">Complemento: Valores de Negócio</h2>
+<p>Os Valores de Negócio (VNs) complementam a leitura da árvore ao indicar o valor esperado de cada Característica de Produto. Os links abaixo redirecionam para a definição completa de cada CP e VN no tópico de solução.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">CP</th>
+<th style="text-align: left;">VN</th>
+<th style="text-align: left;">Valor de negócio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp1">CP1</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp1">VN1</a></td>
+<td style="text-align: left;">Aceleração do aprendizado e aumento da retenção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp2">CP2</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp2">VN2</a></td>
+<td style="text-align: left;">Fortalecimento do engajamento comunitário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp3">CP3</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp3">VN3</a></td>
+<td style="text-align: left;">Segurança do acervo cultural e controle de acesso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp4">CP4</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp4">VN4</a></td>
+<td style="text-align: left;">Ambiente virtual seguro e de qualidade.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp5">CP5</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp5">VN5</a></td>
+<td style="text-align: left;">Melhoria do aprendizado com apoio multimídia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp6">CP6</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp6">VN6</a></td>
+<td style="text-align: left;">Engajamento e personalização pelo acompanhamento do progresso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../solucao/#cp7">CP7</a></td>
+<td style="text-align: left;"><a href="../solucao/#cp7">VN7</a></td>
+<td style="text-align: left;">Disponibilidade do aplicativo em contextos de baixa conectividade.</td>
+</tr>
+</tbody>
+</table>
 
 
 

@@ -6,12 +6,24 @@
 
 **Detalhamento e prototipação das UCs de multimídia:** evidências de cadastro, reprodução, associação e desassociação de vídeos e áudios.
 
-## UCs Relacionadas
-
-- [UC10 - Gerenciar Acervo de Vídeos](../casos-uso/uc10.md)
-- [UC11 - Gerenciar Acervo de Áudios](../casos-uso/uc11.md)
-
 ## Evidências
+
+### DoR registrado nas UCs { .evidence-link-heading }
+
+- [DoR verificável da UC10 - Gerenciar Acervo de Vídeos](../casos-uso/uc10.md#10-aplicacao-do-dor)
+- [DoR verificável da UC11 - Gerenciar Acervo de Áudios](../casos-uso/uc11.md#10-aplicacao-do-dor)
+
+### Prototipação registrada nas UCs { .evidence-link-heading }
+
+- [Protótipo da UC10 - Gerenciar Acervo de Vídeos](../casos-uso/uc10.md#9-prototipo)
+- [Protótipo da UC11 - Gerenciar Acervo de Áudios](../casos-uso/uc11.md#9-prototipo)
+
+### DoD registrado nos PRs { .evidence-link-heading }
+
+Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi aplicado e verificado para cada UC.
+
+- **UC10 - Gerenciar Acervo de Vídeos:** _adicionar link do PR_
+- **UC11 - Gerenciar Acervo de Áudios:** _adicionar link do PR_
 
 ### Apresentação de Funcionalidades e Validação com a Cliente
 

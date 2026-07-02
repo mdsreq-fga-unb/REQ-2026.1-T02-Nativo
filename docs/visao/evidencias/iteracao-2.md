@@ -20,6 +20,8 @@
 
 ### Priorização MoSCoW
 
+Análise inicial do documento enviado pela cliente.
+
 <div style="margin: 20px 0; overflow: hidden; background-color: #111;">
   <iframe src="../../../img/unidade2/Histórias de Usuário.pdf" title="Visualização da priorização MoSCoW" style="display: block; width: 100%; height: 80vh; border: 0; background-color: #111;"></iframe>
 </div>

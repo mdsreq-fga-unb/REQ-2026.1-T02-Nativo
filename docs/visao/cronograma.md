@@ -29,7 +29,7 @@ Clique nos blocos da coluna **Atividade de requisitos / evidência esperada** pa
     </tr>
     <tr class="schedule-row schedule-row--elaboracao">
       <td><strong>Iteração 3</strong><br><span class="schedule-phase">Elaboração</span></td>
-      <td>UCs em descoberta visual</td>
+      <td>UCs em descoberta por protótipo</td>
       <td><a class="schedule-activity" href="../evidencias/iteracao-3/">Representação de requisitos: prototipação, wireframes navegáveis e descoberta visual de fluxos e regras de negócio.</a></td>
       <td><span class="schedule-status">Finalizado</span></td>
       <td>23/04 a 01/05</td>

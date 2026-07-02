@@ -6,13 +6,27 @@
 
 **Gestão de mudanças, detalhamento final e rastreabilidade:** evidências de perfil, favoritos, histórico, acesso e recuperação de senha.
 
-## UCs Relacionadas
-
-- [UC12 - Gerenciar Perfil Pessoal](../casos-uso/uc12.md)
-- [UC06 - Gerenciar Acessos e Permissões](../casos-uso/uc06.md)
-- [UC07 - Redefinir Senha de Acesso](../casos-uso/uc07.md)
-
 ## Evidências
+
+### DoR registrado nas UCs { .evidence-link-heading }
+
+- [DoR verificável da UC12 - Gerenciar Perfil Pessoal](../casos-uso/uc12.md#10-aplicacao-do-dor)
+- [DoR verificável da UC06 - Gerenciar Acessos e Permissões](../casos-uso/uc06.md#10-aplicacao-do-dor)
+- [DoR verificável da UC07 - Redefinir Senha de Acesso](../casos-uso/uc07.md#10-aplicacao-do-dor)
+
+### Prototipação registrada nas UCs { .evidence-link-heading }
+
+- [Protótipo da UC12 - Gerenciar Perfil Pessoal](../casos-uso/uc12.md#9-prototipo)
+- [Protótipo da UC06 - Gerenciar Acessos e Permissões](../casos-uso/uc06.md#9-prototipo)
+- [Protótipo da UC07 - Redefinir Senha de Acesso](../casos-uso/uc07.md#9-prototipo)
+
+### DoD registrado nos PRs { .evidence-link-heading }
+
+Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi aplicado e verificado para cada UC.
+
+- **UC12 - Gerenciar Perfil Pessoal:** _adicionar link do PR_
+- **UC06 - Gerenciar Acessos e Permissões:** _adicionar link do PR_
+- **UC07 - Redefinir Senha de Acesso:** _adicionar link do PR_
 
 ### Revisão de Casos de Uso e Regras de Moderação
 

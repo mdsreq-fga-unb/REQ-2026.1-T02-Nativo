@@ -28,16 +28,6 @@ Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi
 - **UC06 - Gerenciar Acessos e Permissões:** _adicionar link do PR_
 - **UC07 - Redefinir Senha de Acesso:** _adicionar link do PR_
 
-### Revisão de Casos de Uso e Regras de Moderação
-
-**Objetivo:** Retomar decisões de permissão, moderação e perfil para orientar o fechamento das funcionalidades implementadas nesta etapa.
-
-<div style="margin: 20px 0; border-radius: 8px; overflow: hidden; background-color: #111; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <iframe src="https://www.youtube.com/embed/-R0w7m4u6xA" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Revisão de Casos de Uso e Regras de Moderação"></iframe>
-</div>
-
-**Resumo da Reunião:** Para esta iteração, o registro foi usado como referência para fechar funcionalidades ligadas ao perfil e ao controle de acesso. A decisão de alocar traduções favoritas no perfil orientou a implementação de favoritos, histórico e organização das informações do usuário. As definições sobre permissões também serviram de base para separar responsabilidades entre moderadores e administradores, mantendo a avaliação de denúncias com moderadores e a ação de banimento ao administrador. Assim, as funcionalidades finais de perfil, permissões e recuperação de senha foram alinhadas às regras previamente validadas com a cliente.
-
 ### Decisões sobre a UC12 - Gerenciar Perfil Pessoal
 
 **Objetivo:** Registrar as decisões específicas tomadas para fechar o escopo da UC12, principalmente sobre perfil, histórico de traduções e traduções favoritas.
@@ -67,15 +57,3 @@ Os links abaixo redirecionam para os Pull Requests onde o Definition of Done foi
 </div>
 
 **Resumo da Reunião:** A equipe revisou o cronograma após a antecipação da entrega final e discutiu se seria necessário retirar alguma funcionalidade do MVP. Foi decidido manter o escopo previsto, pois a UC12 já estava encaminhada, a gamificação/insígnias estava praticamente pronta e a UC06 ainda seria concluída dentro do prazo. Também ficou combinada uma nova validação com a cliente para apresentar acesso offline, perfil do usuário, administração de acesso e demais funcionalidades pendentes. A equipe ainda alinhou que a semana seguinte seria usada como fase de transição, com testes finais, geração do APK, correções e preparação da entrega.
-
-### Implementações aguardando validação
-
-**Refatoração de telas:** O protótipo no Figma já havia sido apresentado e aprovado pela cliente. Assim, a equipe implementou as telas e ficou no aguardo da próxima reunião para validação.
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img src="../../../entregas/login.png" alt="Login" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <img src="../../../entregas/cadastro.png" alt="Cadastro" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <img src="../../../entregas/usuario.png" alt="Perfil" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <img src="../../../entregas/traducao.png" alt="Tradução" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <img src="../../../entregas/infos.png" alt="Informações" style="width: 30%; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-</div>

@@ -22,15 +22,15 @@
   --nativo-font-heading: 'Lora', Georgia, serif;
   --nativo-font-body:    'Inter', system-ui, sans-serif;
   --md-header-height: 3.6rem;
-  --nativo-primary-sidebar-width: 12rem;
-  --nativo-secondary-sidebar-width: 12rem;
-  --nativo-sidebar-toggle-inset: 0.75rem;
+  --nativo-primary-sidebar-width: 10.2rem;
+  --nativo-secondary-sidebar-width: 9.6rem;
+  --nativo-sidebar-toggle-inset: 0.55rem;
 }
 
 body, .md-typeset {
   font-family: var(--nativo-font-body) !important;
-  font-size: 0.82rem;
-  line-height: 1.55;
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 /* =====================================================
@@ -120,13 +120,13 @@ body, .md-typeset {
 }
 
 .md-sidebar--primary {
-  width: 16rem;
+  width: var(--nativo-primary-sidebar-width);
   transition: transform 0.2s ease, width 0.2s ease;
 }
 
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 16rem;
+    width: var(--nativo-primary-sidebar-width);
   }
 }
 
@@ -137,6 +137,7 @@ body, .md-typeset {
 }
 
 .md-sidebar--secondary {
+  width: var(--nativo-secondary-sidebar-width);
   transition: transform 0.2s ease, width 0.2s ease;
 }
 
@@ -204,8 +205,8 @@ body.sidebar-collapsed-secondary .sidebar-toggle-btn--secondary {
   top: 0;
   display: flex;
   justify-content: flex-end;
-  padding: 0.2rem 0.45rem 0.55rem;
-  margin-bottom: 0.35rem;
+  padding: 0.12rem 0.35rem 0.4rem;
+  margin-bottom: 0.18rem;
   border-bottom: 1px solid rgba(145, 153, 107, 0.16);
   background: inherit;
   z-index: 2;
@@ -216,8 +217,8 @@ body.sidebar-collapsed-secondary .sidebar-toggle-btn--secondary {
 }
 
 .sidebar-control-btn {
-  min-width: 1.65rem;
-  height: 1.65rem;
+  min-width: 1.45rem;
+  height: 1.45rem;
   padding: 0;
   background: rgba(246, 233, 217, 0.92);
   color: var(--nativo-evergreen);
@@ -229,7 +230,7 @@ body.sidebar-collapsed-secondary .sidebar-toggle-btn--secondary {
   justify-content: center;
   cursor: pointer;
   font-family: var(--nativo-font-body);
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   font-weight: 700;
   line-height: 1;
   transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -237,20 +238,20 @@ body.sidebar-collapsed-secondary .sidebar-toggle-btn--secondary {
 
 .sidebar-control-btn--close {
   width: auto;
-  padding: 0 0.55rem;
-  gap: 0.35rem;
+  padding: 0 0.45rem;
+  gap: 0.25rem;
 }
 
 .sidebar-control-btn--primary-close::after {
   content: "Fechar";
-  font-size: 0.62rem;
+  font-size: 0.56rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .sidebar-control-btn--secondary-close::after {
   content: "Fechar";
-  font-size: 0.62rem;
+  font-size: 0.56rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -303,6 +304,7 @@ body.sidebar-collapsed-secondary .sidebar-control-btn--secondary-open {
   scrollbar-color: var(--nativo-sage) transparent;
   overflow-y: auto;
   max-height: calc(100vh - var(--md-header-height, 3.6rem) - 1.5rem);
+  padding-inline: 0.18rem;
 }
 
 body.sidebar-collapsed-primary .md-sidebar--primary {
@@ -349,42 +351,41 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 }
 
 .md-typeset p {
-  margin: 0.55em 0;
+  margin: 0.48em 0;
   word-wrap: break-word;
 }
 
 .md-typeset h1 {
-  font-size: 1.55rem;
+  font-size: 1.46rem;
 }
 
 .md-typeset h2 {
-  font-size: 1.15rem;
+  font-size: 1.08rem;
 }
 
 .md-typeset h3 {
-  font-size: 0.98rem;
+  font-size: 0.92rem;
 }
 
 /* Título da sidebar (label "NATIVO" no topo) */
 .md-nav__title {
   font-family: var(--nativo-font-body) !important;
   font-weight: 700;
-  font-size: 0.66rem;
-  letter-spacing: 0.1em;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--nativo-sage) !important;
-  padding: 0.7rem 0.7rem 0.35rem;
+  padding: 0.5rem 0.55rem 0.28rem;
 }
 
 /* ── Todos os links da sidebar ── */
 .md-nav__link {
   font-family: var(--nativo-font-body);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 400;
-  border-radius: 6px;
-  /* padding vertical generoso para "centralizar" na altura */
-  padding: 0.35rem 0.65rem;
-  min-height: 1.75rem;
+  border-radius: 5px;
+  padding: 0.22rem 0.45rem;
+  min-height: 1.34rem;
   display: flex;
   align-items: center;
   transition: background 0.15s ease, color 0.15s ease;
@@ -413,11 +414,11 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 /* ── Seções de nível 1 (ex: "1. Cenário") ── */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
   font-weight: 600;
-  font-size: 0.74rem;
+  font-size: 0.64rem;
   color: var(--nativo-black);
-  padding: 0.4rem 0.65rem;
-  min-height: 1.9rem;
-  border-radius: 7px;
+  padding: 0.26rem 0.5rem;
+  min-height: 1.45rem;
+  border-radius: 5px;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
@@ -431,9 +432,9 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 /* ── Subtópicos (nível 2) ── */
 .md-nav__item .md-nav .md-nav__link {
-  font-size: 0.7rem;
-  padding: 0.3rem 0.65rem 0.3rem 1rem;
-  min-height: 1.65rem;
+  font-size: 0.6rem;
+  padding: 0.2rem 0.45rem 0.2rem 0.78rem;
+  min-height: 1.25rem;
   color: rgba(23, 25, 24, 0.72);
 }
 
@@ -455,8 +456,8 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 /* Separador visual entre seções de nível 1 */
 .md-nav--primary > .md-nav__list > .md-nav__item {
   border-bottom: 1px solid rgba(145, 153, 107, 0.15);
-  padding-bottom: 0.1rem;
-  margin-bottom: 0.08rem;
+  padding-bottom: 0.04rem;
+  margin-bottom: 0.04rem;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:last-child {
@@ -518,24 +519,24 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 }
 
 .md-typeset h1 {
-  font-size: 1.55rem;
+  font-size: 1.46rem;
   line-height: 1.25;
   border-bottom: 3px solid var(--nativo-cinnamon);
   padding-bottom: 0.35rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
 }
 
 .md-typeset h2 {
-  font-size: 1.15rem;
-  margin: 1.35rem 0 0.55rem;
+  font-size: 1.08rem;
+  margin: 1.2rem 0 0.48rem;
   padding-left: 0.55rem;
   border-left: 3px solid var(--nativo-sage);
 }
 
 .md-typeset h3 {
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   color: var(--nativo-cinnamon) !important;
-  margin: 1rem 0 0.45rem;
+  margin: 0.86rem 0 0.38rem;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h3 {
@@ -573,7 +574,7 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
   overflow: hidden;
   border: 1px solid rgba(145, 153, 107, 0.35);
   box-shadow: 0 2px 12px rgba(4, 50, 34, 0.07);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   width: 100%;
 }
 
@@ -584,13 +585,13 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  font-size: 0.68rem;
-  padding: 0.5rem 0.7rem;
+  font-size: 0.62rem;
+  padding: 0.42rem 0.58rem;
   text-align: center;
 }
 
 .md-typeset table:not([class]) td {
-  padding: 0.45rem 0.7rem;
+  padding: 0.36rem 0.58rem;
   border-bottom: 1px solid rgba(145, 153, 107, 0.2);
   vertical-align: top;
 }
@@ -997,7 +998,9 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
    ÍNDICE TOC (lateral direito)
    ===================================================== */
 .md-nav--secondary .md-nav__link {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  padding-block: 0.18rem;
+  min-height: 1.2rem;
 }
 
 .md-nav--secondary .md-nav__link--active {
@@ -1007,11 +1010,11 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 /* Garantir cor adequada dos itens do índice quando não ativos */
 .md-nav--secondary .md-nav__link {
-  color: rgba(23,25,24,0.75); /* tom escuro suave para modo claro */
+  color: rgba(23,25,24,0.68); /* tom escuro suave para modo claro */
 }
 
 [data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
-  color: rgba(246,233,217,0.85) !important; /* evitar branco puro no modo escuro */
+  color: rgba(246,233,217,0.68) !important; /* evitar branco puro no modo escuro */
 }
 
 [data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover {
@@ -1660,11 +1663,11 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 .md-typeset ul,
 .md-typeset ol {
-  margin: 0.45em 0;
+  margin: 0.36em 0;
 }
 
 .md-typeset li {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.14em;
 }
 
 [data-md-color-scheme="slate"] .md-typeset strong {

@@ -1462,6 +1462,11 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
   stroke: rgba(145, 153, 107, 0.5);
 }
 
+.trace-node--rnf rect {
+  fill: rgba(84, 133, 166, 0.16);
+  stroke: rgba(84, 133, 166, 0.72);
+}
+
 .trace-node--done rect,
 [data-md-color-scheme="slate"] .trace-node--done rect {
   fill: rgba(74, 128, 84, 0.28);
@@ -1549,6 +1554,11 @@ body.sidebar-collapsed-primary.sidebar-collapsed-secondary .md-content {
 
 [data-md-color-scheme="slate"] .trace-node--rf rect {
   fill: rgba(4, 50, 34, 0.42);
+}
+
+[data-md-color-scheme="slate"] .trace-node--rnf rect {
+  fill: rgba(84, 133, 166, 0.2);
+  stroke: rgba(84, 133, 166, 0.78);
 }
 
 [data-md-color-scheme="slate"] .trace-node--done rect {

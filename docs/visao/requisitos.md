@@ -101,23 +101,11 @@ Os requisitos funcionais estabelecem um consenso que fomenta a implementação d
 
 Os requisitos não funcionais definem critérios de qualidade do sistema Nativo. A tabela a seguir apresenta os RNFs com sua categoria segundo a sigla URPS (Usabilidade, Confiabilidade, Desempenho, Segurança).
 
-| ID | Nome | Descrição | Categoria (URPS) |
-|---|---|---|---|
-| RNF01 | Tempo de busca de tradução | O sistema deve apresentar o resultado de uma tradução em até 2 segundos para 95% das requisições realizadas com conexão mínima de 5 Mbps. | Desempenho |
-| RNF02 | Navegação da tradução | O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial. | Usabilidade |
-| RNF03 | Navegação da rede social | O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial. | Usabilidade |
-| RNF04 | Suporte simultâneo geral | O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta inferior a 3 segundos. | Desempenho |
-| RNF05 | Tempo de carregamento | Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android intermediários sob conexão de internet com largura de banda mínima de 100 kbps e latência máxima de 300 ms. | Desempenho |
-| RNF06 | Funcionamento offline | O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet. | Confiabilidade |
-| RNF07 | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
-| RNF08 | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
-| RNF09 | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 30 MB. | Desempenho |
-
-### **RNF01**
+### <span id="req-rnf01" class="rf-anchor">RNF01</span>
   * **Nome:** Tempo de busca de tradução
   * **Descrição:** O sistema deve apresentar o resultado de uma tradução em até 2 segundos para 95% das requisições realizadas com conexão mínima de 5 Mbps.
   * **Categoria URPS:** Desempenho
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   ![Evidência de tempo de resposta da API](../img/rnf1.jpeg)
@@ -127,11 +115,11 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 </details>
 
 
-### **RNF02**
+### <span id="req-rnf02" class="rf-anchor">RNF02</span>
   * **Nome:** Navegação da tradução
   * **Descrição:** O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial.
   * **Categoria URPS:** Usabilidade
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
   
 
@@ -168,17 +156,17 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 </details>
 
 
-### **RNF03**
+### <span id="req-rnf03" class="rf-anchor">RNF03</span>
   * **Nome:** Navegação da rede social
   * **Descrição:** O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial.
   * **Categoria URPS:** Usabilidade
 * Fora do escopo
 
-### **RNF04**
+### <span id="req-rnf04" class="rf-anchor">RNF04</span> 
   * **Nome:** Suporte simultâneo geral
   * **Descrição:** O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta de até 5 segundos.
   * **Categoria URPS:** Desempenho
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   ![Evidência de tempo de resposta da API](../img/rnf4.png)
@@ -187,11 +175,11 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 
 </details>
 
-### **RNF05**
+### <span id="req-rnf05" class="rf-anchor">RNF05</span>
   * **Nome:** Tempo de carregamento
   * **Descrição:** Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android a partir da versão 10 .
   * **Categoria URPS:** Desempenho
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   **Tela de Tradução** ![Tela de Tradução](../img/rn51.jpeg)
@@ -204,11 +192,11 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 </details>
 
 
-### **RNF06**
+### <span id="req-rnf06" class="rf-anchor">RNF06</span>
   * **Nome:** Funcionamento offline
   * **Descrição:** O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet.
   * **Categoria URPS:** Confiabilidade
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   <a class="schedule-activity" href="../visao/casos-uso/uc13.md">UC13</a>
@@ -217,11 +205,11 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 
 </details>
 
-### **RNF07**
+### <span id="req-rnf07" class="rf-anchor">RNF07</span>
   * **Nome:** Backup de dados
   * **Descrição:** O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 7 dias.
   * **Categoria URPS:** Confiabilidade
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   ![Evidência de tempo de resposta da API](../img/rnf71.jpeg)
@@ -232,11 +220,11 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 
 </details>
 
-### **RNF08**
+### <span id="req-rnf08" class="rf-anchor">RNF08</span>
   * **Nome:** Compatibilidade Android
   * **Descrição:** O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0.
   * **Categoria URPS:** Confiabilidade
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   ![Evidência de tempo de resposta da API](../img/rnf81.jpeg)
@@ -246,11 +234,11 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 
 </details>
 
-### **RNF09**
+### <span id="req-rnf09" class="rf-anchor">RNF09</span>
   * **Nome:** Escalabilidade de mídia
   * **Descrição:** O sistema deve suportar upload de arquivos de mídia de até 30 MB.
   * **Categoria URPS:** Desempenho
-<details class="caixa-evidencia" style="background-color: var(--nativo-sage);" markdown="1">
+<details class="caixa-evidencia" style="background-color: var(--md-code-bg-color);" markdown="1">
   <summary class="rnf-summary"><b>Visualizar Evidências</b></summary>
 
   ![Evidência de tempo de resposta da API](../img/rnf9.png)
@@ -259,20 +247,33 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 </details>
 
 
-## 7.3 Matriz-síntese de Rastreabilidade
+## 7.3 Lista de Regras de Negócio
 
-A matriz a seguir representa a rastreabilidade entre os Objetivos Específicos (OE), Características de Produto (CP), Valores de Negócio (VN), Requisitos Funcionais (RFs) e Requisitos Não Funcionais (RNFs). Essa estrutura garante que todas as funcionalidades e critérios de qualidade desenvolvidos estejam diretamente alinhados às necessidades estratégicas da plataforma Nativo.
+As regras de negócio consolidam restrições, condições e políticas do domínio que orientam a execução dos requisitos e dos casos de uso.
 
-| Contribuição principal | Contribuição secundária | CP | VN | RFs relacionados | RNFs relacionados |
-| :---: | :---: | :--- | :---: | :--- | :--- |
-| **OE1** | **OE3** | **CP1** - Mecanismos interativos de aprendizagem e engajamento | **VN1** | RF01 ao RF09, RF50 |
-| **OE1** | **OE3** | **CP2** - Feed Social Comunitário | **VN2** | RF10 ao RF19 | RNF03, RNF09 |
-| **OE2** | **OE3** | **CP3** - Controle de usuário | **VN3** | RF20 ao RF26 |
-| **OE2** | **OE3** | **CP4** - Sistema de denúncias | **VN4** | RF27 ao RF33 |
-| **OE3** | **OE1** | **CP5** - Suporte a Multimídia nas Traduções | **VN5** | RF34 ao RF43 | RNF01, RNF02, RNF09 |
-| **OE3** | **OE1** | **CP6** - Perfil de Usuário | **VN6** | RF44 ao RF48 |
-| **OE3** | **OE1** | **CP7** - Sincronização e Acesso Offline de Traduções | **VN7** | RF49 | RNF06 |
-
-**Observação:** Apesar de não estarem mencionados em cada uma das características de produto, os requisitos **RNF04**, **RNF05**, **RNF07** e **RNF08** (referentes a desempenho, confiabilidade e compatibilidade global) aplicam-se transversalmente a todas as Características de Produto, Requisitos Funcionais e Casos de Uso, por definirem a base da solução. Assim, embora não estejam repetidos em cada linha da matriz de rastreabilidade, eles devem ser considerados válidos, aplicáveis e rastreáveis para todo o produto.
-
-De maneira análoga, o requisito **RNF09** (Escalabilidade de mídia) possui aplicação transversal às características **CP2** e **CP5** , regendo o limite de upload para todas as operações de arquivos vinculadas a esses módulos sem a necessidade de repetição individualizada.
+| ID | Regra de negócio |
+| :--- | :--- |
+| <span id="req-rn01" class="rf-anchor">RN01</span> | Apenas usuários com perfil de Professor criam atividades educacionais, as visualizam, editam e excluem. |
+| <span id="req-rn02" class="rf-anchor">RN02</span> | A criação de atividade exige título e no mínimo uma questão estruturada com enunciado, no mínimo duas alternativas e exatamente uma alternativa correta vinculada às opções. |
+| <span id="req-rn03" class="rf-anchor">RN03</span> | Atividades sem questões válidas são inativadas para listagem e resolução. |
+| <span id="req-rn04" class="rf-anchor">RN04</span> | A alternativa correta é ocultada da interface. |
+| <span id="req-rn05" class="rf-anchor">RN05</span> | O processamento da pontuação das atividades é realizado após a submissão de todas as questões obrigatórias. |
+| <span id="req-rn06" class="rf-anchor">RN06</span> | O registro de entidades exige preenchimento de campos obrigatórios: nome, objetivo e imagem para insígnias; título, data futura, horário, local e descrição para eventos; e texto ou mídia para publicações. |
+| <span id="req-rn07" class="rf-anchor">RN07</span> | As insígnias referentes à taxa de acertos de uma atividade possuem dependência direta, devendo ser excluídas caso a respectiva atividade seja removida do sistema. |
+| <span id="req-rn08" class="rf-anchor">RN08</span> | A edição e exclusão de publicações no feed e de eventos são permitidas ao usuário autor do registro e ao moderador. |
+| <span id="req-rn09" class="rf-anchor">RN09</span> | O sistema aplica o marcador textual Editado em publicações que sofreram alteração após o envio original. |
+| <span id="req-rn10" class="rf-anchor">RN10</span> | A ordenação exibe publicações e históricos de tradução em ordem cronológica decrescente, e eventos comunitários em ordem cronológica crescente. |
+| <span id="req-rn11" class="rf-anchor">RN11</span> | A alteração de nível de acesso entra em vigor imediatamente nas regras de sessão, e o banimento inativa as credenciais do usuário, o que é reversível. |
+| <span id="req-rn12" class="rf-anchor">RN12</span> | O sistema bloqueia a autoexclusão ou o autobanimento de um Administrador caso não exista outro perfil de mesma permissão ativo na plataforma. |
+| <span id="req-rn13" class="rf-anchor">RN13</span> | A recuperação de senha exibe mensagens genéricas para evitar enumeração de contas, exige intervalo de 3 minutos para reenvio e invalida códigos anteriores associados ao usuário. |
+| <span id="req-rn14" class="rf-anchor">RN14</span> | A alteração de perfil restringe-se aos dados da própria conta e exige correspondência exata nos caracteres dos campos de nova senha e confirmação. |
+| <span id="req-rn15" class="rf-anchor">RN15</span> | A denúncia exige a seleção de categoria existente, inicia com status Aberta, e sua alteração para Resolvida ou Improcedente é exclusiva de Administradores. |
+| <span id="req-rn16" class="rf-anchor">RN16</span> | O sistema aborta o registro da denúncia se o conteúdo alvo for excluído da plataforma antes da confirmação da submissão. |
+| <span id="req-rn17" class="rf-anchor">RN17</span> | Apenas Administradores gerenciam categorias de denúncia. |
+| <span id="req-rn18" class="rf-anchor">RN18</span> | Apenas Administradores e Professores gerenciam mídias de vídeo e áudio. |
+| <span id="req-rn19" class="rf-anchor">RN19</span> | O upload restringe vídeos a formatos MP4, MOV, AVI até 30MB, e áudios a formatos MP3, WAV, OGG até 10MB. |
+| <span id="req-rn20" class="rf-anchor">RN20</span> | O cadastro de mídias exige vinculação a uma tradução existente; a desassociação remove apenas esse vínculo, mantendo o arquivo preservado no acervo. |
+| <span id="req-rn21" class="rf-anchor">RN21</span> | O sistema bloqueia a inclusão duplicada na lista de favoritos e oculta traduções inativadas ou removidas da base de dados. |
+| <span id="req-rn22" class="rf-anchor">RN22</span> | O pacote de sincronização offline omite as mídias audiovisuais e exige armazenamento livre no dispositivo. |
+| <span id="req-rn23" class="rf-anchor">RN23</span> | A candidatura a Professor exige justificativa, é restrita a usuários sem este perfil e registrada com status Pendente, bloqueando novos envios do mesmo usuário simultaneamente. |
+| <span id="req-rn24" class="rf-anchor">RN24</span> | A alteração de status da solicitação de candidatura para aprovação ou rejeição é de execução exclusiva dos Administradores. |

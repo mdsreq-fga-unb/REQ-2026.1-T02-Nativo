@@ -15,10 +15,10 @@ Link: https://mdsreq-fga-unb.github.io/REQ-2026.1-T02-Nativo/
 
 | Perfil | Login | Senha |
 | :--- | :--- | :--- |
-| Professor | _adicionar aqui_ | _adicionar aqui_ |
-| Usuário comum | _adicionar aqui_ | _adicionar aqui_ |
-| Admin | _adicionar aqui_ | _adicionar aqui_ |
-| Moderador | _adicionar aqui_ | _adicionar aqui_ |
+| Professor | 10322171032 | Usuario123* |
+| Usuário comum | 53194627007 | Usuario123* |
+| Admin | 61999142012 | Usuario123* |
+| Moderador | 70084561076 | Usuario123* |
 
 ## Como Começar
 

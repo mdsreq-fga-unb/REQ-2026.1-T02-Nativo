@@ -7,13 +7,18 @@
 ## Acessar Documentação
 Link: https://mdsreq-fga-unb.github.io/REQ-2026.1-T02-Nativo/
 
+## Repositório de Desenvolvimento
+
+[Requisitos-Anawe/Nativo](https://github.com/Requisitos-Anawe/Nativo)
+
 ## Credenciais (Login e senha)
 
-(ADICIONAR AQUIIII)
-Professor:
-Usuário comum:
-Admin:
-Moderador:
+| Perfil | Login | Senha |
+| :--- | :--- | :--- |
+| Professor | _adicionar aqui_ | _adicionar aqui_ |
+| Usuário comum | _adicionar aqui_ | _adicionar aqui_ |
+| Admin | _adicionar aqui_ | _adicionar aqui_ |
+| Moderador | _adicionar aqui_ | _adicionar aqui_ |
 
 ## Como Começar
 
@@ -39,3 +44,4 @@ A documentação será disponibilizada em `http://localhost:8000`
 | ![Giovanna Felipe](https://github.com/giovannafg.png?size=100) | **Giovanna Felipe** |
 | ![Arthur Mendes](https://github.com/artmendess.png?size=100) | **Arthur Mendes** |
 | ![Renan Câmara](https://github.com/Renurin.png?size=100) | **Renan Câmara** |
+| ![Julia](https://github.com/juliapat18.png?size=100) | **Julia** |

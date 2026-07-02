@@ -38,10 +38,10 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
 
 ## Equipe
 
-|  |  |  |
-| :---: | :---: | :---: |
-| <a href="https://github.com/314dro" target="_blank"><img src="https://github.com/314dro.png?size=120" alt="Pedro Silva" width="96"><br>Pedro Silva</a> | <a href="https://github.com/andrehsb" target="_blank"><img src="https://github.com/andrehsb.png?size=120" alt="Andre Henrique" width="96"><br>Andre Henrique</a> | <a href="https://github.com/jsalless" target="_blank"><img src="https://github.com/jsalless.png?size=120" alt="Johnnatan Salles" width="96"><br>Johnnatan Salles</a> |
-| <a href="https://github.com/giovannafg" target="_blank"><img src="https://github.com/giovannafg.png?size=120" alt="Giovanna" width="96"><br>Giovanna</a> | <a href="https://github.com/artmendess" target="_blank"><img src="https://github.com/artmendess.png?size=120" alt="Arthur Mendes" width="96"><br>Arthur Mendes</a> | <a href="https://github.com/Renurin" target="_blank"><img src="https://github.com/Renurin.png?size=120" alt="Renan Camara" width="96"><br>Renan Camara</a> |
+|  |  |  |  |
+| :---: | :---: | :---: | :---: |
+| <a href="https://github.com/314dro" target="_blank"><img src="https://github.com/314dro.png?size=120" alt="Pedro Silva" width="96"><br>Pedro Silva</a> | <a href="https://github.com/andrehsb" target="_blank"><img src="https://github.com/andrehsb.png?size=120" alt="Andre Henrique" width="96"><br>Andre Henrique</a> | <a href="https://github.com/jsalless" target="_blank"><img src="https://github.com/jsalless.png?size=120" alt="Johnnatan Salles" width="96"><br>Johnnatan Salles</a> | <a href="https://github.com/giovannafg" target="_blank"><img src="https://github.com/giovannafg.png?size=120" alt="Giovanna" width="96"><br>Giovanna</a> |
+| <a href="https://github.com/artmendess" target="_blank"><img src="https://github.com/artmendess.png?size=120" alt="Arthur Mendes" width="96"><br>Arthur Mendes</a> | <a href="https://github.com/Renurin" target="_blank"><img src="https://github.com/Renurin.png?size=120" alt="Renan Camara" width="96"><br>Renan Camara</a> | <a href="https://github.com/juliapat18" target="_blank"><img src="https://github.com/juliapat18.png?size=120" alt="Julia" width="96"><br>Julia</a> |  |
 
 ## Histórico de Revisão
 
@@ -75,4 +75,3 @@ Bem-vindo à documentação oficial do projeto **Nativo** — um aplicativo trad
 | 15/06/26 | 2.4 | Atualização do cronograma com link dos entregáveis | Giovanna e André Henrique |
 | 30/06/26 | 2.5 | Atualização das UCs para o Pages, antes registradas apenas nas issues | Giovanna |
 | 01/07/26 | 2.6 | Reestruturação dos tópicos do Pages e Rastreabilidade | Giovanna |
-

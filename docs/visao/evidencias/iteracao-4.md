@@ -44,28 +44,17 @@
 
 [Board do Miro](https://miro.com/app/board/uXjVHUP59J4=/?share_link_id=964775775657)
 
+O board do Miro registra a versão inicial usada pela equipe para organizar a priorização e a rastreabilidade. A priorização está explicada no tópico [MVP](../mvp.md), enquanto a árvore de rastreabilidade atualizada e clicável está disponível no tópico [Rastreabilidade](../rastreabilidade.md).
+
 ### Matriz de Priorização
+
+Registro visual da matriz utilizada inicialmente pela equipe no Miro.
 
 ![](../../img/Matriz.png)
 ![](../../img/Quadrante1.png)
 ![](../../img/Quadrante2.png)
 ![](../../img/Quadrante3.png)
 ![](../../img/Quadrante4.png)
-
-### Árvore de Rastreabilidade
-
-![](../../img/Problema-ObjGeral.png)
-![](../../img/ObjGeral-ObjEsps.png)
-![](../../img/ObjEsp1-CPs.png)
-![](../../img/ObjEsp2-CPs.png)
-![](../../img/ObjEsp3-CPs.png)
-![](../../img/CP1-Requisitos.png)
-![](../../img/CP2-Requisitos.png)
-![](../../img/CP3-Requisitos.png)
-![](../../img/CP4-Requisitos.png)
-![](../../img/CP5-Requisitos.png)
-![](../../img/CP6-Requisitos.png)
-![](../../img/CP7-Requisitos.png)
 
 ### Apresentação da Unidade 2
 

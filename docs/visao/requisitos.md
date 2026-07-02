@@ -103,30 +103,12 @@ Os requisitos não funcionais definem critérios de qualidade do sistema Nativo.
 
 | ID | Nome | Descrição | Categoria (URPS) |
 |---|---|---|---|
-| RNF01 | Tempo de busca de tradução | O sistema deve apresentar o resultado de uma tradução em até 2 segundos para 95% das requisições realizadas com conexão mínima de 5 Mbps. | Desempenho |
-| RNF02 | Navegação da tradução | O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial. | Usabilidade |
-| RNF03 | Navegação da rede social | O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial. | Usabilidade |
-| RNF04 | Suporte simultâneo geral | O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta inferior a 3 segundos. | Desempenho |
-| RNF05 | Tempo de carregamento | Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android intermediários sob conexão de internet com largura de banda mínima de 100 kbps e latência máxima de 300 ms. | Desempenho |
-| RNF06 | Funcionamento offline | O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet. | Confiabilidade |
-| RNF07 | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
-| RNF08 | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
-| RNF09 | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |
-
-## 7.3 Matriz-síntese de Rastreabilidade
-
-A matriz a seguir representa a rastreabilidade entre os Objetivos Específicos (OE), Características de Produto (CP), Valores de Negócio (VN), Requisitos Funcionais (RFs) e Requisitos Não Funcionais (RNFs). Essa estrutura garante que todas as funcionalidades e critérios de qualidade desenvolvidos estejam diretamente alinhados às necessidades estratégicas da plataforma Nativo.
-
-| Contribuição principal | Contribuição secundária | CP | VN | RFs relacionados | RNFs relacionados |
-| :---: | :---: | :--- | :---: | :--- | :--- |
-| **OE1** | **OE3** | **CP1** - Mecanismos interativos de aprendizagem e engajamento | **VN1** | RF01 ao RF09, RF50 |
-| **OE1** | **OE3** | **CP2** - Feed Social Comunitário | **VN2** | RF10 ao RF19 | RNF03, RNF09 |
-| **OE2** | **OE3** | **CP3** - Controle de usuário | **VN3** | RF20 ao RF26 |
-| **OE2** | **OE3** | **CP4** - Sistema de denúncias | **VN4** | RF27 ao RF33 |
-| **OE3** | **OE1** | **CP5** - Suporte a Multimídia nas Traduções | **VN5** | RF34 ao RF43 | RNF01, RNF02, RNF09 |
-| **OE3** | **OE1** | **CP6** - Perfil de Usuário | **VN6** | RF44 ao RF48 |
-| **OE3** | **OE1** | **CP7** - Sincronização e Acesso Offline de Traduções | **VN7** | RF49 | RNF06 |
-
-**Observação:** Apesar de não estarem mencionados em cada uma das características de produto, os requisitos **RNF04**, **RNF05**, **RNF07** e **RNF08** (referentes a desempenho, confiabilidade e compatibilidade global) aplicam-se transversalmente a todas as Características de Produto, Requisitos Funcionais e Casos de Uso, por definirem a base da solução. Assim, embora não estejam repetidos em cada linha da matriz de rastreabilidade, eles devem ser considerados válidos, aplicáveis e rastreáveis para todo o produto.
-
-De maneira análoga, o requisito **RNF09** (Escalabilidade de mídia) possui aplicação transversal às características **CP2** e **CP5** , regendo o limite de upload para todas as operações de arquivos vinculadas a esses módulos sem a necessidade de repetição individualizada.
+| <span id="req-rnf01" class="rf-anchor">RNF01</span> | Tempo de busca de tradução | O sistema deve apresentar o resultado de uma tradução em até 2 segundos para 95% das requisições realizadas com conexão mínima de 5 Mbps. | Desempenho |
+| <span id="req-rnf02" class="rf-anchor">RNF02</span> | Navegação da tradução | O usuário deve conseguir acessar a funcionalidade de tradução em no máximo 2 interações a partir da tela inicial. | Usabilidade |
+| <span id="req-rnf03" class="rf-anchor">RNF03</span> | Navegação da rede social | O usuário deve conseguir acessar publicações da comunidade em no máximo 3 cliques a partir da tela inicial. | Usabilidade |
+| <span id="req-rnf04" class="rf-anchor">RNF04</span> | Suporte simultâneo geral | O sistema deve suportar no mínimo 100 usuários simultâneos nas funcionalidades assíncronas mantendo tempo médio de resposta inferior a 3 segundos. | Desempenho |
+| <span id="req-rnf05" class="rf-anchor">RNF05</span> | Tempo de carregamento | Todas as telas do aplicativo devem carregar em até 4 segundos em dispositivos Android intermediários sob conexão de internet com largura de banda mínima de 100 kbps e latência máxima de 300 ms. | Desempenho |
+| <span id="req-rnf06" class="rf-anchor">RNF06</span> | Funcionamento offline | O aplicativo deve permitir acesso às traduções previamente salvas mesmo sem conexão com a internet. | Confiabilidade |
+| <span id="req-rnf07" class="rf-anchor">RNF07</span> | Backup de dados | O sistema deve realizar backup automático da base de dados ao menos uma vez a cada 24 horas. | Confiabilidade |
+| <span id="req-rnf08" class="rf-anchor">RNF08</span> | Compatibilidade Android | O aplicativo deve ser compatível com dispositivos Android a partir da versão 10.0. | Confiabilidade |
+| <span id="req-rnf09" class="rf-anchor">RNF09</span> | Escalabilidade de mídia | O sistema deve suportar upload de arquivos de mídia de até 100 MB. | Desempenho |

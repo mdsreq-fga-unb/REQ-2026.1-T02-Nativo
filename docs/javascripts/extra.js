@@ -144,9 +144,27 @@ document.addEventListener('DOMContentLoaded', function() {
       RF50: 'Listar atividades disponíveis para resolução'
     };
 
+    var nonFunctionalTitles = {
+      RNF01: 'Tempo de busca de traducao',
+      RNF02: 'Navegacao entre traducoes',
+      RNF03: 'Navegacao da rede social',
+      RNF04: 'Suporte simultaneo geral',
+      RNF05: 'Recuperacao de falhas',
+      RNF06: 'Funcionamento offline',
+      RNF07: 'Rotina de backup',
+      RNF08: 'Compatibilidade Android',
+      RNF09: 'Escalabilidade de midia'
+    };
+
     function rfNodes(ids) {
       return ids.map(function(id) {
         return { id: id, type: 'rf', title: requirementTitles[id] || id };
+      });
+    }
+
+    function rnfNodes(ids) {
+      return ids.map(function(id) {
+        return { id: id, type: 'rnf', title: nonFunctionalTitles[id] || id };
       });
     }
 
@@ -167,7 +185,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function markImplementedRfs(node) {
       if (node.type === 'uc' && implementedUcs[node.id]) {
         (node.children || []).forEach(function(child) {
-          implementedRfs[child.id] = true;
+          child.implemented = true;
+          if (child.type === 'rf') {
+            implementedRfs[child.id] = true;
+          }
         });
       }
       (node.children || []).forEach(markImplementedRfs);
@@ -187,6 +208,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return '../casos-uso/' + node.id.toLowerCase() + '/';
       }
       if (node.type === 'rf') {
+        return '../requisitos/#req-' + node.id.toLowerCase();
+      }
+      if (node.type === 'rnf') {
         return '../requisitos/#req-' + node.id.toLowerCase();
       }
       return '#';
@@ -218,8 +242,8 @@ document.addEventListener('DOMContentLoaded', function() {
               type: 'cp',
               title: 'Feed Social Comunitário',
               children: [
-                { id: 'UC04', type: 'uc', title: 'Gerenciar Feed Social', children: rfNodes(['RF10', 'RF11', 'RF12', 'RF13', 'RF14']) },
-                { id: 'UC05', type: 'uc', title: 'Gerenciar Eventos', children: rfNodes(['RF15', 'RF16', 'RF17', 'RF18', 'RF19']) }
+                { id: 'UC04', type: 'uc', title: 'Gerenciar Feed Social', children: rfNodes(['RF10', 'RF11', 'RF12', 'RF13', 'RF14']).concat(rnfNodes(['RNF03', 'RNF09'])) },
+                { id: 'UC05', type: 'uc', title: 'Gerenciar Eventos', children: rfNodes(['RF15', 'RF16', 'RF17', 'RF18', 'RF19']).concat(rnfNodes(['RNF03', 'RNF09'])) }
               ]
             }
           ]
@@ -260,8 +284,8 @@ document.addEventListener('DOMContentLoaded', function() {
               type: 'cp',
               title: 'Suporte a Multimídia nas Traduções',
               children: [
-                { id: 'UC10', type: 'uc', title: 'Gerenciar Acervo de Vídeos', children: rfNodes(['RF34', 'RF35', 'RF36', 'RF37', 'RF38']) },
-                { id: 'UC11', type: 'uc', title: 'Gerenciar Acervo de Áudios', children: rfNodes(['RF39', 'RF40', 'RF41', 'RF42', 'RF43']) }
+                { id: 'UC10', type: 'uc', title: 'Gerenciar Acervo de Vídeos', children: rfNodes(['RF34', 'RF35', 'RF36', 'RF37', 'RF38']).concat(rnfNodes(['RNF01', 'RNF02', 'RNF09'])) },
+                { id: 'UC11', type: 'uc', title: 'Gerenciar Acervo de Áudios', children: rfNodes(['RF39', 'RF40', 'RF41', 'RF42', 'RF43']).concat(rnfNodes(['RNF01', 'RNF02', 'RNF09'])) }
               ]
             },
             {
@@ -277,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
               type: 'cp',
               title: 'Sincronização e Acesso Offline de Traduções',
               children: [
-                { id: 'UC13', type: 'uc', title: 'Baixar Traduções para Acesso Offline', children: rfNodes(['RF49']) }
+                { id: 'UC13', type: 'uc', title: 'Baixar Traduções para Acesso Offline', children: rfNodes(['RF49']).concat(rnfNodes(['RNF06'])) }
               ]
             }
           ]
@@ -290,6 +314,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function computeStatus(node) {
       if (node.type === 'rf') {
         node.status = implementedRfs[node.id] ? 'done' : 'not-started';
+        return node.status;
+      }
+
+      if (node.type === 'rnf') {
+        node.status = node.implemented ? 'done' : 'not-started';
         return node.status;
       }
 
@@ -427,7 +456,8 @@ document.addEventListener('DOMContentLoaded', function() {
         oe: { w: 68, h: 32 },
         cp: { w: 62, h: 30 },
         uc: { w: 66, h: 30 },
-        rf: { w: 58, h: 28 }
+        rf: { w: 58, h: 28 },
+        rnf: { w: 66, h: 28 }
       };
       var size = dimensions[node.type] || dimensions.rf;
       return { x: node.x - size.w / 2, y: node.y, w: size.w, h: size.h };

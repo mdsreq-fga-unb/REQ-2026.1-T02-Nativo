@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Fechamento da documentação as-built:** versão final, estabilização da entrega e atualização das evidências finais.
+**Organização e atualização:** documentação as-built, versão final, rastreabilidade consolidada e evidências finais.
 
 ## Evidências
 

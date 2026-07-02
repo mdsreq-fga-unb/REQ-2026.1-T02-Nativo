@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Detalhamento de cenários e prototipação do módulo pedagógico:** evidências de criação, listagem, resposta e resultado de atividades.
+**Declaração, representação, verificação e validação:** detalhamento das UCs, prototipação, verificação por DoR, validação por DoD e validações com cliente para atividades educacionais.
 
 ## Evidências
 

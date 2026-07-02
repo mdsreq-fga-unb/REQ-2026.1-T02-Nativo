@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Detalhamento de cenários e manutenção da rastreabilidade:** evidências de acesso offline, pontuação e insígnias.
+**Declaração, representação, verificação e validação:** detalhamento das UCs, prototipação, verificação por DoR, validação por DoD e validações com cliente para acesso offline e insígnias.
 
 ## Evidências
 

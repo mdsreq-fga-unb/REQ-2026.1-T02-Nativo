@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Gestão de mudanças, detalhamento final e rastreabilidade:** evidências de perfil, favoritos, histórico, acesso e recuperação de senha.
+**Declaração, representação, verificação e validação:** detalhamento das UCs, prototipação, verificação por DoR, validação por DoD e validações com cliente para perfil, acessos e recuperação de senha.
 
 ## Evidências
 

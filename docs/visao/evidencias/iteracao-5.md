@@ -4,7 +4,7 @@
 
 ## Atividade de Engenharia de Requisitos
 
-**Detalhamento e prototipação das UCs de multimídia:** evidências de cadastro, reprodução, associação e desassociação de vídeos e áudios.
+**Declaração, representação, verificação e validação:** detalhamento das UCs, prototipação, verificação por DoR, validação por DoD e validações com cliente para vídeos e áudios.
 
 ## Evidências
 
